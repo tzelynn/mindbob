@@ -1,4 +1,4 @@
-// Daily doodle prompt: one random single-word object, chosen deterministically
+// Daily doodle prompt: one single-word object, chosen deterministically
 // from the date so everyone sees the same word on a given day (AM == PM) and it
 // works offline. Same seeding pattern as palette.js / doodles.js — no Math.random.
 import { hashString } from "./util.js";
