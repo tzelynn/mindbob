@@ -4,7 +4,7 @@
 //   last note when offline).
 // - everything else (doodles, etc.): stale-while-revalidate.
 
-const VERSION = "v1";
+const VERSION = "v2";
 const SHELL_CACHE = `mindbob-shell-${VERSION}`;
 const RUNTIME_CACHE = `mindbob-runtime-${VERSION}`;
 
@@ -19,7 +19,8 @@ const SHELL_ASSETS = [
   "./js/palette.js",
   "./js/doodles.js",
   "./js/autoDecorate.js",
-  "./js/customDecorate.js",
+  "./js/doodleDecorate.js",
+  "./js/prompts.js",
   "./js/util.js",
   "./js/pwa.js",
   "./icons/icon-192.png",
