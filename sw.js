@@ -4,7 +4,7 @@
 //   last note when offline).
 // - everything else (doodles, etc.): stale-while-revalidate.
 
-const VERSION = "v2";
+const VERSION = "v3";
 const SHELL_CACHE = `mindbob-shell-${VERSION}`;
 const RUNTIME_CACHE = `mindbob-runtime-${VERSION}`;
 
@@ -60,6 +60,12 @@ self.addEventListener("fetch", (event) => {
 
   // Messages: network-first.
   if (url.pathname.endsWith("/data/messages.json")) {
+    event.respondWith(networkFirst(request));
+    return;
+  }
+
+  // Doodle prompt: network-first (fresh when online, last word offline).
+  if (url.pathname.endsWith("/data/prompts.json")) {
     event.respondWith(networkFirst(request));
     return;
   }
