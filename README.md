@@ -4,6 +4,8 @@ A calming wellness micro-site that shows a feel-good note, refreshed **twice a d
 lighthearted in the morning, reflective in the evening. Hosted on GitHub Pages,
 installable to a phone home screen as a PWA, and built to load instantly.
 
+https://tzelynn.github.io/mindbob/
+
 - **Auto mode** — the note is arranged with a little hand-drawn doodle in a calm layout.
 - **Decorate mode** — move the note around, draw with a per-message colour palette, and erase your doodles (you can never erase the note itself).
 
@@ -39,13 +41,6 @@ No build step, no framework, no secrets to configure. Vanilla HTML/CSS/JS (ES mo
 | `scripts/build-doodle-manifest.mjs` | Regenerates `doodles/index.json` |
 | `scripts/make-icons.py` | Regenerates PWA icons |
 | `.github/workflows/generate-message.yml` | The twice-daily schedule |
-
-## Deploy (GitHub Pages)
-
-1. Push this repo to GitHub.
-2. **Settings → Pages → Build and deployment → Source: Deploy from a branch**, branch `main`, folder `/ (root)`.
-3. **Settings → Actions → General → Workflow permissions → Read and write permissions** (so the cron can commit `messages.json`).
-4. The site goes live at `https://<user>.github.io/<repo>/`. All paths are relative, so the project-page subpath works as-is.
 
 ## The twice-daily cron
 

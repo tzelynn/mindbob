@@ -30,6 +30,8 @@ GitHub Pages → index.html → js/main.js
 ```
 The client (`js/messages.js`) shows the entry with the greatest `publishAt` that is `≤ now`.
 
+`publishAt` is **derived deterministically from `date` + `slot`** (`publishAtFor()` in the generator: AM = `00:00` UTC, PM = `11:00` UTC), **not** stamped from wall-clock `now`. This keeps AM strictly before PM and ~11h apart, so generating both slots back-to-back (local runs, seeds) can't produce near-equal timestamps that make the client pick the wrong note. Don't revert this to `now`.
+
 ## Module map
 
 | File | Responsibility | Key export |
@@ -39,7 +41,7 @@ The client (`js/messages.js`) shows the entry with the greatest `publishAt` that
 | `js/palette.js` | Curated palettes; one per note | `paletteFor(seed)`, `applyPalette()` |
 | `js/doodles.js` | Manifest load, pick + place doodle | `renderAutoDoodle()` |
 | `js/autoDecorate.js` | Auto mode render | `renderAuto()`, `clearAuto()` |
-| `js/customDecorate.js` | Decorate canvas (move/pencil/eraser/save) | `createCustomDecorator()` |
+| `js/customDecorate.js` | Decorate canvas (move/pencil/eraser/undo/clear/save) | `createCustomDecorator()` |
 | `js/util.js` | Hash + seeded RNG | `hashString()`, `seededRng()`, `pick()` |
 | `js/pwa.js` | Service worker registration | `registerSW()` |
 
@@ -56,6 +58,8 @@ Keep modules single-purpose and small. `customDecorate.js` is lazy-imported by `
 - **The note can never be erased.** It's a separate DOM layer (`#messageEl`) above the drawing `<canvas>`. The eraser uses `globalCompositeOperation = "destination-out"` on the canvas only. Never merge the note into the canvas (except in `save()`, which composites a throwaway export canvas).
 - **`.toolbar[hidden]` needs an explicit `display:none` rule** — the author `.toolbar{display:flex}` otherwise overrides the `hidden` attribute. (Same trap applies to any element given a `display` and toggled via `hidden`.)
 - Canvas drawing is DPR-aware (`fitCanvas`) and stores strokes in CSS pixels.
+- **The drawing canvas is hidden in auto mode via CSS** (`.app[data-mode="auto"] .layer-canvas { display:none }`), not cleared — so a decorated canvas never shows behind the auto doodle, yet the pixels survive a round-trip back to decorate mode. Don't "fix" leakage by clearing the canvas on mode switch.
+- **Undo is snapshot-based**: `pushUndo()` captures canvas pixels + message position *before* each action (stroke, erase, drag, clear); a drag only snapshots once it actually moves. If you add a new mutating action, call `pushUndo()` at its start.
 
 ## Commands
 

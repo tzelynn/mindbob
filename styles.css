@@ -105,6 +105,11 @@ body {
   pointer-events: none;      /* enabled only in pencil/eraser mode */
 }
 
+/* The drawing belongs to custom mode only — hide it in auto so a decorated
+   canvas never shows behind the auto doodle. Pixels are kept (not cleared),
+   so the drawing reappears on returning to decorate. */
+.app[data-mode="auto"] .layer-canvas { display: none; }
+
 .layer-doodle {
   display: flex;
   align-items: center;
@@ -140,7 +145,11 @@ body {
 /* In custom mode the whole centred message layer can be dragged
    (translate offset is applied via JS), so the text moves as a unit. */
 .app[data-mode="custom"] .layer-message { will-change: transform; }
-.app[data-mode="custom"] .layer-message.is-draggable { cursor: grab; pointer-events: auto; }
+.app[data-mode="custom"] .layer-message.is-draggable {
+  cursor: grab;
+  pointer-events: auto;
+  touch-action: none;        /* stop the browser hijacking touch-drags as scroll */
+}
 .app[data-mode="custom"] .layer-message.is-dragging { cursor: grabbing; }
 
 /* ---------- Toolbar ---------- */
@@ -173,6 +182,8 @@ body {
 }
 .tool-btn:active { transform: scale(0.96); }
 .tool-btn.is-active { background: var(--accent); color: var(--bg); }
+.tool-btn:disabled { opacity: 0.4; cursor: default; }
+.tool-btn:disabled:active { transform: none; }
 
 .swatches { display: inline-flex; gap: 8px; }
 

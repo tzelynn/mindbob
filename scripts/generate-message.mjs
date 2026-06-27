@@ -51,6 +51,16 @@ function todayUTC() {
   return new Date().toISOString().slice(0, 10); // YYYY-MM-DD
 }
 
+// Each note's publish instant is anchored to its date + slot, NOT to the
+// moment the script runs. This keeps AM strictly before PM (and ~12h apart)
+// even when both slots are generated back-to-back, so the client always
+// surfaces the right one. Hours are UTC.
+const PUBLISH_HOUR_UTC = { am: 0, pm: 11 };
+function publishAtFor(date, slot) {
+  const hh = String(PUBLISH_HOUR_UTC[slot]).padStart(2, "0");
+  return `${date}T${hh}:00:00.000Z`;
+}
+
 function clean(text) {
   if (!text) return "";
   let t = String(text).trim();
@@ -139,7 +149,7 @@ async function main() {
     id: `${date}-${SLOT}`,
     date,
     slot: SLOT,
-    publishAt: now.toISOString(),
+    publishAt: publishAtFor(date, SLOT),
     text,
     source,
   };

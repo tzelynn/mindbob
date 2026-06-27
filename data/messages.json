@@ -5,7 +5,7 @@
       "id": "2026-06-26-am",
       "date": "2026-06-26",
       "slot": "am",
-      "publishAt": "2026-06-25T23:00:00Z",
+      "publishAt": "2026-06-26T00:00:00.000Z",
       "text": "Morning. You don't have to do it all today — just the next small thing.",
       "source": "seed"
     },
@@ -13,7 +13,7 @@
       "id": "2026-06-26-pm",
       "date": "2026-06-26",
       "slot": "pm",
-      "publishAt": "2026-06-26T11:00:00Z",
+      "publishAt": "2026-06-26T11:00:00.000Z",
       "text": "Whatever today was, it's allowed to just be over now. Rest easy.",
       "source": "seed"
     },
@@ -21,7 +21,7 @@
       "id": "2026-06-27-am",
       "date": "2026-06-27",
       "slot": "am",
-      "publishAt": "2026-06-27T05:06:38.650Z",
+      "publishAt": "2026-06-27T00:00:00.000Z",
       "text": "You woke up and you're trying. That's the whole job today.",
       "source": "fallback"
     },
@@ -29,7 +29,7 @@
       "id": "2026-06-27-pm",
       "date": "2026-06-27",
       "slot": "pm",
-      "publishAt": "2026-06-27T05:06:38.728Z",
+      "publishAt": "2026-06-27T11:00:00.000Z",
       "text": "Quiet is productive too. Let yourself have some.",
       "source": "fallback"
     }
