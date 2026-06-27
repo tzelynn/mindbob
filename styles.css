@@ -111,14 +111,17 @@ body {
 .app[data-mode="auto"] .layer-canvas { display: none; }
 
 .layer-doodle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   pointer-events: none;
 }
 
+/* Each doodle is anchored to a layout point (set inline as left/top %) and
+   centred on it via translate(-50%, -50%); width is set inline per count. */
+.doodle-slot {
+  position: absolute;
+}
+
 .layer-doodle svg {
-  width: min(46vw, 230px);
+  width: min(46vw, 230px);   /* default; overridden inline per doodle count */
   height: auto;
   color: var(--accent);      /* inline SVGs use currentColor */
   opacity: 0.9;

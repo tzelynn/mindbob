@@ -49,7 +49,8 @@ Keep modules single-purpose and small. `customDecorate.js` is lazy-imported by `
 
 ## Conventions
 
-- **Deterministic-per-note visuals.** Palette and doodle are derived from the note `id` via `hashString` — same note always looks identical, AM ≠ PM, each note gets its own cohesive pencil palette. Don't introduce `Math.random()` for visuals; seed from the note id.
+- **Deterministic-per-note visuals.** Palette and doodles are derived from the note `id` via `hashString` — same note always looks identical, AM ≠ PM, each note gets its own cohesive pencil palette. Don't introduce `Math.random()` for visuals; seed from the note id.
+- **Auto mode shows 1–4 doodles in a symmetric layout.** `doodleCountFor(seed, manifest)` picks the count (1–4, capped to manifest size); `doodleNamesFor()` picks that many *distinct* doodles. `renderAutoDoodle()` (in `js/doodles.js`) places them on a per-count layout from the `LAYOUTS` table — anchor points are left-right (and where possible top-bottom) symmetric and sit in the top/bottom margins so they frame the centred message instead of overlapping it; doodles shrink as the count grows so they never collide. Each doodle is its own absolutely-positioned `.doodle-slot` (centred on its anchor via `translate(-50%, -50%)`) with a small seeded rotation. To change the look, edit `LAYOUTS` (points + per-count `size`), not the call sites. The single-doodle path is gone — `doodleNameFor()` was replaced by `doodleCountFor()` + `doodleNamesFor()`.
 - **Theme via CSS custom properties** (`--bg`, `--ink`, `--accent`) set on `.app` by `applyPalette()`. Add new themeable colors as variables, not hardcoded values.
 - **Doodles are inline SVG line-art using `stroke="currentColor"`** so they inherit `--accent`. New doodles must follow this (viewBox `0 0 100 100`, no hardcoded colors).
 
