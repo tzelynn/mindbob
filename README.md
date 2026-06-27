@@ -33,7 +33,8 @@ No build step, no framework, no secrets to configure. Vanilla HTML/CSS/JS (ES mo
 | `js/messages.js` | Fetch `messages.json`, pick the current note |
 | `js/palette.js` | Curated calming palettes; one per note (deterministic) |
 | `js/doodles.js` | Load manifest, pick + place a doodle (deterministic) |
-| `js/autoDecorate.js` / `js/customDecorate.js` | The two modes |
+| `js/autoDecorate.js` / `js/doodleDecorate.js` | The two render modes (auto note / doodle) |
+| `js/prompts.js` | Daily date-seeded doodle prompt word (deterministic) |
 | `data/messages.json` | Generated notes (the live data) |
 | `data/fallback-bank.json` | Hand-written notes used when the LLM is unavailable |
 | `doodles/*.svg` + `index.json` | Doodle library + its manifest |
@@ -66,7 +67,7 @@ The cron also regenerates the manifest on every run, so simply committing an SVG
 ```bash
 python3 -m http.server 8765
 # open http://localhost:8765/index.html        (auto mode)
-# open http://localhost:8765/index.html#decorate  (decorate mode)
+# open http://localhost:8765/index.html#doodle   (doodle mode)
 
 # regenerate data locally (no token -> uses the fallback bank):
 node scripts/generate-message.mjs --slot=am
