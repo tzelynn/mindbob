@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T05:06:38.728Z",
+  "updated": "2026-06-27T12:09:44.577Z",
   "entries": [
     {
       "id": "2026-06-26-am",
@@ -30,8 +30,8 @@
       "date": "2026-06-27",
       "slot": "pm",
       "publishAt": "2026-06-27T11:00:00.000Z",
-      "text": "Quiet is productive too. Let yourself have some.",
-      "source": "fallback"
+      "text": "Take a moment to breathe and let the day's weight drift away. Tomorrow can wait; for now, just be.",
+      "source": "llm"
     }
   ]
 }
