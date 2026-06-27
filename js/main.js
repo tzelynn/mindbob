@@ -4,7 +4,7 @@ import { getCurrentEntry } from "./messages.js";
 import { paletteFor, applyPalette } from "./palette.js";
 import { renderAuto, clearAuto } from "./autoDecorate.js";
 import { registerSW } from "./pwa.js";
-import { promptFor } from "./prompts.js";
+import { getCurrentPrompt } from "./prompts.js";
 
 const refs = {
   app: document.getElementById("app"),
@@ -38,7 +38,7 @@ async function init() {
   refs.messageText.textContent = state.entry.text;
   refs.status.textContent = statusLine(state.entry);
 
-  state.promptWord = promptFor(state.entry.date);
+  state.promptWord = await getCurrentPrompt(state.entry.date);
   refs.doodleWord.textContent = state.promptWord;
 
   const startMode = location.hash === "#doodle" ? "doodle" : "auto";
