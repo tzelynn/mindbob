@@ -18,11 +18,53 @@ export function createCustomDecorator(refs, state) {
   let msgX = 0, msgY = 0;
   let dragStart = null;
 
+  // undo: each entry snapshots the canvas pixels + message position taken
+  // *before* an action (stroke, erase, drag, clear). Undo restores the top.
+  const undoStack = [];
+  const MAX_UNDO = 40;
+
   const buttons = {
     move: document.getElementById("toolMove"),
     pencil: document.getElementById("toolPencil"),
     eraser: document.getElementById("toolEraser"),
   };
+  const undoBtn = () => document.getElementById("toolUndo");
+
+  function snapshot() {
+    return {
+      img: canvas.width > 0
+        ? ctx.getImageData(0, 0, canvas.width, canvas.height)
+        : null,
+      msgX,
+      msgY,
+    };
+  }
+
+  function pushUndo() {
+    undoStack.push(snapshot());
+    if (undoStack.length > MAX_UNDO) undoStack.shift();
+    refreshUndoBtn();
+  }
+
+  function undo() {
+    const prev = undoStack.pop();
+    if (!prev) return;
+    if (prev.img) {
+      ctx.save();
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      ctx.putImageData(prev.img, 0, 0); // putImageData ignores the transform
+      ctx.restore();
+    }
+    msgX = prev.msgX;
+    msgY = prev.msgY;
+    applyMsgTransform();
+    refreshUndoBtn();
+  }
+
+  function refreshUndoBtn() {
+    const b = undoBtn();
+    if (b) b.disabled = undoStack.length === 0;
+  }
 
   // ---------- canvas sizing (DPR-aware, preserves drawing on resize) ----------
   function fitCanvas() {
@@ -69,7 +111,8 @@ export function createCustomDecorator(refs, state) {
       b.setAttribute("aria-label", "colour " + c);
       b.addEventListener("click", () => {
         color = c;
-        if (tool === "eraser") setTool("pencil");
+        // picking a colour always means "I want to draw"
+        if (tool !== "pencil") setTool("pencil");
         wrap.querySelectorAll(".swatch").forEach((s) => s.classList.remove("is-active"));
         b.classList.add("is-active");
       });
@@ -85,6 +128,7 @@ export function createCustomDecorator(refs, state) {
 
   function onCanvasDown(e) {
     if (tool === "move") return;
+    pushUndo(); // snapshot before this stroke/erase begins
     drawing = true;
     canvas.setPointerCapture(e.pointerId);
     const p = pos(e);
@@ -126,12 +170,18 @@ export function createCustomDecorator(refs, state) {
 
   function onMsgDown(e) {
     if (tool !== "move") return;
-    dragStart = { x: e.clientX - msgX, y: e.clientY - msgY };
+    // remember where we started so undo can capture the pre-drag position,
+    // but only commit that snapshot once the message actually moves.
+    dragStart = { x: e.clientX - msgX, y: e.clientY - msgY, snapped: false };
     messageEl.classList.add("is-dragging");
     messageEl.setPointerCapture(e.pointerId);
   }
   function onMsgMove(e) {
     if (!dragStart) return;
+    if (!dragStart.snapped) {
+      pushUndo(); // snapshot the position before this drag's first move
+      dragStart.snapped = true;
+    }
     msgX = e.clientX - dragStart.x;
     msgY = e.clientY - dragStart.y;
     applyMsgTransform();
@@ -145,6 +195,7 @@ export function createCustomDecorator(refs, state) {
 
   // ---------- clear / save ----------
   function clearDrawing() {
+    pushUndo(); // clear is undoable too
     ctx.save();
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -222,6 +273,7 @@ export function createCustomDecorator(refs, state) {
     buttons.move.addEventListener("click", () => setTool("move"));
     buttons.pencil.addEventListener("click", () => setTool("pencil"));
     buttons.eraser.addEventListener("click", () => setTool("eraser"));
+    document.getElementById("toolUndo").addEventListener("click", undo);
     document.getElementById("toolClear").addEventListener("click", clearDrawing);
     document.getElementById("toolSave").addEventListener("click", save);
 
@@ -249,6 +301,7 @@ export function createCustomDecorator(refs, state) {
     applyMsgTransform();
     fitCanvas();
     setTool("move");
+    refreshUndoBtn();
   }
 
   function deactivate() {
