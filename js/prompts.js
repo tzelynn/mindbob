@@ -20,3 +20,30 @@ export const WORDS = [
 export function promptFor(dateSeed) {
   return WORDS[hashString("prompt|" + dateSeed) % WORDS.length];
 }
+
+// Select the current entry's word from data/prompts.json (greatest publishAt
+// <= now), mirroring messages.js selection. Falls back to the deterministic
+// date-seeded promptFor() when the file is missing/empty (offline, pre-cron).
+export async function getCurrentPrompt(date, now = new Date()) {
+  try {
+    const res = await fetch("./data/prompts.json", { cache: "no-cache" });
+    if (!res.ok) throw new Error("prompts " + res.status);
+    const data = await res.json();
+    const entries = Array.isArray(data?.entries) ? data.entries : [];
+    if (!entries.length) throw new Error("no entries");
+    const sorted = [...entries].sort(
+      (a, b) => new Date(a.publishAt) - new Date(b.publishAt)
+    );
+    const nowMs = now.getTime();
+    let chosen = null;
+    for (const e of sorted) {
+      if (new Date(e.publishAt).getTime() <= nowMs) chosen = e;
+    }
+    chosen = chosen || sorted[0];
+    const word = chosen && typeof chosen.word === "string" ? chosen.word.trim() : "";
+    if (!word) throw new Error("empty word");
+    return word;
+  } catch {
+    return promptFor(date);
+  }
+}
