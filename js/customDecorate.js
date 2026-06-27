@@ -4,6 +4,8 @@
 //   Layer 3: the message as a draggable DOM node (can never be erased)
 // Tools: move (drag text) / pencil (seeded palette) / eraser.
 
+const STORE_PREFIX = "mindbob:decoration:";
+
 export function createCustomDecorator(refs, state) {
   const { canvas, messageEl, toolbar, stage } = refs;
   const ctx = canvas.getContext("2d");
@@ -59,11 +61,69 @@ export function createCustomDecorator(refs, state) {
     msgY = prev.msgY;
     applyMsgTransform();
     refreshUndoBtn();
+    persist();
   }
 
   function refreshUndoBtn() {
     const b = undoBtn();
     if (b) b.disabled = undoStack.length === 0;
+  }
+
+  // ---------- persistence (per-note, survives reloads) ----------
+  // Decoration (canvas pixels + message offset) is saved under the current
+  // note's id and restored on re-entry. Only the current note's decoration is
+  // kept; a new note simply has no saved state, so it "refreshes" with the note.
+  function storageKey() {
+    return STORE_PREFIX + state.entry.id;
+  }
+
+  function persist() {
+    try {
+      const payload = JSON.stringify({
+        img: canvas.width > 0 ? canvas.toDataURL("image/png") : null,
+        msgX,
+        msgY,
+      });
+      const key = storageKey();
+      // prune any other note's decoration so storage stays bounded
+      for (let i = localStorage.length - 1; i >= 0; i--) {
+        const k = localStorage.key(i);
+        if (k && k.startsWith(STORE_PREFIX) && k !== key) localStorage.removeItem(k);
+      }
+      localStorage.setItem(key, payload);
+    } catch {
+      // localStorage disabled/full — degrade to in-memory only
+    }
+  }
+
+  // Restore runs once per load: after the first entry to decorate mode the
+  // in-memory canvas is the source of truth, so re-restoring on later mode
+  // toggles would double-composite the saved bitmap onto identical pixels.
+  let restored = false;
+  function restore() {
+    if (restored) return;
+    restored = true;
+    let payload = null;
+    try {
+      const raw = localStorage.getItem(storageKey());
+      if (raw) payload = JSON.parse(raw);
+    } catch {
+      return;
+    }
+    if (!payload) return;
+    if (typeof payload.msgX === "number") msgX = payload.msgX;
+    if (typeof payload.msgY === "number") msgY = payload.msgY;
+    applyMsgTransform();
+    if (payload.img) {
+      const img = new Image();
+      img.onload = () => {
+        // draw in CSS-pixel space (ctx is dpr-scaled) so the saved bitmap is
+        // rescaled to the current canvas size, absorbing DPR/resize differences
+        const rect = stage.getBoundingClientRect();
+        ctx.drawImage(img, 0, 0, rect.width, rect.height);
+      };
+      img.src = payload.img;
+    }
   }
 
   // ---------- canvas sizing (DPR-aware, preserves drawing on resize) ----------
@@ -150,6 +210,7 @@ export function createCustomDecorator(refs, state) {
     if (!drawing) return;
     drawing = false;
     try { canvas.releasePointerCapture(e.pointerId); } catch {}
+    persist();
   }
 
   function strokeTo(x, y) {
@@ -191,6 +252,7 @@ export function createCustomDecorator(refs, state) {
     dragStart = null;
     messageEl.classList.remove("is-dragging");
     try { messageEl.releasePointerCapture(e.pointerId); } catch {}
+    persist();
   }
 
   // ---------- clear / save ----------
@@ -200,6 +262,7 @@ export function createCustomDecorator(refs, state) {
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.restore();
+    persist();
   }
 
   function save() {
@@ -223,10 +286,17 @@ export function createCustomDecorator(refs, state) {
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
-      a.download = "mindbob.png";
+      a.download = filename();
       a.click();
       URL.revokeObjectURL(url);
     }, "image/png");
+  }
+
+  // mindbob_<theme>_<date>_<slot>.png — unique per note; empty parts (e.g. the
+  // offline fallback's blank date) are dropped so there are no doubled "_".
+  function filename() {
+    const parts = ["mindbob", state.palette.name, state.entry.date, state.entry.slot];
+    return parts.filter(Boolean).join("_") + ".png";
   }
 
   function drawMessageText(o, rect) {
@@ -300,6 +370,7 @@ export function createCustomDecorator(refs, state) {
     // place message at its current centred spot, then make it movable
     applyMsgTransform();
     fitCanvas();
+    restore(); // re-apply this note's saved decoration, if any
     setTool("move");
     refreshUndoBtn();
   }

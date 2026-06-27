@@ -41,7 +41,7 @@ The client (`js/messages.js`) shows the entry with the greatest `publishAt` that
 | `js/palette.js` | Curated palettes; one per note | `paletteFor(seed)`, `applyPalette()` |
 | `js/doodles.js` | Manifest load, pick + place doodle | `renderAutoDoodle()` |
 | `js/autoDecorate.js` | Auto mode render | `renderAuto()`, `clearAuto()` |
-| `js/customDecorate.js` | Decorate canvas (move/pencil/eraser/undo/clear/save) | `createCustomDecorator()` |
+| `js/customDecorate.js` | Decorate canvas (move/pencil/eraser/undo/clear/save) + per-note persistence | `createCustomDecorator()` |
 | `js/util.js` | Hash + seeded RNG | `hashString()`, `seededRng()`, `pick()` |
 | `js/pwa.js` | Service worker registration | `registerSW()` |
 
@@ -60,6 +60,8 @@ Keep modules single-purpose and small. `customDecorate.js` is lazy-imported by `
 - Canvas drawing is DPR-aware (`fitCanvas`) and stores strokes in CSS pixels.
 - **The drawing canvas is hidden in auto mode via CSS** (`.app[data-mode="auto"] .layer-canvas { display:none }`), not cleared — so a decorated canvas never shows behind the auto doodle, yet the pixels survive a round-trip back to decorate mode. Don't "fix" leakage by clearing the canvas on mode switch.
 - **Undo is snapshot-based**: `pushUndo()` captures canvas pixels + message position *before* each action (stroke, erase, drag, clear); a drag only snapshots once it actually moves. If you add a new mutating action, call `pushUndo()` at its start.
+- **Decorations persist per note across reloads.** After each mutating action `persist()` writes `{ img: canvas dataURL, msgX, msgY }` to `localStorage` under `mindbob:decoration:<entry.id>`, pruning all other `mindbob:decoration:*` keys so only the current note is kept — the decoration resets exactly when the note's `id` changes. `restore()` re-applies it once per load in `activate()` (after `fitCanvas()`), redrawing scaled to the live canvas. If you add a new mutating action, call `persist()` at its end (mirror of the `pushUndo()` rule). All storage access is `try/catch`-wrapped so a disabled/full `localStorage` degrades to in-memory.
+- **Saved images are named `mindbob_<theme>_<date>_<slot>.png`** (`filename()` in `save()`), e.g. `mindbob_clay_2026-06-27_am.png` — `<theme>` is the palette `name`; empty parts (offline fallback's blank date) are dropped to avoid doubled `_`. Unique per note; don't revert to a static name.
 
 ## Commands
 
