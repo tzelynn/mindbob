@@ -4,6 +4,7 @@ import { getCurrentEntry } from "./messages.js";
 import { paletteFor, applyPalette } from "./palette.js";
 import { renderAuto, clearAuto } from "./autoDecorate.js";
 import { registerSW } from "./pwa.js";
+import { promptFor } from "./prompts.js";
 
 const refs = {
   app: document.getElementById("app"),
@@ -15,14 +16,16 @@ const refs = {
   toolbar: document.getElementById("toolbar"),
   status: document.getElementById("status"),
   modeAuto: document.getElementById("modeAuto"),
-  modeCustom: document.getElementById("modeCustom"),
+  modeDoodle: document.getElementById("modeDoodle"),
+  doodleWord: document.getElementById("doodleWord"),
 };
 
 const state = {
   entry: null,
   palette: null,
   mode: "auto",
-  custom: null, // lazily-loaded custom-decorate controller
+  promptWord: "",
+  doodle: null, // lazily-loaded doodle controller
 };
 
 async function init() {
@@ -35,12 +38,15 @@ async function init() {
   refs.messageText.textContent = state.entry.text;
   refs.status.textContent = statusLine(state.entry);
 
-  const startMode = location.hash === "#decorate" ? "custom" : "auto";
+  state.promptWord = promptFor(state.entry.date);
+  refs.doodleWord.textContent = state.promptWord;
+
+  const startMode = location.hash === "#doodle" ? "doodle" : "auto";
   await setMode(startMode);
   refs.app.classList.remove("is-loading");
 
   refs.modeAuto.addEventListener("click", () => setMode("auto"));
-  refs.modeCustom.addEventListener("click", () => setMode("custom"));
+  refs.modeDoodle.addEventListener("click", () => setMode("doodle"));
 
   registerSW();
 }
@@ -51,29 +57,26 @@ function statusLine(entry) {
 }
 
 async function setMode(mode) {
-  if (mode === state.mode && (mode === "auto" ? true : state.custom)) {
-    // still update toggle UI on first call
-  }
   state.mode = mode;
   refs.app.dataset.mode = mode;
 
   const isAuto = mode === "auto";
   refs.modeAuto.classList.toggle("is-active", isAuto);
-  refs.modeCustom.classList.toggle("is-active", !isAuto);
+  refs.modeDoodle.classList.toggle("is-active", !isAuto);
   refs.modeAuto.setAttribute("aria-selected", String(isAuto));
-  refs.modeCustom.setAttribute("aria-selected", String(!isAuto));
+  refs.modeDoodle.setAttribute("aria-selected", String(!isAuto));
   refs.toolbar.hidden = isAuto;
 
   if (isAuto) {
-    if (state.custom) state.custom.deactivate();
+    if (state.doodle) state.doodle.deactivate();
     await renderAuto(refs, state.entry);
   } else {
     clearAuto(refs);
-    if (!state.custom) {
-      const mod = await import("./customDecorate.js");
-      state.custom = mod.createCustomDecorator(refs, state);
+    if (!state.doodle) {
+      const mod = await import("./doodleDecorate.js");
+      state.doodle = mod.createDoodleDecorator(refs, state);
     }
-    state.custom.activate();
+    state.doodle.activate();
   }
 }
 
