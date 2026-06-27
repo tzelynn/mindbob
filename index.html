@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>mindbob</title>
+  <meta name="description" content="A calming feel-good note, refreshed twice a day." />
+
+  <!-- PWA -->
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <meta name="theme-color" content="#f4efe6" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="mindbob" />
+  <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+  <link rel="icon" href="./icons/icon-192.png" />
+
+  <link rel="preload" href="./assets/fonts/Eggi-Regular.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main id="app" class="app" data-mode="auto">
+    <!-- Minimal top bar -->
+    <header class="topbar">
+      <span class="brand">mindbob</span>
+      <div class="mode-toggle" role="tablist" aria-label="Display mode">
+        <button id="modeAuto" class="mode-btn is-active" role="tab" aria-selected="true">auto</button>
+        <button id="modeCustom" class="mode-btn" role="tab" aria-selected="false">decorate</button>
+      </div>
+    </header>
+
+    <!-- Stage: stacked layers -->
+    <section class="stage" id="stage">
+      <!-- drawing canvas (custom mode only) -->
+      <canvas id="drawCanvas" class="layer layer-canvas" aria-hidden="true"></canvas>
+
+      <!-- doodle (auto mode) -->
+      <div id="doodleLayer" class="layer layer-doodle" aria-hidden="true"></div>
+
+      <!-- the message -->
+      <div id="messageEl" class="layer layer-message">
+        <p id="messageText" class="message-text">…</p>
+      </div>
+    </section>
+
+    <!-- Toolbar (custom mode only) -->
+    <footer class="toolbar" id="toolbar" hidden>
+      <div class="tool-group" role="group" aria-label="Tools">
+        <button id="toolMove" class="tool-btn is-active" title="Move the message" aria-pressed="true">move</button>
+        <button id="toolPencil" class="tool-btn" title="Draw" aria-pressed="false">pencil</button>
+        <button id="toolEraser" class="tool-btn" title="Erase doodles" aria-pressed="false">eraser</button>
+      </div>
+      <div id="swatches" class="swatches" aria-label="Pencil colours"></div>
+      <div class="tool-group">
+        <button id="toolClear" class="tool-btn" title="Clear drawing">clear</button>
+        <button id="toolSave" class="tool-btn" title="Save as image">save</button>
+      </div>
+    </footer>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+  </main>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
