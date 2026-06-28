@@ -26,7 +26,8 @@ test("isGoodFact rejects empty, too-short, and duplicate facts", () => {
 test("isGoodTrend rejects refusals and over-long output", () => {
   assert.equal(isGoodTrend("I cannot help with that.", []), false);
   assert.equal(isGoodTrend("AI agents are trending right now.", []), true);
-  assert.equal(isGoodTrend("x".repeat(300), []), false); // > max
+  assert.equal(isGoodTrend("x".repeat(300), []), true); // within new 320 max
+  assert.equal(isGoodTrend("x".repeat(400), []), false); // > max
 });
 
 test("pickFromBank rotates deterministically by entry count", () => {

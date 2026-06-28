@@ -26,7 +26,7 @@ const API_URL = "https://models.github.ai/inference/chat/completions";
 const MODEL = "openai/gpt-4o-mini";
 const KEEP = 14;
 const FACT_MAX = 240;
-const TREND_MAX = 260;
+const TREND_MAX = 320;
 const FETCH_TIMEOUT = 8000;
 
 const FACTS_URL = "https://uselessfacts.jsph.pl/api/v2/facts/random?language=en";
@@ -156,10 +156,13 @@ async function trendCandidates() {
 }
 
 const TREND_SYSTEM =
-  "You write a single, short 'tech trend' nugget for a calm daily wellness app. " +
-  "Focus on AI and machine learning (or a broadly groundbreaking tech development). " +
-  "Explain it in plain language a curious non-expert can enjoy. " +
-  "One or two sentences, under 240 characters. " +
+  "You write a single tech-trend nugget for an audience of working AI/ML engineers. " +
+  "You are given one recent AI/ML development and some background headlines. " +
+  "Write about that development specifically: name the model, method, or paper, and " +
+  "include one concrete detail — a number, an architecture choice, a benchmark result, " +
+  "or precisely what is new. " +
+  "Assume the reader knows ML fundamentals; do not explain what a transformer, embedding, or RAG is. " +
+  "One or two sentences, under 320 characters. " +
   "No hype, no buzzword soup, no emoji, no hashtags, no quotation marks, no preamble.";
 
 async function trendFromLLM(candidates) {
@@ -191,7 +194,7 @@ async function trendFromLLM(candidates) {
     body: JSON.stringify({
       model: MODEL,
       temperature: 0.7,
-      max_tokens: 120,
+      max_tokens: 160,
       messages: [
         { role: "system", content: TREND_SYSTEM },
         { role: "user", content: userContent },
