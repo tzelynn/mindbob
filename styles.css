@@ -86,6 +86,35 @@ body {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
+.notify-bell {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 6px 8px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color 200ms ease, opacity 200ms ease;
+}
+
+.notify-bell.is-active {
+  color: var(--ink);
+}
+
+.notify-bell:disabled {
+  opacity: 0.5;
+  cursor: progress;
+}
+
+/* The button has no explicit display, so the hidden attribute hides it
+   natively; this rule makes that intent explicit and immune to future display
+   rules (same trap as .toolbar[hidden]). */
+.notify-bell[hidden] {
+  display: none;
+}
+
 /* ---------- Stage / layers ---------- */
 .stage {
   position: relative;
@@ -98,27 +127,55 @@ body {
   inset: 0;
 }
 
+/* Bounded portrait drawing surface — a rounded vertical rectangle, centred,
+   shown only in doodle mode. JS confines strokes to the same rounded shape. */
 .layer-canvas {
-  width: 100%;
-  height: 100%;
-  touch-action: none;        /* we handle pointer drawing ourselves */
-  pointer-events: none;      /* enabled only in pencil/eraser mode */
+  position: absolute;
+  left: 50%;
+  top: 54%;
+  transform: translate(-50%, -50%);
+  width: min(78vw, 360px);
+  height: min(70vh, 560px);
+  border-radius: 28px;            /* must match clipToRounded() r in doodleDecorate.js */
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  touch-action: none;             /* we handle pointer drawing ourselves */
+  pointer-events: none;           /* enabled in doodle mode by JS */
 }
 
-/* The drawing belongs to custom mode only — hide it in auto so a decorated
-   canvas never shows behind the auto doodle. Pixels are kept (not cleared),
-   so the drawing reappears on returning to decorate. */
-.app[data-mode="auto"] .layer-canvas { display: none; }
+/* Canvas is doodle-mode only; hidden in message mode so it never shows behind doodles. */
+.app[data-mode="message"] .layer-canvas { display: none; }
+
+/* daily prompt: top of the stage, doodle mode only */
+.doodle-prompt {
+  position: absolute;
+  top: 7%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: clamp(1.4rem, 5.5vw, 2.4rem);
+  color: var(--ink);
+  pointer-events: none;
+  display: none;
+}
+.doodle-prompt strong { color: var(--accent); font-weight: inherit; }
+.app[data-mode="doodle"] .doodle-prompt { display: block; }
+
+/* the note belongs to message mode only */
+.app[data-mode="doodle"] .layer-message { display: none; }
 
 .layer-doodle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   pointer-events: none;
 }
 
+/* Each doodle is anchored to a layout point (set inline as left/top %) and
+   centred on it via translate(-50%, -50%); width is set inline per count. */
+.doodle-slot {
+  position: absolute;
+}
+
 .layer-doodle svg {
-  width: min(46vw, 230px);
+  width: min(46vw, 230px);   /* default; overridden inline per doodle count */
   height: auto;
   color: var(--accent);      /* inline SVGs use currentColor */
   opacity: 0.9;
@@ -142,15 +199,6 @@ body {
   user-select: none;
 }
 
-/* In custom mode the whole centred message layer can be dragged
-   (translate offset is applied via JS), so the text moves as a unit. */
-.app[data-mode="custom"] .layer-message { will-change: transform; }
-.app[data-mode="custom"] .layer-message.is-draggable {
-  cursor: grab;
-  pointer-events: auto;
-  touch-action: none;        /* stop the browser hijacking touch-drags as scroll */
-}
-.app[data-mode="custom"] .layer-message.is-dragging { cursor: grabbing; }
 
 /* ---------- Toolbar ---------- */
 .toolbar {
@@ -211,6 +259,6 @@ body {
   color: var(--muted);
   pointer-events: none;
 }
-.app[data-mode="custom"] .status { display: none; }
+.app[data-mode="doodle"] .status { display: none; }
 
 .is-loading .message-text { opacity: 0.3; }

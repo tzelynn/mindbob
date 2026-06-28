@@ -3,10 +3,23 @@
 // - data/messages.json: network-first with cache fallback (fresh when online,
 //   last note when offline).
 // - everything else (doodles, etc.): stale-while-revalidate.
+//
+// Update safety: every cache read/write is scoped to THIS version's caches
+// (never the global `caches.match`, which spans all versions). Combined with
+// not calling `clients.claim()`, this guarantees a page is always served a
+// single self-consistent snapshot — one SW version per navigation — so an
+// in-flight update can never mix an old index.html with a new main.js (which
+// would crash init: stale element ids -> null refs). `skipWaiting` still makes
+// the new version take over on the next reload.
 
-const VERSION = "v1";
+const VERSION = "v6";
 const SHELL_CACHE = `mindbob-shell-${VERSION}`;
 const RUNTIME_CACHE = `mindbob-runtime-${VERSION}`;
+// Unversioned: holds the id of the last note we notified about. Must survive
+// version bumps, so it is excluded from the activate() cleanup below.
+const META_CACHE = "mindbob-meta";
+const LAST_NOTIFIED_KEY = "https://mindbob.local/last-notified";
+const PERIODIC_TAG = "mindbob-check";
 
 const SHELL_ASSETS = [
   "./",
@@ -16,12 +29,15 @@ const SHELL_ASSETS = [
   "./assets/fonts/Eggi-Regular.ttf",
   "./js/main.js",
   "./js/messages.js",
+  "./js/selectEntry.js",
   "./js/palette.js",
   "./js/doodles.js",
-  "./js/autoDecorate.js",
-  "./js/customDecorate.js",
+  "./js/messageDecorate.js",
+  "./js/doodleDecorate.js",
+  "./js/prompts.js",
   "./js/util.js",
   "./js/pwa.js",
+  "./js/notify.js",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
 ];
@@ -37,17 +53,22 @@ self.addEventListener("install", (event) => {
 });
 
 self.addEventListener("activate", (event) => {
+  // Drop caches from older versions. We deliberately do NOT call
+  // clients.claim() — claiming swaps the controller mid-load and can serve a
+  // page a mix of old + new assets. Without it, the running page keeps its
+  // version until the next reload, when the new SW serves a clean snapshot.
   event.waitUntil(
     caches
       .keys()
       .then((keys) =>
         Promise.all(
           keys
-            .filter((k) => k !== SHELL_CACHE && k !== RUNTIME_CACHE)
+            .filter(
+              (k) => k !== SHELL_CACHE && k !== RUNTIME_CACHE && k !== META_CACHE
+            )
             .map((k) => caches.delete(k))
         )
       )
-      .then(() => self.clients.claim())
   );
 });
 
@@ -59,6 +80,12 @@ self.addEventListener("fetch", (event) => {
 
   // Messages: network-first.
   if (url.pathname.endsWith("/data/messages.json")) {
+    event.respondWith(networkFirst(request));
+    return;
+  }
+
+  // Doodle prompt: network-first (fresh when online, last word offline).
+  if (url.pathname.endsWith("/data/prompts.json")) {
     event.respondWith(networkFirst(request));
     return;
   }
@@ -77,35 +104,142 @@ self.addEventListener("fetch", (event) => {
 });
 
 async function cacheFirst(request) {
-  const cached = await caches.match(request);
-  if (cached) return cached;
+  // Scope to this version's caches so the shell stays self-consistent during
+  // an update (the global caches.match would span versions and could mix them).
+  const shell = await caches.open(SHELL_CACHE);
+  const cachedShell = await shell.match(request);
+  if (cachedShell) return cachedShell;
+
+  const runtime = await caches.open(RUNTIME_CACHE);
+  const cachedRuntime = await runtime.match(request);
+  if (cachedRuntime) return cachedRuntime;
+
   try {
     const res = await fetch(request);
-    if (res.ok) (await caches.open(RUNTIME_CACHE)).put(request, res.clone());
+    if (res.ok) runtime.put(request, res.clone());
     return res;
   } catch {
-    return cached || Response.error();
+    return Response.error();
   }
 }
 
 async function networkFirst(request) {
+  const runtime = await caches.open(RUNTIME_CACHE);
   try {
     const res = await fetch(request);
-    if (res.ok) (await caches.open(RUNTIME_CACHE)).put(request, res.clone());
+    if (res.ok) runtime.put(request, res.clone());
     return res;
   } catch {
-    const cached = await caches.match(request);
+    const cached = await runtime.match(request);
     return cached || Response.error();
   }
 }
 
 async function staleWhileRevalidate(request) {
-  const cached = await caches.match(request);
+  const runtime = await caches.open(RUNTIME_CACHE);
+  const cached = await runtime.match(request);
   const fetching = fetch(request)
     .then((res) => {
-      if (res.ok) caches.open(RUNTIME_CACHE).then((c) => c.put(request, res.clone()));
+      if (res.ok) runtime.put(request, res.clone());
       return res;
     })
     .catch(() => null);
   return cached || (await fetching) || Response.error();
 }
+
+// >>> selection-parity >>>
+// EXACT copy of pickCurrentEntry from js/selectEntry.js. This is a classic
+// worker and cannot import ES modules; test/sw-selection.test.mjs asserts the
+// two stay identical in behavior. If you change one, change the other.
+function pickCurrentEntry(entries, nowMs) {
+  let chosen = null;
+  let chosenMs = -Infinity;
+  for (const e of entries) {
+    const t = new Date(e.publishAt).getTime();
+    if (t <= nowMs && t >= chosenMs) {
+      chosen = e;
+      chosenMs = t;
+    }
+  }
+  return chosen;
+}
+// <<< selection-parity <<<
+
+async function getLastNotifiedId() {
+  try {
+    const cache = await caches.open(META_CACHE);
+    const res = await cache.match(LAST_NOTIFIED_KEY);
+    return res ? await res.text() : null;
+  } catch {
+    return null;
+  }
+}
+
+async function setLastNotifiedId(id) {
+  try {
+    const cache = await caches.open(META_CACHE);
+    await cache.put(LAST_NOTIFIED_KEY, new Response(id));
+  } catch {
+    /* storage unavailable — degrade silently */
+  }
+}
+
+function titleFor(entry) {
+  return entry.slot === "pm" ? "mindbob · evening note" : "mindbob · morning note";
+}
+
+// Fetch the latest notes, pick the current one, and notify if it's new.
+async function checkForNewNote() {
+  let data;
+  try {
+    const res = await fetch("./data/messages.json", { cache: "no-store" });
+    if (!res.ok) return;
+    data = await res.json();
+  } catch {
+    return;
+  }
+  if (!data || !Array.isArray(data.entries)) return;
+
+  const entry = pickCurrentEntry(data.entries, Date.now());
+  if (!entry) return;
+
+  const last = await getLastNotifiedId();
+  if (entry.id === last) return;
+
+  await setLastNotifiedId(entry.id);
+  await self.registration.showNotification(titleFor(entry), {
+    body: entry.text,
+    icon: "./icons/icon-192.png",
+    badge: "./icons/icon-192.png",
+    tag: "mindbob-note",
+    data: { url: self.registration.scope },
+  });
+}
+
+self.addEventListener("periodicsync", (event) => {
+  if (event.tag === PERIODIC_TAG) {
+    event.waitUntil(checkForNewNote());
+  }
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  const url =
+    (event.notification.data && event.notification.data.url) ||
+    self.registration.scope;
+  event.waitUntil(
+    (async () => {
+      const all = await self.clients.matchAll({
+        type: "window",
+        includeUncontrolled: true,
+      });
+      for (const client of all) {
+        if ("focus" in client) {
+          await client.focus();
+          return;
+        }
+      }
+      if (self.clients.openWindow) await self.clients.openWindow(url);
+    })()
+  );
+});

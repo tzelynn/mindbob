@@ -6,7 +6,7 @@ installable to a phone home screen as a PWA, and built to load instantly.
 
 https://tzelynn.github.io/mindbob/
 
-- **Auto mode** — the note is arranged with a little hand-drawn doodle in a calm layout.
+- **Message mode** — the note is arranged with a little hand-drawn doodle in a calm layout.
 - **Decorate mode** — move the note around, draw with a per-message colour palette, and erase your doodles (you can never erase the note itself).
 
 ## How it works
@@ -33,7 +33,8 @@ No build step, no framework, no secrets to configure. Vanilla HTML/CSS/JS (ES mo
 | `js/messages.js` | Fetch `messages.json`, pick the current note |
 | `js/palette.js` | Curated calming palettes; one per note (deterministic) |
 | `js/doodles.js` | Load manifest, pick + place a doodle (deterministic) |
-| `js/autoDecorate.js` / `js/customDecorate.js` | The two modes |
+| `js/messageDecorate.js` / `js/doodleDecorate.js` | The two render modes (message note / doodle) |
+| `js/prompts.js` | Daily date-seeded doodle prompt word (deterministic) |
 | `data/messages.json` | Generated notes (the live data) |
 | `data/fallback-bank.json` | Hand-written notes used when the LLM is unavailable |
 | `doodles/*.svg` + `index.json` | Doodle library + its manifest |
@@ -65,8 +66,8 @@ The cron also regenerates the manifest on every run, so simply committing an SVG
 
 ```bash
 python3 -m http.server 8765
-# open http://localhost:8765/index.html        (auto mode)
-# open http://localhost:8765/index.html#decorate  (decorate mode)
+# open http://localhost:8765/index.html        (message mode)
+# open http://localhost:8765/index.html#doodle   (doodle mode)
 
 # regenerate data locally (no token -> uses the fallback bank):
 node scripts/generate-message.mjs --slot=am
@@ -79,3 +80,9 @@ python3 scripts/make-icons.py
 Open the site on your phone → browser menu → **Add to Home Screen**. It launches
 fullscreen (no browser chrome) showing the current note, and works offline via the
 service worker. (True live home-screen widgets require a native app and are out of scope.)
+
+## Notifications
+
+Tap the 🔔 bell in the top bar to get notified of new notes. Available on Chromium-based
+browsers and Android with the app installed as a PWA; the timing follows the browser's
+background schedule, so notifications arrive within a few hours of publish time.

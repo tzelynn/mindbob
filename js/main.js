@@ -2,8 +2,10 @@
 // wire the mode toggle, and register the service worker.
 import { getCurrentEntry } from "./messages.js";
 import { paletteFor, applyPalette } from "./palette.js";
-import { renderAuto, clearAuto } from "./autoDecorate.js";
+import { renderMessage, clearMessage } from "./messageDecorate.js";
 import { registerSW } from "./pwa.js";
+import { getCurrentPrompt } from "./prompts.js";
+import { initNotifications } from "./notify.js";
 
 const refs = {
   app: document.getElementById("app"),
@@ -14,15 +16,18 @@ const refs = {
   messageText: document.getElementById("messageText"),
   toolbar: document.getElementById("toolbar"),
   status: document.getElementById("status"),
-  modeAuto: document.getElementById("modeAuto"),
-  modeCustom: document.getElementById("modeCustom"),
+  modeMessage: document.getElementById("modeMessage"),
+  modeDoodle: document.getElementById("modeDoodle"),
+  doodleWord: document.getElementById("doodleWord"),
+  notifyBell: document.getElementById("notifyBell"),
 };
 
 const state = {
   entry: null,
   palette: null,
-  mode: "auto",
-  custom: null, // lazily-loaded custom-decorate controller
+  mode: "message",
+  promptWord: "",
+  doodle: null, // lazily-loaded doodle controller
 };
 
 async function init() {
@@ -35,14 +40,18 @@ async function init() {
   refs.messageText.textContent = state.entry.text;
   refs.status.textContent = statusLine(state.entry);
 
-  const startMode = location.hash === "#decorate" ? "custom" : "auto";
+  state.promptWord = await getCurrentPrompt(state.entry.date);
+  refs.doodleWord.textContent = state.promptWord;
+
+  const startMode = location.hash === "#doodle" ? "doodle" : "message";
   await setMode(startMode);
   refs.app.classList.remove("is-loading");
 
-  refs.modeAuto.addEventListener("click", () => setMode("auto"));
-  refs.modeCustom.addEventListener("click", () => setMode("custom"));
+  refs.modeMessage.addEventListener("click", () => setMode("message"));
+  refs.modeDoodle.addEventListener("click", () => setMode("doodle"));
 
   registerSW();
+  initNotifications(refs.notifyBell, state);
 }
 
 function statusLine(entry) {
@@ -51,29 +60,26 @@ function statusLine(entry) {
 }
 
 async function setMode(mode) {
-  if (mode === state.mode && (mode === "auto" ? true : state.custom)) {
-    // still update toggle UI on first call
-  }
   state.mode = mode;
   refs.app.dataset.mode = mode;
 
-  const isAuto = mode === "auto";
-  refs.modeAuto.classList.toggle("is-active", isAuto);
-  refs.modeCustom.classList.toggle("is-active", !isAuto);
-  refs.modeAuto.setAttribute("aria-selected", String(isAuto));
-  refs.modeCustom.setAttribute("aria-selected", String(!isAuto));
-  refs.toolbar.hidden = isAuto;
+  const isMessage = mode === "message";
+  refs.modeMessage.classList.toggle("is-active", isMessage);
+  refs.modeDoodle.classList.toggle("is-active", !isMessage);
+  refs.modeMessage.setAttribute("aria-selected", String(isMessage));
+  refs.modeDoodle.setAttribute("aria-selected", String(!isMessage));
+  refs.toolbar.hidden = isMessage;
 
-  if (isAuto) {
-    if (state.custom) state.custom.deactivate();
-    await renderAuto(refs, state.entry);
+  if (isMessage) {
+    if (state.doodle) state.doodle.deactivate();
+    await renderMessage(refs, state.entry);
   } else {
-    clearAuto(refs);
-    if (!state.custom) {
-      const mod = await import("./customDecorate.js");
-      state.custom = mod.createCustomDecorator(refs, state);
+    clearMessage(refs);
+    if (!state.doodle) {
+      const mod = await import("./doodleDecorate.js");
+      state.doodle = mod.createDoodleDecorator(refs, state);
     }
-    state.custom.activate();
+    state.doodle.activate();
   }
 }
 

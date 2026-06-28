@@ -19,36 +19,39 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <main id="app" class="app" data-mode="auto">
+  <main id="app" class="app" data-mode="message">
     <!-- Minimal top bar -->
     <header class="topbar">
       <span class="brand">mindbob</span>
       <div class="mode-toggle" role="tablist" aria-label="Display mode">
-        <button id="modeAuto" class="mode-btn is-active" role="tab" aria-selected="true">auto</button>
-        <button id="modeCustom" class="mode-btn" role="tab" aria-selected="false">decorate</button>
+        <button id="modeMessage" class="mode-btn is-active" role="tab" aria-selected="true">message</button>
+        <button id="modeDoodle" class="mode-btn" role="tab" aria-selected="false">doodle</button>
       </div>
+      <button id="notifyBell" class="notify-bell" type="button" aria-pressed="false" aria-label="Notify me of new notes" title="Notify me of new notes" hidden>🔔</button>
     </header>
 
     <!-- Stage: stacked layers -->
     <section class="stage" id="stage">
-      <!-- drawing canvas (custom mode only) -->
-      <canvas id="drawCanvas" class="layer layer-canvas" aria-hidden="true"></canvas>
+      <!-- daily doodle prompt (doodle mode only) -->
+      <div id="doodlePrompt" class="doodle-prompt" aria-hidden="true">prompt: <strong id="doodleWord"></strong></div>
 
-      <!-- doodle (auto mode) -->
+      <!-- bounded drawing canvas (doodle mode only) -->
+      <canvas id="drawCanvas" class="layer-canvas" aria-hidden="true"></canvas>
+
+      <!-- doodle (message mode) -->
       <div id="doodleLayer" class="layer layer-doodle" aria-hidden="true"></div>
 
-      <!-- the message -->
+      <!-- the message (message mode) -->
       <div id="messageEl" class="layer layer-message">
         <p id="messageText" class="message-text">…</p>
       </div>
     </section>
 
-    <!-- Toolbar (custom mode only) -->
+    <!-- Toolbar (doodle mode only) -->
     <footer class="toolbar" id="toolbar" hidden>
       <div class="tool-group" role="group" aria-label="Tools">
-        <button id="toolMove" class="tool-btn is-active" title="Move the message" aria-pressed="true">move</button>
-        <button id="toolPencil" class="tool-btn" title="Draw" aria-pressed="false">pencil</button>
-        <button id="toolEraser" class="tool-btn" title="Erase doodles" aria-pressed="false">eraser</button>
+        <button id="toolPencil" class="tool-btn is-active" title="Draw" aria-pressed="true">pencil</button>
+        <button id="toolEraser" class="tool-btn" title="Erase" aria-pressed="false">eraser</button>
       </div>
       <div id="swatches" class="swatches" aria-label="Pencil colours"></div>
       <div class="tool-group">

@@ -17,9 +17,29 @@ export async function loadManifest() {
   return manifestCache;
 }
 
-export function doodleNameFor(seed, manifest) {
-  if (!manifest || manifest.length === 0) return null;
-  return manifest[hashString("doodle|" + seed) % manifest.length];
+// How many doodles to show for this note: 1..4, deterministic per seed and
+// never more than the manifest can supply distinctly.
+export function doodleCountFor(seed, manifest) {
+  if (!manifest || manifest.length === 0) return 0;
+  const max = Math.min(4, manifest.length);
+  return 1 + (hashString("count|" + seed) % max);
+}
+
+// Pick `count` distinct doodles deterministically. Each pick is seeded
+// independently (varied), then linear-probes past collisions so the set is
+// always distinct (count is already capped to manifest length by the caller).
+export function doodleNamesFor(seed, manifest, count) {
+  if (!manifest || manifest.length === 0) return [];
+  const n = Math.min(count, manifest.length);
+  const used = new Set();
+  const chosen = [];
+  for (let i = 0; i < n; i++) {
+    let idx = hashString("doodle|" + i + "|" + seed) % manifest.length;
+    while (used.has(idx)) idx = (idx + 1) % manifest.length;
+    used.add(idx);
+    chosen.push(manifest[idx]);
+  }
+  return chosen;
 }
 
 // Fetch an SVG file and return its markup (so it can be inlined).
@@ -33,26 +53,50 @@ export async function fetchDoodleSvg(name) {
   }
 }
 
-// Render the chosen doodle into a container with a little seeded variation
-// (gentle offset + rotation) so the layout feels organic but stable.
-export async function renderAutoDoodle(container, seed) {
+// Symmetric / equally-spaced layouts keyed by doodle count. Each entry is a
+// list of [x%, y%] anchor points; a doodle is centred on its point. Points sit
+// in the top/bottom margins so they frame the centred message instead of
+// clobbering it, and each layout is left-right (and where possible top-bottom)
+// symmetric. Doodles shrink as the count grows so they never collide.
+const LAYOUTS = {
+  1: { size: "min(46vw, 230px)", points: [[50, 72]] },
+  2: { size: "min(34vw, 170px)", points: [[50, 22], [50, 78]] },
+  3: { size: "min(28vw, 140px)", points: [[50, 20], [27, 80], [73, 80]] },
+  4: { size: "min(24vw, 120px)", points: [[25, 22], [75, 22], [25, 78], [75, 78]] },
+};
+
+// Render 1..4 chosen doodles into a container, each anchored to its symmetric
+// layout point with a little seeded rotation so the layout feels organic but
+// stable (same note -> identical placement).
+export async function renderMessageDoodle(container, seed) {
   const manifest = await loadManifest();
-  const name = doodleNameFor(seed, manifest);
   container.innerHTML = "";
   container.setAttribute("aria-hidden", "true");
-  if (!name) return;
 
-  const svg = await fetchDoodleSvg(name);
-  if (!svg) return;
-  container.innerHTML = svg;
+  const count = doodleCountFor(seed, manifest);
+  if (count === 0) return;
+
+  const layout = LAYOUTS[count];
+  const names = doodleNamesFor(seed, manifest, count);
+  const svgs = await Promise.all(names.map(fetchDoodleSvg));
 
   const r = seededRng(seed + "|placement");
-  const dx = Math.round((r() - 0.5) * 16);     // -8..8 vw-ish
-  const dy = 22 + Math.round(r() * 14);         // sit a bit below centre
-  const rot = Math.round((r() - 0.5) * 16);     // -8..8 deg
-  const el = container.firstElementChild;
-  if (el) {
-    el.style.transform = `translate(${dx}vw, ${dy}vh) rotate(${rot}deg)`;
-    el.style.transition = "transform 600ms ease";
-  }
+  svgs.forEach((svg, i) => {
+    if (!svg) return;
+    const [x, y] = layout.points[i];
+    const rot = Math.round((r() - 0.5) * 16);   // -8..8 deg
+
+    const slot = document.createElement("div");
+    slot.className = "doodle-slot";
+    slot.innerHTML = svg;
+    slot.style.left = x + "%";
+    slot.style.top = y + "%";
+    slot.style.transform = `translate(-50%, -50%) rotate(${rot}deg)`;
+    slot.style.transition = "transform 600ms ease";
+
+    const el = slot.firstElementChild;
+    if (el) el.style.width = layout.size;
+
+    container.appendChild(slot);
+  });
 }
