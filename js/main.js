@@ -5,6 +5,7 @@ import { paletteFor, applyPalette } from "./palette.js";
 import { renderMessage, clearMessage } from "./messageDecorate.js";
 import { registerSW } from "./pwa.js";
 import { getCurrentPrompt } from "./prompts.js";
+import { initNotifications } from "./notify.js";
 
 const refs = {
   app: document.getElementById("app"),
@@ -18,6 +19,7 @@ const refs = {
   modeMessage: document.getElementById("modeMessage"),
   modeDoodle: document.getElementById("modeDoodle"),
   doodleWord: document.getElementById("doodleWord"),
+  notifyBell: document.getElementById("notifyBell"),
 };
 
 const state = {
@@ -49,6 +51,7 @@ async function init() {
   refs.modeDoodle.addEventListener("click", () => setMode("doodle"));
 
   registerSW();
+  initNotifications(refs.notifyBell, state);
 }
 
 function statusLine(entry) {

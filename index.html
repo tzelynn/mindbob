@@ -27,12 +27,13 @@
         <button id="modeMessage" class="mode-btn is-active" role="tab" aria-selected="true">message</button>
         <button id="modeDoodle" class="mode-btn" role="tab" aria-selected="false">doodle</button>
       </div>
+      <button id="notifyBell" class="notify-bell" type="button" aria-pressed="false" aria-label="Notify me of new notes" title="Notify me of new notes" hidden>🔔</button>
     </header>
 
     <!-- Stage: stacked layers -->
     <section class="stage" id="stage">
       <!-- daily doodle prompt (doodle mode only) -->
-      <div id="doodlePrompt" class="doodle-prompt" aria-hidden="true">draw <strong id="doodleWord"></strong></div>
+      <div id="doodlePrompt" class="doodle-prompt" aria-hidden="true">prompt: <strong id="doodleWord"></strong></div>
 
       <!-- bounded drawing canvas (doodle mode only) -->
       <canvas id="drawCanvas" class="layer-canvas" aria-hidden="true"></canvas>

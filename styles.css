@@ -86,6 +86,35 @@ body {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
+.notify-bell {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 6px 8px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color 200ms ease, opacity 200ms ease;
+}
+
+.notify-bell.is-active {
+  color: var(--ink);
+}
+
+.notify-bell:disabled {
+  opacity: 0.5;
+  cursor: progress;
+}
+
+/* The button has no explicit display, so the hidden attribute hides it
+   natively; this rule makes that intent explicit and immune to future display
+   rules (same trap as .toolbar[hidden]). */
+.notify-bell[hidden] {
+  display: none;
+}
+
 /* ---------- Stage / layers ---------- */
 .stage {
   position: relative;
