@@ -14,7 +14,7 @@ function supported() {
   return (
     "serviceWorker" in navigator &&
     "Notification" in window &&
-    "PeriodicSyncManager" in window
+    "periodicSync" in ServiceWorkerRegistration.prototype
   );
 }
 
@@ -82,6 +82,11 @@ export async function initNotifications(bell, state) {
         await enable(reg, state.entry.id);
       }
       reflect(bell, await isEnabled(reg));
+      if (Notification.permission === "denied") {
+        const blocked = "Notifications blocked — enable them in your browser settings";
+        bell.title = blocked;
+        bell.setAttribute("aria-label", blocked);
+      }
     } finally {
       bell.disabled = false;
     }

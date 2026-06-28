@@ -29,6 +29,7 @@ const SHELL_ASSETS = [
   "./assets/fonts/Eggi-Regular.ttf",
   "./js/main.js",
   "./js/messages.js",
+  "./js/selectEntry.js",
   "./js/palette.js",
   "./js/doodles.js",
   "./js/messageDecorate.js",
@@ -36,6 +37,7 @@ const SHELL_ASSETS = [
   "./js/prompts.js",
   "./js/util.js",
   "./js/pwa.js",
+  "./js/notify.js",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
 ];
