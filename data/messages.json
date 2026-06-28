@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-27T12:09:44.577Z",
+  "updated": "2026-06-28T00:09:24.052Z",
   "entries": [
     {
       "id": "2026-06-26-am",
@@ -31,6 +31,14 @@
       "slot": "pm",
       "publishAt": "2026-06-27T11:00:00.000Z",
       "text": "Take a moment to breathe and let the day's weight drift away. Tomorrow can wait; for now, just be.",
+      "source": "llm"
+    },
+    {
+      "id": "2026-06-28-am",
+      "date": "2026-06-28",
+      "slot": "am",
+      "publishAt": "2026-06-28T00:00:00.000Z",
+      "text": "Happy new day! Just do your best and remember to find a bit of joy in the little things as you go.",
       "source": "llm"
     }
   ]
