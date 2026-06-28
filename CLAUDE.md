@@ -42,14 +42,15 @@ The client (`js/messages.js`) shows the entry with the greatest `publishAt` that
 { "updated": "ISO", "entries": [
   { "id": "YYYY-MM-DD", "date": "YYYY-MM-DD", "publishAt": "ISO",
     "fact":  { "text": "...", "source": "api|bank|builtin" },
-    "trend": { "text": "...", "source": "llm|bank|builtin", "link": "optional-url" } } ] }
+    "trend": { "text": "...", "source": "llm|pool|bank|builtin", "link": "optional-url" } } ] }
 ```
 `js/nuggets.js` selects the current entry by **reusing `pickCurrentEntry`** (same logic as the note); `js/nuggetsDecorate.js` renders the two cards (lazy-imported on first entry into nuggets mode, like `doodleDecorate.js`).
 
 `scripts/generate-nuggets.mjs` generation strategy — **dynamic via free, no-auth sources, degrading to a curated bank** so a pair always lands:
 - **fun fact** → uselessfacts API; on any failure → `data/nugget-fallback-bank.json` `facts`.
-- **tech trend** → fetch recent AI/ML headlines from Hacker News (Algolia) + arXiv, feed the titles to GitHub Models to write one nugget (and attach the primary headline's `link`); on any failure (no token, fetch/API error, low quality) → bank `trends`.
-- All network calls are wrapped; bank picks are deterministic (rotate by entry count, no `Math.random`). Pure helpers (`cleanText`, `isGoodFact`/`isGoodTrend`, `pickFromBank`, `parseArxivTitles`) are exported and unit-tested in `test/generate-nuggets.test.mjs`. The script only runs `main()` when invoked directly, so tests can import it safely.
+- **tech trend** → fetch recent AI/ML headlines from Hacker News (Algolia, relevance search) + arXiv (cs.AI/cs.LG), rank them by substance (`rankCandidates`: arXiv research sits among high-point HN stories), feature the top one, and have GitHub Models write one **technical** nugget for AI/ML engineers (names a specific model/method/paper + a concrete detail; attaches the headline's `link`). Fallback order: **LLM → self-replenishing pool → static seed**.
+- **trend pool** (`data/nugget-trend-pool.json`) — the next-best candidates we saw but did not feature are banked here (`updateTrendPool`: up to 4/run, capped at 24, FIFO, deduped against the pool and recent trends). When the LLM is unavailable, the trend is drawn from this pool (`source: "pool"`, a cleaned real headline); only if the pool is empty does it fall back to the static `nugget-fallback-bank.json` `trends` (`source: "bank"`). The fact path is unchanged.
+- All network calls are wrapped; bank/pool picks are deterministic (rotate by entry count, no `Math.random`). Pure helpers (`cleanText`, `isGoodFact`/`isGoodTrend`, `pickFromBank`, `parseArxivTitles`, `rankCandidates`, `updateTrendPool`) are exported and unit-tested in `test/generate-nuggets.test.mjs`. The script only runs `main()` when invoked directly, so tests can import it safely.
 - **Notifications are note-only** — nuggets do **not** trigger notifications, so `sw.js` selection/parity logic stays untouched.
 
 ### Notifications (opt-in, no backend)
@@ -142,4 +143,4 @@ There's a `chromium` binary available for headless screenshots. **Snap confineme
 
 ## Cron timing
 
-`.github/workflows/generate-message.yml` runs **once a day** in **UTC**; the current value targets Singapore time (`0 23` = 07:00 SGT). The single morning run generates the note, the doodle prompt, and the nuggets, then commits `data/messages.json`, `data/prompts.json`, `data/nuggets.json`, and `doodles/index.json`. Adjust the cron line if the target timezone changes.
+`.github/workflows/generate-message.yml` runs **once a day** in **UTC**; the current value targets Singapore time (`0 23` = 07:00 SGT). The single morning run generates the note, the doodle prompt, and the nuggets, then commits `data/messages.json`, `data/prompts.json`, `data/nuggets.json`, `data/nugget-trend-pool.json`, and `doodles/index.json`. Adjust the cron line if the target timezone changes.
