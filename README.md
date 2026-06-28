@@ -80,3 +80,9 @@ python3 scripts/make-icons.py
 Open the site on your phone → browser menu → **Add to Home Screen**. It launches
 fullscreen (no browser chrome) showing the current note, and works offline via the
 service worker. (True live home-screen widgets require a native app and are out of scope.)
+
+## Notifications
+
+Tap the 🔔 bell in the top bar to get notified of new notes. Available on Chromium-based
+browsers and Android with the app installed as a PWA; the timing follows the browser's
+background schedule, so notifications arrive within a few hours of publish time.
