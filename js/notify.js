@@ -73,6 +73,7 @@ export async function initNotifications(bell, state) {
   reflect(bell, await isEnabled(reg));
 
   bell.addEventListener("click", async () => {
+    if (!state.entry) return;
     bell.disabled = true;
     try {
       if (await isEnabled(reg)) {
