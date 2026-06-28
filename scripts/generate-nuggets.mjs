@@ -31,7 +31,7 @@ const FETCH_TIMEOUT = 8000;
 
 const FACTS_URL = "https://uselessfacts.jsph.pl/api/v2/facts/random?language=en";
 const HN_URL =
-  "https://hn.algolia.com/api/v1/search_by_date?tags=story&query=AI&hitsPerPage=20";
+  "https://hn.algolia.com/api/v1/search?tags=story&query=AI&numericFilters=points%3E20&hitsPerPage=20";
 const ARXIV_URL =
   "http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.LG&sortBy=submittedDate&sortOrder=descending&max_results=10";
 
@@ -84,6 +84,26 @@ export function parseArxivTitles(xml) {
   return titles;
 }
 
+// Candidate scoring: real research (arXiv) sits among high-signal HN stories so
+// big releases win on big days, otherwise a fresh paper wins. Deterministic.
+const ARXIV_SCORE = 80;
+
+export function scoreCandidate(c) {
+  if (!c) return 0;
+  if (c.source === "arxiv") return ARXIV_SCORE;
+  const pts = Number(c.points);
+  return Number.isFinite(pts) ? pts : 0;
+}
+
+// Stable sort by score descending (ties keep original/recency order). Pure.
+export function rankCandidates(list) {
+  const arr = Array.isArray(list) ? list : [];
+  return arr
+    .map((c, i) => ({ c, i, s: scoreCandidate(c) }))
+    .sort((a, b) => b.s - a.s || a.i - b.i)
+    .map((x) => x.c);
+}
+
 // ---------------------------------------------------------------------------
 // IO helpers.
 // ---------------------------------------------------------------------------
@@ -131,7 +151,7 @@ async function factFromApi() {
 // Tech trend: gather recent headlines, then have the LLM write one nugget.
 // ---------------------------------------------------------------------------
 
-// Returns [{ title, url }] of recent AI/ML headlines from free sources.
+// Returns [{ title, url, source, points? }] of recent AI/ML headlines from free sources.
 async function trendCandidates() {
   const out = [];
 
@@ -139,7 +159,13 @@ async function trendCandidates() {
     const hn = await fetchJson(HN_URL);
     for (const hit of hn?.hits || []) {
       const title = cleanText(hit?.title);
-      if (title) out.push({ title, url: hit?.url || hit?.story_url || "" });
+      if (title)
+        out.push({
+          title,
+          url: hit?.url || hit?.story_url || "",
+          source: "hn",
+          points: Number(hit?.points) || 0,
+        });
     }
   } catch (err) {
     console.warn("[nuggets] Hacker News fetch failed:", err.message);
@@ -147,7 +173,8 @@ async function trendCandidates() {
 
   try {
     const xml = await fetchText(ARXIV_URL);
-    for (const title of parseArxivTitles(xml)) out.push({ title, url: "" });
+    for (const title of parseArxivTitles(xml))
+      out.push({ title, url: "", source: "arxiv" });
   } catch (err) {
     console.warn("[nuggets] arXiv fetch failed:", err.message);
   }

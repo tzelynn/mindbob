@@ -6,6 +6,8 @@ import {
   isGoodTrend,
   pickFromBank,
   parseArxivTitles,
+  scoreCandidate,
+  rankCandidates,
 } from "../scripts/generate-nuggets.mjs";
 
 test("cleanText strips wrapping quotes and collapses whitespace", () => {
@@ -61,4 +63,30 @@ test("parseArxivTitles extracts per-entry titles, skipping the feed title", () =
     "Agents that Plan",
   ]);
   assert.deepEqual(parseArxivTitles(""), []);
+});
+
+test("scoreCandidate: arxiv gets a fixed score, hn scores by points", () => {
+  assert.equal(scoreCandidate({ source: "arxiv" }), 80);
+  assert.equal(scoreCandidate({ source: "hn", points: 150 }), 150);
+  assert.equal(scoreCandidate({ source: "hn" }), 0);
+  assert.equal(scoreCandidate(null), 0);
+});
+
+test("rankCandidates sorts by score desc, stable on ties", () => {
+  const list = [
+    { title: "hn small", source: "hn", points: 5 },
+    { title: "paper", source: "arxiv" },
+    { title: "hn big", source: "hn", points: 150 },
+  ];
+  assert.deepEqual(
+    rankCandidates(list).map((c) => c.title),
+    ["hn big", "paper", "hn small"],
+  );
+  // stable: equal-score arxiv papers keep input order
+  const ties = [
+    { title: "p1", source: "arxiv" },
+    { title: "p2", source: "arxiv" },
+  ];
+  assert.deepEqual(rankCandidates(ties).map((c) => c.title), ["p1", "p2"]);
+  assert.deepEqual(rankCandidates([]), []);
 });
