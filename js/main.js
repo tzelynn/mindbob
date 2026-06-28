@@ -6,6 +6,7 @@ import { renderMessage, clearMessage } from "./messageDecorate.js";
 import { registerSW } from "./pwa.js";
 import { getCurrentPrompt } from "./prompts.js";
 import { initNotifications } from "./notify.js";
+import { getCurrentNuggets } from "./nuggets.js";
 
 const refs = {
   app: document.getElementById("app"),
@@ -18,8 +19,12 @@ const refs = {
   status: document.getElementById("status"),
   modeMessage: document.getElementById("modeMessage"),
   modeDoodle: document.getElementById("modeDoodle"),
+  modeNuggets: document.getElementById("modeNuggets"),
   doodleWord: document.getElementById("doodleWord"),
   notifyBell: document.getElementById("notifyBell"),
+  nuggetsEl: document.getElementById("nuggetsEl"),
+  nuggetFact: document.getElementById("nuggetFact"),
+  nuggetTrend: document.getElementById("nuggetTrend"),
 };
 
 const state = {
@@ -28,6 +33,8 @@ const state = {
   mode: "message",
   promptWord: "",
   doodle: null, // lazily-loaded doodle controller
+  nuggets: null, // current nuggets entry (fetched once, on first nuggets view)
+  nuggetsMod: null, // lazily-loaded nuggets render module
 };
 
 async function init() {
@@ -43,43 +50,64 @@ async function init() {
   state.promptWord = await getCurrentPrompt(state.entry.date);
   refs.doodleWord.textContent = state.promptWord;
 
-  const startMode = location.hash === "#doodle" ? "doodle" : "message";
+  const startMode =
+    location.hash === "#doodle"
+      ? "doodle"
+      : location.hash === "#nuggets"
+      ? "nuggets"
+      : "message";
   await setMode(startMode);
   refs.app.classList.remove("is-loading");
 
   refs.modeMessage.addEventListener("click", () => setMode("message"));
   refs.modeDoodle.addEventListener("click", () => setMode("doodle"));
+  refs.modeNuggets.addEventListener("click", () => setMode("nuggets"));
 
   registerSW();
   initNotifications(refs.notifyBell, state);
 }
 
 function statusLine(entry) {
-  const when = entry.slot === "pm" ? "evening note" : "morning note";
-  return entry.source === "builtin" ? "offline — saved note" : when;
+  return entry.source === "builtin" ? "offline — saved note" : "today's note";
+}
+
+function setActiveTab(mode) {
+  const tabs = {
+    message: refs.modeMessage,
+    doodle: refs.modeDoodle,
+    nuggets: refs.modeNuggets,
+  };
+  for (const [m, btn] of Object.entries(tabs)) {
+    const active = m === mode;
+    btn.classList.toggle("is-active", active);
+    btn.setAttribute("aria-selected", String(active));
+  }
 }
 
 async function setMode(mode) {
   state.mode = mode;
   refs.app.dataset.mode = mode;
 
-  const isMessage = mode === "message";
-  refs.modeMessage.classList.toggle("is-active", isMessage);
-  refs.modeDoodle.classList.toggle("is-active", !isMessage);
-  refs.modeMessage.setAttribute("aria-selected", String(isMessage));
-  refs.modeDoodle.setAttribute("aria-selected", String(!isMessage));
-  refs.toolbar.hidden = isMessage;
+  setActiveTab(mode);
+  refs.toolbar.hidden = mode !== "doodle"; // toolbar belongs to doodle mode only
 
-  if (isMessage) {
-    if (state.doodle) state.doodle.deactivate();
+  // Leave-state cleanup for the modes we're not entering.
+  if (mode !== "doodle" && state.doodle) state.doodle.deactivate();
+  if (mode !== "message") clearMessage(refs);
+  if (mode !== "nuggets" && state.nuggetsMod) state.nuggetsMod.clearNuggets(refs);
+
+  if (mode === "message") {
     await renderMessage(refs, state.entry);
-  } else {
-    clearMessage(refs);
+  } else if (mode === "doodle") {
     if (!state.doodle) {
       const mod = await import("./doodleDecorate.js");
       state.doodle = mod.createDoodleDecorator(refs, state);
     }
     state.doodle.activate();
+  } else if (mode === "nuggets") {
+    if (!state.nuggetsMod) state.nuggetsMod = await import("./nuggetsDecorate.js");
+    if (!state.nuggets) state.nuggets = await getCurrentNuggets();
+    state.nuggetsMod.renderNuggets(refs, state.nuggets);
   }
 }
 

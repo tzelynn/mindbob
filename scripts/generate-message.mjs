@@ -1,10 +1,11 @@
-// Generates one twice-daily message and appends it to data/messages.json.
+// Generates one daily message and appends it to data/messages.json.
 //
-//   node scripts/generate-message.mjs --slot=am|pm
+//   node scripts/generate-message.mjs
 //
-// Primary source: GitHub Models (free, uses the Actions GITHUB_TOKEN).
-// On any failure (no token, API error, low-quality output) it falls back to a
-// hand-written line from data/fallback-bank.json so a fresh note ALWAYS lands.
+// One note per day, generated each morning. Primary source: GitHub Models
+// (free, uses the Actions GITHUB_TOKEN). On any failure (no token, API error,
+// low-quality output) it falls back to a hand-written line from
+// data/fallback-bank.json so a fresh note ALWAYS lands.
 
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
@@ -19,25 +20,16 @@ const MODEL = "openai/gpt-4o-mini";
 const MAX_LEN = 160;
 const KEEP = 14;
 
-const SLOT = (argOf("--slot") || "am").toLowerCase() === "pm" ? "pm" : "am";
+// One note per day, always the morning slot. The "am" slot is retained in the
+// entry shape so existing data and the client's publishAt-based selection stay
+// stable.
+const SLOT = "am";
 
-const PROMPTS = {
-  am:
-    "Write ONE short feel-good note for someone starting their day. " +
-    "Warm, lighthearted, encouraging, casual — like a friend texting you. " +
-    "Never cheesy, never preachy, no hashtags, no emoji, no quotation marks. " +
-    "One or two sentences, under 140 characters.",
-  pm:
-    "Write ONE short reflective note for someone winding down at the end of the day. " +
-    "Gentle, calm, a little thoughtful, but still casual — like a friend texting you. " +
-    "Never cheesy, never preachy, no hashtags, no emoji, no quotation marks. " +
-    "One or two sentences, under 140 characters.",
-};
-
-function argOf(name) {
-  const hit = process.argv.find((a) => a.startsWith(name + "="));
-  return hit ? hit.slice(name.length + 1) : null;
-}
+const PROMPT =
+  "Write ONE short feel-good note for someone starting their day. " +
+  "Warm, lighthearted, encouraging, casual — like a friend texting you. " +
+  "Never cheesy, never preachy, no hashtags, no emoji, no quotation marks. " +
+  "One or two sentences, under 140 characters.";
 
 async function readJson(path, fallback) {
   try {
@@ -51,10 +43,10 @@ function todayUTC() {
   return new Date().toISOString().slice(0, 10); // YYYY-MM-DD
 }
 
-// Each note's publish instant is anchored to its date + slot, NOT to the
-// moment the script runs. This keeps AM strictly before PM (and ~12h apart)
-// even when both slots are generated back-to-back, so the client always
-// surfaces the right one. Hours are UTC.
+// Each note's publish instant is anchored to its date, NOT to the moment the
+// script runs, so the client's publishAt-based selection is stable even when
+// notes are seeded/regenerated back-to-back. The morning slot publishes at
+// 00:00 UTC. Hours are UTC.
 const PUBLISH_HOUR_UTC = { am: 0, pm: 11 };
 function publishAtFor(date, slot) {
   const hh = String(PUBLISH_HOUR_UTC[slot]).padStart(2, "0");
@@ -83,7 +75,7 @@ async function fromLLM(recentTexts) {
 
   const avoid = recentTexts.slice(-6);
   const userContent =
-    PROMPTS[SLOT] +
+    PROMPT +
     (avoid.length
       ? "\n\nDo not repeat or closely echo any of these recent notes:\n- " +
         avoid.join("\n- ")
