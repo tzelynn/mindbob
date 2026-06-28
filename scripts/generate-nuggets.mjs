@@ -21,6 +21,7 @@ import { dirname, join } from "node:path";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const NUGGETS_PATH = join(ROOT, "data", "nuggets.json");
 const BANK_PATH = join(ROOT, "data", "nugget-fallback-bank.json");
+const POOL_PATH = join(ROOT, "data", "nugget-trend-pool.json");
 
 const API_URL = "https://models.github.ai/inference/chat/completions";
 const MODEL = "openai/gpt-4o-mini";
@@ -225,8 +226,8 @@ async function trendFromLLM(candidates) {
 
   const primary = candidates[0];
   const context = candidates
-    .slice(0, 12)
-    .map((c) => "- " + c.title)
+    .slice(0, 8)
+    .map((c) => "- [" + (c.source || "?") + "] " + c.title)
     .join("\n");
 
   const userContent =
@@ -276,35 +277,71 @@ async function buildFact(bank, recentFacts, entryCount) {
   }
 }
 
-async function buildTrend(bank, recentTrends, entryCount) {
+async function buildTrend(bank, pool, recentTrends, entryCount) {
+  let ranked = [];
+  let trend = null;
+
   try {
-    const candidates = await trendCandidates();
-    const { text, link } = await trendFromLLM(candidates);
+    ranked = rankCandidates(await trendCandidates());
+    const { text, link } = await trendFromLLM(ranked);
     if (isGoodTrend(text, recentTrends)) {
-      const trend = { text, source: "llm" };
+      trend = { text, source: "llm" };
       if (link) trend.link = link;
-      return trend;
+    } else {
+      throw new Error("low-quality trend: " + JSON.stringify(text));
     }
-    throw new Error("low-quality trend: " + JSON.stringify(text));
   } catch (err) {
-    console.warn("[nuggets] falling back to trend bank:", err.message);
-    return { text: pickFromBank(bank.trends, recentTrends, entryCount), source: "bank" };
+    console.warn("[nuggets] trend LLM unavailable:", err.message);
   }
+
+  // Bank the next-best candidates we did not feature (before choosing a
+  // fallback, so today's leftovers are eligible).
+  const featuredTitle = ranked[0]?.title || "";
+  const poolTrends = updateTrendPool(
+    pool.trends || [],
+    ranked,
+    featuredTitle,
+    recentTrends,
+    {},
+  );
+
+  if (!trend) {
+    const fromPool = pickFromBank(
+      poolTrends.map((t) => t.text),
+      recentTrends,
+      entryCount,
+    );
+    if (fromPool) {
+      trend = { text: fromPool, source: "pool" };
+      const hit = poolTrends.find((t) => t.text === fromPool);
+      if (hit?.link) trend.link = hit.link;
+    } else {
+      trend = {
+        text: pickFromBank(bank.trends, recentTrends, entryCount),
+        source: "bank",
+      };
+    }
+  }
+
+  return { trend, poolTrends };
 }
 
 async function main() {
   const store = await readJson(NUGGETS_PATH, { updated: "", entries: [] });
   if (!Array.isArray(store.entries)) store.entries = [];
   const bank = await readJson(BANK_PATH, { facts: [], trends: [] });
+  const pool = await readJson(POOL_PATH, { updated: "", trends: [] });
+  if (!Array.isArray(pool.trends)) pool.trends = [];
 
   const recentFacts = store.entries.map((e) => e.fact?.text).filter(Boolean);
   const recentTrends = store.entries.map((e) => e.trend?.text).filter(Boolean);
   const count = store.entries.length;
 
-  const [fact, trend] = await Promise.all([
+  const [fact, built] = await Promise.all([
     buildFact(bank, recentFacts, count),
-    buildTrend(bank, recentTrends, count),
+    buildTrend(bank, pool, recentTrends, count),
   ]);
+  const trend = built.trend;
 
   const now = new Date();
   const date = todayUTC();
@@ -318,6 +355,10 @@ async function main() {
   store.updated = now.toISOString();
 
   await writeFile(NUGGETS_PATH, JSON.stringify(store, null, 2) + "\n");
+  await writeFile(
+    POOL_PATH,
+    JSON.stringify({ updated: now.toISOString(), trends: built.poolTrends }, null, 2) + "\n",
+  );
   console.log(
     `[nuggets] ${entry.id} — fact(${fact.source}), trend(${trend.source})`
   );
