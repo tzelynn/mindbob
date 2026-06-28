@@ -12,7 +12,7 @@
 // would crash init: stale element ids -> null refs). `skipWaiting` still makes
 // the new version take over on the next reload.
 
-const VERSION = "v6";
+const VERSION = "v7";
 const SHELL_CACHE = `mindbob-shell-${VERSION}`;
 const RUNTIME_CACHE = `mindbob-runtime-${VERSION}`;
 // Unversioned: holds the id of the last note we notified about. Must survive
@@ -34,6 +34,8 @@ const SHELL_ASSETS = [
   "./js/doodles.js",
   "./js/messageDecorate.js",
   "./js/doodleDecorate.js",
+  "./js/nuggets.js",
+  "./js/nuggetsDecorate.js",
   "./js/prompts.js",
   "./js/util.js",
   "./js/pwa.js",
@@ -86,6 +88,12 @@ self.addEventListener("fetch", (event) => {
 
   // Doodle prompt: network-first (fresh when online, last word offline).
   if (url.pathname.endsWith("/data/prompts.json")) {
+    event.respondWith(networkFirst(request));
+    return;
+  }
+
+  // Nuggets: network-first (fresh when online, last nuggets offline).
+  if (url.pathname.endsWith("/data/nuggets.json")) {
     event.respondWith(networkFirst(request));
     return;
   }
@@ -184,8 +192,8 @@ async function setLastNotifiedId(id) {
   }
 }
 
-function titleFor(entry) {
-  return entry.slot === "pm" ? "mindbob · evening note" : "mindbob · morning note";
+function titleFor() {
+  return "mindbob · today's note";
 }
 
 // Fetch the latest notes, pick the current one, and notify if it's new.

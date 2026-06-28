@@ -1,0 +1,24 @@
+{
+  "facts": [
+    "Honey never really spoils — archaeologists have found 3,000-year-old honey in Egyptian tombs that was still perfectly edible.",
+    "Your brain is about 2% of your body weight but uses roughly 20% of your energy.",
+    "Bananas are berries, botanically speaking, but strawberries are not.",
+    "Octopuses have three hearts, and two of them stop beating whenever the octopus swims.",
+    "There are more ways to shuffle a single deck of cards than there are atoms on Earth.",
+    "Wombat poop is cube-shaped, which stops it rolling away and helps the wombat mark its territory.",
+    "The Eiffel Tower can grow more than 15 cm taller in summer as its metal expands in the heat.",
+    "Sharks are older than trees — they've been around for over 400 million years, trees for about 350 million.",
+    "A day on Venus is longer than its year: it spins slower than it orbits the Sun.",
+    "Sea otters sometimes hold hands while they sleep so they don't drift apart on the water."
+  ],
+  "trends": [
+    "Small, efficient language models are surging — teams increasingly run capable AI right on phones and laptops instead of in the cloud.",
+    "Retrieval-augmented generation (RAG) has become a standard way to ground AI answers in real documents, cutting down on confident-sounding mistakes.",
+    "AI 'agents' that can use tools and take multi-step actions on their own are one of the hottest areas in machine learning right now.",
+    "Open-weight models have closed much of the gap with closed commercial ones, putting strong AI within reach of researchers and small startups.",
+    "Multimodal models that understand text, images, and audio together are quickly replacing older single-purpose systems.",
+    "Distillation and quantization are letting huge models shrink dramatically while keeping most of their accuracy.",
+    "Mixture-of-experts designs let models grow enormous in capacity while only activating a small slice per question, saving compute.",
+    "Long-context models can now read entire books or codebases at once, changing how people work alongside AI."
+  ]
+}

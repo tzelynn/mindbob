@@ -163,9 +163,64 @@ body {
 
 /* the note belongs to message mode only */
 .app[data-mode="doodle"] .layer-message { display: none; }
+.app[data-mode="nuggets"] .layer-message { display: none; }
+
+/* nuggets mode hides every other layer (the canvas/prompt are doodle-only) */
+.app[data-mode="nuggets"] .layer-canvas,
+.app[data-mode="nuggets"] .doodle-prompt,
+.app[data-mode="nuggets"] .status { display: none; }
 
 .layer-doodle {
   pointer-events: none;
+}
+
+/* ---------- Nuggets ---------- */
+.layer-nuggets {
+  display: none;             /* shown only in nuggets mode (below) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 7vmin 8vmin;
+  overflow-y: auto;
+}
+.app[data-mode="nuggets"] .layer-nuggets { display: flex; }
+
+.nugget {
+  width: min(92vw, 460px);
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 18px;
+  padding: 18px 20px 20px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid var(--accent);   /* the per-card accent bar distinguishes the two */
+}
+.nugget-fact { border-left-color: var(--muted); }
+.nugget-trend { border-left-color: var(--accent); }
+
+.nugget-label {
+  margin: 0 0 8px;
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.nugget-text {
+  margin: 0;
+  font-size: clamp(1.05rem, 3.6vw, 1.4rem);
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.nugget-source {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
 }
 
 /* Each doodle is anchored to a layout point (set inline as left/top %) and

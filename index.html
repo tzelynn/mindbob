@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>mindbob</title>
-  <meta name="description" content="A calming feel-good note, refreshed twice a day." />
+  <meta name="description" content="A calming feel-good note, refreshed each morning, plus daily nuggets." />
 
   <!-- PWA -->
   <link rel="manifest" href="./manifest.webmanifest" />
@@ -26,6 +26,7 @@
       <div class="mode-toggle" role="tablist" aria-label="Display mode">
         <button id="modeMessage" class="mode-btn is-active" role="tab" aria-selected="true">message</button>
         <button id="modeDoodle" class="mode-btn" role="tab" aria-selected="false">doodle</button>
+        <button id="modeNuggets" class="mode-btn" role="tab" aria-selected="false">nuggets</button>
       </div>
       <button id="notifyBell" class="notify-bell" type="button" aria-pressed="false" aria-label="Notify me of new notes" title="Notify me of new notes" hidden>🔔</button>
     </header>
@@ -44,6 +45,18 @@
       <!-- the message (message mode) -->
       <div id="messageEl" class="layer layer-message">
         <p id="messageText" class="message-text">…</p>
+      </div>
+
+      <!-- the nuggets (nuggets mode) -->
+      <div id="nuggetsEl" class="layer layer-nuggets">
+        <article class="nugget nugget-fact">
+          <h2 class="nugget-label">fun fact</h2>
+          <p class="nugget-text" id="nuggetFact"></p>
+        </article>
+        <article class="nugget nugget-trend">
+          <h2 class="nugget-label">tech trend</h2>
+          <p class="nugget-text" id="nuggetTrend"></p>
+        </article>
       </div>
     </section>
 

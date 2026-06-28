@@ -1,7 +1,7 @@
 {
   "name": "mindbob",
   "short_name": "mindbob",
-  "description": "A calming feel-good note, refreshed twice a day.",
+  "description": "A calming feel-good note, refreshed each morning, plus daily nuggets.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

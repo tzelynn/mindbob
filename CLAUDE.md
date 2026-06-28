@@ -4,7 +4,7 @@ Guidance for working in the **mindbob** repo. Read `README.md` for user-facing s
 
 ## What this is
 
-A calming wellness micro-site: a feel-good note refreshed twice a day (lighthearted AM / reflective PM). Static site on GitHub Pages + a GitHub Actions cron that generates the notes. Installable as a PWA ("widget").
+A calming wellness micro-site: a single feel-good note refreshed each morning, plus a **nuggets** tab (a daily fun fact + recent tech/AI trend). Static site on GitHub Pages + a GitHub Actions cron (1×/day) that generates the note, the doodle prompt, and the nuggets. Installable as a PWA ("widget").
 
 ## Hard constraints (don't break these)
 
@@ -15,22 +15,42 @@ A calming wellness micro-site: a feel-good note refreshed twice a day (lighthear
 ## Architecture
 
 ```
-Actions cron (2×/day) → scripts/generate-message.mjs
-   → GitHub Models API (fallback: data/fallback-bank.json)
-   → commits data/messages.json
+Actions cron (1×/day, each morning)
+   → scripts/generate-message.mjs  → data/messages.json  (note; fallback: data/fallback-bank.json)
+   → scripts/generate-prompt.mjs   → data/prompts.json   (doodle word)
+   → scripts/generate-nuggets.mjs  → data/nuggets.json   (fun fact + tech trend; fallback: data/nugget-fallback-bank.json)
 GitHub Pages → index.html → js/main.js
-   → fetch messages.json → theme + doodle + render mode
+   → fetch the json files → theme + doodle + render mode
 ```
 
 `data/messages.json` is the **contract** between the pipeline and the frontend. Its shape:
 ```json
 { "updated": "ISO", "entries": [
-  { "id": "YYYY-MM-DD-am|pm", "date": "YYYY-MM-DD", "slot": "am|pm",
+  { "id": "YYYY-MM-DD-am", "date": "YYYY-MM-DD", "slot": "am",
     "publishAt": "ISO", "text": "...", "source": "llm|fallback|seed" } ] }
 ```
 The client (`js/messages.js`) shows the entry with the greatest `publishAt` that is `≤ now`.
 
-`publishAt` is **derived deterministically from `date` + `slot`** (`publishAtFor()` in the generator: AM = `00:00` UTC, PM = `11:00` UTC), **not** stamped from wall-clock `now`. This keeps AM strictly before PM and ~11h apart, so generating both slots back-to-back (local runs, seeds) can't produce near-equal timestamps that make the client pick the wrong note. Don't revert this to `now`.
+**One note per day.** The note is generated each morning only; the entry keeps the `slot: "am"` field (publishing at `00:00` UTC) so the data shape and `publishAt`-based selection stay unchanged. (The PM slot was removed; `PUBLISH_HOUR_UTC.pm` and the `pm` fallback-bank array survive but are unused.)
+
+`publishAt` is **derived deterministically from `date` + `slot`** (`publishAtFor()` in the generator: AM = `00:00` UTC), **not** stamped from wall-clock `now`. This keeps the timestamp stable so generating/seeding back-to-back can't produce near-equal timestamps that make the client pick the wrong entry. Don't revert this to `now`. The same rule applies to `data/prompts.json` and `data/nuggets.json` (both AM `00:00` UTC).
+
+### Nuggets (daily fun fact + tech trend)
+
+`data/nuggets.json` is the contract for the **nuggets** tab. One entry per day:
+```json
+{ "updated": "ISO", "entries": [
+  { "id": "YYYY-MM-DD", "date": "YYYY-MM-DD", "publishAt": "ISO",
+    "fact":  { "text": "...", "source": "api|bank|builtin" },
+    "trend": { "text": "...", "source": "llm|bank|builtin", "link": "optional-url" } } ] }
+```
+`js/nuggets.js` selects the current entry by **reusing `pickCurrentEntry`** (same logic as the note); `js/nuggetsDecorate.js` renders the two cards (lazy-imported on first entry into nuggets mode, like `doodleDecorate.js`).
+
+`scripts/generate-nuggets.mjs` generation strategy — **dynamic via free, no-auth sources, degrading to a curated bank** so a pair always lands:
+- **fun fact** → uselessfacts API; on any failure → `data/nugget-fallback-bank.json` `facts`.
+- **tech trend** → fetch recent AI/ML headlines from Hacker News (Algolia) + arXiv, feed the titles to GitHub Models to write one nugget (and attach the primary headline's `link`); on any failure (no token, fetch/API error, low quality) → bank `trends`.
+- All network calls are wrapped; bank picks are deterministic (rotate by entry count, no `Math.random`). Pure helpers (`cleanText`, `isGoodFact`/`isGoodTrend`, `pickFromBank`, `parseArxivTitles`) are exported and unit-tested in `test/generate-nuggets.test.mjs`. The script only runs `main()` when invoked directly, so tests can import it safely.
+- **Notifications are note-only** — nuggets do **not** trigger notifications, so `sw.js` selection/parity logic stays untouched.
 
 ### Notifications (opt-in, no backend)
 
@@ -52,8 +72,9 @@ Invariants:
   by both `js/notify.js` (seed on enable) and `sw.js` (on notify). It is
   **excluded from the `activate()` cache cleanup** — adding a versioned cache to
   that keep-list logic must not drop `META_CACHE`.
-- **Notification copy** mirrors the in-app status line: title `mindbob · morning
-  note` / `mindbob · evening note`, body = note text, tag `mindbob-note`.
+- **Notification copy** mirrors the in-app status line: title `mindbob · today's
+  note`, body = note text, tag `mindbob-note`. (Single note/day — there is no
+  morning/evening split.)
 - Limitation: the browser decides *when* periodic sync fires — notifications
   arrive within its background window of publish time, not at the exact minute.
 
@@ -68,12 +89,14 @@ Invariants:
 | `js/doodles.js` | Manifest load, pick + place doodle | `renderMessageDoodle()` |
 | `js/messageDecorate.js` | Message mode render | `renderMessage()`, `clearMessage()` |
 | `js/doodleDecorate.js` | Bounded doodle canvas (pencil/eraser/undo/clear/save) + per-day persistence | `createDoodleDecorator()` |
+| `js/nuggets.js` | Fetch + select current nuggets (reuses `pickCurrentEntry`) | `getCurrentNuggets()` |
+| `js/nuggetsDecorate.js` | Nuggets mode render (two cards) | `renderNuggets()`, `clearNuggets()` |
 | `js/prompts.js` | Daily date-seeded doodle prompt word | `promptFor(dateSeed)` |
 | `js/util.js` | Hash + seeded RNG | `hashString()`, `seededRng()`, `pick()` |
 | `js/pwa.js` | Service worker registration | `registerSW()` |
 | `js/notify.js` | Bell toggle + Periodic Background Sync opt-in | `initNotifications(bell, state)` |
 
-Keep modules single-purpose and small. `doodleDecorate.js` is lazy-imported by `main.js` only when entering doodle mode.
+Keep modules single-purpose and small. `doodleDecorate.js` and `nuggetsDecorate.js` are lazy-imported by `main.js` only when entering their mode. `setMode()` handles three modes (`message` / `doodle` / `nuggets`); the active tab is set via `setActiveTab()` and each non-current mode is cleaned up on switch.
 
 ## Conventions
 
@@ -85,7 +108,7 @@ Keep modules single-purpose and small. `doodleDecorate.js` is lazy-imported by `
 ## Invariants to preserve
 
 - **Doodle mode has no daily note.** The drawing `<canvas>` is the only content layer; there is no move tool. The eraser uses `globalCompositeOperation = "destination-out"` on the canvas only. `save()` exports the canvas directly (no text baking).
-- **`.toolbar[hidden]` needs an explicit `display:none` rule** — the author `.toolbar{display:flex}` otherwise overrides the `hidden` attribute. (Same trap applies to any element given a `display` and toggled via `hidden`.)
+- **`.toolbar[hidden]` needs an explicit `display:none` rule** — the author `.toolbar{display:flex}` otherwise overrides the `hidden` attribute. (Same trap applies to any element given a `display` and toggled via `hidden`.) The nuggets/message/canvas layers are instead shown/hidden purely via `.app[data-mode="…"]` selectors (no `hidden` attribute), so this trap doesn't apply there.
 - Canvas drawing is DPR-aware (`fitCanvas`) and stores strokes in CSS pixels.
 - **The drawing canvas is hidden in message mode via CSS** (`.app[data-mode="message"] .layer-canvas { display:none }`), not cleared — so a decorated canvas never shows behind the message doodle, yet the pixels survive a round-trip back to doodle mode. Don't "fix" leakage by clearing the canvas on mode switch.
 - **Undo is snapshot-based**: `pushUndo()` captures canvas pixels *before* each action (stroke, erase, clear). If you add a new mutating action, call `pushUndo()` at its start.
@@ -97,14 +120,18 @@ Keep modules single-purpose and small. `doodleDecorate.js` is lazy-imported by `
 ```bash
 # local preview
 python3 -m http.server 8765
-#   http://localhost:8765/index.html           (message)
-#   http://localhost:8765/index.html#doodle      (doodle mode — also used for testing)
+#   http://localhost:8765/index.html            (message)
+#   http://localhost:8765/index.html#doodle       (doodle mode — also used for testing)
+#   http://localhost:8765/index.html#nuggets      (nuggets mode)
 
-# run unit tests (selection logic + SW parity; Node built-in runner, no deps)
+# run unit tests (selection logic + SW parity + shell-asset coverage + nugget
+# helpers; Node built-in runner, no deps)
 node --test
 
-# regenerate data (no token locally -> uses fallback bank)
-node scripts/generate-message.mjs --slot=am|pm
+# regenerate data (no token locally -> uses fallback banks)
+node scripts/generate-message.mjs
+node scripts/generate-prompt.mjs
+node scripts/generate-nuggets.mjs
 node scripts/build-doodle-manifest.mjs   # after adding/removing doodles/*.svg
 python3 scripts/make-icons.py            # after changing brand colors
 ```
@@ -115,4 +142,4 @@ There's a `chromium` binary available for headless screenshots. **Snap confineme
 
 ## Cron timing
 
-`.github/workflows/generate-message.yml` schedules run in **UTC**; current values target Singapore time (`0 23` = 07:00 SGT AM, `0 11` = 19:00 SGT PM). The slot is resolved from `github.event.schedule` (or the `workflow_dispatch` input). Adjust the cron lines if the target timezone changes.
+`.github/workflows/generate-message.yml` runs **once a day** in **UTC**; the current value targets Singapore time (`0 23` = 07:00 SGT). The single morning run generates the note, the doodle prompt, and the nuggets, then commits `data/messages.json`, `data/prompts.json`, `data/nuggets.json`, and `doodles/index.json`. Adjust the cron line if the target timezone changes.
