@@ -3,8 +3,16 @@
 // - data/messages.json: network-first with cache fallback (fresh when online,
 //   last note when offline).
 // - everything else (doodles, etc.): stale-while-revalidate.
+//
+// Update safety: every cache read/write is scoped to THIS version's caches
+// (never the global `caches.match`, which spans all versions). Combined with
+// not calling `clients.claim()`, this guarantees a page is always served a
+// single self-consistent snapshot — one SW version per navigation — so an
+// in-flight update can never mix an old index.html with a new main.js (which
+// would crash init: stale element ids -> null refs). `skipWaiting` still makes
+// the new version take over on the next reload.
 
-const VERSION = "v3";
+const VERSION = "v5";
 const SHELL_CACHE = `mindbob-shell-${VERSION}`;
 const RUNTIME_CACHE = `mindbob-runtime-${VERSION}`;
 
@@ -18,7 +26,7 @@ const SHELL_ASSETS = [
   "./js/messages.js",
   "./js/palette.js",
   "./js/doodles.js",
-  "./js/autoDecorate.js",
+  "./js/messageDecorate.js",
   "./js/doodleDecorate.js",
   "./js/prompts.js",
   "./js/util.js",
@@ -38,6 +46,10 @@ self.addEventListener("install", (event) => {
 });
 
 self.addEventListener("activate", (event) => {
+  // Drop caches from older versions. We deliberately do NOT call
+  // clients.claim() — claiming swaps the controller mid-load and can serve a
+  // page a mix of old + new assets. Without it, the running page keeps its
+  // version until the next reload, when the new SW serves a clean snapshot.
   event.waitUntil(
     caches
       .keys()
@@ -48,7 +60,6 @@ self.addEventListener("activate", (event) => {
             .map((k) => caches.delete(k))
         )
       )
-      .then(() => self.clients.claim())
   );
 });
 
@@ -84,33 +95,43 @@ self.addEventListener("fetch", (event) => {
 });
 
 async function cacheFirst(request) {
-  const cached = await caches.match(request);
-  if (cached) return cached;
+  // Scope to this version's caches so the shell stays self-consistent during
+  // an update (the global caches.match would span versions and could mix them).
+  const shell = await caches.open(SHELL_CACHE);
+  const cachedShell = await shell.match(request);
+  if (cachedShell) return cachedShell;
+
+  const runtime = await caches.open(RUNTIME_CACHE);
+  const cachedRuntime = await runtime.match(request);
+  if (cachedRuntime) return cachedRuntime;
+
   try {
     const res = await fetch(request);
-    if (res.ok) (await caches.open(RUNTIME_CACHE)).put(request, res.clone());
+    if (res.ok) runtime.put(request, res.clone());
     return res;
   } catch {
-    return cached || Response.error();
+    return Response.error();
   }
 }
 
 async function networkFirst(request) {
+  const runtime = await caches.open(RUNTIME_CACHE);
   try {
     const res = await fetch(request);
-    if (res.ok) (await caches.open(RUNTIME_CACHE)).put(request, res.clone());
+    if (res.ok) runtime.put(request, res.clone());
     return res;
   } catch {
-    const cached = await caches.match(request);
+    const cached = await runtime.match(request);
     return cached || Response.error();
   }
 }
 
 async function staleWhileRevalidate(request) {
-  const cached = await caches.match(request);
+  const runtime = await caches.open(RUNTIME_CACHE);
+  const cached = await runtime.match(request);
   const fetching = fetch(request)
     .then((res) => {
-      if (res.ok) caches.open(RUNTIME_CACHE).then((c) => c.put(request, res.clone()));
+      if (res.ok) runtime.put(request, res.clone());
       return res;
     })
     .catch(() => null);

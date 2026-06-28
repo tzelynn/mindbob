@@ -2,7 +2,7 @@
 // wire the mode toggle, and register the service worker.
 import { getCurrentEntry } from "./messages.js";
 import { paletteFor, applyPalette } from "./palette.js";
-import { renderAuto, clearAuto } from "./autoDecorate.js";
+import { renderMessage, clearMessage } from "./messageDecorate.js";
 import { registerSW } from "./pwa.js";
 import { getCurrentPrompt } from "./prompts.js";
 
@@ -15,7 +15,7 @@ const refs = {
   messageText: document.getElementById("messageText"),
   toolbar: document.getElementById("toolbar"),
   status: document.getElementById("status"),
-  modeAuto: document.getElementById("modeAuto"),
+  modeMessage: document.getElementById("modeMessage"),
   modeDoodle: document.getElementById("modeDoodle"),
   doodleWord: document.getElementById("doodleWord"),
 };
@@ -23,7 +23,7 @@ const refs = {
 const state = {
   entry: null,
   palette: null,
-  mode: "auto",
+  mode: "message",
   promptWord: "",
   doodle: null, // lazily-loaded doodle controller
 };
@@ -41,11 +41,11 @@ async function init() {
   state.promptWord = await getCurrentPrompt(state.entry.date);
   refs.doodleWord.textContent = state.promptWord;
 
-  const startMode = location.hash === "#doodle" ? "doodle" : "auto";
+  const startMode = location.hash === "#doodle" ? "doodle" : "message";
   await setMode(startMode);
   refs.app.classList.remove("is-loading");
 
-  refs.modeAuto.addEventListener("click", () => setMode("auto"));
+  refs.modeMessage.addEventListener("click", () => setMode("message"));
   refs.modeDoodle.addEventListener("click", () => setMode("doodle"));
 
   registerSW();
@@ -60,18 +60,18 @@ async function setMode(mode) {
   state.mode = mode;
   refs.app.dataset.mode = mode;
 
-  const isAuto = mode === "auto";
-  refs.modeAuto.classList.toggle("is-active", isAuto);
-  refs.modeDoodle.classList.toggle("is-active", !isAuto);
-  refs.modeAuto.setAttribute("aria-selected", String(isAuto));
-  refs.modeDoodle.setAttribute("aria-selected", String(!isAuto));
-  refs.toolbar.hidden = isAuto;
+  const isMessage = mode === "message";
+  refs.modeMessage.classList.toggle("is-active", isMessage);
+  refs.modeDoodle.classList.toggle("is-active", !isMessage);
+  refs.modeMessage.setAttribute("aria-selected", String(isMessage));
+  refs.modeDoodle.setAttribute("aria-selected", String(!isMessage));
+  refs.toolbar.hidden = isMessage;
 
-  if (isAuto) {
+  if (isMessage) {
     if (state.doodle) state.doodle.deactivate();
-    await renderAuto(refs, state.entry);
+    await renderMessage(refs, state.entry);
   } else {
-    clearAuto(refs);
+    clearMessage(refs);
     if (!state.doodle) {
       const mod = await import("./doodleDecorate.js");
       state.doodle = mod.createDoodleDecorator(refs, state);

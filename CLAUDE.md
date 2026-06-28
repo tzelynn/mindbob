@@ -39,8 +39,8 @@ The client (`js/messages.js`) shows the entry with the greatest `publishAt` that
 | `js/main.js` | Entry: load note, theme, render, mode toggle, SW | — |
 | `js/messages.js` | Fetch + select current note | `getCurrentEntry()` |
 | `js/palette.js` | Curated palettes; one per note | `paletteFor(seed)`, `applyPalette()` |
-| `js/doodles.js` | Manifest load, pick + place doodle | `renderAutoDoodle()` |
-| `js/autoDecorate.js` | Auto mode render | `renderAuto()`, `clearAuto()` |
+| `js/doodles.js` | Manifest load, pick + place doodle | `renderMessageDoodle()` |
+| `js/messageDecorate.js` | Message mode render | `renderMessage()`, `clearMessage()` |
 | `js/doodleDecorate.js` | Bounded doodle canvas (pencil/eraser/undo/clear/save) + per-day persistence | `createDoodleDecorator()` |
 | `js/prompts.js` | Daily date-seeded doodle prompt word | `promptFor(dateSeed)` |
 | `js/util.js` | Hash + seeded RNG | `hashString()`, `seededRng()`, `pick()` |
@@ -51,7 +51,7 @@ Keep modules single-purpose and small. `doodleDecorate.js` is lazy-imported by `
 ## Conventions
 
 - **Deterministic-per-note visuals.** Palette and doodles are derived from the note `id` via `hashString` — same note always looks identical, AM ≠ PM, each note gets its own cohesive pencil palette. Don't introduce `Math.random()` for visuals; seed from the note id.
-- **Auto mode shows 1–4 doodles in a symmetric layout.** `doodleCountFor(seed, manifest)` picks the count (1–4, capped to manifest size); `doodleNamesFor()` picks that many *distinct* doodles. `renderAutoDoodle()` (in `js/doodles.js`) places them on a per-count layout from the `LAYOUTS` table — anchor points are left-right (and where possible top-bottom) symmetric and sit in the top/bottom margins so they frame the centred message instead of overlapping it; doodles shrink as the count grows so they never collide. Each doodle is its own absolutely-positioned `.doodle-slot` (centred on its anchor via `translate(-50%, -50%)`) with a small seeded rotation. To change the look, edit `LAYOUTS` (points + per-count `size`), not the call sites. The single-doodle path is gone — `doodleNameFor()` was replaced by `doodleCountFor()` + `doodleNamesFor()`.
+- **Message mode shows 1–4 doodles in a symmetric layout.** `doodleCountFor(seed, manifest)` picks the count (1–4, capped to manifest size); `doodleNamesFor()` picks that many *distinct* doodles. `renderMessageDoodle()` (in `js/doodles.js`) places them on a per-count layout from the `LAYOUTS` table — anchor points are left-right (and where possible top-bottom) symmetric and sit in the top/bottom margins so they frame the centred message instead of overlapping it; doodles shrink as the count grows so they never collide. Each doodle is its own absolutely-positioned `.doodle-slot` (centred on its anchor via `translate(-50%, -50%)`) with a small seeded rotation. To change the look, edit `LAYOUTS` (points + per-count `size`), not the call sites. The single-doodle path is gone — `doodleNameFor()` was replaced by `doodleCountFor()` + `doodleNamesFor()`.
 - **Theme via CSS custom properties** (`--bg`, `--ink`, `--accent`) set on `.app` by `applyPalette()`. Add new themeable colors as variables, not hardcoded values.
 - **Doodles are inline SVG line-art using `stroke="currentColor"`** so they inherit `--accent`. New doodles must follow this (viewBox `0 0 100 100`, no hardcoded colors).
 
@@ -60,7 +60,7 @@ Keep modules single-purpose and small. `doodleDecorate.js` is lazy-imported by `
 - **Doodle mode has no daily note.** The drawing `<canvas>` is the only content layer; there is no move tool. The eraser uses `globalCompositeOperation = "destination-out"` on the canvas only. `save()` exports the canvas directly (no text baking).
 - **`.toolbar[hidden]` needs an explicit `display:none` rule** — the author `.toolbar{display:flex}` otherwise overrides the `hidden` attribute. (Same trap applies to any element given a `display` and toggled via `hidden`.)
 - Canvas drawing is DPR-aware (`fitCanvas`) and stores strokes in CSS pixels.
-- **The drawing canvas is hidden in auto mode via CSS** (`.app[data-mode="auto"] .layer-canvas { display:none }`), not cleared — so a decorated canvas never shows behind the auto doodle, yet the pixels survive a round-trip back to doodle mode. Don't "fix" leakage by clearing the canvas on mode switch.
+- **The drawing canvas is hidden in message mode via CSS** (`.app[data-mode="message"] .layer-canvas { display:none }`), not cleared — so a decorated canvas never shows behind the message doodle, yet the pixels survive a round-trip back to doodle mode. Don't "fix" leakage by clearing the canvas on mode switch.
 - **Undo is snapshot-based**: `pushUndo()` captures canvas pixels *before* each action (stroke, erase, clear). If you add a new mutating action, call `pushUndo()` at its start.
 - **Doodle drawings persist per day across reloads.** After each mutating action `persist()` writes `{ img: canvas dataURL }` to `localStorage` under `mindbob:doodle:<date>`, pruning all other `mindbob:doodle:*` keys so only the current day is kept — the drawing resets exactly when the date changes. `restore()` re-applies it once per load in `activate()` (after `fitCanvas()`), redrawing scaled to the live canvas. If you add a new mutating action, call `persist()` at its end (mirror of the `pushUndo()` rule). All storage access is `try/catch`-wrapped so a disabled/full `localStorage` degrades to in-memory.
 - **Saved images are named `mindbob_<prompt>_<date>.png`** (`filename()` in `save()`), e.g. `mindbob_feather_2026-06-27.png` — `<prompt>` is the date-seeded doodle prompt word; empty parts (offline fallback's blank date) are dropped to avoid doubled `_`. Unique per day; don't revert to a static name.
@@ -70,7 +70,7 @@ Keep modules single-purpose and small. `doodleDecorate.js` is lazy-imported by `
 ```bash
 # local preview
 python3 -m http.server 8765
-#   http://localhost:8765/index.html           (auto)
+#   http://localhost:8765/index.html           (message)
 #   http://localhost:8765/index.html#doodle      (doodle mode — also used for testing)
 
 # regenerate data (no token locally -> uses fallback bank)

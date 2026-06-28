@@ -114,8 +114,8 @@ body {
   pointer-events: none;           /* enabled in doodle mode by JS */
 }
 
-/* Canvas is doodle-mode only; hidden in auto so it never shows behind doodles. */
-.app[data-mode="auto"] .layer-canvas { display: none; }
+/* Canvas is doodle-mode only; hidden in message mode so it never shows behind doodles. */
+.app[data-mode="message"] .layer-canvas { display: none; }
 
 /* daily prompt: top of the stage, doodle mode only */
 .doodle-prompt {
@@ -132,7 +132,7 @@ body {
 .doodle-prompt strong { color: var(--accent); font-weight: inherit; }
 .app[data-mode="doodle"] .doodle-prompt { display: block; }
 
-/* the note belongs to auto mode only */
+/* the note belongs to message mode only */
 .app[data-mode="doodle"] .layer-message { display: none; }
 
 .layer-doodle {

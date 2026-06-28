@@ -68,7 +68,7 @@ const LAYOUTS = {
 // Render 1..4 chosen doodles into a container, each anchored to its symmetric
 // layout point with a little seeded rotation so the layout feels organic but
 // stable (same note -> identical placement).
-export async function renderAutoDoodle(container, seed) {
+export async function renderMessageDoodle(container, seed) {
   const manifest = await loadManifest();
   container.innerHTML = "";
   container.setAttribute("aria-hidden", "true");
