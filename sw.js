@@ -12,9 +12,14 @@
 // would crash init: stale element ids -> null refs). `skipWaiting` still makes
 // the new version take over on the next reload.
 
-const VERSION = "v5";
+const VERSION = "v6";
 const SHELL_CACHE = `mindbob-shell-${VERSION}`;
 const RUNTIME_CACHE = `mindbob-runtime-${VERSION}`;
+// Unversioned: holds the id of the last note we notified about. Must survive
+// version bumps, so it is excluded from the activate() cleanup below.
+const META_CACHE = "mindbob-meta";
+const LAST_NOTIFIED_KEY = "https://mindbob.local/last-notified";
+const PERIODIC_TAG = "mindbob-check";
 
 const SHELL_ASSETS = [
   "./",
@@ -56,7 +61,9 @@ self.addEventListener("activate", (event) => {
       .then((keys) =>
         Promise.all(
           keys
-            .filter((k) => k !== SHELL_CACHE && k !== RUNTIME_CACHE)
+            .filter(
+              (k) => k !== SHELL_CACHE && k !== RUNTIME_CACHE && k !== META_CACHE
+            )
             .map((k) => caches.delete(k))
         )
       )
@@ -137,3 +144,100 @@ async function staleWhileRevalidate(request) {
     .catch(() => null);
   return cached || (await fetching) || Response.error();
 }
+
+// >>> selection-parity >>>
+// EXACT copy of pickCurrentEntry from js/selectEntry.js. This is a classic
+// worker and cannot import ES modules; test/sw-selection.test.mjs asserts the
+// two stay identical in behavior. If you change one, change the other.
+function pickCurrentEntry(entries, nowMs) {
+  let chosen = null;
+  let chosenMs = -Infinity;
+  for (const e of entries) {
+    const t = new Date(e.publishAt).getTime();
+    if (t <= nowMs && t >= chosenMs) {
+      chosen = e;
+      chosenMs = t;
+    }
+  }
+  return chosen;
+}
+// <<< selection-parity <<<
+
+async function getLastNotifiedId() {
+  try {
+    const cache = await caches.open(META_CACHE);
+    const res = await cache.match(LAST_NOTIFIED_KEY);
+    return res ? await res.text() : null;
+  } catch {
+    return null;
+  }
+}
+
+async function setLastNotifiedId(id) {
+  try {
+    const cache = await caches.open(META_CACHE);
+    await cache.put(LAST_NOTIFIED_KEY, new Response(id));
+  } catch {
+    /* storage unavailable — degrade silently */
+  }
+}
+
+function titleFor(entry) {
+  return entry.slot === "pm" ? "mindbob · evening note" : "mindbob · morning note";
+}
+
+// Fetch the latest notes, pick the current one, and notify if it's new.
+async function checkForNewNote() {
+  let data;
+  try {
+    const res = await fetch("./data/messages.json", { cache: "no-store" });
+    if (!res.ok) return;
+    data = await res.json();
+  } catch {
+    return;
+  }
+  if (!data || !Array.isArray(data.entries)) return;
+
+  const entry = pickCurrentEntry(data.entries, Date.now());
+  if (!entry) return;
+
+  const last = await getLastNotifiedId();
+  if (entry.id === last) return;
+
+  await setLastNotifiedId(entry.id);
+  await self.registration.showNotification(titleFor(entry), {
+    body: entry.text,
+    icon: "./icons/icon-192.png",
+    badge: "./icons/icon-192.png",
+    tag: "mindbob-note",
+    data: { url: self.registration.scope },
+  });
+}
+
+self.addEventListener("periodicsync", (event) => {
+  if (event.tag === PERIODIC_TAG) {
+    event.waitUntil(checkForNewNote());
+  }
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  const url =
+    (event.notification.data && event.notification.data.url) ||
+    self.registration.scope;
+  event.waitUntil(
+    (async () => {
+      const all = await self.clients.matchAll({
+        type: "window",
+        includeUncontrolled: true,
+      });
+      for (const client of all) {
+        if ("focus" in client) {
+          client.focus();
+          return;
+        }
+      }
+      if (self.clients.openWindow) await self.clients.openWindow(url);
+    })()
+  );
+});
