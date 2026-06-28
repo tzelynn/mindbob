@@ -233,7 +233,7 @@ self.addEventListener("notificationclick", (event) => {
       });
       for (const client of all) {
         if ("focus" in client) {
-          client.focus();
+          await client.focus();
           return;
         }
       }
