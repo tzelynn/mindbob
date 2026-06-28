@@ -1,6 +1,8 @@
 // Fetches the generated message file and selects the entry to show now.
 // The service worker serves a cached copy when offline.
 
+import { pickCurrentEntry } from "./selectEntry.js";
+
 const FALLBACK_ENTRY = {
   id: "offline",
   date: "",
@@ -27,15 +29,12 @@ export async function loadMessages() {
 // Pick the most recent entry whose publishAt is in the past.
 // If every entry is in the future (e.g. freshly seeded data), show the oldest.
 export function selectCurrent(data, now = new Date()) {
-  const entries = [...data.entries].sort(
+  const chosen = pickCurrentEntry(data.entries, now.getTime());
+  if (chosen) return chosen;
+  const sorted = [...data.entries].sort(
     (a, b) => new Date(a.publishAt) - new Date(b.publishAt)
   );
-  const nowMs = now.getTime();
-  let chosen = null;
-  for (const e of entries) {
-    if (new Date(e.publishAt).getTime() <= nowMs) chosen = e;
-  }
-  return chosen || entries[0] || FALLBACK_ENTRY;
+  return sorted[0] || FALLBACK_ENTRY;
 }
 
 export async function getCurrentEntry(now = new Date()) {
