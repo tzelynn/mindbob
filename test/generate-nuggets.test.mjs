@@ -66,24 +66,37 @@ test("parseArxivTitles extracts per-entry titles, skipping the feed title", () =
   assert.deepEqual(parseArxivTitles(""), []);
 });
 
-test("scoreCandidate: arxiv gets a fixed score, hn scores by points", () => {
+test("scoreCandidate: arxiv fixed; hn capped, with technical boost", () => {
   assert.equal(scoreCandidate({ source: "arxiv" }), 80);
-  assert.equal(scoreCandidate({ source: "hn", points: 150 }), 150);
-  assert.equal(scoreCandidate({ source: "hn" }), 0);
+  assert.equal(scoreCandidate({ source: "hn", points: 5 }), 5); // below cap, no boost
+  assert.equal(scoreCandidate({ source: "hn", points: 500 }), 60); // capped, no boost
+  assert.equal(
+    scoreCandidate({ source: "hn", points: 500, title: "My AI skeptic friends are all nuts" }),
+    60,
+  ); // opinion: capped, no technical signal
+  assert.equal(
+    scoreCandidate({ source: "hn", points: 10, title: "Mistral releases new 7B open-weights model" }),
+    130,
+  ); // 10 + 120 boost
+  assert.equal(
+    scoreCandidate({ source: "hn", points: 500, title: "Llama 3 70B benchmark results" }),
+    180,
+  ); // capped 60 + 120 boost
   assert.equal(scoreCandidate(null), 0);
 });
 
-test("rankCandidates sorts by score desc, stable on ties", () => {
+test("rankCandidates: technical HN > arxiv research > non-technical HN", () => {
   const list = [
-    { title: "hn small", source: "hn", points: 5 },
-    { title: "paper", source: "arxiv" },
-    { title: "hn big", source: "hn", points: 150 },
+    { title: "AI is going to ruin everything, says pundit", source: "hn", points: 800 },
+    { title: "Scaling laws for sparse models", source: "arxiv" },
+    { title: "Open-source 13B model released with weights", source: "hn", points: 30 },
   ];
-  assert.deepEqual(
-    rankCandidates(list).map((c) => c.title),
-    ["hn big", "paper", "hn small"],
-  );
-  // stable: equal-score arxiv papers keep input order
+  assert.deepEqual(rankCandidates(list).map((c) => c.title), [
+    "Open-source 13B model released with weights",
+    "Scaling laws for sparse models",
+    "AI is going to ruin everything, says pundit",
+  ]);
+  // stable on ties + empty still hold
   const ties = [
     { title: "p1", source: "arxiv" },
     { title: "p2", source: "arxiv" },

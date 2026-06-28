@@ -87,15 +87,24 @@ export function parseArxivTitles(xml) {
   return titles;
 }
 
-// Candidate scoring: real research (arXiv) sits among high-signal HN stories so
-// big releases win on big days, otherwise a fresh paper wins. Deterministic.
+// Candidate scoring. arXiv research sits mid-tier (reliably technical). Raw HN
+// points are capped so a high-traffic opinion/drama post cannot dominate the
+// featured slot; HN titles with a strong technical signal (releases, papers,
+// param sizes, open weights, etc.) are boosted above arXiv. Net order:
+// technical HN > arXiv research > non-technical HN. Deterministic, pure.
 const ARXIV_SCORE = 80;
+const HN_POINTS_CAP = 60; // raw HN points contribute at most this (< ARXIV_SCORE)
+const HN_TECH_BOOST = 120; // HN titles with a technical signal jump above arXiv
+const TECH_RE =
+  /\b(?:release[ds]?|launch(?:e[ds]|ing)?|open[- ]?source|open[- ]?weights?|weights?|fine[- ]?tun\w*|quantiz\w*|distill\w*|benchmark|state[- ]of[- ]the[- ]art|sota|checkpoint|pre[- ]?train\w*|mixture[- ]of[- ]experts|moe|context window|\d+\s?[bB])\b/i;
 
 export function scoreCandidate(c) {
   if (!c) return 0;
   if (c.source === "arxiv") return ARXIV_SCORE;
   const pts = Number(c.points);
-  return Number.isFinite(pts) ? pts : 0;
+  let s = Number.isFinite(pts) ? Math.min(pts, HN_POINTS_CAP) : 0;
+  if (TECH_RE.test(c.title || "")) s += HN_TECH_BOOST;
+  return s;
 }
 
 // Stable sort by score descending (ties keep original/recency order). Pure.
