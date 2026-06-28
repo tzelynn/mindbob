@@ -34,7 +34,7 @@ const FETCH_TIMEOUT = 8000;
 
 const FACTS_URL = "https://uselessfacts.jsph.pl/api/v2/facts/random?language=en";
 const HN_URL =
-  "https://hn.algolia.com/api/v1/search?tags=story&query=AI&numericFilters=points%3E20&hitsPerPage=20";
+  "https://hn.algolia.com/api/v1/search?tags=story&query=AI&hitsPerPage=20";
 const ARXIV_URL =
   "http://export.arxiv.org/api/query?search_query=cat:cs.AI+OR+cat:cs.LG&sortBy=submittedDate&sortOrder=descending&max_results=10";
 

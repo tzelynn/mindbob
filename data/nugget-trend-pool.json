@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T06:54:17.767Z",
+  "updated": "2026-06-28T06:57:17.945Z",
   "trends": [
     {
       "text": "Reinforcement Learning without Ground-Truth Solutions can Improve LLMs",
@@ -16,6 +16,22 @@
     {
       "text": "Error-Conditioned Neural Solvers",
       "link": ""
+    },
+    {
+      "text": "Open source AI is the path forward",
+      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
+    },
+    {
+      "text": "My AI skeptic friends are all nuts",
+      "link": "https://fly.io/blog/youre-all-nuts/"
+    },
+    {
+      "text": "An AI agent published a hit piece on me",
+      "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
+    },
+    {
+      "text": "I believe there are entire companies right now under AI psychosis",
+      "link": "https://twitter.com/mitchellh/status/2055380239711457578"
     }
   ]
 }

@@ -1,16 +1,16 @@
 {
-  "updated": "2026-06-28T06:54:17.767Z",
+  "updated": "2026-06-28T06:57:17.945Z",
   "entries": [
     {
       "id": "2026-06-28",
       "date": "2026-06-28",
       "publishAt": "2026-06-28T00:00:00.000Z",
       "fact": {
-        "text": "Bananas are berries, botanically speaking, but strawberries are not.",
+        "text": "Your brain is about 2% of your body weight but uses roughly 20% of your energy.",
         "source": "bank"
       },
       "trend": {
-        "text": "Autoregressive Boltzmann Generators",
+        "text": "When are likely answers right? On Sequence Probability and Correctness in LLMs",
         "source": "pool"
       }
     }
