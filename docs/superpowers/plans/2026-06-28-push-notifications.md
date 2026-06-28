@@ -112,7 +112,7 @@ test("selectCurrent picks the current published entry when one exists", () => {
 
 - [ ] **Step 3: Run the test to verify it fails**
 
-Run: `node --test test/`
+Run: `node --test`
 Expected: FAIL — `Cannot find module '../js/selectEntry.js'` (module not created yet).
 
 - [ ] **Step 4: Create `js/selectEntry.js`**
@@ -167,7 +167,7 @@ Leave `FALLBACK_ENTRY`, `loadMessages`, and `getCurrentEntry` unchanged.
 
 - [ ] **Step 6: Run the tests to verify they pass**
 
-Run: `node --test test/`
+Run: `node --test`
 Expected: PASS — 5 tests passing.
 
 - [ ] **Step 7: Commit**
@@ -380,7 +380,7 @@ self.addEventListener("notificationclick", (event) => {
 
 - [ ] **Step 6: Run the parity test to verify it passes**
 
-Run: `node --test test/`
+Run: `node --test`
 Expected: PASS — all tests from Task 1 and the parity test pass.
 
 - [ ] **Step 7: Commit**
@@ -677,7 +677,7 @@ In the "Commands" section, add under the local-preview block:
 
 ```markdown
 # run unit tests (selection logic + SW parity; Node built-in runner, no deps)
-node --test test/
+node --test
 ```
 
 - [ ] **Step 4: Add a user-facing note to `README.md`**
