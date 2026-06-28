@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T00:09:24.052Z",
+  "updated": "2026-06-28T12:17:18.544Z",
   "entries": [
     {
       "id": "2026-06-26-am",
@@ -39,6 +39,14 @@
       "slot": "am",
       "publishAt": "2026-06-28T00:00:00.000Z",
       "text": "Happy new day! Just do your best and remember to find a bit of joy in the little things as you go.",
+      "source": "llm"
+    },
+    {
+      "id": "2026-06-28-pm",
+      "date": "2026-06-28",
+      "slot": "pm",
+      "publishAt": "2026-06-28T11:00:00.000Z",
+      "text": "As you settle in for the night, let yourself unwind and appreciate the little wins today brought, no matter how small.",
       "source": "llm"
     }
   ]
