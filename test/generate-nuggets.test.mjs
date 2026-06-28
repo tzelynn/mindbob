@@ -8,6 +8,7 @@ import {
   parseArxivTitles,
   scoreCandidate,
   rankCandidates,
+  updateTrendPool,
 } from "../scripts/generate-nuggets.mjs";
 
 test("cleanText strips wrapping quotes and collapses whitespace", () => {
@@ -89,4 +90,54 @@ test("rankCandidates sorts by score desc, stable on ties", () => {
   ];
   assert.deepEqual(rankCandidates(ties).map((c) => c.title), ["p1", "p2"]);
   assert.deepEqual(rankCandidates([]), []);
+});
+
+test("updateTrendPool adds next-best candidates, excluding the featured one", () => {
+  const ranked = [
+    { title: "Featured paper on scaling laws for sparse models", url: "" },
+    { title: "A new mixture-of-experts router cuts decode latency", url: "http://a", source: "hn" },
+    { title: "Quantized 7B model matches a 13B baseline on MMLU", url: "", source: "arxiv" },
+  ];
+  const pool = updateTrendPool([], ranked, ranked[0].title, [], {});
+  assert.equal(pool.length, 2);
+  assert.equal(pool[0].text, "A new mixture-of-experts router cuts decode latency");
+  assert.equal(pool[0].link, "http://a");
+});
+
+test("updateTrendPool dedupes against existing entries and recent trends", () => {
+  const existing = [{ text: "AI agents that plan multi-step actions reliably", link: "" }];
+  const ranked = [
+    { title: "Featured headline goes here for today only", url: "" },
+    { title: "AI agents that plan multi-step actions reliably", url: "", source: "hn" },
+    { title: "A trend we already showed in nuggets recently", url: "", source: "hn" },
+  ];
+  const out = updateTrendPool(existing, ranked, "Featured headline goes here for today only", [
+    "A trend we already showed in nuggets recently",
+  ], {});
+  assert.equal(out.length, 1); // both additions filtered out
+});
+
+test("updateTrendPool caps the pool with FIFO eviction", () => {
+  const existing = Array.from({ length: 24 }, (_, i) => ({
+    text: `old pool entry number ${i} with padding text`,
+    link: "",
+  }));
+  const ranked = [
+    { title: "A brand new fresh headline about agent evals today", url: "", source: "hn" },
+  ];
+  const out = updateTrendPool(existing, ranked, "", [], { cap: 24 });
+  assert.equal(out.length, 24);
+  assert.equal(out[out.length - 1].text, "A brand new fresh headline about agent evals today");
+  assert.equal(out[0].text, "old pool entry number 1 with padding text"); // index 0 evicted
+});
+
+test("updateTrendPool drops empty/too-short/too-long titles", () => {
+  const ranked = [
+    { title: "short", url: "", source: "hn" }, // < 20 chars
+    { title: "", url: "", source: "hn" },
+    { title: "x".repeat(400), url: "", source: "hn" }, // > maxLen
+    { title: "A perfectly reasonable technical headline here", url: "", source: "hn" },
+  ];
+  const out = updateTrendPool([], ranked, "", [], {});
+  assert.deepEqual(out.map((t) => t.text), ["A perfectly reasonable technical headline here"]);
 });

@@ -27,6 +27,8 @@ const MODEL = "openai/gpt-4o-mini";
 const KEEP = 14;
 const FACT_MAX = 240;
 const TREND_MAX = 320;
+const POOL_CAP = 24; // rolling trend pool size; oldest evicted FIFO
+const POOL_ADD = 4; // max candidates banked per run ("not everything")
 const FETCH_TIMEOUT = 8000;
 
 const FACTS_URL = "https://uselessfacts.jsph.pl/api/v2/facts/random?language=en";
@@ -102,6 +104,30 @@ export function rankCandidates(list) {
     .map((c, i) => ({ c, i, s: scoreCandidate(c) }))
     .sort((a, b) => b.s - a.s || a.i - b.i)
     .map((x) => x.c);
+}
+
+// Self-replenishing trend pool: bank the next-best candidates we saw but did
+// not feature, so the fallback degrades to real recent headlines instead of a
+// stale curated list. Pure: returns a new capped array, oldest evicted FIFO.
+export function updateTrendPool(existing, ranked, featuredText, recentTrends, opts = {}) {
+  const cap = opts.cap ?? POOL_CAP;
+  const maxAdd = opts.maxAdd ?? POOL_ADD;
+  const maxLen = opts.maxLen ?? TREND_MAX;
+  const pool = Array.isArray(existing) ? existing.slice() : [];
+  const featured = cleanText(featuredText);
+  const seen = new Set([...pool.map((t) => t.text), ...(recentTrends || [])]);
+  let added = 0;
+  for (const c of Array.isArray(ranked) ? ranked : []) {
+    if (added >= maxAdd) break;
+    const text = cleanText(c?.title);
+    if (!text || text === featured) continue;
+    if (text.length < 20 || text.length > maxLen) continue;
+    if (seen.has(text)) continue;
+    seen.add(text);
+    pool.push({ text, link: c?.url || "" });
+    added += 1;
+  }
+  return pool.slice(-cap);
 }
 
 // ---------------------------------------------------------------------------
