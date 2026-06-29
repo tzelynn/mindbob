@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T12:17:18.544Z",
+  "updated": "2026-06-29T00:14:55.357Z",
   "entries": [
     {
       "id": "2026-06-26-am",
@@ -47,6 +47,14 @@
       "slot": "pm",
       "publishAt": "2026-06-28T11:00:00.000Z",
       "text": "As you settle in for the night, let yourself unwind and appreciate the little wins today brought, no matter how small.",
+      "source": "llm"
+    },
+    {
+      "id": "2026-06-29-am",
+      "date": "2026-06-29",
+      "slot": "am",
+      "publishAt": "2026-06-29T00:00:00.000Z",
+      "text": "Hey, just a reminder that it’s a brand new day full of possibilities. Take your time and enjoy the ride!",
       "source": "llm"
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T06:57:17.945Z",
+  "updated": "2026-06-29T00:14:59.860Z",
   "entries": [
     {
       "id": "2026-06-28",
@@ -12,6 +12,20 @@
       "trend": {
         "text": "When are likely answers right? On Sequence Probability and Correctness in LLMs",
         "source": "pool"
+      }
+    },
+    {
+      "id": "2026-06-29",
+      "date": "2026-06-29",
+      "publishAt": "2026-06-29T00:00:00.000Z",
+      "fact": {
+        "text": "King Louis XIX ruled France for 15 minutes.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "The recent paper \"DanceOPD: On-Policy Generative Field Distillation\" introduces a novel method for distilling generative models, achieving a 25% improvement in sample efficiency over previous techniques by leveraging on-policy data, marking a significant step forward in open-source AI methodologies.",
+        "source": "llm",
+        "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
       }
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T06:57:17.945Z",
+  "updated": "2026-06-29T00:14:59.860Z",
   "trends": [
     {
       "text": "Reinforcement Learning without Ground-Truth Solutions can Improve LLMs",
@@ -32,6 +32,22 @@
     {
       "text": "I believe there are entire companies right now under AI psychosis",
       "link": "https://twitter.com/mitchellh/status/2055380239711457578"
+    },
+    {
+      "text": "Open source AI must win",
+      "link": "https://opensourceaimustwin.com/?share=v2"
+    },
+    {
+      "text": "DanceOPD: On-Policy Generative Field Distillation",
+      "link": ""
+    },
+    {
+      "text": "Understanding Domain-Aware Distribution Alignment in Budgeted Entity Matching",
+      "link": ""
+    },
+    {
+      "text": "Language-Based Digital Twins for Elderly Cognitive Assistance",
+      "link": ""
     }
   ]
 }
