@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29T00:14:59.860Z",
+  "updated": "2026-06-30T00:12:48.862Z",
   "trends": [
     {
       "text": "Reinforcement Learning without Ground-Truth Solutions can Improve LLMs",
@@ -47,6 +47,22 @@
     },
     {
       "text": "Language-Based Digital Twins for Elderly Cognitive Assistance",
+      "link": ""
+    },
+    {
+      "text": "DexCompose: Reusing Dexterous Policies for Multi-Task Manipulation with a Single Hand",
+      "link": ""
+    },
+    {
+      "text": "Surprises in Proper Positive-Only Learning",
+      "link": ""
+    },
+    {
+      "text": "Which Nash Equilibrium? Solver-Dependent Selection on Zero-Sum Nash Polytopes",
+      "link": ""
+    },
+    {
+      "text": "Second-Order KKT Guarantees for Bregman ADMM in Nonconvex and Non-Lipschitz Optimization",
       "link": ""
     }
   ]
