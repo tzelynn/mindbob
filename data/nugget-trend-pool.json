@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30T00:12:48.862Z",
+  "updated": "2026-07-01T00:14:51.030Z",
   "trends": [
     {
       "text": "Reinforcement Learning without Ground-Truth Solutions can Improve LLMs",
@@ -63,6 +63,22 @@
     },
     {
       "text": "Second-Order KKT Guarantees for Bregman ADMM in Nonconvex and Non-Lipschitz Optimization",
+      "link": ""
+    },
+    {
+      "text": "VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes",
+      "link": ""
+    },
+    {
+      "text": "LeVo 2: Stable and Melodious Song Generation via Hierarchical Representation Modeling and Progressive Post-Training",
+      "link": ""
+    },
+    {
+      "text": "Self-Evolving World Models for LLM Agent Planning",
+      "link": ""
+    },
+    {
+      "text": "One-Step Gradient Delay is Not a Barrier for Large-Scale Asynchronous Pipeline Parallel LLM Pretraining",
       "link": ""
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30T00:12:43.238Z",
+  "updated": "2026-07-01T00:14:46.155Z",
   "entries": [
     {
       "id": "2026-06-26-am",
@@ -63,6 +63,14 @@
       "slot": "am",
       "publishAt": "2026-06-30T00:00:00.000Z",
       "text": "Today’s a blank canvas. Just add your favorite colors and see what beautiful mess you can create!",
+      "source": "llm"
+    },
+    {
+      "id": "2026-07-01-am",
+      "date": "2026-07-01",
+      "slot": "am",
+      "publishAt": "2026-07-01T00:00:00.000Z",
+      "text": "Rise and shine! Just take it one step at a time and don’t forget to smile at the little moments that pop up today.",
       "source": "llm"
     }
   ]
