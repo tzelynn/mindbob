@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T00:14:51.030Z",
+  "updated": "2026-07-02T00:15:44.014Z",
   "trends": [
     {
       "text": "Reinforcement Learning without Ground-Truth Solutions can Improve LLMs",
@@ -79,6 +79,22 @@
     },
     {
       "text": "One-Step Gradient Delay is Not a Barrier for Large-Scale Asynchronous Pipeline Parallel LLM Pretraining",
+      "link": ""
+    },
+    {
+      "text": "Introspective Coupling: Self-Explanation Training Tracks Behavioral Change Despite Fixed Supervision",
+      "link": ""
+    },
+    {
+      "text": "QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon LLM Agents",
+      "link": ""
+    },
+    {
+      "text": "Reinforcement Learning with Metacognitive Feedback Elicits Faithful Uncertainty Expression in LLMs",
+      "link": ""
+    },
+    {
+      "text": "When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors",
       "link": ""
     }
   ]
