@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-02T00:15:44.014Z",
+  "updated": "2026-07-03T00:13:43.606Z",
   "entries": [
     {
       "id": "2026-06-28",
@@ -68,6 +68,19 @@
         "text": "The recent paper \"AdaJEPA: An Adaptive Latent World Model\" introduces a novel architecture that dynamically adjusts its latent space, achieving a 15% improvement in sample efficiency over previous models in reinforcement learning tasks, emphasizing the potential of adaptive approaches in open source AI development.",
         "source": "llm",
         "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
+      }
+    },
+    {
+      "id": "2026-07-03",
+      "date": "2026-07-03",
+      "publishAt": "2026-07-03T00:00:00.000Z",
+      "fact": {
+        "text": "The Eiffel Tower can grow more than 15 cm taller in summer as its metal expands in the heat.",
+        "source": "bank"
+      },
+      "trend": {
+        "text": "DanceOPD: On-Policy Generative Field Distillation",
+        "source": "pool"
       }
     }
   ]

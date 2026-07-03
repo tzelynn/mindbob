@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-02T00:15:44.014Z",
+  "updated": "2026-07-03T00:13:43.606Z",
   "trends": [
-    {
-      "text": "Reinforcement Learning without Ground-Truth Solutions can Improve LLMs",
-      "link": ""
-    },
-    {
-      "text": "Autoregressive Boltzmann Generators",
-      "link": ""
-    },
-    {
-      "text": "When are likely answers right? On Sequence Probability and Correctness in LLMs",
-      "link": ""
-    },
-    {
-      "text": "Error-Conditioned Neural Solvers",
-      "link": ""
-    },
     {
       "text": "Open source AI is the path forward",
       "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
@@ -95,6 +79,22 @@
     },
     {
       "text": "When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors",
+      "link": ""
+    },
+    {
+      "text": "Measuring the Gap Between Human and LLM Research Ideas",
+      "link": ""
+    },
+    {
+      "text": "Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training",
+      "link": ""
+    },
+    {
+      "text": "Language-Critique Imitation Learning from Suboptimal Demonstrations",
+      "link": ""
+    },
+    {
+      "text": "AutoMem: Automated Learning of Memory as a Cognitive Skill",
       "link": ""
     }
   ]
