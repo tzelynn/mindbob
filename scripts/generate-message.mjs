@@ -26,8 +26,9 @@ const KEEP = 14;
 const SLOT = "am";
 
 const PROMPT =
-  "Write ONE short feel-good note for someone starting their day. " +
-  "Warm, lighthearted, encouraging, casual — like a friend texting you. " +
+  "Write ONE short note to quietly make someone's day a little better. " +
+  "Chill, lighthearted, or gently insightful — casual and sincere, like a friend texting you. " +
+  "Not tied to any time of day (no 'good morning', no 'goodnight', no 'today'-specific framing). " +
   "Never cheesy, never preachy, no hashtags, no emoji, no quotation marks. " +
   "One or two sentences, under 140 characters.";
 

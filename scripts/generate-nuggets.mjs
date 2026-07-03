@@ -73,18 +73,24 @@ export function pickFromBank(bank, recent, entryCount) {
   return choices[entryCount % choices.length];
 }
 
-// Parse <title> entries out of an arXiv Atom feed. The first <title> is the
-// feed title itself, so it is skipped.
-export function parseArxivTitles(xml) {
+// Parse each <entry> out of an arXiv Atom feed into { title, url }. The url is
+// the entry's <id> (its abs page, e.g. https://arxiv.org/abs/2401.00001), so a
+// featured arXiv paper links to the paper itself. The feed's own <title> sits
+// outside any <entry>, so iterating entries skips it naturally.
+export function parseArxivEntries(xml) {
   if (!xml) return [];
-  const titles = [];
-  const re = /<entry\b[\s\S]*?<title>([\s\S]*?)<\/title>/g;
+  const out = [];
+  const entryRe = /<entry\b([\s\S]*?)<\/entry>/g;
   let m;
-  while ((m = re.exec(xml)) !== null) {
-    const t = cleanText(m[1].replace(/\s+/g, " "));
-    if (t) titles.push(t);
+  while ((m = entryRe.exec(xml)) !== null) {
+    const block = m[1];
+    const title = cleanText((/<title>([\s\S]*?)<\/title>/.exec(block)?.[1] || "").replace(/\s+/g, " "));
+    if (!title) continue;
+    let url = cleanText(/<id>([\s\S]*?)<\/id>/.exec(block)?.[1] || "");
+    if (url.startsWith("http://")) url = "https://" + url.slice(7); // arXiv ids are http
+    out.push({ title, url });
   }
-  return titles;
+  return out;
 }
 
 // Candidate scoring. arXiv research sits mid-tier (reliably technical). Raw HN
@@ -95,8 +101,12 @@ export function parseArxivTitles(xml) {
 const ARXIV_SCORE = 80;
 const HN_POINTS_CAP = 60; // raw HN points contribute at most this (< ARXIV_SCORE)
 const HN_TECH_BOOST = 120; // HN titles with a technical signal jump above arXiv
+// A "technical signal" means a concrete model/method/result — NOT generic
+// commentary. Bare "open source" / "weights" were dropped: opinion/drama posts
+// ("Open source AI is the path forward") tripped them and out-ranked real
+// papers, which then mismatched the featured link. "open-weights" is kept.
 const TECH_RE =
-  /\b(?:release[ds]?|launch(?:e[ds]|ing)?|open[- ]?source|open[- ]?weights?|weights?|fine[- ]?tun\w*|quantiz\w*|distill\w*|benchmark|state[- ]of[- ]the[- ]art|sota|checkpoint|pre[- ]?train\w*|mixture[- ]of[- ]experts|moe|context window|\d+\s?[bB])\b/i;
+  /\b(?:release[ds]?|launch(?:e[ds]|ing)?|open[- ]?weights?|fine[- ]?tun\w*|quantiz\w*|distill\w*|benchmark|state[- ]of[- ]the[- ]art|sota|checkpoint|pre[- ]?train\w*|mixture[- ]of[- ]experts|moe|context window|\d+\s?[bB])\b/i;
 
 export function scoreCandidate(c) {
   if (!c) return 0;
@@ -123,14 +133,19 @@ export function updateTrendPool(existing, ranked, featuredText, recentTrends, op
   const cap = opts.cap ?? POOL_CAP;
   const maxAdd = opts.maxAdd ?? POOL_ADD;
   const maxLen = opts.maxLen ?? TREND_MAX;
-  const pool = Array.isArray(existing) ? existing.slice() : [];
+  const recentTitles = (opts.recentTitles || []).map(cleanText);
   const featured = cleanText(featuredText);
-  const seen = new Set([...pool.map((t) => t.text), ...(recentTrends || [])]);
+  // Anything already featured (today or on a recent day, by raw title or by the
+  // rendered trend text) must never live in the pool — else it gets re-served as
+  // a "repeat". Purge such entries from the existing pool, not just skip adds.
+  const blocked = new Set([featured, ...recentTitles, ...(recentTrends || [])].filter(Boolean));
+  const pool = (Array.isArray(existing) ? existing : []).filter((t) => !blocked.has(t.text));
+  const seen = new Set([...pool.map((t) => t.text), ...blocked]);
   let added = 0;
   for (const c of Array.isArray(ranked) ? ranked : []) {
     if (added >= maxAdd) break;
     const text = cleanText(c?.title);
-    if (!text || text === featured) continue;
+    if (!text) continue;
     if (text.length < 20 || text.length > maxLen) continue;
     if (seen.has(text)) continue;
     seen.add(text);
@@ -209,8 +224,8 @@ async function trendCandidates() {
 
   try {
     const xml = await fetchText(ARXIV_URL);
-    for (const title of parseArxivTitles(xml))
-      out.push({ title, url: "", source: "arxiv" });
+    for (const { title, url } of parseArxivEntries(xml))
+      out.push({ title, url, source: "arxiv" });
   } catch (err) {
     console.warn("[nuggets] arXiv fetch failed:", err.message);
   }
@@ -220,12 +235,13 @@ async function trendCandidates() {
 
 const TREND_SYSTEM =
   "You write a single tech-trend nugget for an audience of working AI/ML engineers. " +
-  "You are given one recent AI/ML development and some background headlines. " +
-  "Write about that development specifically: name the model, method, or paper, and " +
-  "include one concrete detail — a number, an architecture choice, a benchmark result, " +
-  "or precisely what is new. " +
+  "You are given the title of ONE recent AI/ML paper or development. " +
+  "Write one or two sentences about THAT title and nothing else — name the model, " +
+  "method, or paper and say what is new about it. " +
+  "Do not invent specific statistics, benchmark scores, or percentage improvements: " +
+  "state only what the title itself makes clear plus context an ML engineer would already know. " +
   "Assume the reader knows ML fundamentals; do not explain what a transformer, embedding, or RAG is. " +
-  "One or two sentences, under 320 characters. " +
+  "Under 320 characters. " +
   "No hype, no buzzword soup, no emoji, no hashtags, no quotation marks, no preamble.";
 
 async function trendFromLLM(candidates) {
@@ -234,17 +250,13 @@ async function trendFromLLM(candidates) {
   if (!candidates.length) throw new Error("no candidate headlines");
 
   const primary = candidates[0];
-  const context = candidates
-    .slice(0, 8)
-    .map((c) => "- [" + (c.source || "?") + "] " + c.title)
-    .join("\n");
 
+  // Only the featured title is sent. Feeding a background list made the model
+  // drift and write about a *different* headline than `primary`, so the
+  // attached link (primary.url) no longer matched the nugget text.
   const userContent =
-    "Write today's tech-trend nugget about this recent development:\n" +
-    `"${primary.title}"\n\n` +
-    "You may use these other recent headlines as background context, but keep " +
-    "the nugget focused and self-contained (do not list them):\n" +
-    context;
+    "Write today's tech-trend nugget about this and only this development:\n" +
+    `"${primary.title}"`;
 
   const res = await fetch(API_URL, {
     method: "POST",
@@ -268,7 +280,11 @@ async function trendFromLLM(candidates) {
 
   if (!res.ok) throw new Error(`API ${res.status}: ${await res.text()}`);
   const data = await res.json();
-  return { text: cleanText(data?.choices?.[0]?.message?.content), link: primary.url || "" };
+  return {
+    text: cleanText(data?.choices?.[0]?.message?.content),
+    link: primary.url || "",
+    title: primary.title, // the raw featured title, tracked for cross-day dedupe
+  };
 }
 
 // ---------------------------------------------------------------------------
@@ -286,15 +302,15 @@ async function buildFact(bank, recentFacts, entryCount) {
   }
 }
 
-async function buildTrend(bank, pool, recentTrends, entryCount) {
+async function buildTrend(bank, pool, recentTrends, recentTitles, entryCount) {
   let ranked = [];
   let trend = null;
 
   try {
     ranked = rankCandidates(await trendCandidates());
-    const { text, link } = await trendFromLLM(ranked);
+    const { text, link, title } = await trendFromLLM(ranked);
     if (isGoodTrend(text, recentTrends)) {
-      trend = { text, source: "llm" };
+      trend = { text, source: "llm", title };
       if (link) trend.link = link;
     } else {
       throw new Error("low-quality trend: " + JSON.stringify(text));
@@ -304,31 +320,29 @@ async function buildTrend(bank, pool, recentTrends, entryCount) {
   }
 
   // Bank the next-best candidates we did not feature (before choosing a
-  // fallback, so today's leftovers are eligible).
+  // fallback, so today's leftovers are eligible). Recent raw titles are passed
+  // so a topic already featured on a past day is purged from the pool.
   const featuredTitle = ranked[0]?.title || "";
-  const poolTrends = updateTrendPool(
-    pool.trends || [],
-    ranked,
-    featuredTitle,
-    recentTrends,
-    {},
-  );
+  const poolTrends = updateTrendPool(pool.trends || [], ranked, featuredTitle, recentTrends, {
+    recentTitles,
+  });
 
   if (!trend) {
+    // Dedupe pool picks against both rendered trend text AND recent raw titles,
+    // so a headline whose topic we already featured can't reappear.
+    const seenRecently = [...recentTrends, ...recentTitles];
     const fromPool = pickFromBank(
       poolTrends.map((t) => t.text),
-      recentTrends,
+      seenRecently,
       entryCount,
     );
     if (fromPool) {
-      trend = { text: fromPool, source: "pool" };
+      trend = { text: fromPool, source: "pool", title: fromPool };
       const hit = poolTrends.find((t) => t.text === fromPool);
       if (hit?.link) trend.link = hit.link;
     } else {
-      trend = {
-        text: pickFromBank(bank.trends, recentTrends, entryCount),
-        source: "bank",
-      };
+      const fromBank = pickFromBank(bank.trends, seenRecently, entryCount);
+      trend = { text: fromBank, source: "bank", title: fromBank };
     }
   }
 
@@ -344,11 +358,14 @@ async function main() {
 
   const recentFacts = store.entries.map((e) => e.fact?.text).filter(Boolean);
   const recentTrends = store.entries.map((e) => e.trend?.text).filter(Boolean);
+  // Raw source titles of past featured trends (LLM rewrites the title, so the
+  // rendered text alone can't catch a repeat of the same underlying paper).
+  const recentTitles = store.entries.map((e) => e.trend?.title).filter(Boolean);
   const count = store.entries.length;
 
   const [fact, built] = await Promise.all([
     buildFact(bank, recentFacts, count),
-    buildTrend(bank, pool, recentTrends, count),
+    buildTrend(bank, pool, recentTrends, recentTitles, count),
   ]);
   const trend = built.trend;
 

@@ -50,6 +50,14 @@ export function paletteFor(seed) {
   return PALETTES[hashString("palette|" + seed) % PALETTES.length];
 }
 
+// Doodle mode gets its OWN cohesive palette that changes each day, seeded from
+// the date (a distinct namespace from paletteFor) so it varies day to day and
+// is decoupled from the message's palette — while staying deterministic within
+// a day so a persisted drawing keeps its colours across reloads.
+export function doodlePaletteFor(dateSeed) {
+  return PALETTES[hashString("doodle-palette|" + dateSeed) % PALETTES.length];
+}
+
 // Apply a palette to the app element via CSS custom properties.
 export function applyPalette(palette, el = document.querySelector(".app")) {
   el.style.setProperty("--bg", palette.bg);

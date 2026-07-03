@@ -1,7 +1,7 @@
 // Entry point: load the current message, theme it, render the active mode,
 // wire the mode toggle, and register the service worker.
 import { getCurrentEntry } from "./messages.js";
-import { paletteFor, applyPalette } from "./palette.js";
+import { paletteFor, doodlePaletteFor, applyPalette } from "./palette.js";
 import { renderMessage, clearMessage } from "./messageDecorate.js";
 import { registerSW } from "./pwa.js";
 import { getCurrentPrompt } from "./prompts.js";
@@ -30,6 +30,7 @@ const refs = {
 const state = {
   entry: null,
   palette: null,
+  doodlePalette: null, // doodle mode's own daily palette (decoupled from the note)
   mode: "message",
   promptWord: "",
   doodle: null, // lazily-loaded doodle controller
@@ -42,6 +43,7 @@ async function init() {
 
   state.entry = await getCurrentEntry();
   state.palette = paletteFor(state.entry.id);
+  state.doodlePalette = doodlePaletteFor(state.entry.date);
   applyPalette(state.palette, refs.app);
 
   refs.messageText.textContent = state.entry.text;
@@ -90,6 +92,9 @@ async function setMode(mode) {
 
   setActiveTab(mode);
   refs.toolbar.hidden = mode !== "doodle"; // toolbar belongs to doodle mode only
+
+  // Doodle mode wears its own daily palette; message/nuggets wear the note's.
+  applyPalette(mode === "doodle" ? state.doodlePalette : state.palette, refs.app);
 
   // Leave-state cleanup for the modes we're not entering.
   if (mode !== "doodle" && state.doodle) state.doodle.deactivate();
