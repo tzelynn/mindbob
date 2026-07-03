@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T00:13:43.606Z",
+  "updated": "2026-07-03T22:58:41.747Z",
   "entries": [
     {
       "id": "2026-06-28",
@@ -75,12 +75,14 @@
       "date": "2026-07-03",
       "publishAt": "2026-07-03T00:00:00.000Z",
       "fact": {
-        "text": "The Eiffel Tower can grow more than 15 cm taller in summer as its metal expands in the heat.",
-        "source": "bank"
+        "text": "The most common street name in the U.S. is Second Street.",
+        "source": "api"
       },
       "trend": {
-        "text": "DanceOPD: On-Policy Generative Field Distillation",
-        "source": "pool"
+        "text": "The paper \"Distributed Attacks in Persistent-State AI Control\" explores vulnerabilities in AI systems that maintain persistent states, revealing how coordinated attacks can exploit these states to undermine system integrity. It emphasizes the need for robust security mechanisms in persistent AI applications.",
+        "source": "llm",
+        "title": "Distributed Attacks in Persistent-State AI Control",
+        "link": "https://arxiv.org/abs/2607.02514v1"
       }
     }
   ]

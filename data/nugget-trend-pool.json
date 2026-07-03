@@ -1,18 +1,6 @@
 {
-  "updated": "2026-07-03T00:13:43.606Z",
+  "updated": "2026-07-03T22:58:41.747Z",
   "trends": [
-    {
-      "text": "Open source AI is the path forward",
-      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
-    },
-    {
-      "text": "My AI skeptic friends are all nuts",
-      "link": "https://fly.io/blog/youre-all-nuts/"
-    },
-    {
-      "text": "An AI agent published a hit piece on me",
-      "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
-    },
     {
       "text": "I believe there are entire companies right now under AI psychosis",
       "link": "https://twitter.com/mitchellh/status/2055380239711457578"
@@ -20,10 +8,6 @@
     {
       "text": "Open source AI must win",
       "link": "https://opensourceaimustwin.com/?share=v2"
-    },
-    {
-      "text": "DanceOPD: On-Policy Generative Field Distillation",
-      "link": ""
     },
     {
       "text": "Understanding Domain-Aware Distribution Alignment in Budgeted Entity Matching",
@@ -96,6 +80,22 @@
     {
       "text": "AutoMem: Automated Learning of Memory as a Cognitive Skill",
       "link": ""
+    },
+    {
+      "text": "LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning",
+      "link": "https://arxiv.org/abs/2607.02513v1"
+    },
+    {
+      "text": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
+      "link": "https://arxiv.org/abs/2607.02512v1"
+    },
+    {
+      "text": "Online Safety Monitoring for LLMs",
+      "link": "https://arxiv.org/abs/2607.02510v1"
+    },
+    {
+      "text": "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
+      "link": "https://arxiv.org/abs/2607.02509v1"
     }
   ]
 }
