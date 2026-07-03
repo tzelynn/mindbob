@@ -10,7 +10,7 @@ export function createDoodleDecorator(refs, state) {
   const ctx = canvas.getContext("2d");
 
   let tool = "pencil";
-  let color = state.palette.pencil[0];
+  let color = state.doodlePalette.pencil[0];
   let dpr = 1;
   let drawing = false;
   let lastX = 0, lastY = 0;
@@ -144,7 +144,7 @@ export function createDoodleDecorator(refs, state) {
   function buildSwatches() {
     const wrap = document.getElementById("swatches");
     wrap.innerHTML = "";
-    state.palette.pencil.forEach((c, i) => {
+    state.doodlePalette.pencil.forEach((c, i) => {
       const b = document.createElement("button");
       b.className = "swatch" + (i === 0 ? " is-active" : "");
       b.style.background = c;
@@ -220,7 +220,7 @@ export function createDoodleDecorator(refs, state) {
     const o = out.getContext("2d");
     o.setTransform(dpr, 0, 0, dpr, 0, 0);
     // background + drawing (no prompt text baked in)
-    o.fillStyle = state.palette.bg;
+    o.fillStyle = state.doodlePalette.bg;
     o.fillRect(0, 0, rect.width, rect.height);
     o.drawImage(canvas, 0, 0, rect.width, rect.height);
 
@@ -265,7 +265,7 @@ export function createDoodleDecorator(refs, state) {
   function activate() {
     wireOnce();
     buildSwatches();
-    color = state.palette.pencil[0];
+    color = state.doodlePalette.pencil[0];
     canvas.setAttribute("aria-hidden", "false");
     fitCanvas();
     restore(); // re-apply this day's saved doodle, if any

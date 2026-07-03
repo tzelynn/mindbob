@@ -5,7 +5,7 @@ import {
   isGoodFact,
   isGoodTrend,
   pickFromBank,
-  parseArxivTitles,
+  parseArxivEntries,
   scoreCandidate,
   rankCandidates,
   updateTrendPool,
@@ -52,18 +52,18 @@ test("pickFromBank handles empty/missing banks", () => {
   assert.equal(pickFromBank(undefined, [], 0), "");
 });
 
-test("parseArxivTitles extracts per-entry titles, skipping the feed title", () => {
+test("parseArxivEntries extracts title + abs link, skipping the feed title", () => {
   const xml = `<?xml version="1.0"?>
     <feed>
       <title>ArXiv Query Feed</title>
-      <entry><title>Scaling Laws for   Tiny Models</title></entry>
-      <entry><title>Agents that Plan</title></entry>
+      <entry><id>http://arxiv.org/abs/2401.00001v1</id><title>Scaling Laws for   Tiny Models</title></entry>
+      <entry><id>http://arxiv.org/abs/2401.00002v2</id><title>Agents that Plan</title></entry>
     </feed>`;
-  assert.deepEqual(parseArxivTitles(xml), [
-    "Scaling Laws for Tiny Models",
-    "Agents that Plan",
+  assert.deepEqual(parseArxivEntries(xml), [
+    { title: "Scaling Laws for Tiny Models", url: "https://arxiv.org/abs/2401.00001v1" },
+    { title: "Agents that Plan", url: "https://arxiv.org/abs/2401.00002v2" },
   ]);
-  assert.deepEqual(parseArxivTitles(""), []);
+  assert.deepEqual(parseArxivEntries(""), []);
 });
 
 test("scoreCandidate: arxiv fixed; hn capped, with technical boost", () => {
@@ -74,6 +74,10 @@ test("scoreCandidate: arxiv fixed; hn capped, with technical boost", () => {
     scoreCandidate({ source: "hn", points: 500, title: "My AI skeptic friends are all nuts" }),
     60,
   ); // opinion: capped, no technical signal
+  assert.equal(
+    scoreCandidate({ source: "hn", points: 500, title: "Open source AI is the path forward" }),
+    60,
+  ); // generic 'open source' is not a technical signal — must not out-rank real papers
   assert.equal(
     scoreCandidate({ source: "hn", points: 10, title: "Mistral releases new 7B open-weights model" }),
     130,
@@ -128,6 +132,19 @@ test("updateTrendPool dedupes against existing entries and recent trends", () =>
     "A trend we already showed in nuggets recently",
   ], {});
   assert.equal(out.length, 1); // both additions filtered out
+});
+
+test("updateTrendPool purges pool entries that have since been featured (recentTitles)", () => {
+  const existing = [
+    { text: "DanceOPD: On-Policy Generative Field Distillation", link: "" },
+    { text: "Some other still-fresh technical headline here", link: "" },
+  ];
+  // The DanceOPD topic was featured on an earlier day; its raw title is now a
+  // recent title. It must be dropped so it can never be re-served from the pool.
+  const out = updateTrendPool(existing, [], "", [], {
+    recentTitles: ["DanceOPD: On-Policy Generative Field Distillation"],
+  });
+  assert.deepEqual(out.map((t) => t.text), ["Some other still-fresh technical headline here"]);
 });
 
 test("updateTrendPool caps the pool with FIFO eviction", () => {

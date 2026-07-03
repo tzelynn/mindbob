@@ -4,7 +4,7 @@ name: Generate message
 # to your timezone. GitHub schedules run in UTC.
 on:
   schedule:
-    - cron: "0 23 * * *" # 07:00 SGT  -> morning note + doodle prompt + nuggets
+    - cron: "0 22 * * *" # 06:00 SGT  -> morning note + doodle prompt + nuggets
   workflow_dispatch:
 
 permissions:
