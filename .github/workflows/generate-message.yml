@@ -1,10 +1,15 @@
 name: Generate message
 
-# Once daily each morning, tuned to Singapore time (UTC+8). Adjust the cron time
-# to your timezone. GitHub schedules run in UTC.
+# Once daily each morning, tuned to Singapore time (UTC+8). GitHub schedules run
+# in UTC. IMPORTANT: GitHub only *queues* scheduled runs at the cron time — they
+# commonly start 30-75 min late (worst on the top of the hour, the busiest slot).
+# So to land the note before 06:00 SGT we trigger ~1h40m early and off-the-hour:
+# 20:20 UTC nominal -> job starts ~21:00-21:35 UTC -> commits ~04:20-05:35 SGT,
+# leaving margin for GitHub Pages to redeploy before 06:00 SGT. If it drifts late
+# again, move the time earlier still. (Adjust for your timezone.)
 on:
   schedule:
-    - cron: "0 22 * * *" # 06:00 SGT  -> morning note + doodle prompt + nuggets
+    - cron: "20 20 * * *" # ~04:20 SGT nominal (early, to beat scheduler delay)
   workflow_dispatch:
 
 permissions:

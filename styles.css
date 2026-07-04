@@ -170,6 +170,12 @@ body {
 .app[data-mode="nuggets"] .doodle-prompt,
 .app[data-mode="nuggets"] .status { display: none; }
 
+/* mood mode hides every other layer + the note status */
+.app[data-mode="mood"] .layer-message,
+.app[data-mode="mood"] .layer-canvas,
+.app[data-mode="mood"] .doodle-prompt,
+.app[data-mode="mood"] .status { display: none; }
+
 .layer-doodle {
   pointer-events: none;
 }
@@ -222,6 +228,187 @@ body {
   text-decoration: none;
   border-bottom: 1px solid var(--accent);
 }
+
+/* ---------- Mood tracker ---------- */
+.layer-mood {
+  display: none;               /* shown only in mood mode (below) */
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 4vmin 6vmin calc(6vmin + var(--safe-bottom));
+  overflow-y: auto;
+}
+.app[data-mode="mood"] .layer-mood { display: flex; }
+
+/* logging strip */
+.mood-log {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: min(94vw, 460px);
+}
+.mood-heading {
+  margin: 0;
+  font-size: clamp(1.1rem, 4vw, 1.5rem);
+  color: var(--ink);
+}
+.mood-glyphs {
+  display: flex;
+  gap: clamp(8px, 3vw, 16px);
+}
+.mood-glyph-btn {
+  appearance: none;
+  border: 0;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  width: clamp(48px, 15vw, 68px);
+  height: clamp(48px, 15vw, 68px);
+  border-radius: 16px;
+  cursor: pointer;
+  opacity: 0.55;
+  transition: opacity 160ms ease, transform 120ms ease, box-shadow 160ms ease;
+}
+.mood-glyph-btn svg { width: 100%; height: 100%; }
+.mood-glyph-btn:hover { opacity: 0.85; }
+.mood-glyph-btn:active { transform: scale(0.94); }
+.mood-glyph-btn.is-active {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 0 2px currentColor;
+}
+
+/* zoom toggle + period nav */
+.mood-zoom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.mood-zoom-group {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.04);
+}
+.mood-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.mood-nav-btn,
+.mood-today-btn {
+  appearance: none;
+  border: 0;
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 4px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 160ms ease;
+}
+.mood-nav-btn:hover,
+.mood-today-btn:hover { background: rgba(0, 0, 0, 0.09); }
+.mood-period {
+  min-width: 8.5em;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+/* history grid */
+.mood-grid { width: min(94vw, 460px); }
+
+.mood-cell {
+  appearance: none;
+  border: 0;
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--ink);
+  cursor: pointer;
+  border-radius: 6px;
+  position: relative;
+  transition: transform 120ms ease, box-shadow 160ms ease;
+}
+.mood-cell.is-empty { background: rgba(0, 0, 0, 0.05); }
+.mood-cell.is-blank { background: transparent; cursor: default; pointer-events: none; }
+.mood-cell.is-future { opacity: 0.3; cursor: default; }
+.mood-cell.is-set { color: rgba(255, 255, 255, 0.9); }
+.mood-cell:not(.is-blank):not(.is-future):hover { transform: scale(1.06); }
+.mood-cell.is-today { box-shadow: 0 0 0 2px var(--ink); }
+.mood-cell.is-selected { box-shadow: 0 0 0 3px var(--accent); }
+.mood-cell-num {
+  font-size: 0.72rem;
+  line-height: 1;
+  opacity: 0.75;
+}
+
+/* week: a roomy 7-across row with day caps + glyph */
+.mood-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+.mood-cell-week {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  aspect-ratio: 1 / 1.35;
+  padding: 6px 0;
+  border-radius: 12px;
+}
+.mood-cell-cap { font-size: 0.72rem; color: var(--muted); }
+.mood-cell-week .mood-cell-num { order: -1; }
+.mood-cell-glyph { width: 56%; }
+.mood-cell-glyph svg { width: 100%; height: 100%; display: block; }
+
+/* month: weekday header + 7-column calendar */
+.mood-month-head,
+.mood-month {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+.mood-month-head {
+  margin-bottom: 5px;
+}
+.mood-month-head span {
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+.mood-cell-month {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* year: 12 columns of tiny day cells — the classic year-in-pixels mosaic */
+.mood-year {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 4px;
+  align-items: start;
+}
+.mood-year-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.mood-year-label { font-size: 0.62rem; color: var(--muted); margin-bottom: 2px; }
+.mood-cell-year {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 2px;
+}
+.mood-cell-year.is-today { box-shadow: 0 0 0 1.5px var(--ink); }
+.mood-cell-year.is-selected { box-shadow: 0 0 0 1.5px var(--accent); }
 
 /* Each doodle is anchored to a layout point (set inline as left/top %) and
    centred on it via translate(-50%, -50%); width is set inline per count. */

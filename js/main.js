@@ -20,11 +20,16 @@ const refs = {
   modeMessage: document.getElementById("modeMessage"),
   modeDoodle: document.getElementById("modeDoodle"),
   modeNuggets: document.getElementById("modeNuggets"),
+  modeMood: document.getElementById("modeMood"),
   doodleWord: document.getElementById("doodleWord"),
   notifyBell: document.getElementById("notifyBell"),
   nuggetsEl: document.getElementById("nuggetsEl"),
   nuggetFact: document.getElementById("nuggetFact"),
   nuggetTrend: document.getElementById("nuggetTrend"),
+  moodEl: document.getElementById("moodEl"),
+  moodLog: document.getElementById("moodLog"),
+  moodZoom: document.getElementById("moodZoom"),
+  moodGrid: document.getElementById("moodGrid"),
 };
 
 const state = {
@@ -36,6 +41,7 @@ const state = {
   doodle: null, // lazily-loaded doodle controller
   nuggets: null, // current nuggets entry (fetched once, on first nuggets view)
   nuggetsMod: null, // lazily-loaded nuggets render module
+  moodMod: null, // lazily-loaded mood render module
 };
 
 async function init() {
@@ -57,6 +63,8 @@ async function init() {
       ? "doodle"
       : location.hash === "#nuggets"
       ? "nuggets"
+      : location.hash === "#mood"
+      ? "mood"
       : "message";
   await setMode(startMode);
   refs.app.classList.remove("is-loading");
@@ -64,6 +72,7 @@ async function init() {
   refs.modeMessage.addEventListener("click", () => setMode("message"));
   refs.modeDoodle.addEventListener("click", () => setMode("doodle"));
   refs.modeNuggets.addEventListener("click", () => setMode("nuggets"));
+  refs.modeMood.addEventListener("click", () => setMode("mood"));
 
   registerSW();
   initNotifications(refs.notifyBell, state);
@@ -78,6 +87,7 @@ function setActiveTab(mode) {
     message: refs.modeMessage,
     doodle: refs.modeDoodle,
     nuggets: refs.modeNuggets,
+    mood: refs.modeMood,
   };
   for (const [m, btn] of Object.entries(tabs)) {
     const active = m === mode;
@@ -100,6 +110,7 @@ async function setMode(mode) {
   if (mode !== "doodle" && state.doodle) state.doodle.deactivate();
   if (mode !== "message") clearMessage(refs);
   if (mode !== "nuggets" && state.nuggetsMod) state.nuggetsMod.clearNuggets(refs);
+  if (mode !== "mood" && state.moodMod) state.moodMod.clearMood(refs);
 
   if (mode === "message") {
     await renderMessage(refs, state.entry);
@@ -113,6 +124,9 @@ async function setMode(mode) {
     if (!state.nuggetsMod) state.nuggetsMod = await import("./nuggetsDecorate.js");
     if (!state.nuggets) state.nuggets = await getCurrentNuggets();
     state.nuggetsMod.renderNuggets(refs, state.nuggets);
+  } else if (mode === "mood") {
+    if (!state.moodMod) state.moodMod = await import("./moodDecorate.js");
+    state.moodMod.renderMood(refs, state);
   }
 }
 
