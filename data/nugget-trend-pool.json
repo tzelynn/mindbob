@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-03T22:58:41.747Z",
+  "updated": "2026-07-04T21:16:08.703Z",
   "trends": [
-    {
-      "text": "I believe there are entire companies right now under AI psychosis",
-      "link": "https://twitter.com/mitchellh/status/2055380239711457578"
-    },
-    {
-      "text": "Open source AI must win",
-      "link": "https://opensourceaimustwin.com/?share=v2"
-    },
-    {
-      "text": "Understanding Domain-Aware Distribution Alignment in Budgeted Entity Matching",
-      "link": ""
-    },
-    {
-      "text": "Language-Based Digital Twins for Elderly Cognitive Assistance",
-      "link": ""
-    },
     {
       "text": "DexCompose: Reusing Dexterous Policies for Multi-Task Manipulation with a Single Hand",
       "link": ""
@@ -96,6 +80,22 @@
     {
       "text": "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
       "link": "https://arxiv.org/abs/2607.02509v1"
+    },
+    {
+      "text": "What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates",
+      "link": "https://arxiv.org/abs/2607.02507v1"
+    },
+    {
+      "text": "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas",
+      "link": "https://arxiv.org/abs/2607.02504v1"
+    },
+    {
+      "text": "DemoPSD: Disagreement-Modulated Policy Self-Distillation",
+      "link": "https://arxiv.org/abs/2607.02502v1"
+    },
+    {
+      "text": "Beyond Adam: SOAP and Muon for Faster, Label-Efficient Training of Machine Learning Interatomic Potentials",
+      "link": "https://arxiv.org/abs/2607.02499v1"
     }
   ]
 }

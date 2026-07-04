@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T22:58:41.747Z",
+  "updated": "2026-07-04T21:16:08.703Z",
   "entries": [
     {
       "id": "2026-06-28",
@@ -80,6 +80,21 @@
       },
       "trend": {
         "text": "The paper \"Distributed Attacks in Persistent-State AI Control\" explores vulnerabilities in AI systems that maintain persistent states, revealing how coordinated attacks can exploit these states to undermine system integrity. It emphasizes the need for robust security mechanisms in persistent AI applications.",
+        "source": "llm",
+        "title": "Distributed Attacks in Persistent-State AI Control",
+        "link": "https://arxiv.org/abs/2607.02514v1"
+      }
+    },
+    {
+      "id": "2026-07-04",
+      "date": "2026-07-04",
+      "publishAt": "2026-07-04T00:00:00.000Z",
+      "fact": {
+        "text": "The KGB is headquartered at No. 2 Felix Dzerzhinsky Square, Moscow",
+        "source": "api"
+      },
+      "trend": {
+        "text": "The paper \"Distributed Attacks in Persistent-State AI Control\" explores vulnerabilities in AI systems with persistent states by demonstrating how coordinated attacks can disrupt decision-making processes. It highlights the need for robust defenses against multi-agent adversarial strategies in AI control environments.",
         "source": "llm",
         "title": "Distributed Attacks in Persistent-State AI Control",
         "link": "https://arxiv.org/abs/2607.02514v1"
