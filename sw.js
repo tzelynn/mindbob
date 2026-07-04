@@ -12,7 +12,7 @@
 // would crash init: stale element ids -> null refs). `skipWaiting` still makes
 // the new version take over on the next reload.
 
-const VERSION = "v7";
+const VERSION = "v8";
 const SHELL_CACHE = `mindbob-shell-${VERSION}`;
 const RUNTIME_CACHE = `mindbob-runtime-${VERSION}`;
 // Unversioned: holds the id of the last note we notified about. Must survive
@@ -36,6 +36,8 @@ const SHELL_ASSETS = [
   "./js/doodleDecorate.js",
   "./js/nuggets.js",
   "./js/nuggetsDecorate.js",
+  "./js/mood.js",
+  "./js/moodDecorate.js",
   "./js/prompts.js",
   "./js/util.js",
   "./js/pwa.js",
