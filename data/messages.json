@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T21:16:05.090Z",
+  "updated": "2026-07-05T21:30:05.673Z",
   "entries": [
     {
       "id": "2026-06-26-am",
@@ -95,6 +95,14 @@
       "slot": "am",
       "publishAt": "2026-07-04T00:00:00.000Z",
       "text": "You’ve got a unique spark that lights up the room—don’t underestimate how much your presence matters.",
+      "source": "llm"
+    },
+    {
+      "id": "2026-07-05-am",
+      "date": "2026-07-05",
+      "slot": "am",
+      "publishAt": "2026-07-05T00:00:00.000Z",
+      "text": "Just wanted to say that it’s perfectly okay to take a breather and enjoy the small stuff. You've got this.",
       "source": "llm"
     }
   ]

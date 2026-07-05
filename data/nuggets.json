@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T21:16:08.703Z",
+  "updated": "2026-07-05T21:30:09.968Z",
   "entries": [
     {
       "id": "2026-06-28",
@@ -98,6 +98,20 @@
         "source": "llm",
         "title": "Distributed Attacks in Persistent-State AI Control",
         "link": "https://arxiv.org/abs/2607.02514v1"
+      }
+    },
+    {
+      "id": "2026-07-05",
+      "date": "2026-07-05",
+      "publishAt": "2026-07-05T00:00:00.000Z",
+      "fact": {
+        "text": "The state of Florida is bigger than England.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors",
+        "source": "pool",
+        "title": "When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors"
       }
     }
   ]

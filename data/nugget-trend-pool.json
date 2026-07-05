@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-04T21:16:08.703Z",
+  "updated": "2026-07-05T21:30:09.968Z",
   "trends": [
-    {
-      "text": "DexCompose: Reusing Dexterous Policies for Multi-Task Manipulation with a Single Hand",
-      "link": ""
-    },
-    {
-      "text": "Surprises in Proper Positive-Only Learning",
-      "link": ""
-    },
-    {
-      "text": "Which Nash Equilibrium? Solver-Dependent Selection on Zero-Sum Nash Polytopes",
-      "link": ""
-    },
-    {
-      "text": "Second-Order KKT Guarantees for Bregman ADMM in Nonconvex and Non-Lipschitz Optimization",
-      "link": ""
-    },
     {
       "text": "VLK: Learning Humanoid Loco-Manipulation from Synthetic Interactions in Reconstructed Scenes",
       "link": ""
@@ -96,6 +80,22 @@
     {
       "text": "Beyond Adam: SOAP and Muon for Faster, Label-Efficient Training of Machine Learning Interatomic Potentials",
       "link": "https://arxiv.org/abs/2607.02499v1"
+    },
+    {
+      "text": "Controllable Sim Agents with Behavior Latents",
+      "link": "https://arxiv.org/abs/2607.02496v1"
+    },
+    {
+      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
+    },
+    {
+      "text": "Open source AI is the path forward",
+      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
+    },
+    {
+      "text": "My AI skeptic friends are all nuts",
+      "link": "https://fly.io/blog/youre-all-nuts/"
     }
   ]
 }
