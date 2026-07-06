@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T21:30:05.673Z",
+  "updated": "2026-07-06T21:51:07.206Z",
   "entries": [
     {
       "id": "2026-06-26-am",
@@ -103,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-07-05T00:00:00.000Z",
       "text": "Just wanted to say that it’s perfectly okay to take a breather and enjoy the small stuff. You've got this.",
+      "source": "llm"
+    },
+    {
+      "id": "2026-07-06-am",
+      "date": "2026-07-06",
+      "slot": "am",
+      "publishAt": "2026-07-06T00:00:00.000Z",
+      "text": "Hey, just a reminder that it's totally cool to embrace the little things that bring you joy. They add up in the best way.",
       "source": "llm"
     }
   ]

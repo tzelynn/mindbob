@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T21:30:09.968Z",
+  "updated": "2026-07-06T21:51:11.042Z",
   "entries": [
     {
       "id": "2026-06-28",
@@ -112,6 +112,21 @@
         "text": "When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors",
         "source": "pool",
         "title": "When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors"
+      }
+    },
+    {
+      "id": "2026-07-06",
+      "date": "2026-07-06",
+      "publishAt": "2026-07-06T00:00:00.000Z",
+      "fact": {
+        "text": "The national anthem of Greece has 158 verses. No one in Greece has memorized all 158 verses.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning",
+        "source": "pool",
+        "title": "LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning",
+        "link": "https://arxiv.org/abs/2607.02513v1"
       }
     }
   ]
