@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-06T21:51:11.042Z",
+  "updated": "2026-07-07T21:46:06.521Z",
   "entries": [
     {
       "id": "2026-06-28",
@@ -127,6 +127,21 @@
         "source": "pool",
         "title": "LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning",
         "link": "https://arxiv.org/abs/2607.02513v1"
+      }
+    },
+    {
+      "id": "2026-07-07",
+      "date": "2026-07-07",
+      "publishAt": "2026-07-07T00:00:00.000Z",
+      "fact": {
+        "text": "Honey is the only food that does not spoil.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "The paper introduces a view-robust vision-language-action model that eliminates the need for camera calibration, enabling the model to generalize across different camera perspectives. This approach enhances adaptability in real-world applications where camera positioning is variable.",
+        "source": "llm",
+        "title": "From Fixed to Free Cameras: Calibration-Free View-Robust Vision-Language-Action Model",
+        "link": "https://arxiv.org/abs/2607.05396v1"
       }
     }
   ]

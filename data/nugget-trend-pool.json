@@ -1,18 +1,6 @@
 {
-  "updated": "2026-07-06T21:51:11.042Z",
+  "updated": "2026-07-07T21:46:06.521Z",
   "trends": [
-    {
-      "text": "One-Step Gradient Delay is Not a Barrier for Large-Scale Asynchronous Pipeline Parallel LLM Pretraining",
-      "link": ""
-    },
-    {
-      "text": "Introspective Coupling: Self-Explanation Training Tracks Behavioral Change Despite Fixed Supervision",
-      "link": ""
-    },
-    {
-      "text": "QVal: Cheaply Evaluating Dense Supervision Signals for Long-Horizon LLM Agents",
-      "link": ""
-    },
     {
       "text": "Reinforcement Learning with Metacognitive Feedback Elicits Faithful Uncertainty Expression in LLMs",
       "link": ""
@@ -32,10 +20,6 @@
     {
       "text": "AutoMem: Automated Learning of Memory as a Cognitive Skill",
       "link": ""
-    },
-    {
-      "text": "LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning",
-      "link": "https://arxiv.org/abs/2607.02513v1"
     },
     {
       "text": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
@@ -96,6 +80,22 @@
     {
       "text": "I'm Tired of Talking to AI",
       "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
+    },
+    {
+      "text": "Weak-to-Strong Generalization via Direct On-Policy Distillation",
+      "link": "https://arxiv.org/abs/2607.05394v1"
+    },
+    {
+      "text": "Interpretable Human-Label-Free Deep Learning for Real-Bogus Classification with Uncertainty Quantification",
+      "link": "https://arxiv.org/abs/2607.05393v1"
+    },
+    {
+      "text": "LLM-as-a-Verifier: A General-Purpose Verification Framework",
+      "link": "https://arxiv.org/abs/2607.05391v1"
+    },
+    {
+      "text": "Search Beyond What Can Be Taught: Evolving the Knowledge Boundary in Agentic Visual Generation",
+      "link": "https://arxiv.org/abs/2607.05382v1"
     }
   ]
 }
