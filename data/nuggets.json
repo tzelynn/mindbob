@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T21:46:06.521Z",
+  "updated": "2026-07-08T21:34:13.624Z",
   "entries": [
     {
       "id": "2026-06-28",
@@ -142,6 +142,21 @@
         "source": "llm",
         "title": "From Fixed to Free Cameras: Calibration-Free View-Robust Vision-Language-Action Model",
         "link": "https://arxiv.org/abs/2607.05396v1"
+      }
+    },
+    {
+      "id": "2026-07-08",
+      "date": "2026-07-08",
+      "publishAt": "2026-07-08T00:00:00.000Z",
+      "fact": {
+        "text": "In the last 4000 years, no new animals have been domesticated.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "ELSA3D introduces Elastic Semantic Anchoring, enhancing the integration of 3D understanding and generation by leveraging semantic information for more coherent spatial representations. This framework aims to improve the scalability and adaptability of 3D models in various applications.",
+        "source": "llm",
+        "title": "ELSA3D: Elastic Semantic Anchoring for Unified 3D Understanding and Generation",
+        "link": "https://arxiv.org/abs/2607.06565v1"
       }
     }
   ]

@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-07T21:46:06.521Z",
+  "updated": "2026-07-08T21:34:13.624Z",
   "trends": [
-    {
-      "text": "Reinforcement Learning with Metacognitive Feedback Elicits Faithful Uncertainty Expression in LLMs",
-      "link": ""
-    },
-    {
-      "text": "Measuring the Gap Between Human and LLM Research Ideas",
-      "link": ""
-    },
-    {
-      "text": "Is One Layer Enough? Training A Single Transformer Layer Can Match Full-Parameter RL Training",
-      "link": ""
-    },
-    {
-      "text": "Language-Critique Imitation Learning from Suboptimal Demonstrations",
-      "link": ""
-    },
     {
       "text": "AutoMem: Automated Learning of Memory as a Cognitive Skill",
       "link": ""
@@ -96,6 +80,22 @@
     {
       "text": "Search Beyond What Can Be Taught: Evolving the Knowledge Boundary in Agentic Visual Generation",
       "link": "https://arxiv.org/abs/2607.05382v1"
+    },
+    {
+      "text": "Graph Convolutional Attention: A Spectral Perspective on Graph Denoising and Diffusion",
+      "link": "https://arxiv.org/abs/2607.06546v1"
+    },
+    {
+      "text": "Rethinking Indic AI from a Lens of Cultural Heritage Preservation",
+      "link": "https://arxiv.org/abs/2607.06544v1"
+    },
+    {
+      "text": "GraphBU: MILP Instance Generation with Graph-Native Block Units",
+      "link": "https://arxiv.org/abs/2607.06532v1"
+    },
+    {
+      "text": "The Large Cancer Assistant (LCA): A Model-Agnostic Orchestration Framework for Scalable Clinical Decision Support in Oncology",
+      "link": "https://arxiv.org/abs/2607.06531v1"
     }
   ]
 }
