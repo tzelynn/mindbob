@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-08T21:34:13.624Z",
+  "updated": "2026-07-09T21:51:10.471Z",
   "entries": [
     {
       "id": "2026-06-28",
@@ -157,6 +157,21 @@
         "source": "llm",
         "title": "ELSA3D: Elastic Semantic Anchoring for Unified 3D Understanding and Generation",
         "link": "https://arxiv.org/abs/2607.06565v1"
+      }
+    },
+    {
+      "id": "2026-07-09",
+      "date": "2026-07-09",
+      "publishAt": "2026-07-09T00:00:00.000Z",
+      "fact": {
+        "text": "In Iceland, a Big Mac costs $5.50.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "I'm Tired of Talking to AI",
+        "source": "pool",
+        "title": "I'm Tired of Talking to AI",
+        "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
       }
     }
   ]

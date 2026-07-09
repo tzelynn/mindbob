@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-08T21:34:13.624Z",
+  "updated": "2026-07-09T21:51:10.471Z",
   "trends": [
-    {
-      "text": "AutoMem: Automated Learning of Memory as a Cognitive Skill",
-      "link": ""
-    },
-    {
-      "text": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
-      "link": "https://arxiv.org/abs/2607.02512v1"
-    },
-    {
-      "text": "Online Safety Monitoring for LLMs",
-      "link": "https://arxiv.org/abs/2607.02510v1"
-    },
-    {
-      "text": "ReContext: Recursive Evidence Replay as LLM Harness for Long-Context Reasoning",
-      "link": "https://arxiv.org/abs/2607.02509v1"
-    },
     {
       "text": "What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates",
       "link": "https://arxiv.org/abs/2607.02507v1"
@@ -96,6 +80,22 @@
     {
       "text": "The Large Cancer Assistant (LCA): A Model-Agnostic Orchestration Framework for Scalable Clinical Decision Support in Oncology",
       "link": "https://arxiv.org/abs/2607.06531v1"
+    },
+    {
+      "text": "Co-LMLM: Continuous-Query Limited Memory Language Models",
+      "link": "https://arxiv.org/abs/2607.07707v1"
+    },
+    {
+      "text": "The Key to Going Linear: Analysis-Driven Transformer Linearization",
+      "link": "https://arxiv.org/abs/2607.07706v1"
+    },
+    {
+      "text": "Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass",
+      "link": "https://arxiv.org/abs/2607.07696v1"
+    },
+    {
+      "text": "Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety",
+      "link": "https://arxiv.org/abs/2607.07695v1"
     }
   ]
 }
