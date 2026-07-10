@@ -1,18 +1,6 @@
 {
-  "updated": "2026-07-09T21:51:10.471Z",
+  "updated": "2026-07-10T21:30:40.275Z",
   "trends": [
-    {
-      "text": "What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates",
-      "link": "https://arxiv.org/abs/2607.02507v1"
-    },
-    {
-      "text": "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas",
-      "link": "https://arxiv.org/abs/2607.02504v1"
-    },
-    {
-      "text": "DemoPSD: Disagreement-Modulated Policy Self-Distillation",
-      "link": "https://arxiv.org/abs/2607.02502v1"
-    },
     {
       "text": "Beyond Adam: SOAP and Muon for Faster, Label-Efficient Training of Machine Learning Interatomic Potentials",
       "link": "https://arxiv.org/abs/2607.02499v1"
@@ -44,10 +32,6 @@
     {
       "text": "IDF killed Gaza aid workers at point blank range in 2025 massacre: Report",
       "link": "https://www.dropsitenews.com/p/israeli-soldiers-tel-sultan-gaza-red-crescent-civil-defense-massacre-report-forensic-architecture-earshot"
-    },
-    {
-      "text": "I'm Tired of Talking to AI",
-      "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
     },
     {
       "text": "Weak-to-Strong Generalization via Direct On-Policy Distillation",
@@ -96,6 +80,22 @@
     {
       "text": "Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety",
       "link": "https://arxiv.org/abs/2607.07695v1"
+    },
+    {
+      "text": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
+      "link": "https://arxiv.org/abs/2607.08758v1"
+    },
+    {
+      "text": "Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling",
+      "link": "https://arxiv.org/abs/2607.08757v1"
+    },
+    {
+      "text": "MulTTiPop: A Multitrack Transcription Dataset for Pop Music",
+      "link": "https://arxiv.org/abs/2607.08756v1"
+    },
+    {
+      "text": "SLORR: Simple and Efficient In-Training Low-Rank Regularization",
+      "link": "https://arxiv.org/abs/2607.08754v1"
     }
   ]
 }

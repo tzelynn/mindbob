@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09T21:51:10.471Z",
+  "updated": "2026-07-10T21:30:40.275Z",
   "entries": [
     {
       "id": "2026-06-28",
@@ -172,6 +172,21 @@
         "source": "pool",
         "title": "I'm Tired of Talking to AI",
         "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
+      }
+    },
+    {
+      "id": "2026-07-10",
+      "date": "2026-07-10",
+      "publishAt": "2026-07-10T00:00:00.000Z",
+      "fact": {
+        "text": "I am.\" is the shortest complete sentence in the English language.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "OpenCoF introduces a novel approach for learning reasoning skills via video generation, enabling models to generate coherent video sequences that reflect logical relationships and causal reasoning. This advancement enhances the ability to understand and predict complex temporal dynamics in visual data.",
+        "source": "llm",
+        "title": "OpenCoF: Learning to Reason Through Video Generation",
+        "link": "https://arxiv.org/abs/2607.08763v1"
       }
     }
   ]
