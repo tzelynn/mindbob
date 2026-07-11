@@ -1,14 +1,6 @@
 {
-  "updated": "2026-07-10T21:30:36.734Z",
+  "updated": "2026-07-11T21:09:31.824Z",
   "entries": [
-    {
-      "id": "2026-06-28-am",
-      "date": "2026-06-28",
-      "slot": "am",
-      "publishAt": "2026-06-28T00:00:00.000Z",
-      "text": "Happy new day! Just do your best and remember to find a bit of joy in the little things as you go.",
-      "source": "llm"
-    },
     {
       "id": "2026-06-28-pm",
       "date": "2026-06-28",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-07-10T00:00:00.000Z",
       "text": "Just a heads up that your kindness doesn't go unnoticed—it's like a ripple that makes everything a little better.",
+      "source": "llm"
+    },
+    {
+      "id": "2026-07-11-am",
+      "date": "2026-07-11",
+      "slot": "am",
+      "publishAt": "2026-07-11T00:00:00.000Z",
+      "text": "Sometimes just being you is enough to make a difference. Keep shining in your own way; it truly matters.",
       "source": "llm"
     }
   ]

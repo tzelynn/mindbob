@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-10T21:30:40.275Z",
+  "updated": "2026-07-11T21:09:35.301Z",
   "trends": [
-    {
-      "text": "Beyond Adam: SOAP and Muon for Faster, Label-Efficient Training of Machine Learning Interatomic Potentials",
-      "link": "https://arxiv.org/abs/2607.02499v1"
-    },
-    {
-      "text": "Controllable Sim Agents with Behavior Latents",
-      "link": "https://arxiv.org/abs/2607.02496v1"
-    },
-    {
-      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
-      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
-    },
-    {
-      "text": "Open source AI is the path forward",
-      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
-    },
     {
       "text": "My AI skeptic friends are all nuts",
       "link": "https://fly.io/blog/youre-all-nuts/"
@@ -96,6 +80,22 @@
     {
       "text": "SLORR: Simple and Efficient In-Training Low-Rank Regularization",
       "link": "https://arxiv.org/abs/2607.08754v1"
+    },
+    {
+      "text": "Using AI-based Learning Assistants in Higher Education: A Large-Scale Descriptive Analysis",
+      "link": "https://arxiv.org/abs/2607.08748v1"
+    },
+    {
+      "text": "Dimensionality Reduction Meets Network Science: Sensemaking on UMAP's kNN Graph",
+      "link": "https://arxiv.org/abs/2607.08746v1"
+    },
+    {
+      "text": "AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding",
+      "link": "https://arxiv.org/abs/2607.08745v1"
+    },
+    {
+      "text": "ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation",
+      "link": "https://arxiv.org/abs/2607.08741v1"
     }
   ]
 }

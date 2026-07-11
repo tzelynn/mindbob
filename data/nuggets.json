@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-10T21:30:40.275Z",
+  "updated": "2026-07-11T21:09:35.301Z",
   "entries": [
     {
       "id": "2026-06-28",
@@ -184,6 +184,21 @@
       },
       "trend": {
         "text": "OpenCoF introduces a novel approach for learning reasoning skills via video generation, enabling models to generate coherent video sequences that reflect logical relationships and causal reasoning. This advancement enhances the ability to understand and predict complex temporal dynamics in visual data.",
+        "source": "llm",
+        "title": "OpenCoF: Learning to Reason Through Video Generation",
+        "link": "https://arxiv.org/abs/2607.08763v1"
+      }
+    },
+    {
+      "id": "2026-07-11",
+      "date": "2026-07-11",
+      "publishAt": "2026-07-11T00:00:00.000Z",
+      "fact": {
+        "text": "There are two credit cards for every person in the United States.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "OpenCoF introduces a novel approach to video generation by enabling models to learn reasoning skills through the synthesis of visual content. This advancement enhances the capability of AI systems to understand and generate coherent narratives, bridging the gap between visual comprehension and reasoning.",
         "source": "llm",
         "title": "OpenCoF: Learning to Reason Through Video Generation",
         "link": "https://arxiv.org/abs/2607.08763v1"
