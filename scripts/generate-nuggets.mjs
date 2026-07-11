@@ -17,6 +17,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { fetchWithRetry, planWork, isForced, LLM_TIMEOUT, SOURCE_TIMEOUT } from "./lib.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const NUGGETS_PATH = join(ROOT, "data", "nuggets.json");
@@ -30,7 +31,6 @@ const FACT_MAX = 240;
 const TREND_MAX = 320;
 const POOL_CAP = 24; // rolling trend pool size; oldest evicted FIFO
 const POOL_ADD = 4; // max candidates banked per run ("not everything")
-const FETCH_TIMEOUT = 8000;
 
 const FACTS_URL = "https://uselessfacts.jsph.pl/api/v2/facts/random?language=en";
 const HN_URL =
@@ -177,15 +177,15 @@ function publishAtFor(date) {
   return `${date}T00:00:00.000Z`;
 }
 
+// 2 attempts is enough for the headline/fact sources — they already sit in
+// front of a rich fallback chain, and it keeps the job short.
 async function fetchJson(url) {
-  const res = await fetch(url, { signal: AbortSignal.timeout(FETCH_TIMEOUT) });
-  if (!res.ok) throw new Error(`${url} -> ${res.status}`);
+  const res = await fetchWithRetry(url, {}, { attempts: 2, timeoutMs: SOURCE_TIMEOUT });
   return res.json();
 }
 
 async function fetchText(url) {
-  const res = await fetch(url, { signal: AbortSignal.timeout(FETCH_TIMEOUT) });
-  if (!res.ok) throw new Error(`${url} -> ${res.status}`);
+  const res = await fetchWithRetry(url, {}, { attempts: 2, timeoutMs: SOURCE_TIMEOUT });
   return res.text();
 }
 
@@ -258,27 +258,29 @@ async function trendFromLLM(candidates) {
     "Write today's tech-trend nugget about this and only this development:\n" +
     `"${primary.title}"`;
 
-  const res = await fetch(API_URL, {
-    method: "POST",
-    headers: {
-      Accept: "application/vnd.github+json",
-      Authorization: `Bearer ${token}`,
-      "X-GitHub-Api-Version": "2026-03-10",
-      "Content-Type": "application/json",
+  const res = await fetchWithRetry(
+    API_URL,
+    {
+      method: "POST",
+      headers: {
+        Accept: "application/vnd.github+json",
+        Authorization: `Bearer ${token}`,
+        "X-GitHub-Api-Version": "2026-03-10",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: MODEL,
+        temperature: 0.7,
+        max_tokens: 160,
+        messages: [
+          { role: "system", content: TREND_SYSTEM },
+          { role: "user", content: userContent },
+        ],
+      }),
     },
-    body: JSON.stringify({
-      model: MODEL,
-      temperature: 0.7,
-      max_tokens: 160,
-      messages: [
-        { role: "system", content: TREND_SYSTEM },
-        { role: "user", content: userContent },
-      ],
-    }),
-    signal: AbortSignal.timeout(FETCH_TIMEOUT),
-  });
+    { timeoutMs: LLM_TIMEOUT },
+  );
 
-  if (!res.ok) throw new Error(`API ${res.status}: ${await res.text()}`);
   const data = await res.json();
   return {
     text: cleanText(data?.choices?.[0]?.message?.content),
@@ -291,18 +293,32 @@ async function trendFromLLM(candidates) {
 // Main.
 // ---------------------------------------------------------------------------
 
-async function buildFact(bank, recentFacts, entryCount) {
+// action: "generate" (full run incl. bank fallback) | "retry" (attempt an
+// upgrade; on failure keep `existingFact` untouched). `changed` tells main()
+// whether anything actually needs writing.
+async function buildFact(bank, recentFacts, entryCount, action, existingFact) {
   try {
     const candidate = await factFromApi();
-    if (isGoodFact(candidate, recentFacts)) return { text: candidate, source: "api" };
+    if (isGoodFact(candidate, recentFacts))
+      return { fact: { text: candidate, source: "api" }, changed: true };
     throw new Error("low-quality fact: " + JSON.stringify(candidate));
   } catch (err) {
+    if (action === "retry") {
+      console.warn(`[nuggets] fact retry failed, keeping existing ${existingFact.source} fact:`, err.message);
+      return { fact: existingFact, changed: false };
+    }
     console.warn("[nuggets] falling back to fact bank:", err.message);
-    return { text: pickFromBank(bank.facts, recentFacts, entryCount), source: "bank" };
+    return {
+      fact: { text: pickFromBank(bank.facts, recentFacts, entryCount), source: "bank" },
+      changed: true,
+    };
   }
 }
 
-async function buildTrend(bank, pool, recentTrends, recentTitles, entryCount) {
+// Same contract as buildFact. On a failed retry the existing trend is kept and
+// poolTrends is null — the pool file is only rewritten when the entry changed,
+// so a no-op retry run stays byte-identical (no commit, no Pages redeploy).
+async function buildTrend(bank, pool, recentTrends, recentTitles, entryCount, action, existingTrend) {
   let ranked = [];
   let trend = null;
 
@@ -317,6 +333,11 @@ async function buildTrend(bank, pool, recentTrends, recentTitles, entryCount) {
     }
   } catch (err) {
     console.warn("[nuggets] trend LLM unavailable:", err.message);
+  }
+
+  if (!trend && action === "retry") {
+    console.warn(`[nuggets] trend retry failed, keeping existing ${existingTrend.source} trend`);
+    return { trend: existingTrend, poolTrends: null, changed: false };
   }
 
   // Bank the next-best candidates we did not feature (before choosing a
@@ -346,7 +367,7 @@ async function buildTrend(bank, pool, recentTrends, recentTitles, entryCount) {
     }
   }
 
-  return { trend, poolTrends };
+  return { trend, poolTrends, changed: true };
 }
 
 async function main() {
@@ -356,6 +377,19 @@ async function main() {
   const pool = await readJson(POOL_PATH, { updated: "", trends: [] });
   if (!Array.isArray(pool.trends)) pool.trends = [];
 
+  const date = todayUTC();
+
+  // Upgrade-only, decided per part: a good "api" fact is kept while a
+  // pool/bank trend retries, and vice versa. A retry can never downgrade.
+  const existing = store.entries.find((e) => e.id === date);
+  const force = isForced();
+  const factAction = planWork(existing?.fact?.source, "api", force);
+  const trendAction = planWork(existing?.trend?.source, "llm", force);
+  if (factAction === "skip" && trendAction === "skip") {
+    console.log(`[nuggets] ${date} already api+llm — skipping`);
+    return;
+  }
+
   const recentFacts = store.entries.map((e) => e.fact?.text).filter(Boolean);
   const recentTrends = store.entries.map((e) => e.trend?.text).filter(Boolean);
   // Raw source titles of past featured trends (LLM rewrites the title, so the
@@ -363,14 +397,28 @@ async function main() {
   const recentTitles = store.entries.map((e) => e.trend?.title).filter(Boolean);
   const count = store.entries.length;
 
-  const [fact, built] = await Promise.all([
-    buildFact(bank, recentFacts, count),
-    buildTrend(bank, pool, recentTrends, recentTitles, count),
+  const [factRes, trendRes] = await Promise.all([
+    factAction === "skip"
+      ? null
+      : buildFact(bank, recentFacts, count, factAction, existing?.fact),
+    trendAction === "skip"
+      ? null
+      : buildTrend(bank, pool, recentTrends, recentTitles, count, trendAction, existing?.trend),
   ]);
-  const trend = built.trend;
+
+  // Kept parts reuse the existing objects verbatim, so their serialization
+  // (including link/title) stays byte-identical.
+  const fact = factRes ? factRes.fact : existing.fact;
+  const trend = trendRes ? trendRes.trend : existing.trend;
+  const poolTrends = trendRes ? trendRes.poolTrends : null;
+  const changed = Boolean(factRes?.changed || trendRes?.changed);
+
+  if (!changed) {
+    console.log(`[nuggets] ${date} retry produced no upgrade — keeping existing entry`);
+    return;
+  }
 
   const now = new Date();
-  const date = todayUTC();
   const entry = { id: date, date, publishAt: publishAtFor(date), fact, trend };
 
   // replace same-id entry if re-run, else append; keep most recent KEEP
@@ -381,10 +429,12 @@ async function main() {
   store.updated = now.toISOString();
 
   await writeFile(NUGGETS_PATH, JSON.stringify(store, null, 2) + "\n");
-  await writeFile(
-    POOL_PATH,
-    JSON.stringify({ updated: now.toISOString(), trends: built.poolTrends }, null, 2) + "\n",
-  );
+  if (poolTrends) {
+    await writeFile(
+      POOL_PATH,
+      JSON.stringify({ updated: now.toISOString(), trends: poolTrends }, null, 2) + "\n",
+    );
+  }
   console.log(
     `[nuggets] ${entry.id} — fact(${fact.source}), trend(${trend.source})`
   );

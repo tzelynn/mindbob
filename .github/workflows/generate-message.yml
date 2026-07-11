@@ -1,16 +1,30 @@
 name: Generate message
 
-# Once daily each morning, tuned to Singapore time (UTC+8). GitHub schedules run
-# in UTC. IMPORTANT: GitHub only *queues* scheduled runs at the cron time — they
-# commonly start 30-75 min late (worst on the top of the hour, the busiest slot).
-# So to land the note before 06:00 SGT we trigger ~1h40m early and off-the-hour:
-# 20:20 UTC nominal -> job starts ~21:00-21:35 UTC -> commits ~04:20-05:35 SGT,
-# leaving margin for GitHub Pages to redeploy before 06:00 SGT. If it drifts late
-# again, move the time earlier still. (Adjust for your timezone.)
+# Two runs daily, tuned to Singapore time (UTC+8). GitHub schedules run in UTC.
+# IMPORTANT: GitHub only *queues* scheduled runs at the cron time — they
+# commonly start 30-75 min late (worst on the top of the hour, the busiest
+# slot). So both crons trigger early and off-the-hour:
+#   - main:  20:20 UTC nominal -> starts ~21:00-21:35 -> commits ~04:20-05:35
+#     SGT, leaving margin for GitHub Pages to redeploy before 06:00 SGT.
+#   - retry: 21:50 UTC nominal -> starts ~22:20-23:05 -> commits ~06:20-07:05
+#     SGT. The scripts are UPGRADE-ONLY: each skips regeneration when today's
+#     entry already came from its best source (LLM/api), retries lower tiers,
+#     and on a failed retry keeps the existing entry byte-for-byte. So when the
+#     morning run fully succeeded, the retry run writes nothing and the commit
+#     step is a no-op — no pointless Pages redeploy. If the morning run
+#     hard-failed, the retry cron performs the full generation instead.
+# If it drifts late again, move the times earlier still. (Adjust for your
+# timezone.)
 on:
   schedule:
-    - cron: "20 20 * * *" # ~04:20 SGT nominal (early, to beat scheduler delay)
+    - cron: "20 20 * * *" # main: ~04:20 SGT nominal (early, to beat scheduler delay)
+    - cron: "50 21 * * *" # retry: regenerates only what fell back (~06:20 SGT)
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Regenerate today's entries even if already at best source"
+        type: boolean
+        default: false
 
 permissions:
   contents: write # commit data/messages.json, data/prompts.json, data/nuggets.json
@@ -30,25 +44,35 @@ jobs:
         with:
           node-version: "20"
 
+      # !cancelled() on the later steps: one script's crash must not discard
+      # the others' output — the job still reports failure, and whatever was
+      # not generated is picked up by the retry cron (no entry -> full run).
       - name: Generate message
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FORCE_REGENERATE: ${{ inputs.force && '1' || '' }}
         run: node scripts/generate-message.mjs
 
       - name: Generate doodle prompt
+        if: ${{ !cancelled() }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FORCE_REGENERATE: ${{ inputs.force && '1' || '' }}
         run: node scripts/generate-prompt.mjs
 
       - name: Generate nuggets
+        if: ${{ !cancelled() }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FORCE_REGENERATE: ${{ inputs.force && '1' || '' }}
         run: node scripts/generate-nuggets.mjs
 
       - name: Rebuild doodle manifest
+        if: ${{ !cancelled() }}
         run: node scripts/build-doodle-manifest.mjs
 
       - name: Commit and push
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

@@ -11,6 +11,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { WORDS } from "../js/prompts.js";
+import { fetchWithRetry, planWork, isForced, LLM_TIMEOUT } from "./lib.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const PROMPTS_PATH = join(ROOT, "data", "prompts.json");
@@ -69,26 +70,29 @@ async function fromLLM(recentWords) {
     "Give me today's doodle word." +
     (avoid.length ? " Do not use any of these recent words: " + avoid.join(", ") + "." : "");
 
-  const res = await fetch(API_URL, {
-    method: "POST",
-    headers: {
-      Accept: "application/vnd.github+json",
-      Authorization: `Bearer ${token}`,
-      "X-GitHub-Api-Version": "2026-03-10",
-      "Content-Type": "application/json",
+  const res = await fetchWithRetry(
+    API_URL,
+    {
+      method: "POST",
+      headers: {
+        Accept: "application/vnd.github+json",
+        Authorization: `Bearer ${token}`,
+        "X-GitHub-Api-Version": "2026-03-10",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: MODEL,
+        temperature: 0.9,
+        max_tokens: 12,
+        messages: [
+          { role: "system", content: SYSTEM_PROMPT },
+          { role: "user", content: userContent },
+        ],
+      }),
     },
-    body: JSON.stringify({
-      model: MODEL,
-      temperature: 0.9,
-      max_tokens: 12,
-      messages: [
-        { role: "system", content: SYSTEM_PROMPT },
-        { role: "user", content: userContent },
-      ],
-    }),
-  });
+    { timeoutMs: LLM_TIMEOUT },
+  );
 
-  if (!res.ok) throw new Error(`API ${res.status}: ${await res.text()}`);
   const data = await res.json();
   return cleanWord(data?.choices?.[0]?.message?.content);
 }
@@ -105,6 +109,17 @@ async function main() {
   if (!Array.isArray(store.entries)) store.entries = [];
   const recentWords = store.entries.map((e) => e.word);
 
+  const date = todayUTC();
+
+  // Upgrade-only: skip when today's word already came from the LLM; a failed
+  // retry keeps the existing entry instead of downgrading it (no write).
+  const existing = store.entries.find((e) => e.id === date);
+  const action = planWork(existing?.source, "llm", isForced());
+  if (action === "skip") {
+    console.log(`[prompt] ${date} already llm — skipping`);
+    return;
+  }
+
   let word = "";
   let source = "llm";
   try {
@@ -115,12 +130,15 @@ async function main() {
       throw new Error("low-quality output: " + JSON.stringify(candidate));
     }
   } catch (err) {
+    if (action === "retry") {
+      console.warn(`[prompt] retry failed, keeping existing ${existing.source} entry:`, err.message);
+      return;
+    }
     console.warn("[prompt] falling back to word list:", err.message);
     word = fromBank(recentWords, store.entries.length);
     source = "fallback";
   }
 
-  const date = todayUTC();
   const entry = { id: date, date, publishAt: publishAtFor(date), word, source };
 
   store.entries = store.entries.filter((e) => e.id !== entry.id);
@@ -133,7 +151,10 @@ async function main() {
   console.log(`[prompt] ${entry.id} (${source}): ${word}`);
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+// Run only when invoked directly, so tests can import this file safely.
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}
