@@ -176,6 +176,12 @@ body {
 .app[data-mode="mood"] .doodle-prompt,
 .app[data-mode="mood"] .status { display: none; }
 
+/* brain mode hides every other layer + the note status */
+.app[data-mode="brain"] .layer-message,
+.app[data-mode="brain"] .layer-canvas,
+.app[data-mode="brain"] .doodle-prompt,
+.app[data-mode="brain"] .status { display: none; }
+
 .layer-doodle {
   pointer-events: none;
 }
@@ -440,6 +446,156 @@ body {
   color: var(--ink);
   user-select: none;
 }
+
+
+/* ---------- Brain dump ---------- */
+.layer-brain {
+  display: none;               /* shown only in brain mode (below) */
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 5vmin 6vmin calc(6vmin + var(--safe-bottom));
+  overflow-y: auto;
+}
+.app[data-mode="brain"] .layer-brain { display: flex; }
+
+/* the two cards reuse the nugget card idiom */
+.brain-card {
+  width: min(92vw, 460px);
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 18px;
+  padding: 18px 20px 20px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid var(--accent);
+}
+.brain-card:first-child { border-left-color: var(--muted); }
+
+.brain-label {
+  margin: 0 0 12px;
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.brain-list {
+  list-style: none;
+  margin: 0 0 4px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.brain-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 2px;
+  transition: opacity 200ms ease;
+}
+.brain-item.is-done {
+  opacity: 0.55;
+}
+.brain-item.is-done .brain-text {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.brain-text {
+  flex: 1 1 auto;
+  font-size: clamp(1rem, 3.4vw, 1.2rem);
+  line-height: 1.4;
+  color: var(--ink);
+  word-break: break-word;
+}
+
+/* round check toggle — line-art tick, tinted via currentColor */
+.brain-check {
+  flex: 0 0 auto;
+  appearance: none;
+  border: 0;
+  width: 26px;
+  height: 26px;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 0 0 1.5px rgba(0, 0, 0, 0.12);
+  transition: color 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+.brain-check svg { width: 100%; height: 100%; opacity: 0; transition: opacity 140ms ease; }
+.brain-check:hover { background: rgba(255, 255, 255, 0.8); }
+.brain-check[aria-pressed="true"] {
+  color: var(--accent);
+  box-shadow: inset 0 0 0 1.5px var(--accent);
+}
+.brain-check[aria-pressed="true"] svg { opacity: 1; }
+.brain-check:disabled { cursor: default; }
+
+/* ✕ remove (monthly definitions) */
+.brain-remove {
+  flex: 0 0 auto;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1;
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 140ms ease, background 140ms ease;
+}
+.brain-remove:hover { opacity: 1; background: rgba(0, 0, 0, 0.05); }
+
+.brain-empty {
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-style: italic;
+  padding: 4px 2px;
+}
+
+/* add-row: ghost input + subtle button */
+.brain-add {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+.brain-input {
+  flex: 1 1 auto;
+  appearance: none;
+  border: 0;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.14);
+  background: transparent;
+  font: inherit;
+  font-size: 0.98rem;
+  color: var(--ink);
+  padding: 5px 2px;
+}
+.brain-input::placeholder { color: var(--muted); opacity: 0.8; }
+.brain-input:focus {
+  outline: none;
+  border-bottom-color: var(--accent);
+}
+.brain-add-btn {
+  flex: 0 0 auto;
+  appearance: none;
+  border: 0;
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 6px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 160ms ease;
+}
+.brain-add-btn:hover { background: rgba(0, 0, 0, 0.1); }
 
 
 /* ---------- Toolbar ---------- */

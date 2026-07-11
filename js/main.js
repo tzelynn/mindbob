@@ -21,6 +21,7 @@ const refs = {
   modeDoodle: document.getElementById("modeDoodle"),
   modeNuggets: document.getElementById("modeNuggets"),
   modeMood: document.getElementById("modeMood"),
+  modeBrain: document.getElementById("modeBrain"),
   doodleWord: document.getElementById("doodleWord"),
   notifyBell: document.getElementById("notifyBell"),
   nuggetsEl: document.getElementById("nuggetsEl"),
@@ -30,6 +31,9 @@ const refs = {
   moodLog: document.getElementById("moodLog"),
   moodZoom: document.getElementById("moodZoom"),
   moodGrid: document.getElementById("moodGrid"),
+  brainEl: document.getElementById("brainEl"),
+  brainMonthly: document.getElementById("brainMonthly"),
+  brainAdhoc: document.getElementById("brainAdhoc"),
 };
 
 const state = {
@@ -42,6 +46,7 @@ const state = {
   nuggets: null, // current nuggets entry (fetched once, on first nuggets view)
   nuggetsMod: null, // lazily-loaded nuggets render module
   moodMod: null, // lazily-loaded mood render module
+  brainMod: null, // lazily-loaded brain render module
 };
 
 async function init() {
@@ -65,6 +70,8 @@ async function init() {
       ? "nuggets"
       : location.hash === "#mood"
       ? "mood"
+      : location.hash === "#brain"
+      ? "brain"
       : "message";
   await setMode(startMode);
   refs.app.classList.remove("is-loading");
@@ -73,6 +80,7 @@ async function init() {
   refs.modeDoodle.addEventListener("click", () => setMode("doodle"));
   refs.modeNuggets.addEventListener("click", () => setMode("nuggets"));
   refs.modeMood.addEventListener("click", () => setMode("mood"));
+  refs.modeBrain.addEventListener("click", () => setMode("brain"));
 
   registerSW();
   initNotifications(refs.notifyBell, state);
@@ -88,6 +96,7 @@ function setActiveTab(mode) {
     doodle: refs.modeDoodle,
     nuggets: refs.modeNuggets,
     mood: refs.modeMood,
+    brain: refs.modeBrain,
   };
   for (const [m, btn] of Object.entries(tabs)) {
     const active = m === mode;
@@ -111,6 +120,7 @@ async function setMode(mode) {
   if (mode !== "message") clearMessage(refs);
   if (mode !== "nuggets" && state.nuggetsMod) state.nuggetsMod.clearNuggets(refs);
   if (mode !== "mood" && state.moodMod) state.moodMod.clearMood(refs);
+  if (mode !== "brain" && state.brainMod) state.brainMod.clearBrain(refs);
 
   if (mode === "message") {
     await renderMessage(refs, state.entry);
@@ -127,6 +137,9 @@ async function setMode(mode) {
   } else if (mode === "mood") {
     if (!state.moodMod) state.moodMod = await import("./moodDecorate.js");
     state.moodMod.renderMood(refs, state);
+  } else if (mode === "brain") {
+    if (!state.brainMod) state.brainMod = await import("./brainDecorate.js");
+    state.brainMod.renderBrain(refs, state);
   }
 }
 
