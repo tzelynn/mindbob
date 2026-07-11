@@ -2,6 +2,10 @@
 // one-word prompt. No draggable note, no move tool — the canvas is the only
 // drawable surface. Strokes are clipped to the rounded rectangle.
 // Tools: pencil (seeded palette) / eraser. Undo snapshots canvas pixels only.
+// Past days' drawings are archived into the IndexedDB gallery on activation,
+// before the per-day localStorage prune would drop them.
+
+import { doodlePaletteFor } from "./palette.js";
 
 const STORE_PREFIX = "mindbob:doodle:";
 
@@ -65,8 +69,15 @@ export function createDoodleDecorator(refs, state) {
 
   function persist() {
     try {
+      // word + palette ride along so the archive can label past doodles
       const payload = JSON.stringify({
         img: canvas.width > 0 ? canvas.toDataURL("image/png") : null,
+        word: state.promptWord,
+        palette: {
+          bg: state.doodlePalette.bg,
+          ink: state.doodlePalette.ink,
+          accent: state.doodlePalette.accent,
+        },
       });
       const key = storageKey();
       // prune any other day's doodle so storage stays bounded
@@ -101,6 +112,105 @@ export function createDoodleDecorator(refs, state) {
       ctx.drawImage(img, 0, 0, rect.width, rect.height);
     };
     img.src = payload.img;
+  }
+
+  // ---------- gallery archive (past days -> IndexedDB) ----------
+  // persist() prunes every non-current-day key, so past days must be captured
+  // here, synchronously, before the user's first stroke can trigger a prune.
+  // The payload strings are read up front; the conversion/store is async.
+  let archived = false;
+  function archiveStale() {
+    if (archived) return;
+    archived = true;
+    const stale = [];
+    try {
+      const key = storageKey();
+      for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i);
+        if (!k || !k.startsWith(STORE_PREFIX) || k === key) continue;
+        const p = JSON.parse(localStorage.getItem(k));
+        if (p && p.img) stale.push({ date: k.slice(STORE_PREFIX.length), ...p });
+      }
+    } catch {
+      return; // storage unavailable — nothing to archive
+    }
+    if (!stale.length) return;
+    import("./galleryStore.js")
+      .then(async (store) => {
+        for (const s of stale) await archiveOne(store, s);
+      })
+      .catch(() => {});
+  }
+
+  async function archiveOne(store, { date, img, word, palette }) {
+    // legacy {img}-only payloads: backfill the day's deterministic palette
+    const pal = palette || doodlePaletteFor(date);
+    const image = await loadImage(img);
+    if (!image) return;
+    const scale = Math.min(1, 640 / Math.max(image.width, image.height));
+    const c = document.createElement("canvas");
+    c.width = Math.round(image.width * scale);
+    c.height = Math.round(image.height * scale);
+    const cx = c.getContext("2d");
+    cx.drawImage(image, 0, 0, c.width, c.height);
+    if (isBlank(cx, c)) return; // empty days don't enter the gallery
+    // bake the day's background behind the strokes: lossy formats have no alpha
+    cx.globalCompositeOperation = "destination-over";
+    cx.fillStyle = pal.bg;
+    cx.fillRect(0, 0, c.width, c.height);
+    const blob = await encodeThumb(c);
+    if (!blob) return;
+    const ok = await store.putEntry({
+      date,
+      blob,
+      type: blob.type,
+      word: word || "",
+      palette: pal,
+    });
+    // only drop the localStorage copy once it's safely in IndexedDB
+    if (ok) {
+      try {
+        localStorage.removeItem(STORE_PREFIX + date);
+      } catch {}
+    }
+  }
+
+  function loadImage(src) {
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.onload = () => resolve(img);
+      img.onerror = () => resolve(null);
+      img.src = src;
+    });
+  }
+
+  // Any visible pixel? Sampled with a stride — exactness doesn't matter, a
+  // single stray dot either way is fine.
+  function isBlank(cx, c) {
+    try {
+      const data = cx.getImageData(0, 0, c.width, c.height).data;
+      for (let i = 3; i < data.length; i += 64) {
+        if (data[i] > 0) return false;
+      }
+      return true;
+    } catch {
+      return false; // can't tell — keep it
+    }
+  }
+
+  // WebP q0.8 -> JPEG q0.85 -> PNG. toBlob silently substitutes PNG when a
+  // type is unsupported (Safari/Firefox for WebP), so check blob.type.
+  function encodeThumb(c) {
+    return new Promise((resolve) => {
+      c.toBlob(
+        (w) => {
+          if (w && w.type === "image/webp") return resolve(w);
+          c.toBlob((j) => resolve(j || w || null), "image/jpeg", 0.85);
+        },
+        "image/webp",
+        0.8
+      );
+    });
   }
 
   // ---------- canvas sizing (DPR-aware, rounded clip, preserves drawing) ----------
@@ -214,15 +324,46 @@ export function createDoodleDecorator(refs, state) {
 
   function save() {
     const rect = canvas.getBoundingClientRect();
+    // header band: the prompt word + date in a rounded box above the drawing.
+    // The output canvas GROWS by the band so it never overlaps the drawing.
+    // All coordinates are CSS px under the dpr transform.
+    const BAND = 72, PAD = 12, R = 14;
     const out = document.createElement("canvas");
-    out.width = canvas.width;
-    out.height = canvas.height;
+    out.width = Math.round(rect.width * dpr);
+    out.height = Math.round((rect.height + BAND) * dpr);
     const o = out.getContext("2d");
     o.setTransform(dpr, 0, 0, dpr, 0, 0);
-    // background + drawing (no prompt text baked in)
+
+    // page background
     o.fillStyle = state.doodlePalette.bg;
-    o.fillRect(0, 0, rect.width, rect.height);
-    o.drawImage(canvas, 0, 0, rect.width, rect.height);
+    o.fillRect(0, 0, rect.width, rect.height + BAND);
+
+    // header box: accent-tinted fill + accent outline
+    o.beginPath();
+    o.roundRect(PAD, PAD, rect.width - 2 * PAD, BAND - 2 * PAD, R);
+    o.save();
+    o.globalAlpha = 0.16;
+    o.fillStyle = state.doodlePalette.accent;
+    o.fill();
+    o.restore();
+    o.lineWidth = 1.5;
+    o.strokeStyle = state.doodlePalette.accent;
+    o.stroke();
+
+    // prompt word (big) + date (small, muted), centred in the box
+    const FONTS = ' Eggi, ui-rounded, "Segoe UI", system-ui, sans-serif';
+    o.fillStyle = state.doodlePalette.ink;
+    o.textAlign = "center";
+    o.font = "24px" + FONTS;
+    o.fillText(state.promptWord || "doodle", rect.width / 2, PAD + 26);
+    o.save();
+    o.globalAlpha = 0.6;
+    o.font = "12px" + FONTS;
+    o.fillText(state.entry.date || "", rect.width / 2, BAND - PAD - 6);
+    o.restore();
+
+    // the drawing, below the band
+    o.drawImage(canvas, 0, BAND, rect.width, rect.height);
 
     out.toBlob((blob) => {
       if (!blob) return;
@@ -251,6 +392,13 @@ export function createDoodleDecorator(refs, state) {
     document.getElementById("toolUndo").addEventListener("click", undo);
     document.getElementById("toolClear").addEventListener("click", clearDrawing);
     document.getElementById("toolSave").addEventListener("click", save);
+    document.getElementById("toolGallery").addEventListener("click", async () => {
+      if (!state.gallery) {
+        const mod = await import("./galleryView.js");
+        state.gallery = mod.createGalleryView(refs, state);
+      }
+      state.gallery.open();
+    });
 
     canvas.addEventListener("pointerdown", onCanvasDown);
     canvas.addEventListener("pointermove", onCanvasMove);
@@ -264,6 +412,7 @@ export function createDoodleDecorator(refs, state) {
 
   function activate() {
     wireOnce();
+    archiveStale(); // bank past days into the gallery before any prune
     buildSwatches();
     color = state.doodlePalette.pencil[0];
     canvas.setAttribute("aria-hidden", "false");
@@ -274,6 +423,7 @@ export function createDoodleDecorator(refs, state) {
   }
 
   function deactivate() {
+    if (state.gallery && state.gallery.isOpen()) state.gallery.close();
     canvas.style.pointerEvents = "none";
     canvas.setAttribute("aria-hidden", "true");
   }

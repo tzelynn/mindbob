@@ -4,7 +4,7 @@ Guidance for working in the **mindbob** repo. Read `README.md` for user-facing s
 
 ## What this is
 
-A calming wellness micro-site: a single feel-good note refreshed each morning, plus a **nuggets** tab (a daily fun fact + recent tech/AI trend). Static site on GitHub Pages + a GitHub Actions cron (1×/day) that generates the note, the doodle prompt, and the nuggets. Installable as a PWA ("widget").
+A calming wellness micro-site with five modes behind a single-icon menu (plus swipe navigation): a feel-good **note** refreshed each morning, a daily **doodle** canvas (with a gallery of past drawings), **nuggets** (a daily fun fact + recent tech/AI trend), a **mood** tracker, and a **brain**-dump list. Static site on GitHub Pages + a GitHub Actions cron (2×/day: main run + upgrade-only retry) that generates the note, the doodle prompt, and the nuggets. Installable as a PWA ("widget").
 
 ## Hard constraints (don't break these)
 
@@ -15,13 +15,22 @@ A calming wellness micro-site: a single feel-good note refreshed each morning, p
 ## Architecture
 
 ```
-Actions cron (1×/day, each morning)
+Actions cron (2×/day: main run each morning + an upgrade-only retry ~1.5h later)
    → scripts/generate-message.mjs  → data/messages.json  (note; fallback: data/fallback-bank.json)
    → scripts/generate-prompt.mjs   → data/prompts.json   (doodle word)
    → scripts/generate-nuggets.mjs  → data/nuggets.json   (fun fact + tech trend; fallback: data/nugget-fallback-bank.json)
 GitHub Pages → index.html → js/main.js
    → fetch the json files → theme + doodle + render mode
 ```
+
+All three generators share `scripts/lib.mjs` (`fetchWithRetry` with per-attempt
+timeouts + backoff, and the `planWork` upgrade-only decision) and are
+**upgrade-only**: a run skips regeneration when today's entry already came from
+its best source (message/prompt `llm`; nuggets per part — fact `api`, trend
+`llm`), retries lower tiers, and on a failed retry keeps the existing entry
+**byte-for-byte** (no write, no `updated` bump, no commit). A retry can never
+downgrade a good entry. `FORCE_REGENERATE=1` (the workflow's `force` dispatch
+input) restores unconditional regeneration.
 
 `data/messages.json` is the **contract** between the pipeline and the frontend. Its shape:
 ```json
@@ -83,53 +92,67 @@ Invariants:
 
 | File | Responsibility | Key export |
 |------|----------------|-----------|
-| `js/main.js` | Entry: load note, theme, render, mode toggle, SW | — |
+| `js/main.js` | Entry: load note, theme, render, mode menu + swipe, SW | — |
+| `js/modes.js` | Pure mode order + swipe classification (shared source of truth) | `MODES`, `nextMode(mode, dir)`, `resolveSwipe(dx, dy)` |
 | `js/messages.js` | Fetch + select current note | `getCurrentEntry()` |
 | `js/selectEntry.js` | Pure current-note selection (shared by page + SW) | `pickCurrentEntry(entries, nowMs)` |
 | `js/palette.js` | Curated palettes; one per note, plus a daily one for doodle mode | `paletteFor(seed)`, `doodlePaletteFor(dateSeed)`, `applyPalette()` |
 | `js/doodles.js` | Manifest load, pick + place doodle | `renderMessageDoodle()` |
 | `js/messageDecorate.js` | Message mode render | `renderMessage()`, `clearMessage()` |
-| `js/doodleDecorate.js` | Bounded doodle canvas (pencil/eraser/undo/clear/save) + per-day persistence | `createDoodleDecorator()` |
+| `js/doodleDecorate.js` | Bounded doodle canvas (pencil/eraser/undo/clear/save) + per-day persistence + gallery archiving | `createDoodleDecorator()` |
+| `js/galleryStore.js` | IndexedDB store for past doodles (WebP/JPEG/PNG blobs) | `putEntry()`, `getAllEntries()`, `deleteEntry()`, `galleryFilename()` |
+| `js/galleryView.js` | Gallery overlay UI (grid → viewer with download/delete) | `createGalleryView(refs, state)` |
 | `js/nuggets.js` | Fetch + select current nuggets (reuses `pickCurrentEntry`) | `getCurrentNuggets()` |
 | `js/nuggetsDecorate.js` | Nuggets mode render (two cards) | `renderNuggets()`, `clearNuggets()` |
+| `js/mood.js` | DOM-free mood storage + calendar helpers | `readMood()`, `writeMood()`, `readAllMoods()` |
+| `js/moodDecorate.js` | Mood mode render (log strip + week/month/year grids) | `renderMood()`, `clearMood()` |
+| `js/brain.js` | DOM-free brain-dump task storage | — |
+| `js/brainDecorate.js` | Brain mode render (monthly + to-do lists) | `renderBrain()`, `clearBrain()` |
 | `js/prompts.js` | Daily date-seeded doodle prompt word | `promptFor(dateSeed)` |
 | `js/util.js` | Hash + seeded RNG | `hashString()`, `seededRng()`, `pick()` |
 | `js/pwa.js` | Service worker registration | `registerSW()` |
 | `js/notify.js` | Bell toggle + Periodic Background Sync opt-in | `initNotifications(bell, state)` |
 
-Keep modules single-purpose and small. `doodleDecorate.js` and `nuggetsDecorate.js` are lazy-imported by `main.js` only when entering their mode. `setMode()` handles three modes (`message` / `doodle` / `nuggets`); the active tab is set via `setActiveTab()` and each non-current mode is cleaned up on switch.
+Keep modules single-purpose and small. The decorate modules (and `galleryView.js`) are lazy-imported by `main.js`/`doodleDecorate.js` only when first needed. `setMode()` handles the five modes in `MODES` (`message` / `doodle` / `nuggets` / `mood` / `brain`); the active item is set via `setActiveTab()` and each non-current mode is cleaned up on switch. **Navigation**: the topbar has a single-icon mode menu (hamburger trigger + dropdown, items built from `MODES`), and horizontal swipes on `.stage` move between adjacent modes (no wrap-around at the ends; a `pointerdown` on the drawing canvas never starts a swipe — the canvas owns its gestures). `.stage` has `touch-action: pan-y` so vertical scrolling stays native while horizontal pans reach the swipe handler; don't remove it.
 
 ## Conventions
 
-- **Deterministic visuals (no `Math.random()`).** Message-mode palette + doodles are derived from the note `id` via `hashString` — same note always looks identical, each note gets its own cohesive palette. **Doodle mode has its own palette, `doodlePaletteFor(date)`** (seeded from the date, distinct namespace): it changes each day and is decoupled from the note's palette, yet stays deterministic within a day so a persisted drawing keeps its colours across reloads. `main.js` re-applies the right palette on every mode switch (doodle → `state.doodlePalette`, message/nuggets → `state.palette`). Seed from the id/date, never `Math.random()`.
+- **Deterministic visuals (no `Math.random()`).** Message-mode palette + doodles are derived from the note `id` via `hashString` — same note always looks identical, each note gets its own cohesive palette. **Doodle mode has its own palette, `doodlePaletteFor(date)`** (seeded from the date, distinct namespace): it changes each day and is decoupled from the note's palette, yet stays deterministic within a day so a persisted drawing keeps its colours across reloads. `main.js` re-applies the right palette on every mode switch (doodle → `state.doodlePalette`, every other mode → `state.palette`). Seed from the id/date, never `Math.random()`.
 - **Message mode shows 1–4 doodles in a symmetric layout.** `doodleCountFor(seed, manifest)` picks the count (1–4, capped to manifest size); `doodleNamesFor()` picks that many *distinct* doodles. `renderMessageDoodle()` (in `js/doodles.js`) places them on a per-count layout from the `LAYOUTS` table — anchor points are left-right (and where possible top-bottom) symmetric and sit in the top/bottom margins so they frame the centred message instead of overlapping it; doodles shrink as the count grows so they never collide. Each doodle is its own absolutely-positioned `.doodle-slot` (centred on its anchor via `translate(-50%, -50%)`) with a small seeded rotation. To change the look, edit `LAYOUTS` (points + per-count `size`), not the call sites. The single-doodle path is gone — `doodleNameFor()` was replaced by `doodleCountFor()` + `doodleNamesFor()`.
 - **Theme via CSS custom properties** (`--bg`, `--ink`, `--accent`) set on `.app` by `applyPalette()`. Add new themeable colors as variables, not hardcoded values.
 - **Doodles are inline SVG line-art using `stroke="currentColor"`** so they inherit `--accent`. New doodles must follow this (viewBox `0 0 100 100`, no hardcoded colors).
 
 ## Invariants to preserve
 
-- **Doodle mode has no daily note.** The drawing `<canvas>` is the only content layer; there is no move tool. The eraser uses `globalCompositeOperation = "destination-out"` on the canvas only. `save()` exports the canvas directly (no text baking).
+- **Doodle mode has no daily note.** The drawing `<canvas>` is the only content layer; there is no move tool. The eraser uses `globalCompositeOperation = "destination-out"` on the canvas only. `save()` composites a **header band** (rounded accent box with the prompt word + date) *above* the drawing — the output canvas grows by the band height, never overlapping the strokes; all band math is in CSS px under the `dpr` transform.
 - **`.toolbar[hidden]` needs an explicit `display:none` rule** — the author `.toolbar{display:flex}` otherwise overrides the `hidden` attribute. (Same trap applies to any element given a `display` and toggled via `hidden`.) The nuggets/message/canvas layers are instead shown/hidden purely via `.app[data-mode="…"]` selectors (no `hidden` attribute), so this trap doesn't apply there.
 - Canvas drawing is DPR-aware (`fitCanvas`) and stores strokes in CSS pixels.
 - **The drawing canvas is hidden in message mode via CSS** (`.app[data-mode="message"] .layer-canvas { display:none }`), not cleared — so a decorated canvas never shows behind the message doodle, yet the pixels survive a round-trip back to doodle mode. Don't "fix" leakage by clearing the canvas on mode switch.
 - **Undo is snapshot-based**: `pushUndo()` captures canvas pixels *before* each action (stroke, erase, clear). If you add a new mutating action, call `pushUndo()` at its start.
-- **Doodle drawings persist per day across reloads.** After each mutating action `persist()` writes `{ img: canvas dataURL }` to `localStorage` under `mindbob:doodle:<date>`, pruning all other `mindbob:doodle:*` keys so only the current day is kept — the drawing resets exactly when the date changes. `restore()` re-applies it once per load in `activate()` (after `fitCanvas()`), redrawing scaled to the live canvas. If you add a new mutating action, call `persist()` at its end (mirror of the `pushUndo()` rule). All storage access is `try/catch`-wrapped so a disabled/full `localStorage` degrades to in-memory.
-- **Saved images are named `mindbob_<prompt>_<date>.png`** (`filename()` in `save()`), e.g. `mindbob_feather_2026-06-27.png` — `<prompt>` is the date-seeded doodle prompt word; empty parts (offline fallback's blank date) are dropped to avoid doubled `_`. Unique per day; don't revert to a static name.
+- **Doodle drawings persist per day across reloads.** After each mutating action `persist()` writes `{ img: canvas dataURL, word, palette }` to `localStorage` under `mindbob:doodle:<date>`, pruning all other `mindbob:doodle:*` keys so only the current day is kept there — but **past days are archived into the gallery first**: `archiveStale()` runs at the top of `activate()` (before `restore()` and before any prune can fire), synchronously capturing stale payloads, then downscaling to ≤640px, skipping blank canvases, baking the day's `bg`, and storing a compressed blob in IndexedDB (`mindbob-gallery`, via `js/galleryStore.js`, FIFO-capped at 730 entries). The localStorage key is removed only after `putEntry` succeeds; if IndexedDB is unavailable the behavior degrades to the old prune. `restore()` re-applies today's drawing once per load in `activate()` (after `fitCanvas()`), redrawing scaled to the live canvas. If you add a new mutating action, call `persist()` at its end (mirror of the `pushUndo()` rule). All storage access is `try/catch`-wrapped so disabled/full storage degrades gracefully.
+- **WebP encoding must be feature-checked**: `canvas.toBlob(cb, "image/webp")` silently substitutes PNG on Safari/Firefox — check `blob.type` (see `encodeThumb()`: WebP → JPEG → PNG) and derive file extensions from the stored `type`, never assume.
+- **Saved images are named `mindbob_<prompt>_<date>.png`** (`filename()` in `save()`), e.g. `mindbob_feather_2026-06-27.png` — `<prompt>` is the date-seeded doodle prompt word; empty parts (offline fallback's blank date) are dropped to avoid doubled `_`. Unique per day; don't revert to a static name. Gallery downloads use the same shape via `galleryFilename()` with the extension derived from the blob type.
 
 ## Commands
 
 ```bash
-# local preview
+# local preview — any mode name from MODES works as a hash
 python3 -m http.server 8765
 #   http://localhost:8765/index.html            (message)
 #   http://localhost:8765/index.html#doodle       (doodle mode — also used for testing)
 #   http://localhost:8765/index.html#nuggets      (nuggets mode)
+#   http://localhost:8765/index.html#mood         (mood tracker)
+#   http://localhost:8765/index.html#brain        (brain dump)
 
 # run unit tests (selection logic + SW parity + shell-asset coverage + nugget
-# helpers; Node built-in runner, no deps)
+# helpers + mode/swipe helpers + gallery helpers + retry/upgrade-only helpers +
+# mood/brain storage; Node built-in runner, no deps)
 node --test
 
-# regenerate data (no token locally -> uses fallback banks)
+# regenerate data (no token locally -> uses fallback banks). Re-running on the
+# same day is upgrade-only: a no-op if today's entry is already best-tier, and
+# a failed retry keeps the existing entry byte-identical. Force with:
+#   FORCE_REGENERATE=1 node scripts/generate-message.mjs
 node scripts/generate-message.mjs
 node scripts/generate-prompt.mjs
 node scripts/generate-nuggets.mjs
@@ -139,8 +162,8 @@ python3 scripts/make-icons.py            # after changing brand colors
 
 ## Verifying UI changes
 
-There's a `chromium` binary available for headless screenshots. **Snap confinement blocks writing screenshots into the scratchpad/tmp — write them under `/home/<user>/` instead.** For interaction tests (drawing, clicks), drive Chrome via the DevTools Protocol (`--remote-debugging-port`) using Node's global `fetch`/`WebSocket`; `Input.dispatchMouseEvent` triggers the app's pointer-event handlers.
+There's a `chromium` binary available for headless screenshots. **Snap confinement blocks writing screenshots into the scratchpad/tmp — write them under `/home/<user>/` instead.** For interaction tests (drawing, clicks, swipes), drive Chrome via the DevTools Protocol (`--remote-debugging-port`) using Node's global `fetch`/`WebSocket`; `Input.dispatchMouseEvent` triggers the app's pointer-event handlers. The full launch/drive recipe (including the gotchas: hash-mode tests need a fresh tab, measure click targets after images decode) lives in `.claude/skills/verify/SKILL.md`.
 
 ## Cron timing
 
-`.github/workflows/generate-message.yml` runs **once a day** in **UTC**; the current value targets Singapore time (`0 22` = 06:00 SGT). The single morning run generates the note, the doodle prompt, and the nuggets, then commits `data/messages.json`, `data/prompts.json`, `data/nuggets.json`, `data/nugget-trend-pool.json`, and `doodles/index.json`. Adjust the cron line if the target timezone changes.
+`.github/workflows/generate-message.yml` runs **twice a day** in **UTC**, targeting Singapore mornings: the main cron (`20 20` → commits ~04:20–05:35 SGT) generates the note, doodle prompt, and nuggets, then commits `data/messages.json`, `data/prompts.json`, `data/nuggets.json`, `data/nugget-trend-pool.json`, and `doodles/index.json`; the retry cron (`50 21` → ~06:20–07:05 SGT) re-runs the same job, which — because the scripts are upgrade-only — regenerates **only** entries that fell back (or everything, if the first run hard-failed) and is a commit-free no-op otherwise. The generate steps carry `if: ${{ !cancelled() }}` so one script's crash doesn't discard the others' output. `workflow_dispatch` is safe to trigger anytime; its `force` input maps to `FORCE_REGENERATE=1`. Adjust both cron lines together if the target timezone changes.

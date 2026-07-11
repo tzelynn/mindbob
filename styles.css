@@ -46,6 +46,8 @@ body {
 
 /* ---------- Top bar ---------- */
 .topbar {
+  position: relative; /* the mode-menu dropdown must paint above .stage layers */
+  z-index: 5;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,31 +61,64 @@ body {
   color: var(--muted);
 }
 
-.mode-toggle {
-  display: inline-flex;
-  gap: 2px;
-  padding: 3px;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.04);
+/* Single-icon mode menu: a pill trigger showing the current mode, with a
+   dropdown of all modes below it (items built in JS from MODES). */
+.mode-menu {
+  position: relative;
 }
 
-.mode-btn {
+.mode-menu-btn {
+  appearance: none;
+  border: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 6px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 200ms ease;
+}
+.mode-menu-btn:hover { background: rgba(0, 0, 0, 0.08); }
+.mode-menu-btn svg { color: var(--muted); }
+
+.mode-menu-list {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0; /* the trigger sits at the topbar's right edge — anchor the
+               dropdown to it so it can't overflow narrow phone viewports */
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 9em;
+  padding: 6px;
+  border-radius: 16px;
+  background: var(--bg);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.14);
+}
+/* author display:flex above would override the hidden attribute */
+.mode-menu-list[hidden] { display: none; }
+
+.mode-menu-item {
   appearance: none;
   border: 0;
   background: transparent;
   color: var(--muted);
   font: inherit;
   font-size: 0.9rem;
-  padding: 6px 14px;
-  border-radius: 999px;
+  text-align: left;
+  padding: 8px 14px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background 200ms ease, color 200ms ease;
+  transition: background 160ms ease, color 160ms ease;
 }
-
-.mode-btn.is-active {
-  background: var(--bg);
+.mode-menu-item:hover { background: rgba(0, 0, 0, 0.05); }
+.mode-menu-item.is-active {
+  background: rgba(0, 0, 0, 0.06);
   color: var(--ink);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .notify-bell {
@@ -120,6 +155,8 @@ body {
   position: relative;
   flex: 1 1 auto;
   overflow: hidden;
+  /* vertical scrolling stays native; horizontal pans reach the swipe handler */
+  touch-action: pan-y;
 }
 
 .layer {
@@ -297,6 +334,25 @@ body {
   padding: 3px;
   border-radius: 999px;
   background: rgba(0, 0, 0, 0.04);
+}
+/* segmented pill buttons — used by the mood zoom toggle (week/month/year).
+   (Formerly also the topbar tabs, since replaced by the mode menu.) */
+.mode-btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 6px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 200ms ease, color 200ms ease;
+}
+.mode-btn.is-active {
+  background: var(--bg);
+  color: var(--ink);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 .mood-nav {
   display: inline-flex;
@@ -597,6 +653,88 @@ body {
 }
 .brain-add-btn:hover { background: rgba(0, 0, 0, 0.1); }
 
+
+/* ---------- Doodle gallery overlay ---------- */
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 20; /* above the canvas + prompt */
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px;
+  background: var(--bg);
+  overflow-y: auto;
+}
+/* author display:flex above would override the hidden attribute */
+.gallery-overlay[hidden] { display: none; }
+
+.gallery-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gallery-title {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.gallery-card {
+  appearance: none;
+  border: 0;
+  padding: 8px;
+  border-radius: 14px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font: inherit;
+  color: var(--ink);
+  text-align: left;
+}
+.gallery-card img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+.gallery-card-word { font-size: 0.9rem; }
+.gallery-card-date { font-size: 0.72rem; color: var(--muted); }
+
+.gallery-empty {
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+/* single-doodle viewer */
+.gallery-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.gallery-viewer img {
+  max-width: min(92vw, 420px);
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+}
+.gallery-viewer-meta { color: var(--muted); font-size: 0.85rem; margin: 0; }
+.gallery-viewer-actions { display: flex; gap: 8px; }
+.gallery-viewer-actions a.tool-btn { text-decoration: none; } /* the download link */
 
 /* ---------- Toolbar ---------- */
 .toolbar {

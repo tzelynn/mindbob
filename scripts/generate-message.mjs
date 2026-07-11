@@ -10,6 +10,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { fetchWithRetry, planWork, isForced, LLM_TIMEOUT } from "./lib.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const MESSAGES_PATH = join(ROOT, "data", "messages.json");
@@ -82,26 +83,29 @@ async function fromLLM(recentTexts) {
         avoid.join("\n- ")
       : "");
 
-  const res = await fetch(API_URL, {
-    method: "POST",
-    headers: {
-      Accept: "application/vnd.github+json",
-      Authorization: `Bearer ${token}`,
-      "X-GitHub-Api-Version": "2026-03-10",
-      "Content-Type": "application/json",
+  const res = await fetchWithRetry(
+    API_URL,
+    {
+      method: "POST",
+      headers: {
+        Accept: "application/vnd.github+json",
+        Authorization: `Bearer ${token}`,
+        "X-GitHub-Api-Version": "2026-03-10",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: MODEL,
+        temperature: 0.85,
+        max_tokens: 80,
+        messages: [
+          { role: "system", content: "You write tiny, sincere, casual notes. No preamble." },
+          { role: "user", content: userContent },
+        ],
+      }),
     },
-    body: JSON.stringify({
-      model: MODEL,
-      temperature: 0.85,
-      max_tokens: 80,
-      messages: [
-        { role: "system", content: "You write tiny, sincere, casual notes. No preamble." },
-        { role: "user", content: userContent },
-      ],
-    }),
-  });
+    { timeoutMs: LLM_TIMEOUT },
+  );
 
-  if (!res.ok) throw new Error(`API ${res.status}: ${await res.text()}`);
   const data = await res.json();
   return clean(data?.choices?.[0]?.message?.content);
 }
@@ -121,6 +125,19 @@ async function main() {
   if (!Array.isArray(store.entries)) store.entries = [];
   const recentTexts = store.entries.map((e) => e.text);
 
+  const date = todayUTC();
+  const id = `${date}-${SLOT}`;
+
+  // Upgrade-only: skip when today's note already came from the LLM; on a
+  // retry (existing fallback entry) a failed LLM call keeps the existing
+  // entry untouched instead of downgrading it. No write -> no commit churn.
+  const existing = store.entries.find((e) => e.id === id);
+  const action = planWork(existing?.source, "llm", isForced());
+  if (action === "skip") {
+    console.log(`[generate] ${id} already llm — skipping`);
+    return;
+  }
+
   let text = "";
   let source = "llm";
   try {
@@ -131,15 +148,18 @@ async function main() {
       throw new Error("low-quality output: " + JSON.stringify(candidate));
     }
   } catch (err) {
+    if (action === "retry") {
+      console.warn(`[generate] retry failed, keeping existing ${existing.source} entry:`, err.message);
+      return;
+    }
     console.warn("[generate] falling back to bank:", err.message);
     text = await fromBank(recentTexts);
     source = "fallback";
   }
 
   const now = new Date();
-  const date = todayUTC();
   const entry = {
-    id: `${date}-${SLOT}`,
+    id,
     date,
     slot: SLOT,
     publishAt: publishAtFor(date, SLOT),
@@ -158,7 +178,10 @@ async function main() {
   console.log(`[generate] ${entry.id} (${source}): ${text}`);
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+// Run only when invoked directly, so tests can import this file safely.
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}

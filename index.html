@@ -23,12 +23,15 @@
     <!-- Minimal top bar -->
     <header class="topbar">
       <span class="brand">mindbob</span>
-      <div class="mode-toggle" role="tablist" aria-label="Display mode">
-        <button id="modeMessage" class="mode-btn is-active" role="tab" aria-selected="true">message</button>
-        <button id="modeDoodle" class="mode-btn" role="tab" aria-selected="false">doodle</button>
-        <button id="modeNuggets" class="mode-btn" role="tab" aria-selected="false">nuggets</button>
-        <button id="modeMood" class="mode-btn" role="tab" aria-selected="false">mood</button>
-        <button id="modeBrain" class="mode-btn" role="tab" aria-selected="false">brain</button>
+      <div class="mode-menu" id="modeMenu">
+        <button id="modeMenuBtn" class="mode-menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Choose mode">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+          <span id="modeMenuLabel">message</span>
+        </button>
+        <!-- items built in JS from MODES (js/modes.js) -->
+        <div id="modeMenuList" class="mode-menu-list" role="menu" aria-label="Display mode" hidden></div>
       </div>
       <button id="notifyBell" class="notify-bell" type="button" aria-pressed="false" aria-label="Notify me of new notes" title="Notify me of new notes" hidden>🔔</button>
     </header>
@@ -79,6 +82,15 @@
           <div class="brain-body" id="brainAdhoc"></div>
         </article>
       </div>
+
+      <!-- past-doodles gallery overlay (doodle mode, opened from the toolbar) -->
+      <div id="galleryOverlay" class="gallery-overlay" role="dialog" aria-label="Past doodles" hidden>
+        <div class="gallery-head">
+          <h2 class="gallery-title">past doodles</h2>
+          <button id="galleryClose" class="tool-btn" type="button">close</button>
+        </div>
+        <div id="galleryBody" class="gallery-body"></div>
+      </div>
     </section>
 
     <!-- Toolbar (doodle mode only) -->
@@ -92,6 +104,7 @@
         <button id="toolUndo" class="tool-btn" title="Undo last action" disabled>undo</button>
         <button id="toolClear" class="tool-btn" title="Clear drawing">clear</button>
         <button id="toolSave" class="tool-btn" title="Save as image">save</button>
+        <button id="toolGallery" class="tool-btn" title="Past doodles">gallery</button>
       </div>
     </footer>
 
