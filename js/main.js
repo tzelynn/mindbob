@@ -71,10 +71,14 @@ async function init() {
 
   const hashMode = location.hash.slice(1);
   await setMode(isMode(hashMode) ? hashMode : "message");
+  // seed history so the browser/PWA back button steps through modes instead of
+  // exiting the app on the very first press
+  history.replaceState({ mode: state.mode }, "", "#" + state.mode);
   refs.app.classList.remove("is-loading");
 
   initMenu();
   initSwipe(refs.stage);
+  initHistory();
 
   registerSW();
   initNotifications(refs.notifyBell, state);
@@ -93,7 +97,7 @@ function buildModeMenu() {
     b.textContent = m;
     b.addEventListener("click", () => {
       closeMenu();
-      setMode(m);
+      navigate(m);
     });
     refs.modeMenuList.appendChild(b);
   }
@@ -157,11 +161,43 @@ function initSwipe(el) {
     g = null;
     if (dir) {
       const next = nextMode(state.mode, dir);
-      if (next) setMode(next); // fire-and-forget, same as menu clicks
+      if (next) navigate(next); // fire-and-forget, same as menu clicks
     }
   });
   el.addEventListener("pointercancel", () => {
     g = null; // native scrolling claimed the gesture
+  });
+}
+
+// ---------- history / back-button navigation ----------
+// Each mode switch pushes a history entry so the device back button walks back
+// through modes rather than exiting the app. The gallery has no entry of its
+// own; a back press while it's open just dismisses it.
+function navigate(mode) {
+  if (mode === state.mode) {
+    // already here — nothing to navigate, but still dismiss an open gallery
+    if (state.gallery && state.gallery.isOpen()) state.gallery.close();
+    return;
+  }
+  history.pushState({ mode }, "", "#" + mode);
+  setMode(mode); // fire-and-forget render
+}
+
+function initHistory() {
+  window.addEventListener("popstate", (e) => {
+    if (state.gallery && state.gallery.isOpen()) {
+      // consume this back press to close the gallery, and stay on this mode
+      state.gallery.close();
+      history.pushState({ mode: state.mode }, "", "#" + state.mode);
+      return;
+    }
+    const hash = location.hash.slice(1);
+    const mode = isMode(e.state?.mode)
+      ? e.state.mode
+      : isMode(hash)
+        ? hash
+        : "message";
+    setMode(mode); // render only — popstate must not push another entry
   });
 }
 
@@ -179,6 +215,9 @@ function setActiveTab(mode) {
 }
 
 async function setMode(mode) {
+  // the gallery overlays doodle mode; any mode switch dismisses it
+  if (state.gallery && state.gallery.isOpen()) state.gallery.close();
+
   state.mode = mode;
   refs.app.dataset.mode = mode;
 

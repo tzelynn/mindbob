@@ -47,7 +47,7 @@ body {
 /* ---------- Top bar ---------- */
 .topbar {
   position: relative; /* the mode-menu dropdown must paint above .stage layers */
-  z-index: 5;
+  z-index: 30; /* above the gallery overlay (z-index 20) so the menu works there too */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -232,11 +232,17 @@ body {
   gap: 18px;
   padding: 7vmin 8vmin;
   overflow-y: auto;
+  /* only vertical scroll here; horizontal drags must reach the .stage swipe
+     handler, not scroll the layer sideways (overflow-y:auto would otherwise
+     compute overflow-x to auto) */
+  overflow-x: hidden;
+  touch-action: pan-y;
 }
 .app[data-mode="nuggets"] .layer-nuggets { display: flex; }
 
 .nugget {
-  width: min(92vw, 460px);
+  width: 100%;                 /* fit the padded layer, never overflow sideways */
+  max-width: 460px;
   background: rgba(255, 255, 255, 0.45);
   border-radius: 18px;
   padding: 18px 20px 20px;
@@ -280,6 +286,8 @@ body {
   gap: 20px;
   padding: 4vmin 6vmin calc(6vmin + var(--safe-bottom));
   overflow-y: auto;
+  overflow-x: hidden;          /* horizontal drags → swipe, not sideways scroll */
+  touch-action: pan-y;
 }
 .app[data-mode="mood"] .layer-mood { display: flex; }
 
@@ -289,7 +297,8 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  width: min(94vw, 460px);
+  width: 100%;
+  max-width: 460px;
 }
 .mood-heading {
   margin: 0;
@@ -382,7 +391,7 @@ body {
 }
 
 /* history grid */
-.mood-grid { width: min(94vw, 460px); }
+.mood-grid { width: 100%; max-width: 460px; }
 
 .mood-cell {
   appearance: none;
@@ -512,12 +521,15 @@ body {
   gap: 18px;
   padding: 5vmin 6vmin calc(6vmin + var(--safe-bottom));
   overflow-y: auto;
+  overflow-x: hidden;          /* horizontal drags → swipe, not sideways scroll */
+  touch-action: pan-y;
 }
 .app[data-mode="brain"] .layer-brain { display: flex; }
 
 /* the two cards reuse the nugget card idiom */
 .brain-card {
-  width: min(92vw, 460px);
+  width: 100%;                 /* fit the padded layer, never overflow sideways */
+  max-width: 460px;
   background: rgba(255, 255, 255, 0.45);
   border-radius: 18px;
   padding: 18px 20px 20px;
