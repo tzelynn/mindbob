@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-11T21:09:35.301Z",
+  "updated": "2026-07-12T21:09:34.256Z",
   "trends": [
-    {
-      "text": "My AI skeptic friends are all nuts",
-      "link": "https://fly.io/blog/youre-all-nuts/"
-    },
-    {
-      "text": "An AI agent published a hit piece on me",
-      "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
-    },
-    {
-      "text": "I believe there are entire companies right now under AI psychosis",
-      "link": "https://twitter.com/mitchellh/status/2055380239711457578"
-    },
-    {
-      "text": "IDF killed Gaza aid workers at point blank range in 2025 massacre: Report",
-      "link": "https://www.dropsitenews.com/p/israeli-soldiers-tel-sultan-gaza-red-crescent-civil-defense-massacre-report-forensic-architecture-earshot"
-    },
     {
       "text": "Weak-to-Strong Generalization via Direct On-Policy Distillation",
       "link": "https://arxiv.org/abs/2607.05394v1"
@@ -96,6 +80,22 @@
     {
       "text": "ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation",
       "link": "https://arxiv.org/abs/2607.08741v1"
+    },
+    {
+      "text": "Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows",
+      "link": "https://arxiv.org/abs/2607.08740v1"
+    },
+    {
+      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
+    },
+    {
+      "text": "Open source AI is the path forward",
+      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
+    },
+    {
+      "text": "Bypassing airport security via SQL injection",
+      "link": "https://ian.sh/tsa"
     }
   ]
 }
