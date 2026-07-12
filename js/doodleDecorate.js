@@ -6,6 +6,7 @@
 // before the per-day localStorage prune would drop them.
 
 import { doodlePaletteFor } from "./palette.js";
+import { promptFor } from "./prompts.js";
 
 const STORE_PREFIX = "mindbob:doodle:";
 
@@ -154,9 +155,11 @@ export function createDoodleDecorator(refs, state) {
     const cx = c.getContext("2d");
     cx.drawImage(image, 0, 0, c.width, c.height);
     if (isBlank(cx, c)) return; // empty days don't enter the gallery
-    // bake the day's background behind the strokes: lossy formats have no alpha
+    // Bake a neutral white behind the strokes (lossy formats have no alpha).
+    // We deliberately do NOT use the day's bg tint — every gallery thumbnail
+    // should read on the same neutral ground, not a per-day colour.
     cx.globalCompositeOperation = "destination-over";
-    cx.fillStyle = pal.bg;
+    cx.fillStyle = "#ffffff";
     cx.fillRect(0, 0, c.width, c.height);
     const blob = await encodeThumb(c);
     if (!blob) return;
@@ -164,7 +167,7 @@ export function createDoodleDecorator(refs, state) {
       date,
       blob,
       type: blob.type,
-      word: word || "",
+      word: word || promptFor(date), // the day's date-seeded prompt, never blank
       palette: pal,
     });
     // only drop the localStorage copy once it's safely in IndexedDB

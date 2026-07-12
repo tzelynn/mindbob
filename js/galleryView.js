@@ -4,6 +4,14 @@
 // rebuild-from-storage pattern as moodDecorate.js).
 
 import { getAllEntries, deleteEntry, galleryFilename } from "./galleryStore.js";
+import { promptFor } from "./prompts.js";
+
+// The label for an entry: its stored prompt word, or — for legacy/blank
+// entries — the day's deterministic date-seeded prompt. Never "doodle".
+// Exported for unit testing.
+export function labelFor(entry) {
+  return entry.word || promptFor(entry.date);
+}
 
 export function createGalleryView(refs, state) {
   const { galleryOverlay, galleryClose, galleryBody } = refs;
@@ -43,7 +51,7 @@ export function createGalleryView(refs, state) {
       img.alt = `doodle for ${entry.date}`;
       const word = document.createElement("span");
       word.className = "gallery-card-word";
-      word.textContent = entry.word || "doodle";
+      word.textContent = labelFor(entry);
       const date = document.createElement("span");
       date.className = "gallery-card-date";
       date.textContent = entry.date;
@@ -66,7 +74,7 @@ export function createGalleryView(refs, state) {
 
     const meta = document.createElement("p");
     meta.className = "gallery-viewer-meta";
-    meta.textContent = [entry.word, entry.date].filter(Boolean).join(" · ");
+    meta.textContent = [labelFor(entry), entry.date].filter(Boolean).join(" · ");
 
     const actions = document.createElement("div");
     actions.className = "gallery-viewer-actions";
@@ -81,7 +89,7 @@ export function createGalleryView(refs, state) {
     download.className = "tool-btn";
     download.textContent = "download";
     download.href = objectUrl(entry.blob);
-    download.download = galleryFilename(entry.word, entry.date, entry.type);
+    download.download = galleryFilename(labelFor(entry), entry.date, entry.type);
 
     const del = document.createElement("button");
     del.type = "button";
