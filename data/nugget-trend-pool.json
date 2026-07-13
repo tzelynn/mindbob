@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-12T21:09:34.256Z",
+  "updated": "2026-07-13T21:15:46.211Z",
   "trends": [
-    {
-      "text": "Weak-to-Strong Generalization via Direct On-Policy Distillation",
-      "link": "https://arxiv.org/abs/2607.05394v1"
-    },
-    {
-      "text": "Interpretable Human-Label-Free Deep Learning for Real-Bogus Classification with Uncertainty Quantification",
-      "link": "https://arxiv.org/abs/2607.05393v1"
-    },
-    {
-      "text": "LLM-as-a-Verifier: A General-Purpose Verification Framework",
-      "link": "https://arxiv.org/abs/2607.05391v1"
-    },
-    {
-      "text": "Search Beyond What Can Be Taught: Evolving the Knowledge Boundary in Agentic Visual Generation",
-      "link": "https://arxiv.org/abs/2607.05382v1"
-    },
     {
       "text": "Graph Convolutional Attention: A Spectral Perspective on Graph Denoising and Diffusion",
       "link": "https://arxiv.org/abs/2607.06546v1"
@@ -96,6 +80,22 @@
     {
       "text": "Bypassing airport security via SQL injection",
       "link": "https://ian.sh/tsa"
+    },
+    {
+      "text": "Scalable Visual Pretraining for Language Intelligence",
+      "link": "https://arxiv.org/abs/2607.09657v1"
+    },
+    {
+      "text": "Evolution of Accuracy and Visual-Cognitive Errors in a Decade of Vision-Language AI Models",
+      "link": "https://arxiv.org/abs/2607.09654v1"
+    },
+    {
+      "text": "VEXAIoT: Autonomous IoT Vulnerability EXploitation using AI Agents",
+      "link": "https://arxiv.org/abs/2607.09653v1"
+    },
+    {
+      "text": "ConceptSMILE: Auditing the Trustworthiness of Concept-Based Explainable AI",
+      "link": "https://arxiv.org/abs/2607.09649v1"
     }
   ]
 }
