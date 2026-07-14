@@ -1,18 +1,6 @@
 {
-  "updated": "2026-07-14T21:18:08.687Z",
+  "updated": "2026-07-14T22:42:02.257Z",
   "trends": [
-    {
-      "text": "Co-LMLM: Continuous-Query Limited Memory Language Models",
-      "link": "https://arxiv.org/abs/2607.07707v1"
-    },
-    {
-      "text": "The Key to Going Linear: Analysis-Driven Transformer Linearization",
-      "link": "https://arxiv.org/abs/2607.07706v1"
-    },
-    {
-      "text": "Breaking Database Lock-in: Agentic Regeneration of High Performance Storage Readers for Database Bypass",
-      "link": "https://arxiv.org/abs/2607.07696v1"
-    },
     {
       "text": "Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety",
       "link": "https://arxiv.org/abs/2607.07695v1"
@@ -58,10 +46,6 @@
       "link": "https://news.ycombinator.com/newsguidelines.html#generated"
     },
     {
-      "text": "Open source AI is the path forward",
-      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
-    },
-    {
       "text": "Bypassing airport security via SQL injection",
       "link": "https://ian.sh/tsa"
     },
@@ -96,6 +80,22 @@
     {
       "text": "A Durability and Cross-Language Transfer Benchmark for a Validated Teaching-Feedback Classification Protocol",
       "link": "https://arxiv.org/abs/2607.11873v1"
+    },
+    {
+      "text": "Inside the Unfair Judge: A Mechanistic Interpretability Account of LLM-as-Judge Bias",
+      "link": "https://arxiv.org/abs/2607.11871v1"
+    },
+    {
+      "text": "Evidence-Backed Video Question Answering",
+      "link": "https://arxiv.org/abs/2607.11862v1"
+    },
+    {
+      "text": "Input-Aware Dynamic Backdoor Attack Against Quantum Neural Networks",
+      "link": "https://arxiv.org/abs/2607.11843v1"
+    },
+    {
+      "text": "LoRA-Based Cascaded Multimodal Fusion for Action Recognition in Medical Training Environments",
+      "link": "https://arxiv.org/abs/2607.11839v1"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-14T21:18:08.687Z",
+  "updated": "2026-07-14T22:42:02.257Z",
   "entries": [
     {
       "id": "2026-07-01",
@@ -202,10 +202,10 @@
         "source": "api"
       },
       "trend": {
-        "text": "Open source AI is the path forward",
-        "source": "pool",
-        "title": "Open source AI is the path forward",
-        "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
+        "text": "Requential Coding introduces a novel approach to model compression by leveraging self-generated training data, enabling significant reductions in model size without sacrificing performance. This method enhances efficiency, particularly for deployment in resource-constrained environments.",
+        "source": "llm",
+        "title": "Requential Coding: Pushing the Limits of Model Compression with Self-Generated Training Data",
+        "link": "https://arxiv.org/abs/2607.11883v1"
       }
     }
   ]
