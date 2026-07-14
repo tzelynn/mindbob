@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-13T21:15:46.211Z",
+  "updated": "2026-07-14T21:18:08.687Z",
   "trends": [
-    {
-      "text": "Graph Convolutional Attention: A Spectral Perspective on Graph Denoising and Diffusion",
-      "link": "https://arxiv.org/abs/2607.06546v1"
-    },
-    {
-      "text": "Rethinking Indic AI from a Lens of Cultural Heritage Preservation",
-      "link": "https://arxiv.org/abs/2607.06544v1"
-    },
-    {
-      "text": "GraphBU: MILP Instance Generation with Graph-Native Block Units",
-      "link": "https://arxiv.org/abs/2607.06532v1"
-    },
-    {
-      "text": "The Large Cancer Assistant (LCA): A Model-Agnostic Orchestration Framework for Scalable Clinical Decision Support in Oncology",
-      "link": "https://arxiv.org/abs/2607.06531v1"
-    },
     {
       "text": "Co-LMLM: Continuous-Query Limited Memory Language Models",
       "link": "https://arxiv.org/abs/2607.07707v1"
@@ -96,6 +80,22 @@
     {
       "text": "ConceptSMILE: Auditing the Trustworthiness of Concept-Based Explainable AI",
       "link": "https://arxiv.org/abs/2607.09649v1"
+    },
+    {
+      "text": "Metacognition in LLMs: Foundations, Progress, and Opportunities",
+      "link": "https://arxiv.org/abs/2607.11881v1"
+    },
+    {
+      "text": "Invariant Learning Dynamics of Transformers in Inductive Reasoning Tasks",
+      "link": "https://arxiv.org/abs/2607.11875v1"
+    },
+    {
+      "text": "A Minimalist Retargeting-Guided Reinforcement Learning Recipe for Dexterous Manipulation",
+      "link": "https://arxiv.org/abs/2607.11874v1"
+    },
+    {
+      "text": "A Durability and Cross-Language Transfer Benchmark for a Validated Teaching-Feedback Classification Protocol",
+      "link": "https://arxiv.org/abs/2607.11873v1"
     }
   ]
 }

@@ -1,14 +1,6 @@
 {
-  "updated": "2026-07-13T21:15:42.362Z",
+  "updated": "2026-07-14T21:18:04.327Z",
   "entries": [
-    {
-      "id": "2026-06-30-am",
-      "date": "2026-06-30",
-      "slot": "am",
-      "publishAt": "2026-06-30T00:00:00.000Z",
-      "text": "Today’s a blank canvas. Just add your favorite colors and see what beautiful mess you can create!",
-      "source": "llm"
-    },
     {
       "id": "2026-07-01-am",
       "date": "2026-07-01",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-07-13T00:00:00.000Z",
       "text": "You're really great at finding the fun in the ordinary—never underestimate how much that lifts everyone up around you.",
+      "source": "llm"
+    },
+    {
+      "id": "2026-07-14-am",
+      "date": "2026-07-14",
+      "slot": "am",
+      "publishAt": "2026-07-14T00:00:00.000Z",
+      "text": "You have a knack for making the everyday feel special; it’s a gift that doesn’t go unnoticed. Keep sharing that magic.",
       "source": "llm"
     }
   ]

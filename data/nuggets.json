@@ -1,20 +1,6 @@
 {
-  "updated": "2026-07-13T21:15:46.211Z",
+  "updated": "2026-07-14T21:18:08.687Z",
   "entries": [
-    {
-      "id": "2026-06-30",
-      "date": "2026-06-30",
-      "publishAt": "2026-06-30T00:00:00.000Z",
-      "fact": {
-        "text": "This common everyday occurrence composed of 59% nitrogen, 21% hydrogen, and 9% dioxide is called a `fart`.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "The recent paper \"DexCompose\" introduces a novel approach for multi-task manipulation by reusing dexterous policies, achieving a 30% improvement in sample efficiency over traditional methods, demonstrating the potential of open-source frameworks in advancing robotics.",
-        "source": "llm",
-        "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
-      }
-    },
     {
       "id": "2026-07-01",
       "date": "2026-07-01",
@@ -205,6 +191,21 @@
         "source": "llm",
         "title": "PHINN-EEG: Topological Time-Series Analysis of Dream-State EEG -- Dynamic Betti Curves for Dream Content Classification and Topology-Conditioned Neural Signal Synthesis",
         "link": "https://arxiv.org/abs/2607.09662v1"
+      }
+    },
+    {
+      "id": "2026-07-14",
+      "date": "2026-07-14",
+      "publishAt": "2026-07-14T00:00:00.000Z",
+      "fact": {
+        "text": "Proportional to their size, cats have the largest eyes of all mammals.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Open source AI is the path forward",
+        "source": "pool",
+        "title": "Open source AI is the path forward",
+        "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
       }
     }
   ]
