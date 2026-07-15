@@ -1,14 +1,6 @@
 {
-  "updated": "2026-07-14T21:18:04.327Z",
+  "updated": "2026-07-15T21:25:42.000Z",
   "entries": [
-    {
-      "id": "2026-07-01-am",
-      "date": "2026-07-01",
-      "slot": "am",
-      "publishAt": "2026-07-01T00:00:00.000Z",
-      "text": "Rise and shine! Just take it one step at a time and don’t forget to smile at the little moments that pop up today.",
-      "source": "llm"
-    },
     {
       "id": "2026-07-02-am",
       "date": "2026-07-02",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-07-14T00:00:00.000Z",
       "text": "You have a knack for making the everyday feel special; it’s a gift that doesn’t go unnoticed. Keep sharing that magic.",
+      "source": "llm"
+    },
+    {
+      "id": "2026-07-15-am",
+      "date": "2026-07-15",
+      "slot": "am",
+      "publishAt": "2026-07-15T00:00:00.000Z",
+      "text": "Your vibe has a way of making things a little brighter; it’s a quiet kind of magic that really counts. Keep being you.",
       "source": "llm"
     }
   ]

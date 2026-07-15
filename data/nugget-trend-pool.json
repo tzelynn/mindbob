@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-14T22:42:02.257Z",
+  "updated": "2026-07-15T21:25:45.193Z",
   "trends": [
-    {
-      "text": "Institutional Red-Teaming: Deployment Rules, Not Just Models, Causally Shape Multi-Agent AI Safety",
-      "link": "https://arxiv.org/abs/2607.07695v1"
-    },
-    {
-      "text": "Ideas Have Genomes: Benchmarking Scientific Lineage Reasoning and Lineage-Grounded Idea Generation",
-      "link": "https://arxiv.org/abs/2607.08758v1"
-    },
-    {
-      "text": "Score Accuracy Along the Forward Diffusion Does Not Certify Numerical Stability in Diffusion Sampling",
-      "link": "https://arxiv.org/abs/2607.08757v1"
-    },
-    {
-      "text": "MulTTiPop: A Multitrack Transcription Dataset for Pop Music",
-      "link": "https://arxiv.org/abs/2607.08756v1"
-    },
     {
       "text": "SLORR: Simple and Efficient In-Training Low-Rank Regularization",
       "link": "https://arxiv.org/abs/2607.08754v1"
@@ -96,6 +80,22 @@
     {
       "text": "LoRA-Based Cascaded Multimodal Fusion for Action Recognition in Medical Training Environments",
       "link": "https://arxiv.org/abs/2607.11839v1"
+    },
+    {
+      "text": "The Seriality Gap in Video Diffusion Models",
+      "link": "https://arxiv.org/abs/2607.13031v1"
+    },
+    {
+      "text": "TerraZero: Procedural Driving Simulation for Zero-Demonstration Self-Play at Scale",
+      "link": "https://arxiv.org/abs/2607.13028v1"
+    },
+    {
+      "text": "PalmClaw: A Native On-Device Agent Framework for Mobile Phones",
+      "link": "https://arxiv.org/abs/2607.13027v1"
+    },
+    {
+      "text": "A Shortcut to Statistically Steady-State Turbulence with Flow Matching",
+      "link": "https://arxiv.org/abs/2607.13022v1"
     }
   ]
 }

@@ -1,20 +1,6 @@
 {
-  "updated": "2026-07-14T22:42:02.257Z",
+  "updated": "2026-07-15T21:25:45.193Z",
   "entries": [
-    {
-      "id": "2026-07-01",
-      "date": "2026-07-01",
-      "publishAt": "2026-07-01T00:00:00.000Z",
-      "fact": {
-        "text": "In Quebec, there is an old law that states margarine must be a different color than butter.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "The model \"GROW²\" introduces a novel approach to robot tool use by integrating grounding for both \"which\" and \"where\" tasks, achieving a 30% improvement in task completion rates compared to previous baselines. This advancement highlights the potential of open-source methodologies in enhancing robotic capabilities.",
-        "source": "llm",
-        "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
-      }
-    },
     {
       "id": "2026-07-02",
       "date": "2026-07-02",
@@ -206,6 +192,21 @@
         "source": "llm",
         "title": "Requential Coding: Pushing the Limits of Model Compression with Self-Generated Training Data",
         "link": "https://arxiv.org/abs/2607.11883v1"
+      }
+    },
+    {
+      "id": "2026-07-15",
+      "date": "2026-07-15",
+      "publishAt": "2026-07-15T00:00:00.000Z",
+      "fact": {
+        "text": "In 10 minutes, a hurricane releases more energy than all the world’s nuclear weapons combined.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "The paper explores whether AI agents can assess task complexity to enhance reasoning and execution efficiency. It introduces a framework for agents to discern simple tasks from complex ones, aiming to improve decision-making processes in dynamic environments.",
+        "source": "llm",
+        "title": "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution",
+        "link": "https://arxiv.org/abs/2607.13034v1"
       }
     }
   ]
