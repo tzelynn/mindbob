@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-15T21:25:45.193Z",
+  "updated": "2026-07-16T21:28:25.085Z",
   "trends": [
-    {
-      "text": "SLORR: Simple and Efficient In-Training Low-Rank Regularization",
-      "link": "https://arxiv.org/abs/2607.08754v1"
-    },
-    {
-      "text": "Using AI-based Learning Assistants in Higher Education: A Large-Scale Descriptive Analysis",
-      "link": "https://arxiv.org/abs/2607.08748v1"
-    },
-    {
-      "text": "Dimensionality Reduction Meets Network Science: Sensemaking on UMAP's kNN Graph",
-      "link": "https://arxiv.org/abs/2607.08746v1"
-    },
-    {
-      "text": "AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding",
-      "link": "https://arxiv.org/abs/2607.08745v1"
-    },
     {
       "text": "ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation",
       "link": "https://arxiv.org/abs/2607.08741v1"
@@ -96,6 +80,22 @@
     {
       "text": "A Shortcut to Statistically Steady-State Turbulence with Flow Matching",
       "link": "https://arxiv.org/abs/2607.13022v1"
+    },
+    {
+      "text": "Linear Independent Component Analysis via Optimal Transport",
+      "link": "https://arxiv.org/abs/2607.14081v1"
+    },
+    {
+      "text": "MetaPerch: Learning from metadata for bioacoustics foundation models",
+      "link": "https://arxiv.org/abs/2607.14072v1"
+    },
+    {
+      "text": "Screening of Biosecurity Features in Metagenomic Data with Evo 2 Probes",
+      "link": "https://arxiv.org/abs/2607.14070v1"
+    },
+    {
+      "text": "Deep Interaction: An Efficient Human-AI Interaction Method for Large Reasoning Models",
+      "link": "https://arxiv.org/abs/2607.14049v1"
     }
   ]
 }

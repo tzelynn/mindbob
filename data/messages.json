@@ -1,14 +1,6 @@
 {
-  "updated": "2026-07-15T21:25:42.000Z",
+  "updated": "2026-07-16T21:28:21.341Z",
   "entries": [
-    {
-      "id": "2026-07-02-am",
-      "date": "2026-07-02",
-      "slot": "am",
-      "publishAt": "2026-07-02T00:00:00.000Z",
-      "text": "Good morning! Remember to sprinkle a little laughter into your day and embrace whatever comes your way. You’ve got this!",
-      "source": "llm"
-    },
     {
       "id": "2026-07-03-am",
       "date": "2026-07-03",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-07-15T00:00:00.000Z",
       "text": "Your vibe has a way of making things a little brighter; it’s a quiet kind of magic that really counts. Keep being you.",
+      "source": "llm"
+    },
+    {
+      "id": "2026-07-16-am",
+      "date": "2026-07-16",
+      "slot": "am",
+      "publishAt": "2026-07-16T00:00:00.000Z",
+      "text": "Just a little reminder that your perspective is refreshingly unique; it adds a special touch to everything around you.",
       "source": "llm"
     }
   ]
