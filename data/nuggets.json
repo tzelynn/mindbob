@@ -1,21 +1,6 @@
 {
-  "updated": "2026-07-16T21:28:25.085Z",
+  "updated": "2026-07-17T21:11:13.539Z",
   "entries": [
-    {
-      "id": "2026-07-03",
-      "date": "2026-07-03",
-      "publishAt": "2026-07-03T00:00:00.000Z",
-      "fact": {
-        "text": "The most common street name in the U.S. is Second Street.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "The paper \"Distributed Attacks in Persistent-State AI Control\" explores vulnerabilities in AI systems that maintain persistent states, revealing how coordinated attacks can exploit these states to undermine system integrity. It emphasizes the need for robust security mechanisms in persistent AI applications.",
-        "source": "llm",
-        "title": "Distributed Attacks in Persistent-State AI Control",
-        "link": "https://arxiv.org/abs/2607.02514v1"
-      }
-    },
     {
       "id": "2026-07-04",
       "date": "2026-07-04",
@@ -208,6 +193,21 @@
         "source": "llm",
         "title": "Leveraging unlabelled data for generalizable neural population decoding",
         "link": "https://arxiv.org/abs/2607.14086v1"
+      }
+    },
+    {
+      "id": "2026-07-17",
+      "date": "2026-07-17",
+      "publishAt": "2026-07-17T00:00:00.000Z",
+      "fact": {
+        "text": "In Japan, watermelons are squared. It's easier to stack them that way.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "RoboTTT introduces a novel approach to context scaling in robot policies, enabling more effective transfer of learned behaviors across varied tasks. This method enhances generalization by leveraging contextual information, which could lead to improved adaptability in real-world applications.",
+        "source": "llm",
+        "title": "RoboTTT: Context Scaling for Robot Policies",
+        "link": "https://arxiv.org/abs/2607.15275v1"
       }
     }
   ]

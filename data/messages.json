@@ -1,14 +1,6 @@
 {
-  "updated": "2026-07-16T21:28:21.341Z",
+  "updated": "2026-07-17T21:11:09.991Z",
   "entries": [
-    {
-      "id": "2026-07-03-am",
-      "date": "2026-07-03",
-      "slot": "am",
-      "publishAt": "2026-07-03T00:00:00.000Z",
-      "text": "Just a little note to say you’re doing better than you think. Keep being you, it’s more than enough.",
-      "source": "llm"
-    },
     {
       "id": "2026-07-04-am",
       "date": "2026-07-04",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-07-16T00:00:00.000Z",
       "text": "Just a little reminder that your perspective is refreshingly unique; it adds a special touch to everything around you.",
+      "source": "llm"
+    },
+    {
+      "id": "2026-07-17-am",
+      "date": "2026-07-17",
+      "slot": "am",
+      "publishAt": "2026-07-17T00:00:00.000Z",
+      "text": "You’ve got a way of bringing warmth wherever you go, and it really makes a difference. Just wanted you to know that.",
       "source": "llm"
     }
   ]

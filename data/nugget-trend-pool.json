@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-16T21:28:25.085Z",
+  "updated": "2026-07-17T21:11:13.539Z",
   "trends": [
-    {
-      "text": "ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation",
-      "link": "https://arxiv.org/abs/2607.08741v1"
-    },
-    {
-      "text": "Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows",
-      "link": "https://arxiv.org/abs/2607.08740v1"
-    },
-    {
-      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
-      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
-    },
-    {
-      "text": "Bypassing airport security via SQL injection",
-      "link": "https://ian.sh/tsa"
-    },
     {
       "text": "Scalable Visual Pretraining for Language Intelligence",
       "link": "https://arxiv.org/abs/2607.09657v1"
@@ -96,6 +80,22 @@
     {
       "text": "Deep Interaction: An Efficient Human-AI Interaction Method for Large Reasoning Models",
       "link": "https://arxiv.org/abs/2607.14049v1"
+    },
+    {
+      "text": "MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators",
+      "link": "https://arxiv.org/abs/2607.15273v1"
+    },
+    {
+      "text": "SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions",
+      "link": "https://arxiv.org/abs/2607.15272v1"
+    },
+    {
+      "text": "Online Neural Space Time Memory for Dynamic Novel View Synthesis",
+      "link": "https://arxiv.org/abs/2607.15271v1"
+    },
+    {
+      "text": "Pretraining Data Can Be Poisoned through Computational Propaganda",
+      "link": "https://arxiv.org/abs/2607.15267v1"
     }
   ]
 }
