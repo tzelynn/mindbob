@@ -1,21 +1,6 @@
 {
-  "updated": "2026-07-17T21:11:13.539Z",
+  "updated": "2026-07-18T21:08:33.562Z",
   "entries": [
-    {
-      "id": "2026-07-04",
-      "date": "2026-07-04",
-      "publishAt": "2026-07-04T00:00:00.000Z",
-      "fact": {
-        "text": "The KGB is headquartered at No. 2 Felix Dzerzhinsky Square, Moscow",
-        "source": "api"
-      },
-      "trend": {
-        "text": "The paper \"Distributed Attacks in Persistent-State AI Control\" explores vulnerabilities in AI systems with persistent states by demonstrating how coordinated attacks can disrupt decision-making processes. It highlights the need for robust defenses against multi-agent adversarial strategies in AI control environments.",
-        "source": "llm",
-        "title": "Distributed Attacks in Persistent-State AI Control",
-        "link": "https://arxiv.org/abs/2607.02514v1"
-      }
-    },
     {
       "id": "2026-07-05",
       "date": "2026-07-05",
@@ -205,6 +190,21 @@
       },
       "trend": {
         "text": "RoboTTT introduces a novel approach to context scaling in robot policies, enabling more effective transfer of learned behaviors across varied tasks. This method enhances generalization by leveraging contextual information, which could lead to improved adaptability in real-world applications.",
+        "source": "llm",
+        "title": "RoboTTT: Context Scaling for Robot Policies",
+        "link": "https://arxiv.org/abs/2607.15275v1"
+      }
+    },
+    {
+      "id": "2026-07-18",
+      "date": "2026-07-18",
+      "publishAt": "2026-07-18T00:00:00.000Z",
+      "fact": {
+        "text": "Bruce Lee was so fast that they had to slow the film down so you could see his moves.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "RoboTTT introduces a method for scaling robot policies by leveraging context, allowing for improved adaptability in various environments. This approach enhances the efficiency of learning and executing tasks by dynamically considering situational factors, addressing limitations in traditional policy training.",
         "source": "llm",
         "title": "RoboTTT: Context Scaling for Robot Policies",
         "link": "https://arxiv.org/abs/2607.15275v1"

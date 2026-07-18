@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-17T21:11:13.539Z",
+  "updated": "2026-07-18T21:08:33.562Z",
   "trends": [
-    {
-      "text": "Scalable Visual Pretraining for Language Intelligence",
-      "link": "https://arxiv.org/abs/2607.09657v1"
-    },
-    {
-      "text": "Evolution of Accuracy and Visual-Cognitive Errors in a Decade of Vision-Language AI Models",
-      "link": "https://arxiv.org/abs/2607.09654v1"
-    },
-    {
-      "text": "VEXAIoT: Autonomous IoT Vulnerability EXploitation using AI Agents",
-      "link": "https://arxiv.org/abs/2607.09653v1"
-    },
-    {
-      "text": "ConceptSMILE: Auditing the Trustworthiness of Concept-Based Explainable AI",
-      "link": "https://arxiv.org/abs/2607.09649v1"
-    },
     {
       "text": "Metacognition in LLMs: Foundations, Progress, and Opportunities",
       "link": "https://arxiv.org/abs/2607.11881v1"
@@ -96,6 +80,22 @@
     {
       "text": "Pretraining Data Can Be Poisoned through Computational Propaganda",
       "link": "https://arxiv.org/abs/2607.15267v1"
+    },
+    {
+      "text": "SceneBind: Binding What and Where Across Vision, Audio and Language",
+      "link": "https://arxiv.org/abs/2607.15265v1"
+    },
+    {
+      "text": "Beyond Success Rate: Cost-Aware Evaluation of Offensive and Defensive Security Agents",
+      "link": "https://arxiv.org/abs/2607.15263v1"
+    },
+    {
+      "text": "Decoding Market Emotion from Blockchain Activity: A Data-Driven Sentiment Classifier",
+      "link": "https://arxiv.org/abs/2607.15258v1"
+    },
+    {
+      "text": "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration",
+      "link": "https://arxiv.org/abs/2607.15257v1"
     }
   ]
 }

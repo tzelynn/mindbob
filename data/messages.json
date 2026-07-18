@@ -1,14 +1,6 @@
 {
-  "updated": "2026-07-17T21:11:09.991Z",
+  "updated": "2026-07-18T21:08:30.626Z",
   "entries": [
-    {
-      "id": "2026-07-04-am",
-      "date": "2026-07-04",
-      "slot": "am",
-      "publishAt": "2026-07-04T00:00:00.000Z",
-      "text": "You’ve got a unique spark that lights up the room—don’t underestimate how much your presence matters.",
-      "source": "llm"
-    },
     {
       "id": "2026-07-05-am",
       "date": "2026-07-05",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-07-17T00:00:00.000Z",
       "text": "You’ve got a way of bringing warmth wherever you go, and it really makes a difference. Just wanted you to know that.",
+      "source": "llm"
+    },
+    {
+      "id": "2026-07-18-am",
+      "date": "2026-07-18",
+      "slot": "am",
+      "publishAt": "2026-07-18T00:00:00.000Z",
+      "text": "Just a note to say your kindness doesn't go unnoticed; it spreads good energy and makes a real impact. Keep shining.",
       "source": "llm"
     }
   ]
