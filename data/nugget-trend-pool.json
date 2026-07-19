@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-18T21:08:33.562Z",
+  "updated": "2026-07-19T21:10:22.129Z",
   "trends": [
-    {
-      "text": "Metacognition in LLMs: Foundations, Progress, and Opportunities",
-      "link": "https://arxiv.org/abs/2607.11881v1"
-    },
-    {
-      "text": "Invariant Learning Dynamics of Transformers in Inductive Reasoning Tasks",
-      "link": "https://arxiv.org/abs/2607.11875v1"
-    },
-    {
-      "text": "A Minimalist Retargeting-Guided Reinforcement Learning Recipe for Dexterous Manipulation",
-      "link": "https://arxiv.org/abs/2607.11874v1"
-    },
-    {
-      "text": "A Durability and Cross-Language Transfer Benchmark for a Validated Teaching-Feedback Classification Protocol",
-      "link": "https://arxiv.org/abs/2607.11873v1"
-    },
     {
       "text": "Inside the Unfair Judge: A Mechanistic Interpretability Account of LLM-as-Judge Bias",
       "link": "https://arxiv.org/abs/2607.11871v1"
@@ -96,6 +80,22 @@
     {
       "text": "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration",
       "link": "https://arxiv.org/abs/2607.15257v1"
+    },
+    {
+      "text": "teLLMe Why (Ain't Nothing but a Jam): Exploratory Causal Analysis of Urban Driving Data",
+      "link": "https://arxiv.org/abs/2607.15254v1"
+    },
+    {
+      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
+    },
+    {
+      "text": "Open source AI is the path forward",
+      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
+    },
+    {
+      "text": "My AI skeptic friends are all nuts",
+      "link": "https://fly.io/blog/youre-all-nuts/"
     }
   ]
 }

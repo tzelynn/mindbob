@@ -1,14 +1,6 @@
 {
-  "updated": "2026-07-18T21:08:30.626Z",
+  "updated": "2026-07-19T21:10:17.746Z",
   "entries": [
-    {
-      "id": "2026-07-05-am",
-      "date": "2026-07-05",
-      "slot": "am",
-      "publishAt": "2026-07-05T00:00:00.000Z",
-      "text": "Just wanted to say that it’s perfectly okay to take a breather and enjoy the small stuff. You've got this.",
-      "source": "llm"
-    },
     {
       "id": "2026-07-06-am",
       "date": "2026-07-06",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-07-18T00:00:00.000Z",
       "text": "Just a note to say your kindness doesn't go unnoticed; it spreads good energy and makes a real impact. Keep shining.",
+      "source": "llm"
+    },
+    {
+      "id": "2026-07-19-am",
+      "date": "2026-07-19",
+      "slot": "am",
+      "publishAt": "2026-07-19T00:00:00.000Z",
+      "text": "You have a talent for turning a regular moment into something memorable; it really makes the world feel more connected.",
       "source": "llm"
     }
   ]

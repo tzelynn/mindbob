@@ -1,20 +1,6 @@
 {
-  "updated": "2026-07-18T21:08:33.562Z",
+  "updated": "2026-07-19T21:10:22.129Z",
   "entries": [
-    {
-      "id": "2026-07-05",
-      "date": "2026-07-05",
-      "publishAt": "2026-07-05T00:00:00.000Z",
-      "fact": {
-        "text": "The state of Florida is bigger than England.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors",
-        "source": "pool",
-        "title": "When LLMs Read Tables Carelessly: Measuring and Reducing Data Referencing Errors"
-      }
-    },
     {
       "id": "2026-07-06",
       "date": "2026-07-06",
@@ -205,6 +191,21 @@
       },
       "trend": {
         "text": "RoboTTT introduces a method for scaling robot policies by leveraging context, allowing for improved adaptability in various environments. This approach enhances the efficiency of learning and executing tasks by dynamically considering situational factors, addressing limitations in traditional policy training.",
+        "source": "llm",
+        "title": "RoboTTT: Context Scaling for Robot Policies",
+        "link": "https://arxiv.org/abs/2607.15275v1"
+      }
+    },
+    {
+      "id": "2026-07-19",
+      "date": "2026-07-19",
+      "publishAt": "2026-07-19T00:00:00.000Z",
+      "fact": {
+        "text": "Nutmeg is extremely poisonous if injected intravenously.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "RoboTTT: Context Scaling for Robot Policies\" introduces a novel approach to scaling robot policy learning by efficiently managing context through task-specific adaptations, enabling robots to better generalize across diverse environments and tasks without extensive retraining.",
         "source": "llm",
         "title": "RoboTTT: Context Scaling for Robot Policies",
         "link": "https://arxiv.org/abs/2607.15275v1"
