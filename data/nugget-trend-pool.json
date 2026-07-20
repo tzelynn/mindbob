@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-19T21:10:22.129Z",
+  "updated": "2026-07-20T21:36:17.037Z",
   "trends": [
-    {
-      "text": "Inside the Unfair Judge: A Mechanistic Interpretability Account of LLM-as-Judge Bias",
-      "link": "https://arxiv.org/abs/2607.11871v1"
-    },
-    {
-      "text": "Evidence-Backed Video Question Answering",
-      "link": "https://arxiv.org/abs/2607.11862v1"
-    },
-    {
-      "text": "Input-Aware Dynamic Backdoor Attack Against Quantum Neural Networks",
-      "link": "https://arxiv.org/abs/2607.11843v1"
-    },
-    {
-      "text": "LoRA-Based Cascaded Multimodal Fusion for Action Recognition in Medical Training Environments",
-      "link": "https://arxiv.org/abs/2607.11839v1"
-    },
     {
       "text": "The Seriality Gap in Video Diffusion Models",
       "link": "https://arxiv.org/abs/2607.13031v1"
@@ -96,6 +80,22 @@
     {
       "text": "My AI skeptic friends are all nuts",
       "link": "https://fly.io/blog/youre-all-nuts/"
+    },
+    {
+      "text": "A Blueprint for Equilibrium-Based Differentiable Continuous-Variable Thermodynamic Computing",
+      "link": "https://arxiv.org/abs/2607.16183v1"
+    },
+    {
+      "text": "Cluster-Aware Matching via Laplacian Optimal Transport",
+      "link": "https://arxiv.org/abs/2607.16178v1"
+    },
+    {
+      "text": "Physics-enhanced reinforcement learning for real-time optimal control of dynamical systems",
+      "link": "https://arxiv.org/abs/2607.16177v1"
+    },
+    {
+      "text": "Evaluating Open-Weight LLMs for Generating Structured Threat Information for Autonomous Vehicle Vulnerabilities",
+      "link": "https://arxiv.org/abs/2607.16175v1"
     }
   ]
 }

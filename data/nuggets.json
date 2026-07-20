@@ -1,21 +1,6 @@
 {
-  "updated": "2026-07-19T21:10:22.129Z",
+  "updated": "2026-07-20T21:36:17.037Z",
   "entries": [
-    {
-      "id": "2026-07-06",
-      "date": "2026-07-06",
-      "publishAt": "2026-07-06T00:00:00.000Z",
-      "fact": {
-        "text": "The national anthem of Greece has 158 verses. No one in Greece has memorized all 158 verses.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning",
-        "source": "pool",
-        "title": "LACUNA: A Testbed for Evaluating Localization Precision for LLM Unlearning",
-        "link": "https://arxiv.org/abs/2607.02513v1"
-      }
-    },
     {
       "id": "2026-07-07",
       "date": "2026-07-07",
@@ -209,6 +194,21 @@
         "source": "llm",
         "title": "RoboTTT: Context Scaling for Robot Policies",
         "link": "https://arxiv.org/abs/2607.15275v1"
+      }
+    },
+    {
+      "id": "2026-07-20",
+      "date": "2026-07-20",
+      "publishAt": "2026-07-20T00:00:00.000Z",
+      "fact": {
+        "text": "Pepsi originally contained pepsin, thus the name.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "PagedWeight introduces a method for efficiently serving Mixture of Experts (MoE) large language models through dynamic quality-aware weight quantization, optimizing resource usage while maintaining model performance during inference. This approach enhances scalability in production environments.",
+        "source": "llm",
+        "title": "PagedWeight: Efficient MoE LLM Serving with Dynamic Quality-Aware Weight Quantization",
+        "link": "https://arxiv.org/abs/2607.16184v1"
       }
     }
   ]
