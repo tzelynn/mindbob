@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-20T21:36:17.037Z",
+  "updated": "2026-07-21T21:36:15.427Z",
   "trends": [
-    {
-      "text": "The Seriality Gap in Video Diffusion Models",
-      "link": "https://arxiv.org/abs/2607.13031v1"
-    },
-    {
-      "text": "TerraZero: Procedural Driving Simulation for Zero-Demonstration Self-Play at Scale",
-      "link": "https://arxiv.org/abs/2607.13028v1"
-    },
-    {
-      "text": "PalmClaw: A Native On-Device Agent Framework for Mobile Phones",
-      "link": "https://arxiv.org/abs/2607.13027v1"
-    },
-    {
-      "text": "A Shortcut to Statistically Steady-State Turbulence with Flow Matching",
-      "link": "https://arxiv.org/abs/2607.13022v1"
-    },
     {
       "text": "Linear Independent Component Analysis via Optimal Transport",
       "link": "https://arxiv.org/abs/2607.14081v1"
@@ -96,6 +80,22 @@
     {
       "text": "Evaluating Open-Weight LLMs for Generating Structured Threat Information for Autonomous Vehicle Vulnerabilities",
       "link": "https://arxiv.org/abs/2607.16175v1"
+    },
+    {
+      "text": "Patch Policy: Efficient Embodied Control via Dense Visual Representations",
+      "link": "https://arxiv.org/abs/2607.18236v1"
+    },
+    {
+      "text": "Automated Discovery Has No Universally Superior Harness",
+      "link": "https://arxiv.org/abs/2607.18235v1"
+    },
+    {
+      "text": "Simple Domain Generalization for Strong Pixel-Level Image Tampering Detection in Modern VLMs",
+      "link": "https://arxiv.org/abs/2607.18230v1"
+    },
+    {
+      "text": "Logical Judgments Under Pressure: Diagnosing Syllogistic Stability with Learned Soft Prefixes",
+      "link": "https://arxiv.org/abs/2607.18228v1"
     }
   ]
 }

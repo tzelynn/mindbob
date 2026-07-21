@@ -1,21 +1,6 @@
 {
-  "updated": "2026-07-20T21:36:17.037Z",
+  "updated": "2026-07-21T21:36:15.427Z",
   "entries": [
-    {
-      "id": "2026-07-07",
-      "date": "2026-07-07",
-      "publishAt": "2026-07-07T00:00:00.000Z",
-      "fact": {
-        "text": "Honey is the only food that does not spoil.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "The paper introduces a view-robust vision-language-action model that eliminates the need for camera calibration, enabling the model to generalize across different camera perspectives. This approach enhances adaptability in real-world applications where camera positioning is variable.",
-        "source": "llm",
-        "title": "From Fixed to Free Cameras: Calibration-Free View-Robust Vision-Language-Action Model",
-        "link": "https://arxiv.org/abs/2607.05396v1"
-      }
-    },
     {
       "id": "2026-07-08",
       "date": "2026-07-08",
@@ -209,6 +194,21 @@
         "source": "llm",
         "title": "PagedWeight: Efficient MoE LLM Serving with Dynamic Quality-Aware Weight Quantization",
         "link": "https://arxiv.org/abs/2607.16184v1"
+      }
+    },
+    {
+      "id": "2026-07-21",
+      "date": "2026-07-21",
+      "publishAt": "2026-07-21T00:00:00.000Z",
+      "fact": {
+        "text": "Coca-Cola was originally green.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "The paper introduces a text-prompted image perceptual metric that evaluates visual similarity based on multiple sensory dimensions, enhancing the ability to capture human-like perceptual judgments in image comparison tasks. This approach aims to bridge the gap between textual descriptions and visual content evaluation.",
+        "source": "llm",
+        "title": "The Many Senses of Visual Similarity: A Text-Prompted Image Perceptual Metric",
+        "link": "https://arxiv.org/abs/2607.18237v1"
       }
     }
   ]

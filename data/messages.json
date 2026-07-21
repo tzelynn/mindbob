@@ -1,14 +1,6 @@
 {
-  "updated": "2026-07-20T21:36:13.831Z",
+  "updated": "2026-07-21T21:36:11.356Z",
   "entries": [
-    {
-      "id": "2026-07-07-am",
-      "date": "2026-07-07",
-      "slot": "am",
-      "publishAt": "2026-07-07T00:00:00.000Z",
-      "text": "Hope you find a moment to do something that makes you smile today. Little joys can be the best kind of magic.",
-      "source": "llm"
-    },
     {
       "id": "2026-07-08-am",
       "date": "2026-07-08",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-07-20T00:00:00.000Z",
       "text": "Your sense of humor is a breath of fresh air; never underestimate how much it lifts the mood around you.",
+      "source": "llm"
+    },
+    {
+      "id": "2026-07-21-am",
+      "date": "2026-07-21",
+      "slot": "am",
+      "publishAt": "2026-07-21T00:00:00.000Z",
+      "text": "You have this cool ability to make everyday moments feel a bit more special; it’s a gift not everyone has. Just a little shoutout to that.",
       "source": "llm"
     }
   ]
