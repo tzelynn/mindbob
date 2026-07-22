@@ -1,21 +1,6 @@
 {
-  "updated": "2026-07-21T21:36:15.427Z",
+  "updated": "2026-07-22T21:37:25.859Z",
   "entries": [
-    {
-      "id": "2026-07-08",
-      "date": "2026-07-08",
-      "publishAt": "2026-07-08T00:00:00.000Z",
-      "fact": {
-        "text": "In the last 4000 years, no new animals have been domesticated.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "ELSA3D introduces Elastic Semantic Anchoring, enhancing the integration of 3D understanding and generation by leveraging semantic information for more coherent spatial representations. This framework aims to improve the scalability and adaptability of 3D models in various applications.",
-        "source": "llm",
-        "title": "ELSA3D: Elastic Semantic Anchoring for Unified 3D Understanding and Generation",
-        "link": "https://arxiv.org/abs/2607.06565v1"
-      }
-    },
     {
       "id": "2026-07-09",
       "date": "2026-07-09",
@@ -209,6 +194,21 @@
         "source": "llm",
         "title": "The Many Senses of Visual Similarity: A Text-Prompted Image Perceptual Metric",
         "link": "https://arxiv.org/abs/2607.18237v1"
+      }
+    },
+    {
+      "id": "2026-07-22",
+      "date": "2026-07-22",
+      "publishAt": "2026-07-22T00:00:00.000Z",
+      "fact": {
+        "text": "Table tennis balls have been known to travel off the paddle at speeds up to 160 km/hr.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "The paper presents a novel approach to long-context reasoning by utilizing evidence-aware reinforcement learning to reduce repetitive copying in outputs. This method enhances the efficiency of generating contextually relevant responses, addressing a common limitation in current long-context models.",
+        "source": "llm",
+        "title": "Copy Less, Ground More: Overcoming Repetitive Copying in Long-Context Reasoning via Evidence-Aware Reinforcement Learning",
+        "link": "https://arxiv.org/abs/2607.19345v1"
       }
     }
   ]

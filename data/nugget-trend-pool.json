@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-21T21:36:15.427Z",
+  "updated": "2026-07-22T21:37:25.859Z",
   "trends": [
-    {
-      "text": "Linear Independent Component Analysis via Optimal Transport",
-      "link": "https://arxiv.org/abs/2607.14081v1"
-    },
-    {
-      "text": "MetaPerch: Learning from metadata for bioacoustics foundation models",
-      "link": "https://arxiv.org/abs/2607.14072v1"
-    },
-    {
-      "text": "Screening of Biosecurity Features in Metagenomic Data with Evo 2 Probes",
-      "link": "https://arxiv.org/abs/2607.14070v1"
-    },
-    {
-      "text": "Deep Interaction: An Efficient Human-AI Interaction Method for Large Reasoning Models",
-      "link": "https://arxiv.org/abs/2607.14049v1"
-    },
     {
       "text": "MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators",
       "link": "https://arxiv.org/abs/2607.15273v1"
@@ -96,6 +80,22 @@
     {
       "text": "Logical Judgments Under Pressure: Diagnosing Syllogistic Stability with Learned Soft Prefixes",
       "link": "https://arxiv.org/abs/2607.18228v1"
+    },
+    {
+      "text": "Appearance Pointers -- Multimodal Region Control of Diffusion Transformers",
+      "link": "https://arxiv.org/abs/2607.19344v1"
+    },
+    {
+      "text": "CodeRescue: Budget-Calibrated Recovery Routing for Coding Agents",
+      "link": "https://arxiv.org/abs/2607.19338v1"
+    },
+    {
+      "text": "Agents in the Wild: Where Research Meets Deployment",
+      "link": "https://arxiv.org/abs/2607.19336v1"
+    },
+    {
+      "text": "1-Lipschitz Neural Networks on Hadamard Manifolds",
+      "link": "https://arxiv.org/abs/2607.19335v1"
     }
   ]
 }
