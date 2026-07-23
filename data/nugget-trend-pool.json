@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-22T21:37:25.859Z",
+  "updated": "2026-07-23T21:31:09.125Z",
   "trends": [
-    {
-      "text": "MeanFlowNFT: Bringing Forward-Process RL to Average-Velocity Generators",
-      "link": "https://arxiv.org/abs/2607.15273v1"
-    },
-    {
-      "text": "SciDiagramEdit: Learning to Edit Scientific Diagrams from Paper Revisions",
-      "link": "https://arxiv.org/abs/2607.15272v1"
-    },
-    {
-      "text": "Online Neural Space Time Memory for Dynamic Novel View Synthesis",
-      "link": "https://arxiv.org/abs/2607.15271v1"
-    },
-    {
-      "text": "Pretraining Data Can Be Poisoned through Computational Propaganda",
-      "link": "https://arxiv.org/abs/2607.15267v1"
-    },
     {
       "text": "SceneBind: Binding What and Where Across Vision, Audio and Language",
       "link": "https://arxiv.org/abs/2607.15265v1"
@@ -96,6 +80,22 @@
     {
       "text": "1-Lipschitz Neural Networks on Hadamard Manifolds",
       "link": "https://arxiv.org/abs/2607.19335v1"
+    },
+    {
+      "text": "SoftReason: A Fully Differentiable Neuro-Soft-Symbolic Deductive Reasoning Architecture over High-Dimensional Perceptual Data",
+      "link": "https://arxiv.org/abs/2607.20402v1"
+    },
+    {
+      "text": "Towards Miniature Humanoid Tele-Loco-Manipulation Using Virtual Reality and Reinforcement Learning",
+      "link": "https://arxiv.org/abs/2607.20399v1"
+    },
+    {
+      "text": "Persian Pixel: A large-scale synthetic OCR dataset for Persian language",
+      "link": "https://arxiv.org/abs/2607.20385v1"
+    },
+    {
+      "text": "FMRP-LEAN: A HIPAA-Compliant AI-Augmented LIMS Architecture for End-to-End Clinical Assay Workflow Optimization",
+      "link": "https://arxiv.org/abs/2607.20382v1"
     }
   ]
 }

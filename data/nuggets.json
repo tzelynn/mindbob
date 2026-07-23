@@ -1,21 +1,6 @@
 {
-  "updated": "2026-07-22T21:37:25.859Z",
+  "updated": "2026-07-23T21:31:09.125Z",
   "entries": [
-    {
-      "id": "2026-07-09",
-      "date": "2026-07-09",
-      "publishAt": "2026-07-09T00:00:00.000Z",
-      "fact": {
-        "text": "In Iceland, a Big Mac costs $5.50.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "I'm Tired of Talking to AI",
-        "source": "pool",
-        "title": "I'm Tired of Talking to AI",
-        "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
-      }
-    },
     {
       "id": "2026-07-10",
       "date": "2026-07-10",
@@ -209,6 +194,21 @@
         "source": "llm",
         "title": "Copy Less, Ground More: Overcoming Repetitive Copying in Long-Context Reasoning via Evidence-Aware Reinforcement Learning",
         "link": "https://arxiv.org/abs/2607.19345v1"
+      }
+    },
+    {
+      "id": "2026-07-23",
+      "date": "2026-07-23",
+      "publishAt": "2026-07-23T00:00:00.000Z",
+      "fact": {
+        "text": "Paraskevidekatriaphobia means fear of Friday the 13th, which occurs one to three times a year.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "The paper \"Lipschitzian SLLNs for random functions\" introduces a new approach to strong law of large numbers (SLLNs) that applies to random functions, extending classical results in probability theory. This development could have implications for understanding convergence in stochastic processes relevant to ML models.",
+        "source": "llm",
+        "title": "Lipschitzian SLLNs for random functions",
+        "link": "https://arxiv.org/abs/2607.20411v1"
       }
     }
   ]

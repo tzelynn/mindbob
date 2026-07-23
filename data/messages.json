@@ -1,14 +1,6 @@
 {
-  "updated": "2026-07-22T21:37:20.967Z",
+  "updated": "2026-07-23T21:31:05.365Z",
   "entries": [
-    {
-      "id": "2026-07-09-am",
-      "date": "2026-07-09",
-      "slot": "am",
-      "publishAt": "2026-07-09T00:00:00.000Z",
-      "text": "You're doing better than you realize, and your perspective is a breath of fresh air. Just keep being your awesome self.",
-      "source": "llm"
-    },
     {
       "id": "2026-07-10-am",
       "date": "2026-07-10",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-07-22T00:00:00.000Z",
       "text": "Your vibe brings a sense of ease that’s hard to find; it makes everything feel a little lighter. Just wanted to say I appreciate that.",
+      "source": "llm"
+    },
+    {
+      "id": "2026-07-23-am",
+      "date": "2026-07-23",
+      "slot": "am",
+      "publishAt": "2026-07-23T00:00:00.000Z",
+      "text": "You have a knack for seeing the little things that others miss, and it adds so much richness to life. Just thought you should know.",
       "source": "llm"
     }
   ]
