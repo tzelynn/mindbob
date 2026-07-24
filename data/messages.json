@@ -1,14 +1,6 @@
 {
-  "updated": "2026-07-23T21:31:05.365Z",
+  "updated": "2026-07-24T21:32:02.343Z",
   "entries": [
-    {
-      "id": "2026-07-10-am",
-      "date": "2026-07-10",
-      "slot": "am",
-      "publishAt": "2026-07-10T00:00:00.000Z",
-      "text": "Just a heads up that your kindness doesn't go unnoticed—it's like a ripple that makes everything a little better.",
-      "source": "llm"
-    },
     {
       "id": "2026-07-11-am",
       "date": "2026-07-11",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-07-23T00:00:00.000Z",
       "text": "You have a knack for seeing the little things that others miss, and it adds so much richness to life. Just thought you should know.",
+      "source": "llm"
+    },
+    {
+      "id": "2026-07-24-am",
+      "date": "2026-07-24",
+      "slot": "am",
+      "publishAt": "2026-07-24T00:00:00.000Z",
+      "text": "You have a unique way of making conversations feel effortless, and it’s a rare quality that truly brightens up the room.",
       "source": "llm"
     }
   ]

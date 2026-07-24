@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-23T21:31:09.125Z",
+  "updated": "2026-07-24T21:32:05.456Z",
   "trends": [
-    {
-      "text": "SceneBind: Binding What and Where Across Vision, Audio and Language",
-      "link": "https://arxiv.org/abs/2607.15265v1"
-    },
-    {
-      "text": "Beyond Success Rate: Cost-Aware Evaluation of Offensive and Defensive Security Agents",
-      "link": "https://arxiv.org/abs/2607.15263v1"
-    },
-    {
-      "text": "Decoding Market Emotion from Blockchain Activity: A Data-Driven Sentiment Classifier",
-      "link": "https://arxiv.org/abs/2607.15258v1"
-    },
-    {
-      "text": "SearchOS-V1: Towards Robust Open-Domain Information-Seeking Agent Collaboration",
-      "link": "https://arxiv.org/abs/2607.15257v1"
-    },
     {
       "text": "teLLMe Why (Ain't Nothing but a Jam): Exploratory Causal Analysis of Urban Driving Data",
       "link": "https://arxiv.org/abs/2607.15254v1"
@@ -96,6 +80,22 @@
     {
       "text": "FMRP-LEAN: A HIPAA-Compliant AI-Augmented LIMS Architecture for End-to-End Clinical Assay Workflow Optimization",
       "link": "https://arxiv.org/abs/2607.20382v1"
+    },
+    {
+      "text": "GraphVid: Interactive Graph-Controllable Video Generation",
+      "link": "https://arxiv.org/abs/2607.21580v1"
+    },
+    {
+      "text": "Barzilai-Borwein Fails Superlinear Convergence on an Open Set of Quadratics for Every Dimension $n\\geq 4$",
+      "link": "https://arxiv.org/abs/2607.21579v1"
+    },
+    {
+      "text": "Synthetic data generation framework for quality control automation in gravure printing",
+      "link": "https://arxiv.org/abs/2607.21577v1"
+    },
+    {
+      "text": "Beyond Sufficiency: Time Series Explanation with Counterfactual Necessity",
+      "link": "https://arxiv.org/abs/2607.21573v1"
     }
   ]
 }

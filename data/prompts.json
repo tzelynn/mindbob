@@ -1,13 +1,6 @@
 {
-  "updated": "2026-07-23T21:31:06.342Z",
+  "updated": "2026-07-24T21:32:03.444Z",
   "entries": [
-    {
-      "id": "2026-07-10",
-      "date": "2026-07-10",
-      "publishAt": "2026-07-10T00:00:00.000Z",
-      "word": "bike",
-      "source": "fallback"
-    },
     {
       "id": "2026-07-11",
       "date": "2026-07-11",
@@ -98,6 +91,13 @@
       "publishAt": "2026-07-23T00:00:00.000Z",
       "word": "dragonfly",
       "source": "llm"
+    },
+    {
+      "id": "2026-07-24",
+      "date": "2026-07-24",
+      "publishAt": "2026-07-24T00:00:00.000Z",
+      "word": "frog",
+      "source": "fallback"
     }
   ]
 }

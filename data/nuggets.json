@@ -1,21 +1,6 @@
 {
-  "updated": "2026-07-23T21:31:09.125Z",
+  "updated": "2026-07-24T21:32:05.456Z",
   "entries": [
-    {
-      "id": "2026-07-10",
-      "date": "2026-07-10",
-      "publishAt": "2026-07-10T00:00:00.000Z",
-      "fact": {
-        "text": "I am.\" is the shortest complete sentence in the English language.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "OpenCoF introduces a novel approach for learning reasoning skills via video generation, enabling models to generate coherent video sequences that reflect logical relationships and causal reasoning. This advancement enhances the ability to understand and predict complex temporal dynamics in visual data.",
-        "source": "llm",
-        "title": "OpenCoF: Learning to Reason Through Video Generation",
-        "link": "https://arxiv.org/abs/2607.08763v1"
-      }
-    },
     {
       "id": "2026-07-11",
       "date": "2026-07-11",
@@ -209,6 +194,21 @@
         "source": "llm",
         "title": "Lipschitzian SLLNs for random functions",
         "link": "https://arxiv.org/abs/2607.20411v1"
+      }
+    },
+    {
+      "id": "2026-07-24",
+      "date": "2026-07-24",
+      "publishAt": "2026-07-24T00:00:00.000Z",
+      "fact": {
+        "text": "There are more ways to shuffle a single deck of cards than there are atoms on Earth.",
+        "source": "bank"
+      },
+      "trend": {
+        "text": "The paper presents 3D-Aware Vision-Language Models (VLMs) that integrate both implicit and explicit geometric representations. This approach enhances the model's understanding of spatial relationships in multi-modal contexts, potentially improving tasks involving 3D scene comprehension and interaction.",
+        "source": "llm",
+        "title": "3D-Aware VLMs with Implicit and Explicit Geometries",
+        "link": "https://arxiv.org/abs/2607.21595v1"
       }
     }
   ]
