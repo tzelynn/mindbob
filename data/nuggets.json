@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24T21:32:05.456Z",
+  "updated": "2026-07-24T22:45:46.031Z",
   "entries": [
     {
       "id": "2026-07-11",
@@ -201,8 +201,8 @@
       "date": "2026-07-24",
       "publishAt": "2026-07-24T00:00:00.000Z",
       "fact": {
-        "text": "There are more ways to shuffle a single deck of cards than there are atoms on Earth.",
-        "source": "bank"
+        "text": "Some individuals express concern sharing their soap, rightly so, considering 75% of all people wash from top to bottom.",
+        "source": "api"
       },
       "trend": {
         "text": "The paper presents 3D-Aware Vision-Language Models (VLMs) that integrate both implicit and explicit geometric representations. This approach enhances the model's understanding of spatial relationships in multi-modal contexts, potentially improving tasks involving 3D scene comprehension and interaction.",
