@@ -1,14 +1,6 @@
 {
-  "updated": "2026-07-24T21:32:02.343Z",
+  "updated": "2026-07-25T21:11:29.357Z",
   "entries": [
-    {
-      "id": "2026-07-11-am",
-      "date": "2026-07-11",
-      "slot": "am",
-      "publishAt": "2026-07-11T00:00:00.000Z",
-      "text": "Sometimes just being you is enough to make a difference. Keep shining in your own way; it truly matters.",
-      "source": "llm"
-    },
     {
       "id": "2026-07-12-am",
       "date": "2026-07-12",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-07-24T00:00:00.000Z",
       "text": "You have a unique way of making conversations feel effortless, and it’s a rare quality that truly brightens up the room.",
+      "source": "llm"
+    },
+    {
+      "id": "2026-07-25-am",
+      "date": "2026-07-25",
+      "slot": "am",
+      "publishAt": "2026-07-25T00:00:00.000Z",
+      "text": "You have a real way of making people feel comfortable, and it’s such a valuable trait. Just wanted to give you a nod for that.",
       "source": "llm"
     }
   ]

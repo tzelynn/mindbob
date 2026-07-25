@@ -1,21 +1,6 @@
 {
-  "updated": "2026-07-24T22:45:46.031Z",
+  "updated": "2026-07-25T21:11:32.506Z",
   "entries": [
-    {
-      "id": "2026-07-11",
-      "date": "2026-07-11",
-      "publishAt": "2026-07-11T00:00:00.000Z",
-      "fact": {
-        "text": "There are two credit cards for every person in the United States.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "OpenCoF introduces a novel approach to video generation by enabling models to learn reasoning skills through the synthesis of visual content. This advancement enhances the capability of AI systems to understand and generate coherent narratives, bridging the gap between visual comprehension and reasoning.",
-        "source": "llm",
-        "title": "OpenCoF: Learning to Reason Through Video Generation",
-        "link": "https://arxiv.org/abs/2607.08763v1"
-      }
-    },
     {
       "id": "2026-07-12",
       "date": "2026-07-12",
@@ -206,6 +191,21 @@
       },
       "trend": {
         "text": "The paper presents 3D-Aware Vision-Language Models (VLMs) that integrate both implicit and explicit geometric representations. This approach enhances the model's understanding of spatial relationships in multi-modal contexts, potentially improving tasks involving 3D scene comprehension and interaction.",
+        "source": "llm",
+        "title": "3D-Aware VLMs with Implicit and Explicit Geometries",
+        "link": "https://arxiv.org/abs/2607.21595v1"
+      }
+    },
+    {
+      "id": "2026-07-25",
+      "date": "2026-07-25",
+      "publishAt": "2026-07-25T00:00:00.000Z",
+      "fact": {
+        "text": "Steely Dan got their name from a sexual device depicted in the book `The Naked Lunch`.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "The paper introduces a new approach to vision-language models that incorporates both implicit and explicit geometric representations, enhancing the model's ability to understand and generate 3D content. This dual geometry approach aims to improve spatial reasoning in multimodal tasks.",
         "source": "llm",
         "title": "3D-Aware VLMs with Implicit and Explicit Geometries",
         "link": "https://arxiv.org/abs/2607.21595v1"
