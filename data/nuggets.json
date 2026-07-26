@@ -1,21 +1,6 @@
 {
-  "updated": "2026-07-25T21:11:32.506Z",
+  "updated": "2026-07-26T21:14:13.598Z",
   "entries": [
-    {
-      "id": "2026-07-12",
-      "date": "2026-07-12",
-      "publishAt": "2026-07-12T00:00:00.000Z",
-      "fact": {
-        "text": "The average person`s left hand does 56% of the typing.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "OpenCoF: Learning to Reason Through Video Generation\" introduces a framework for generating videos that captures complex reasoning from input data, enabling models to synthesize coherent narratives and actions over time. This advances video generation by incorporating explicit reasoning mechanisms.",
-        "source": "llm",
-        "title": "OpenCoF: Learning to Reason Through Video Generation",
-        "link": "https://arxiv.org/abs/2607.08763v1"
-      }
-    },
     {
       "id": "2026-07-13",
       "date": "2026-07-13",
@@ -206,6 +191,21 @@
       },
       "trend": {
         "text": "The paper introduces a new approach to vision-language models that incorporates both implicit and explicit geometric representations, enhancing the model's ability to understand and generate 3D content. This dual geometry approach aims to improve spatial reasoning in multimodal tasks.",
+        "source": "llm",
+        "title": "3D-Aware VLMs with Implicit and Explicit Geometries",
+        "link": "https://arxiv.org/abs/2607.21595v1"
+      }
+    },
+    {
+      "id": "2026-07-26",
+      "date": "2026-07-26",
+      "publishAt": "2026-07-26T00:00:00.000Z",
+      "fact": {
+        "text": "There were always 56 curls in Shirley Temple`s hair.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "The paper introduces 3D-Aware Vision-Language Models (VLMs) leveraging both implicit and explicit geometric representations to enhance understanding of 3D scenes. This dual approach allows for improved spatial reasoning in tasks that require integration of visual and linguistic inputs.",
         "source": "llm",
         "title": "3D-Aware VLMs with Implicit and Explicit Geometries",
         "link": "https://arxiv.org/abs/2607.21595v1"

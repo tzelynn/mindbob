@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-25T21:11:32.506Z",
+  "updated": "2026-07-26T21:14:13.598Z",
   "trends": [
-    {
-      "text": "A Blueprint for Equilibrium-Based Differentiable Continuous-Variable Thermodynamic Computing",
-      "link": "https://arxiv.org/abs/2607.16183v1"
-    },
-    {
-      "text": "Cluster-Aware Matching via Laplacian Optimal Transport",
-      "link": "https://arxiv.org/abs/2607.16178v1"
-    },
-    {
-      "text": "Physics-enhanced reinforcement learning for real-time optimal control of dynamical systems",
-      "link": "https://arxiv.org/abs/2607.16177v1"
-    },
-    {
-      "text": "Evaluating Open-Weight LLMs for Generating Structured Threat Information for Autonomous Vehicle Vulnerabilities",
-      "link": "https://arxiv.org/abs/2607.16175v1"
-    },
     {
       "text": "Patch Policy: Efficient Embodied Control via Dense Visual Representations",
       "link": "https://arxiv.org/abs/2607.18236v1"
@@ -96,6 +80,22 @@
     {
       "text": "OpenForgeRL: Train Harness-native Agents in Any Environment",
       "link": "https://arxiv.org/abs/2607.21557v1"
+    },
+    {
+      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
+    },
+    {
+      "text": "Open source AI is the path forward",
+      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
+    },
+    {
+      "text": "My AI skeptic friends are all nuts",
+      "link": "https://fly.io/blog/youre-all-nuts/"
+    },
+    {
+      "text": "An AI agent published a hit piece on me",
+      "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
     }
   ]
 }
