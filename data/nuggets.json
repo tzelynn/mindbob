@@ -1,21 +1,6 @@
 {
-  "updated": "2026-07-26T21:14:13.598Z",
+  "updated": "2026-07-27T21:32:19.867Z",
   "entries": [
-    {
-      "id": "2026-07-13",
-      "date": "2026-07-13",
-      "publishAt": "2026-07-13T00:00:00.000Z",
-      "fact": {
-        "text": "55.1% of all US prisoners are in prison for drug offenses.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "PHINN-EEG introduces a novel approach to analyze dream-state EEG signals using dynamic Betti curves for topological time-series analysis, enabling improved classification of dream content and facilitating topology-conditioned neural signal synthesis, advancing the intersection of neuroscience and machine learning.",
-        "source": "llm",
-        "title": "PHINN-EEG: Topological Time-Series Analysis of Dream-State EEG -- Dynamic Betti Curves for Dream Content Classification and Topology-Conditioned Neural Signal Synthesis",
-        "link": "https://arxiv.org/abs/2607.09662v1"
-      }
-    },
     {
       "id": "2026-07-14",
       "date": "2026-07-14",
@@ -209,6 +194,21 @@
         "source": "llm",
         "title": "3D-Aware VLMs with Implicit and Explicit Geometries",
         "link": "https://arxiv.org/abs/2607.21595v1"
+      }
+    },
+    {
+      "id": "2026-07-27",
+      "date": "2026-07-27",
+      "publishAt": "2026-07-27T00:00:00.000Z",
+      "fact": {
+        "text": "Laredo, Texas is the U.S.'s farthest inland port.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "SM4RT: Learning Structured Motion Geometry for 4D Reconstruction\" introduces a novel approach to capturing and reconstructing dynamic scenes in four dimensions, enhancing the accuracy and efficiency of motion analysis in computer vision tasks by leveraging structured motion information.",
+        "source": "llm",
+        "title": "SM4RT: Learning Structured Motion Geometry for 4D Reconstruction",
+        "link": "https://arxiv.org/abs/2607.22534v1"
       }
     }
   ]

@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-26T21:14:13.598Z",
+  "updated": "2026-07-27T21:32:19.867Z",
   "trends": [
-    {
-      "text": "Patch Policy: Efficient Embodied Control via Dense Visual Representations",
-      "link": "https://arxiv.org/abs/2607.18236v1"
-    },
-    {
-      "text": "Automated Discovery Has No Universally Superior Harness",
-      "link": "https://arxiv.org/abs/2607.18235v1"
-    },
-    {
-      "text": "Simple Domain Generalization for Strong Pixel-Level Image Tampering Detection in Modern VLMs",
-      "link": "https://arxiv.org/abs/2607.18230v1"
-    },
-    {
-      "text": "Logical Judgments Under Pressure: Diagnosing Syllogistic Stability with Learned Soft Prefixes",
-      "link": "https://arxiv.org/abs/2607.18228v1"
-    },
     {
       "text": "Appearance Pointers -- Multimodal Region Control of Diffusion Transformers",
       "link": "https://arxiv.org/abs/2607.19344v1"
@@ -96,6 +80,22 @@
     {
       "text": "An AI agent published a hit piece on me",
       "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
+    },
+    {
+      "text": "Explainable Reinforcement Learning for assisting Air Traffic Controllers",
+      "link": "https://arxiv.org/abs/2607.22525v1"
+    },
+    {
+      "text": "The Regression Tax: Decomposing Why Skills Help and Hurt LLM Agents",
+      "link": "https://arxiv.org/abs/2607.22520v1"
+    },
+    {
+      "text": "PinEqualizer: Full Funnel Content Exploration and Debiasing System at Pinterest",
+      "link": "https://arxiv.org/abs/2607.22518v1"
+    },
+    {
+      "text": "Quantum Spectral Model: Data Reuploading with Input-Conditioned Frequency Support",
+      "link": "https://arxiv.org/abs/2607.22516v1"
     }
   ]
 }

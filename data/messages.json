@@ -1,14 +1,6 @@
 {
-  "updated": "2026-07-26T21:14:10.198Z",
+  "updated": "2026-07-27T21:32:15.654Z",
   "entries": [
-    {
-      "id": "2026-07-13-am",
-      "date": "2026-07-13",
-      "slot": "am",
-      "publishAt": "2026-07-13T00:00:00.000Z",
-      "text": "You're really great at finding the fun in the ordinary—never underestimate how much that lifts everyone up around you.",
-      "source": "llm"
-    },
     {
       "id": "2026-07-14-am",
       "date": "2026-07-14",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-07-26T00:00:00.000Z",
       "text": "You have a way of turning ordinary moments into something memorable, and it’s really special to be around. Just wanted to share that.",
+      "source": "llm"
+    },
+    {
+      "id": "2026-07-27-am",
+      "date": "2026-07-27",
+      "slot": "am",
+      "publishAt": "2026-07-27T00:00:00.000Z",
+      "text": "I always appreciate how you bring a calm energy wherever you go; it makes the world feel a bit more relaxed. Just thought you'd like to know.",
       "source": "llm"
     }
   ]
