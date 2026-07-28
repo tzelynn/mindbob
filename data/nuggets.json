@@ -1,21 +1,6 @@
 {
-  "updated": "2026-07-27T21:32:19.867Z",
+  "updated": "2026-07-28T21:34:11.062Z",
   "entries": [
-    {
-      "id": "2026-07-14",
-      "date": "2026-07-14",
-      "publishAt": "2026-07-14T00:00:00.000Z",
-      "fact": {
-        "text": "Proportional to their size, cats have the largest eyes of all mammals.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Requential Coding introduces a novel approach to model compression by leveraging self-generated training data, enabling significant reductions in model size without sacrificing performance. This method enhances efficiency, particularly for deployment in resource-constrained environments.",
-        "source": "llm",
-        "title": "Requential Coding: Pushing the Limits of Model Compression with Self-Generated Training Data",
-        "link": "https://arxiv.org/abs/2607.11883v1"
-      }
-    },
     {
       "id": "2026-07-15",
       "date": "2026-07-15",
@@ -209,6 +194,21 @@
         "source": "llm",
         "title": "SM4RT: Learning Structured Motion Geometry for 4D Reconstruction",
         "link": "https://arxiv.org/abs/2607.22534v1"
+      }
+    },
+    {
+      "id": "2026-07-28",
+      "date": "2026-07-28",
+      "publishAt": "2026-07-28T00:00:00.000Z",
+      "fact": {
+        "text": "US gold coins used to say “In Gold We Trust”.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "ClinFusion introduces a vision-centric multimodal LLM that integrates clinical text and medical imaging, enhancing the model's capability for comprehensive medical understanding. This approach emphasizes the synergy between visual and textual data to improve diagnostics and knowledge extraction in healthcare.",
+        "source": "llm",
+        "title": "ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical Understanding",
+        "link": "https://arxiv.org/abs/2607.24743v1"
       }
     }
   ]

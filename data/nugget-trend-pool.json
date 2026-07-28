@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-27T21:32:19.867Z",
+  "updated": "2026-07-28T21:34:11.062Z",
   "trends": [
-    {
-      "text": "Appearance Pointers -- Multimodal Region Control of Diffusion Transformers",
-      "link": "https://arxiv.org/abs/2607.19344v1"
-    },
-    {
-      "text": "CodeRescue: Budget-Calibrated Recovery Routing for Coding Agents",
-      "link": "https://arxiv.org/abs/2607.19338v1"
-    },
-    {
-      "text": "Agents in the Wild: Where Research Meets Deployment",
-      "link": "https://arxiv.org/abs/2607.19336v1"
-    },
-    {
-      "text": "1-Lipschitz Neural Networks on Hadamard Manifolds",
-      "link": "https://arxiv.org/abs/2607.19335v1"
-    },
     {
       "text": "SoftReason: A Fully Differentiable Neuro-Soft-Symbolic Deductive Reasoning Architecture over High-Dimensional Perceptual Data",
       "link": "https://arxiv.org/abs/2607.20402v1"
@@ -96,6 +80,22 @@
     {
       "text": "Quantum Spectral Model: Data Reuploading with Input-Conditioned Frequency Support",
       "link": "https://arxiv.org/abs/2607.22516v1"
+    },
+    {
+      "text": "Certified Parallel-in-Time Sinkhorn for Dynamic Entropic Optimal Transport",
+      "link": "https://arxiv.org/abs/2607.24741v1"
+    },
+    {
+      "text": "Learning Distributions from Multiple Data Providers",
+      "link": "https://arxiv.org/abs/2607.24732v1"
+    },
+    {
+      "text": "Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation",
+      "link": "https://arxiv.org/abs/2607.24731v1"
+    },
+    {
+      "text": "KANEx: Translating Kolmogorov-Arnold Networks' Interpretability to Medical Explainability",
+      "link": "https://arxiv.org/abs/2607.24730v1"
     }
   ]
 }
