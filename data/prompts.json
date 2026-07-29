@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-29T21:15:06.074Z",
+  "updated": "2026-07-29T22:42:40.894Z",
   "entries": [
     {
       "id": "2026-07-16",
@@ -96,8 +96,8 @@
       "id": "2026-07-29",
       "date": "2026-07-29",
       "publishAt": "2026-07-29T00:00:00.000Z",
-      "word": "snail",
-      "source": "fallback"
+      "word": "cupcake",
+      "source": "llm"
     }
   ]
 }
