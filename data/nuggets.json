@@ -1,21 +1,6 @@
 {
-  "updated": "2026-07-28T21:34:11.062Z",
+  "updated": "2026-07-29T21:15:08.359Z",
   "entries": [
-    {
-      "id": "2026-07-15",
-      "date": "2026-07-15",
-      "publishAt": "2026-07-15T00:00:00.000Z",
-      "fact": {
-        "text": "In 10 minutes, a hurricane releases more energy than all the world’s nuclear weapons combined.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "The paper explores whether AI agents can assess task complexity to enhance reasoning and execution efficiency. It introduces a framework for agents to discern simple tasks from complex ones, aiming to improve decision-making processes in dynamic environments.",
-        "source": "llm",
-        "title": "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution",
-        "link": "https://arxiv.org/abs/2607.13034v1"
-      }
-    },
     {
       "id": "2026-07-16",
       "date": "2026-07-16",
@@ -209,6 +194,21 @@
         "source": "llm",
         "title": "ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical Understanding",
         "link": "https://arxiv.org/abs/2607.24743v1"
+      }
+    },
+    {
+      "id": "2026-07-29",
+      "date": "2026-07-29",
+      "publishAt": "2026-07-29T00:00:00.000Z",
+      "fact": {
+        "text": "The Great Wall of China is the only man-made structure visible from space.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Pass the Baton: Trajectory-Relayed On-Policy Distillation\" introduces a novel method for on-policy distillation that leverages trajectory relaying to enhance the training of smaller models. This approach allows for more effective knowledge transfer from larger, complex agents during policy learning.",
+        "source": "llm",
+        "title": "Pass the Baton: Trajectory-Relayed On-Policy Distillation",
+        "link": "https://arxiv.org/abs/2607.26057v1"
       }
     }
   ]

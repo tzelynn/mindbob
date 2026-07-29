@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-28T21:34:11.062Z",
+  "updated": "2026-07-29T21:15:08.359Z",
   "trends": [
-    {
-      "text": "SoftReason: A Fully Differentiable Neuro-Soft-Symbolic Deductive Reasoning Architecture over High-Dimensional Perceptual Data",
-      "link": "https://arxiv.org/abs/2607.20402v1"
-    },
-    {
-      "text": "Towards Miniature Humanoid Tele-Loco-Manipulation Using Virtual Reality and Reinforcement Learning",
-      "link": "https://arxiv.org/abs/2607.20399v1"
-    },
-    {
-      "text": "Persian Pixel: A large-scale synthetic OCR dataset for Persian language",
-      "link": "https://arxiv.org/abs/2607.20385v1"
-    },
-    {
-      "text": "FMRP-LEAN: A HIPAA-Compliant AI-Augmented LIMS Architecture for End-to-End Clinical Assay Workflow Optimization",
-      "link": "https://arxiv.org/abs/2607.20382v1"
-    },
     {
       "text": "GraphVid: Interactive Graph-Controllable Video Generation",
       "link": "https://arxiv.org/abs/2607.21580v1"
@@ -96,6 +80,22 @@
     {
       "text": "KANEx: Translating Kolmogorov-Arnold Networks' Interpretability to Medical Explainability",
       "link": "https://arxiv.org/abs/2607.24730v1"
+    },
+    {
+      "text": "$π\\mathbf{R}^2$: Reactive Real-time Flow Policies",
+      "link": "https://arxiv.org/abs/2607.26055v1"
+    },
+    {
+      "text": "Spend Experts Where You Are Unsure: Confidence-Adaptive Routing for Mixture-of-Experts LoRA",
+      "link": "https://arxiv.org/abs/2607.26052v1"
+    },
+    {
+      "text": "Re-thinking Mammography Transfer Learning: The Dataset-Informed Transfer Learning (DITL) Framework for Breast Cancer Screening and Lesion Diagnosis",
+      "link": "https://arxiv.org/abs/2607.26043v1"
+    },
+    {
+      "text": "VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening",
+      "link": "https://arxiv.org/abs/2607.26042v1"
     }
   ]
 }
