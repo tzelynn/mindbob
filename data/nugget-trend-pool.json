@@ -1,22 +1,6 @@
 {
-  "updated": "2026-07-29T21:15:08.359Z",
+  "updated": "2026-07-30T21:36:08.581Z",
   "trends": [
-    {
-      "text": "GraphVid: Interactive Graph-Controllable Video Generation",
-      "link": "https://arxiv.org/abs/2607.21580v1"
-    },
-    {
-      "text": "Barzilai-Borwein Fails Superlinear Convergence on an Open Set of Quadratics for Every Dimension $n\\geq 4$",
-      "link": "https://arxiv.org/abs/2607.21579v1"
-    },
-    {
-      "text": "Synthetic data generation framework for quality control automation in gravure printing",
-      "link": "https://arxiv.org/abs/2607.21577v1"
-    },
-    {
-      "text": "Beyond Sufficiency: Time Series Explanation with Counterfactual Necessity",
-      "link": "https://arxiv.org/abs/2607.21573v1"
-    },
     {
       "text": "Graph Learning on Ensembles of Cyclic Peptides: An Investigation of Molecular Ensemble Modeling",
       "link": "https://arxiv.org/abs/2607.21561v1"
@@ -96,6 +80,22 @@
     {
       "text": "VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening",
       "link": "https://arxiv.org/abs/2607.26042v1"
+    },
+    {
+      "text": "From Classification to Regression: Using a Fruitfly to Solve Equations",
+      "link": "https://arxiv.org/abs/2607.27196v1"
+    },
+    {
+      "text": "Can AI agents conduct open-ended AI research? Early evidence from two case studies",
+      "link": "https://arxiv.org/abs/2607.27191v1"
+    },
+    {
+      "text": "Inverse Learning of Latent Risk-Neutral Densities from Irregular Option Quotes",
+      "link": "https://arxiv.org/abs/2607.27188v1"
+    },
+    {
+      "text": "The Social Cost of an AI Teammate: How an Artificial Teammate Reshapes Human-Human Communication in Small-Team Decision-Making",
+      "link": "https://arxiv.org/abs/2607.27179v1"
     }
   ]
 }

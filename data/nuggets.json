@@ -1,21 +1,6 @@
 {
-  "updated": "2026-07-29T21:15:08.359Z",
+  "updated": "2026-07-30T21:36:08.581Z",
   "entries": [
-    {
-      "id": "2026-07-16",
-      "date": "2026-07-16",
-      "publishAt": "2026-07-16T00:00:00.000Z",
-      "fact": {
-        "text": "Your tongue is the only muscle in your body that is attached at only one end.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "The paper proposes a novel approach to neural population decoding that utilizes unlabelled data, enhancing the model's generalizability across different tasks. This method addresses the challenge of limited labelled datasets in neuroscience applications, potentially improving decoding accuracy and robustness.",
-        "source": "llm",
-        "title": "Leveraging unlabelled data for generalizable neural population decoding",
-        "link": "https://arxiv.org/abs/2607.14086v1"
-      }
-    },
     {
       "id": "2026-07-17",
       "date": "2026-07-17",
@@ -209,6 +194,21 @@
         "source": "llm",
         "title": "Pass the Baton: Trajectory-Relayed On-Policy Distillation",
         "link": "https://arxiv.org/abs/2607.26057v1"
+      }
+    },
+    {
+      "id": "2026-07-30",
+      "date": "2026-07-30",
+      "publishAt": "2026-07-30T00:00:00.000Z",
+      "fact": {
+        "text": "Donald Duck`s middle name is Fauntleroy.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation",
+        "source": "pool",
+        "title": "Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation",
+        "link": "https://arxiv.org/abs/2607.24731v1"
       }
     }
   ]

@@ -1,14 +1,6 @@
 {
-  "updated": "2026-07-29T21:15:04.169Z",
+  "updated": "2026-07-30T21:35:58.476Z",
   "entries": [
-    {
-      "id": "2026-07-16-am",
-      "date": "2026-07-16",
-      "slot": "am",
-      "publishAt": "2026-07-16T00:00:00.000Z",
-      "text": "Just a little reminder that your perspective is refreshingly unique; it adds a special touch to everything around you.",
-      "source": "llm"
-    },
     {
       "id": "2026-07-17-am",
       "date": "2026-07-17",
@@ -112,6 +104,14 @@
       "publishAt": "2026-07-29T00:00:00.000Z",
       "text": "You have a great eye for detail, and it adds a nice touch to everything you do. Just thought I’d mention how much I admire that.",
       "source": "llm"
+    },
+    {
+      "id": "2026-07-30-am",
+      "date": "2026-07-30",
+      "slot": "am",
+      "publishAt": "2026-07-30T00:00:00.000Z",
+      "text": "It doesn't need to be big. It just needs to be yours.",
+      "source": "fallback"
     }
   ]
 }
