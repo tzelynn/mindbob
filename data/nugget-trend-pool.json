@@ -1,18 +1,6 @@
 {
-  "updated": "2026-07-30T21:36:08.581Z",
+  "updated": "2026-07-31T21:31:51.834Z",
   "trends": [
-    {
-      "text": "Graph Learning on Ensembles of Cyclic Peptides: An Investigation of Molecular Ensemble Modeling",
-      "link": "https://arxiv.org/abs/2607.21561v1"
-    },
-    {
-      "text": "Unsupervised Consensus-Based Anomaly Detection for Spatiotemporal Malaria Incidence in Ghana",
-      "link": "https://arxiv.org/abs/2607.21559v1"
-    },
-    {
-      "text": "Beyond Sycophancy: Structured Resistance and Compliance in LLM Moral Reasoning",
-      "link": "https://arxiv.org/abs/2607.21558v1"
-    },
     {
       "text": "OpenForgeRL: Train Harness-native Agents in Any Environment",
       "link": "https://arxiv.org/abs/2607.21557v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2607.24732v1"
     },
     {
-      "text": "Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation",
-      "link": "https://arxiv.org/abs/2607.24731v1"
-    },
-    {
       "text": "KANEx: Translating Kolmogorov-Arnold Networks' Interpretability to Medical Explainability",
       "link": "https://arxiv.org/abs/2607.24730v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "The Social Cost of an AI Teammate: How an Artificial Teammate Reshapes Human-Human Communication in Small-Team Decision-Making",
       "link": "https://arxiv.org/abs/2607.27179v1"
+    },
+    {
+      "text": "ReToken: One Token to Improve Vision-Language Models for Visual Retrieval",
+      "link": "https://arxiv.org/abs/2607.28627v1"
+    },
+    {
+      "text": "PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball",
+      "link": "https://arxiv.org/abs/2607.28623v1"
+    },
+    {
+      "text": "AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis",
+      "link": "https://arxiv.org/abs/2607.28618v1"
+    },
+    {
+      "text": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
+      "link": "https://arxiv.org/abs/2607.28617v1"
     }
   ]
 }
