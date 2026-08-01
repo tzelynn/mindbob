@@ -1,13 +1,6 @@
 {
-  "updated": "2026-07-31T21:31:51.083Z",
+  "updated": "2026-08-01T21:12:08.837Z",
   "entries": [
-    {
-      "id": "2026-07-18",
-      "date": "2026-07-18",
-      "publishAt": "2026-07-18T00:00:00.000Z",
-      "word": "giraffe",
-      "source": "llm"
-    },
     {
       "id": "2026-07-19",
       "date": "2026-07-19",
@@ -97,6 +90,13 @@
       "date": "2026-07-31",
       "publishAt": "2026-07-31T00:00:00.000Z",
       "word": "snail",
+      "source": "fallback"
+    },
+    {
+      "id": "2026-08-01",
+      "date": "2026-08-01",
+      "publishAt": "2026-08-01T00:00:00.000Z",
+      "word": "butterfly",
       "source": "fallback"
     }
   ]

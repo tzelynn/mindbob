@@ -1,21 +1,6 @@
 {
-  "updated": "2026-07-31T21:31:51.834Z",
+  "updated": "2026-08-01T21:12:09.577Z",
   "entries": [
-    {
-      "id": "2026-07-18",
-      "date": "2026-07-18",
-      "publishAt": "2026-07-18T00:00:00.000Z",
-      "fact": {
-        "text": "Bruce Lee was so fast that they had to slow the film down so you could see his moves.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "RoboTTT introduces a method for scaling robot policies by leveraging context, allowing for improved adaptability in various environments. This approach enhances the efficiency of learning and executing tasks by dynamically considering situational factors, addressing limitations in traditional policy training.",
-        "source": "llm",
-        "title": "RoboTTT: Context Scaling for Robot Policies",
-        "link": "https://arxiv.org/abs/2607.15275v1"
-      }
-    },
     {
       "id": "2026-07-19",
       "date": "2026-07-19",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Re-thinking Mammography Transfer Learning: The Dataset-Informed Transfer Learning (DITL) Framework for Breast Cancer Screening and Lesion Diagnosis",
         "link": "https://arxiv.org/abs/2607.26043v1"
+      }
+    },
+    {
+      "id": "2026-08-01",
+      "date": "2026-08-01",
+      "publishAt": "2026-08-01T00:00:00.000Z",
+      "fact": {
+        "text": "In the U.S, Frisbees outsell footballs, baseballs and basketballs combined.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Inverse Learning of Latent Risk-Neutral Densities from Irregular Option Quotes",
+        "source": "pool",
+        "title": "Inverse Learning of Latent Risk-Neutral Densities from Irregular Option Quotes",
+        "link": "https://arxiv.org/abs/2607.27188v1"
       }
     }
   ]

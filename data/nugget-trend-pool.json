@@ -1,18 +1,6 @@
 {
-  "updated": "2026-07-31T21:31:51.834Z",
+  "updated": "2026-08-01T21:12:09.577Z",
   "trends": [
-    {
-      "text": "OpenForgeRL: Train Harness-native Agents in Any Environment",
-      "link": "https://arxiv.org/abs/2607.21557v1"
-    },
-    {
-      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
-      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
-    },
-    {
-      "text": "Open source AI is the path forward",
-      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
-    },
     {
       "text": "My AI skeptic friends are all nuts",
       "link": "https://fly.io/blog/youre-all-nuts/"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2607.26052v1"
     },
     {
-      "text": "Re-thinking Mammography Transfer Learning: The Dataset-Informed Transfer Learning (DITL) Framework for Breast Cancer Screening and Lesion Diagnosis",
-      "link": "https://arxiv.org/abs/2607.26043v1"
-    },
-    {
       "text": "VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening",
       "link": "https://arxiv.org/abs/2607.26042v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
       "link": "https://arxiv.org/abs/2607.28617v1"
+    },
+    {
+      "text": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
+      "link": "https://arxiv.org/abs/2607.28609v1"
+    },
+    {
+      "text": "KAISEN: Reproducible Subgroup Fairness Auditing for Clinical Risk Models",
+      "link": "https://arxiv.org/abs/2607.28608v1"
+    },
+    {
+      "text": "Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments",
+      "link": "https://arxiv.org/abs/2607.28591v1"
+    },
+    {
+      "text": "MixFrag: Fragility-Guided Mixed-Precision Post-Training Quantization for Vision Transformers",
+      "link": "https://arxiv.org/abs/2607.28589v1"
     }
   ]
 }
