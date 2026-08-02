@@ -1,14 +1,6 @@
 {
-  "updated": "2026-08-01T21:12:08.558Z",
+  "updated": "2026-08-02T21:13:01.177Z",
   "entries": [
-    {
-      "id": "2026-07-19-am",
-      "date": "2026-07-19",
-      "slot": "am",
-      "publishAt": "2026-07-19T00:00:00.000Z",
-      "text": "You have a talent for turning a regular moment into something memorable; it really makes the world feel more connected.",
-      "source": "llm"
-    },
     {
       "id": "2026-07-20-am",
       "date": "2026-07-20",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-08-01T00:00:00.000Z",
       "text": "Be a little kinder to yourself than you think you deserve. It usually balances out.",
+      "source": "fallback"
+    },
+    {
+      "id": "2026-08-02-am",
+      "date": "2026-08-02",
+      "slot": "am",
+      "publishAt": "2026-08-02T00:00:00.000Z",
+      "text": "You don't have to do it all — just the next small thing.",
       "source": "fallback"
     }
   ]

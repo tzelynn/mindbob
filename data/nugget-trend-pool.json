@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-01T21:12:09.577Z",
+  "updated": "2026-08-02T21:13:02.378Z",
   "trends": [
-    {
-      "text": "My AI skeptic friends are all nuts",
-      "link": "https://fly.io/blog/youre-all-nuts/"
-    },
-    {
-      "text": "An AI agent published a hit piece on me",
-      "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
-    },
-    {
-      "text": "Explainable Reinforcement Learning for assisting Air Traffic Controllers",
-      "link": "https://arxiv.org/abs/2607.22525v1"
-    },
     {
       "text": "The Regression Tax: Decomposing Why Skills Help and Hurt LLM Agents",
       "link": "https://arxiv.org/abs/2607.22520v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2607.27191v1"
     },
     {
-      "text": "Inverse Learning of Latent Risk-Neutral Densities from Irregular Option Quotes",
-      "link": "https://arxiv.org/abs/2607.27188v1"
-    },
-    {
       "text": "The Social Cost of an AI Teammate: How an Artificial Teammate Reshapes Human-Human Communication in Small-Team Decision-Making",
       "link": "https://arxiv.org/abs/2607.27179v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "MixFrag: Fragility-Guided Mixed-Precision Post-Training Quantization for Vision Transformers",
       "link": "https://arxiv.org/abs/2607.28589v1"
+    },
+    {
+      "text": "PAIChecker: Uncovering and Checking PR-Issue Misalignment in SWE-Bench-Like Benchmarks",
+      "link": "https://arxiv.org/abs/2607.28587v1"
+    },
+    {
+      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
+    },
+    {
+      "text": "Open source AI is the path forward",
+      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
+    },
+    {
+      "text": "I believe there are entire companies right now under AI psychosis",
+      "link": "https://twitter.com/mitchellh/status/2055380239711457578"
     }
   ]
 }

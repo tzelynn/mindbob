@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-01T21:12:09.577Z",
+  "updated": "2026-08-02T21:13:02.378Z",
   "entries": [
-    {
-      "id": "2026-07-19",
-      "date": "2026-07-19",
-      "publishAt": "2026-07-19T00:00:00.000Z",
-      "fact": {
-        "text": "Nutmeg is extremely poisonous if injected intravenously.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "RoboTTT: Context Scaling for Robot Policies\" introduces a novel approach to scaling robot policy learning by efficiently managing context through task-specific adaptations, enabling robots to better generalize across diverse environments and tasks without extensive retraining.",
-        "source": "llm",
-        "title": "RoboTTT: Context Scaling for Robot Policies",
-        "link": "https://arxiv.org/abs/2607.15275v1"
-      }
-    },
     {
       "id": "2026-07-20",
       "date": "2026-07-20",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Inverse Learning of Latent Risk-Neutral Densities from Irregular Option Quotes",
         "link": "https://arxiv.org/abs/2607.27188v1"
+      }
+    },
+    {
+      "id": "2026-08-02",
+      "date": "2026-08-02",
+      "publishAt": "2026-08-02T00:00:00.000Z",
+      "fact": {
+        "text": "The average person spends about two years on the phone in a lifetime.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis",
+        "source": "pool",
+        "title": "AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis",
+        "link": "https://arxiv.org/abs/2607.28618v1"
       }
     }
   ]
