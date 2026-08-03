@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-02T21:13:02.378Z",
+  "updated": "2026-08-03T21:33:33.154Z",
   "trends": [
-    {
-      "text": "The Regression Tax: Decomposing Why Skills Help and Hurt LLM Agents",
-      "link": "https://arxiv.org/abs/2607.22520v1"
-    },
-    {
-      "text": "PinEqualizer: Full Funnel Content Exploration and Debiasing System at Pinterest",
-      "link": "https://arxiv.org/abs/2607.22518v1"
-    },
-    {
-      "text": "Quantum Spectral Model: Data Reuploading with Input-Conditioned Frequency Support",
-      "link": "https://arxiv.org/abs/2607.22516v1"
-    },
     {
       "text": "Certified Parallel-in-Time Sinkhorn for Dynamic Entropic Optimal Transport",
       "link": "https://arxiv.org/abs/2607.24741v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2607.28623v1"
     },
     {
-      "text": "AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis",
-      "link": "https://arxiv.org/abs/2607.28618v1"
-    },
-    {
       "text": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
       "link": "https://arxiv.org/abs/2607.28617v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "I believe there are entire companies right now under AI psychosis",
       "link": "https://twitter.com/mitchellh/status/2055380239711457578"
+    },
+    {
+      "text": "Differentially Private Nonparametric Modal Learning with Applications to Regression and Clustering",
+      "link": "https://arxiv.org/abs/2607.29675v1"
+    },
+    {
+      "text": "Sign compression for Muon: SignMuon, MuonSign, and the Limits of Error Feedback",
+      "link": "https://arxiv.org/abs/2607.29674v1"
+    },
+    {
+      "text": "Freeze, Then Select: Structured Field Adapters and Stability-Validated Weak Selection for PDE Discovery from Sparse Observations",
+      "link": "https://arxiv.org/abs/2607.29665v1"
+    },
+    {
+      "text": "GQ-FSL: Green Quantized Federated Split Learning",
+      "link": "https://arxiv.org/abs/2607.29659v1"
     }
   ]
 }

@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-02T21:13:02.378Z",
+  "updated": "2026-08-03T21:33:33.154Z",
   "entries": [
-    {
-      "id": "2026-07-20",
-      "date": "2026-07-20",
-      "publishAt": "2026-07-20T00:00:00.000Z",
-      "fact": {
-        "text": "Pepsi originally contained pepsin, thus the name.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "PagedWeight introduces a method for efficiently serving Mixture of Experts (MoE) large language models through dynamic quality-aware weight quantization, optimizing resource usage while maintaining model performance during inference. This approach enhances scalability in production environments.",
-        "source": "llm",
-        "title": "PagedWeight: Efficient MoE LLM Serving with Dynamic Quality-Aware Weight Quantization",
-        "link": "https://arxiv.org/abs/2607.16184v1"
-      }
-    },
     {
       "id": "2026-07-21",
       "date": "2026-07-21",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis",
         "link": "https://arxiv.org/abs/2607.28618v1"
+      }
+    },
+    {
+      "id": "2026-08-03",
+      "date": "2026-08-03",
+      "publishAt": "2026-08-03T00:00:00.000Z",
+      "fact": {
+        "text": "During his entire life, Vincent Van Gogh sold exactly one painting, “Red Vineyard at Arles”.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments",
+        "source": "pool",
+        "title": "Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments",
+        "link": "https://arxiv.org/abs/2607.28591v1"
       }
     }
   ]
