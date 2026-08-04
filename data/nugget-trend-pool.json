@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-03T21:33:33.154Z",
+  "updated": "2026-08-04T21:41:35.139Z",
   "trends": [
-    {
-      "text": "Certified Parallel-in-Time Sinkhorn for Dynamic Entropic Optimal Transport",
-      "link": "https://arxiv.org/abs/2607.24741v1"
-    },
-    {
-      "text": "Learning Distributions from Multiple Data Providers",
-      "link": "https://arxiv.org/abs/2607.24732v1"
-    },
-    {
-      "text": "KANEx: Translating Kolmogorov-Arnold Networks' Interpretability to Medical Explainability",
-      "link": "https://arxiv.org/abs/2607.24730v1"
-    },
     {
       "text": "$π\\mathbf{R}^2$: Reactive Real-time Flow Policies",
       "link": "https://arxiv.org/abs/2607.26055v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2607.28608v1"
     },
     {
-      "text": "Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments",
-      "link": "https://arxiv.org/abs/2607.28591v1"
-    },
-    {
       "text": "MixFrag: Fragility-Guided Mixed-Precision Post-Training Quantization for Vision Transformers",
       "link": "https://arxiv.org/abs/2607.28589v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "GQ-FSL: Green Quantized Federated Split Learning",
       "link": "https://arxiv.org/abs/2607.29659v1"
+    },
+    {
+      "text": "onepot-Bench 0: towards lab-aware in silico chemistry benchmarks",
+      "link": "https://arxiv.org/abs/2608.02595v1"
+    },
+    {
+      "text": "The Condition-Number Barrier in Sparse Least Squares",
+      "link": "https://arxiv.org/abs/2608.02588v1"
+    },
+    {
+      "text": "GradCuit: Credit-Assigned Gradient Flow Enables Robust and Interpretable Test-Time Latent Reasoning",
+      "link": "https://arxiv.org/abs/2608.02585v1"
+    },
+    {
+      "text": "UEmbed: Unified Sparse and Dense Multimodal Embeddings",
+      "link": "https://arxiv.org/abs/2608.02583v1"
     }
   ]
 }

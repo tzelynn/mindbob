@@ -1,14 +1,6 @@
 {
-  "updated": "2026-08-03T21:33:31.848Z",
+  "updated": "2026-08-04T21:41:33.615Z",
   "entries": [
-    {
-      "id": "2026-07-21-am",
-      "date": "2026-07-21",
-      "slot": "am",
-      "publishAt": "2026-07-21T00:00:00.000Z",
-      "text": "You have this cool ability to make everyday moments feel a bit more special; it’s a gift not everyone has. Just a little shoutout to that.",
-      "source": "llm"
-    },
     {
       "id": "2026-07-22-am",
       "date": "2026-07-22",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-08-03T00:00:00.000Z",
       "text": "Whatever's half-finished is allowed to stay half-finished. Pick it up when you're ready.",
+      "source": "fallback"
+    },
+    {
+      "id": "2026-08-04-am",
+      "date": "2026-08-04",
+      "slot": "am",
+      "publishAt": "2026-08-04T00:00:00.000Z",
+      "text": "Nothing has to be figured out all at once. You're allowed to just be here for a minute.",
       "source": "fallback"
     }
   ]
