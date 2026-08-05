@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-04T21:41:35.139Z",
+  "updated": "2026-08-05T21:37:09.505Z",
   "trends": [
-    {
-      "text": "$π\\mathbf{R}^2$: Reactive Real-time Flow Policies",
-      "link": "https://arxiv.org/abs/2607.26055v1"
-    },
-    {
-      "text": "Spend Experts Where You Are Unsure: Confidence-Adaptive Routing for Mixture-of-Experts LoRA",
-      "link": "https://arxiv.org/abs/2607.26052v1"
-    },
-    {
-      "text": "VetClaw: An Edge-Cloud Multimodal Agentic System for Veterinary Disease Screening",
-      "link": "https://arxiv.org/abs/2607.26042v1"
-    },
     {
       "text": "From Classification to Regression: Using a Fruitfly to Solve Equations",
       "link": "https://arxiv.org/abs/2607.27196v1"
@@ -58,10 +46,6 @@
       "link": "https://news.ycombinator.com/newsguidelines.html#generated"
     },
     {
-      "text": "Open source AI is the path forward",
-      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
-    },
-    {
       "text": "I believe there are entire companies right now under AI psychosis",
       "link": "https://twitter.com/mitchellh/status/2055380239711457578"
     },
@@ -96,6 +80,22 @@
     {
       "text": "UEmbed: Unified Sparse and Dense Multimodal Embeddings",
       "link": "https://arxiv.org/abs/2608.02583v1"
+    },
+    {
+      "text": "Test-Time Scaling in Reasoning LLMs: Inference Regimes, Evaluation, and Reproducibility",
+      "link": "https://arxiv.org/abs/2608.04001v1"
+    },
+    {
+      "text": "Assessment of Conditional Diffusion Model for Synthetic Histopathology Image Generation",
+      "link": "https://arxiv.org/abs/2608.03990v1"
+    },
+    {
+      "text": "Can Large Language Models Recover Semantic Optimization Opportunities That Compilers Miss?",
+      "link": "https://arxiv.org/abs/2608.03983v1"
+    },
+    {
+      "text": "Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent",
+      "link": "https://arxiv.org/abs/2608.03979v1"
     }
   ]
 }

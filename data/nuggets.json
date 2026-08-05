@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-04T21:41:35.139Z",
+  "updated": "2026-08-05T21:37:09.505Z",
   "entries": [
-    {
-      "id": "2026-07-22",
-      "date": "2026-07-22",
-      "publishAt": "2026-07-22T00:00:00.000Z",
-      "fact": {
-        "text": "Table tennis balls have been known to travel off the paddle at speeds up to 160 km/hr.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "The paper presents a novel approach to long-context reasoning by utilizing evidence-aware reinforcement learning to reduce repetitive copying in outputs. This method enhances the efficiency of generating contextually relevant responses, addressing a common limitation in current long-context models.",
-        "source": "llm",
-        "title": "Copy Less, Ground More: Overcoming Repetitive Copying in Long-Context Reasoning via Evidence-Aware Reinforcement Learning",
-        "link": "https://arxiv.org/abs/2607.19345v1"
-      }
-    },
     {
       "id": "2026-07-23",
       "date": "2026-07-23",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Open source AI is the path forward",
         "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
+      }
+    },
+    {
+      "id": "2026-08-05",
+      "date": "2026-08-05",
+      "publishAt": "2026-08-05T00:00:00.000Z",
+      "fact": {
+        "text": "40% of all people who come to a party in your home snoop in your medicine cabinet",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Freeze, Then Select: Structured Field Adapters and Stability-Validated Weak Selection for PDE Discovery from Sparse Observations",
+        "source": "pool",
+        "title": "Freeze, Then Select: Structured Field Adapters and Stability-Validated Weak Selection for PDE Discovery from Sparse Observations",
+        "link": "https://arxiv.org/abs/2607.29665v1"
       }
     }
   ]
