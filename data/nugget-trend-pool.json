@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-05T21:37:09.505Z",
+  "updated": "2026-08-07T00:55:45.718Z",
   "trends": [
-    {
-      "text": "From Classification to Regression: Using a Fruitfly to Solve Equations",
-      "link": "https://arxiv.org/abs/2607.27196v1"
-    },
-    {
-      "text": "Can AI agents conduct open-ended AI research? Early evidence from two case studies",
-      "link": "https://arxiv.org/abs/2607.27191v1"
-    },
-    {
-      "text": "The Social Cost of an AI Teammate: How an Artificial Teammate Reshapes Human-Human Communication in Small-Team Decision-Making",
-      "link": "https://arxiv.org/abs/2607.27179v1"
-    },
     {
       "text": "ReToken: One Token to Improve Vision-Language Models for Visual Retrieval",
       "link": "https://arxiv.org/abs/2607.28627v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2607.29674v1"
     },
     {
-      "text": "Freeze, Then Select: Structured Field Adapters and Stability-Validated Weak Selection for PDE Discovery from Sparse Observations",
-      "link": "https://arxiv.org/abs/2607.29665v1"
-    },
-    {
       "text": "GQ-FSL: Green Quantized Federated Split Learning",
       "link": "https://arxiv.org/abs/2607.29659v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent",
       "link": "https://arxiv.org/abs/2608.03979v1"
+    },
+    {
+      "text": "OctoLong: Mid-Training On Cross-Repository Code Contexts Enhances Long-Context Modeling",
+      "link": "https://arxiv.org/abs/2608.05141v1"
+    },
+    {
+      "text": "Toward Skill-Native LLMs: Skill Entropy for Benchmarking and Training Long-Horizon Reasoning",
+      "link": "https://arxiv.org/abs/2608.05139v1"
+    },
+    {
+      "text": "Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains",
+      "link": "https://arxiv.org/abs/2608.05138v1"
+    },
+    {
+      "text": "The Loss Does Not See the Basis, but Adam Does",
+      "link": "https://arxiv.org/abs/2608.05136v1"
     }
   ]
 }

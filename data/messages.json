@@ -1,14 +1,6 @@
 {
-  "updated": "2026-08-05T21:37:08.341Z",
+  "updated": "2026-08-07T00:55:44.489Z",
   "entries": [
-    {
-      "id": "2026-07-23-am",
-      "date": "2026-07-23",
-      "slot": "am",
-      "publishAt": "2026-07-23T00:00:00.000Z",
-      "text": "You have a knack for seeing the little things that others miss, and it adds so much richness to life. Just thought you should know.",
-      "source": "llm"
-    },
     {
       "id": "2026-07-24-am",
       "date": "2026-07-24",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-08-05T00:00:00.000Z",
       "text": "Drink some water, unclench your jaw, and go be a person.",
+      "source": "fallback"
+    },
+    {
+      "id": "2026-08-07-am",
+      "date": "2026-08-07",
+      "slot": "am",
+      "publishAt": "2026-08-07T00:00:00.000Z",
+      "text": "You're allowed to start before you feel ready.",
       "source": "fallback"
     }
   ]

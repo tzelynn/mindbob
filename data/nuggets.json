@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-05T21:37:09.505Z",
+  "updated": "2026-08-07T00:55:45.718Z",
   "entries": [
-    {
-      "id": "2026-07-23",
-      "date": "2026-07-23",
-      "publishAt": "2026-07-23T00:00:00.000Z",
-      "fact": {
-        "text": "Paraskevidekatriaphobia means fear of Friday the 13th, which occurs one to three times a year.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "The paper \"Lipschitzian SLLNs for random functions\" introduces a new approach to strong law of large numbers (SLLNs) that applies to random functions, extending classical results in probability theory. This development could have implications for understanding convergence in stochastic processes relevant to ML models.",
-        "source": "llm",
-        "title": "Lipschitzian SLLNs for random functions",
-        "link": "https://arxiv.org/abs/2607.20411v1"
-      }
-    },
     {
       "id": "2026-07-24",
       "date": "2026-07-24",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Freeze, Then Select: Structured Field Adapters and Stability-Validated Weak Selection for PDE Discovery from Sparse Observations",
         "link": "https://arxiv.org/abs/2607.29665v1"
+      }
+    },
+    {
+      "id": "2026-08-07",
+      "date": "2026-08-07",
+      "publishAt": "2026-08-07T00:00:00.000Z",
+      "fact": {
+        "text": "It has been estimated that humans use only 10% of their brain.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "GradCuit: Credit-Assigned Gradient Flow Enables Robust and Interpretable Test-Time Latent Reasoning",
+        "source": "pool",
+        "title": "GradCuit: Credit-Assigned Gradient Flow Enables Robust and Interpretable Test-Time Latent Reasoning",
+        "link": "https://arxiv.org/abs/2608.02585v1"
       }
     }
   ]
