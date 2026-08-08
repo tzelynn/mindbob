@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-07T00:55:45.718Z",
+  "updated": "2026-08-08T20:52:19.783Z",
   "trends": [
-    {
-      "text": "ReToken: One Token to Improve Vision-Language Models for Visual Retrieval",
-      "link": "https://arxiv.org/abs/2607.28627v1"
-    },
-    {
-      "text": "PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball",
-      "link": "https://arxiv.org/abs/2607.28623v1"
-    },
-    {
-      "text": "AISPA: User-Centric System Prompt Auditing for Large Language Model Applications",
-      "link": "https://arxiv.org/abs/2607.28617v1"
-    },
     {
       "text": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
       "link": "https://arxiv.org/abs/2607.28609v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.02588v1"
     },
     {
-      "text": "GradCuit: Credit-Assigned Gradient Flow Enables Robust and Interpretable Test-Time Latent Reasoning",
-      "link": "https://arxiv.org/abs/2608.02585v1"
-    },
-    {
       "text": "UEmbed: Unified Sparse and Dense Multimodal Embeddings",
       "link": "https://arxiv.org/abs/2608.02583v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "The Loss Does Not See the Basis, but Adam Does",
       "link": "https://arxiv.org/abs/2608.05136v1"
+    },
+    {
+      "text": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering",
+      "link": "https://arxiv.org/abs/2608.06366v1"
+    },
+    {
+      "text": "Investigating Artificial Intelligence Digital Sovereignty in Mobile Shopping Apps: A Case Study of Nigeria",
+      "link": "https://arxiv.org/abs/2608.06364v1"
+    },
+    {
+      "text": "An Optimal Agnostic PAC Algorithm",
+      "link": "https://arxiv.org/abs/2608.06363v1"
+    },
+    {
+      "text": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
+      "link": "https://arxiv.org/abs/2608.06362v1"
     }
   ]
 }

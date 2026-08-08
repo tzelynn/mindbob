@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-07T00:55:45.718Z",
+  "updated": "2026-08-08T20:52:19.783Z",
   "entries": [
-    {
-      "id": "2026-07-24",
-      "date": "2026-07-24",
-      "publishAt": "2026-07-24T00:00:00.000Z",
-      "fact": {
-        "text": "Some individuals express concern sharing their soap, rightly so, considering 75% of all people wash from top to bottom.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "The paper presents 3D-Aware Vision-Language Models (VLMs) that integrate both implicit and explicit geometric representations. This approach enhances the model's understanding of spatial relationships in multi-modal contexts, potentially improving tasks involving 3D scene comprehension and interaction.",
-        "source": "llm",
-        "title": "3D-Aware VLMs with Implicit and Explicit Geometries",
-        "link": "https://arxiv.org/abs/2607.21595v1"
-      }
-    },
     {
       "id": "2026-07-25",
       "date": "2026-07-25",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "GradCuit: Credit-Assigned Gradient Flow Enables Robust and Interpretable Test-Time Latent Reasoning",
         "link": "https://arxiv.org/abs/2608.02585v1"
+      }
+    },
+    {
+      "id": "2026-08-08",
+      "date": "2026-08-08",
+      "publishAt": "2026-08-08T00:00:00.000Z",
+      "fact": {
+        "text": "The site with the highest number of women visitors between the age of 35 and 44 years old: Alka-Seltzer.com",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Can Large Language Models Recover Semantic Optimization Opportunities That Compilers Miss?",
+        "source": "pool",
+        "title": "Can Large Language Models Recover Semantic Optimization Opportunities That Compilers Miss?",
+        "link": "https://arxiv.org/abs/2608.03983v1"
       }
     }
   ]
