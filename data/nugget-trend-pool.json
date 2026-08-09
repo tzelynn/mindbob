@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-08T20:52:19.783Z",
+  "updated": "2026-08-09T20:55:42.369Z",
   "trends": [
-    {
-      "text": "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models",
-      "link": "https://arxiv.org/abs/2607.28609v1"
-    },
-    {
-      "text": "KAISEN: Reproducible Subgroup Fairness Auditing for Clinical Risk Models",
-      "link": "https://arxiv.org/abs/2607.28608v1"
-    },
-    {
-      "text": "MixFrag: Fragility-Guided Mixed-Precision Post-Training Quantization for Vision Transformers",
-      "link": "https://arxiv.org/abs/2607.28589v1"
-    },
     {
       "text": "PAIChecker: Uncovering and Checking PR-Issue Misalignment in SWE-Bench-Like Benchmarks",
       "link": "https://arxiv.org/abs/2607.28587v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.03990v1"
     },
     {
-      "text": "Can Large Language Models Recover Semantic Optimization Opportunities That Compilers Miss?",
-      "link": "https://arxiv.org/abs/2608.03983v1"
-    },
-    {
       "text": "Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent",
       "link": "https://arxiv.org/abs/2608.03979v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
       "link": "https://arxiv.org/abs/2608.06362v1"
+    },
+    {
+      "text": "The Low Frequency Trap: Video Language Models Fail at Simple Event Bookkeeping",
+      "link": "https://arxiv.org/abs/2608.06361v1"
+    },
+    {
+      "text": "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
+      "link": "https://arxiv.org/abs/2608.06353v1"
+    },
+    {
+      "text": "CalibForge: Adversarial Solver Calibration for Scaling Learnable Terminal Tasks",
+      "link": "https://arxiv.org/abs/2608.06352v1"
+    },
+    {
+      "text": "Challenges in Evaluating Explanation Methods for Static and Evolving Data",
+      "link": "https://arxiv.org/abs/2608.06351v1"
     }
   ]
 }
