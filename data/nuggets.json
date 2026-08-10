@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-09T20:55:42.369Z",
+  "updated": "2026-08-10T21:05:22.011Z",
   "entries": [
-    {
-      "id": "2026-07-26",
-      "date": "2026-07-26",
-      "publishAt": "2026-07-26T00:00:00.000Z",
-      "fact": {
-        "text": "There were always 56 curls in Shirley Temple`s hair.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "The paper introduces 3D-Aware Vision-Language Models (VLMs) leveraging both implicit and explicit geometric representations to enhance understanding of 3D scenes. This dual approach allows for improved spatial reasoning in tasks that require integration of visual and linguistic inputs.",
-        "source": "llm",
-        "title": "3D-Aware VLMs with Implicit and Explicit Geometries",
-        "link": "https://arxiv.org/abs/2607.21595v1"
-      }
-    },
     {
       "id": "2026-07-27",
       "date": "2026-07-27",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains",
         "link": "https://arxiv.org/abs/2608.05138v1"
+      }
+    },
+    {
+      "id": "2026-08-10",
+      "date": "2026-08-10",
+      "publishAt": "2026-08-10T00:00:00.000Z",
+      "fact": {
+        "text": "No word in the English language rhymes with month, orange, silver, or purple.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "An Optimal Agnostic PAC Algorithm",
+        "source": "pool",
+        "title": "An Optimal Agnostic PAC Algorithm",
+        "link": "https://arxiv.org/abs/2608.06363v1"
       }
     }
   ]

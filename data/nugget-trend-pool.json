@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-09T20:55:42.369Z",
+  "updated": "2026-08-10T21:05:22.011Z",
   "trends": [
-    {
-      "text": "PAIChecker: Uncovering and Checking PR-Issue Misalignment in SWE-Bench-Like Benchmarks",
-      "link": "https://arxiv.org/abs/2607.28587v1"
-    },
-    {
-      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
-      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
-    },
-    {
-      "text": "I believe there are entire companies right now under AI psychosis",
-      "link": "https://twitter.com/mitchellh/status/2055380239711457578"
-    },
     {
       "text": "Differentially Private Nonparametric Modal Learning with Applications to Regression and Clustering",
       "link": "https://arxiv.org/abs/2607.29675v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.05139v1"
     },
     {
-      "text": "Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains",
-      "link": "https://arxiv.org/abs/2608.05138v1"
-    },
-    {
       "text": "The Loss Does Not See the Basis, but Adam Does",
       "link": "https://arxiv.org/abs/2608.05136v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Challenges in Evaluating Explanation Methods for Static and Evolving Data",
       "link": "https://arxiv.org/abs/2608.06351v1"
+    },
+    {
+      "text": "CreativeInstruct: Scalably Teaching LLMs to Balance Quality, Creativity, and Diversity",
+      "link": "https://arxiv.org/abs/2608.07460v1"
+    },
+    {
+      "text": "CoinRAG: Contextualized Information Nugget KV Cache Reuse for Long-Context RAG",
+      "link": "https://arxiv.org/abs/2608.07458v1"
+    },
+    {
+      "text": "Interaction Creates Dynamical AI Behavior Absent in Isolation",
+      "link": "https://arxiv.org/abs/2608.07457v1"
+    },
+    {
+      "text": "Strategy-first synthesis planning for complex natural products",
+      "link": "https://arxiv.org/abs/2608.07454v1"
     }
   ]
 }

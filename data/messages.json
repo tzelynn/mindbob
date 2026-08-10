@@ -1,14 +1,6 @@
 {
-  "updated": "2026-08-09T20:55:41.376Z",
+  "updated": "2026-08-10T21:05:20.850Z",
   "entries": [
-    {
-      "id": "2026-07-26-am",
-      "date": "2026-07-26",
-      "slot": "am",
-      "publishAt": "2026-07-26T00:00:00.000Z",
-      "text": "You have a way of turning ordinary moments into something memorable, and it’s really special to be around. Just wanted to share that.",
-      "source": "llm"
-    },
     {
       "id": "2026-07-27-am",
       "date": "2026-07-27",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-08-09T00:00:00.000Z",
       "text": "You're trying, and that quietly counts more than it feels like it does.",
+      "source": "fallback"
+    },
+    {
+      "id": "2026-08-10-am",
+      "date": "2026-08-10",
+      "slot": "am",
+      "publishAt": "2026-08-10T00:00:00.000Z",
+      "text": "It doesn't need to be big. It just needs to be yours.",
       "source": "fallback"
     }
   ]
