@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-10T21:05:22.011Z",
+  "updated": "2026-08-11T21:07:40.101Z",
   "trends": [
-    {
-      "text": "Differentially Private Nonparametric Modal Learning with Applications to Regression and Clustering",
-      "link": "https://arxiv.org/abs/2607.29675v1"
-    },
-    {
-      "text": "Sign compression for Muon: SignMuon, MuonSign, and the Limits of Error Feedback",
-      "link": "https://arxiv.org/abs/2607.29674v1"
-    },
-    {
-      "text": "GQ-FSL: Green Quantized Federated Split Learning",
-      "link": "https://arxiv.org/abs/2607.29659v1"
-    },
     {
       "text": "onepot-Bench 0: towards lab-aware in silico chemistry benchmarks",
       "link": "https://arxiv.org/abs/2608.02595v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.06364v1"
     },
     {
-      "text": "An Optimal Agnostic PAC Algorithm",
-      "link": "https://arxiv.org/abs/2608.06363v1"
-    },
-    {
       "text": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
       "link": "https://arxiv.org/abs/2608.06362v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Strategy-first synthesis planning for complex natural products",
       "link": "https://arxiv.org/abs/2608.07454v1"
+    },
+    {
+      "text": "Multimodal Model Diffing for Feature Discovery and Control",
+      "link": "https://arxiv.org/abs/2608.09928v1"
+    },
+    {
+      "text": "From Values to Benchmarks: Evaluating Large Language Models for Governmental Use in Dutch",
+      "link": "https://arxiv.org/abs/2608.09925v1"
+    },
+    {
+      "text": "GENCO - A Unified Neural Solver Embedded in a Development Framework for Steady-State Grid Analysis",
+      "link": "https://arxiv.org/abs/2608.09921v1"
+    },
+    {
+      "text": "DSLE: A Learning Environment for Dark Souls Boss Encounters",
+      "link": "https://arxiv.org/abs/2608.09902v1"
     }
   ]
 }

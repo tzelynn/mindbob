@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-10T21:05:22.011Z",
+  "updated": "2026-08-11T21:07:40.101Z",
   "entries": [
-    {
-      "id": "2026-07-27",
-      "date": "2026-07-27",
-      "publishAt": "2026-07-27T00:00:00.000Z",
-      "fact": {
-        "text": "Laredo, Texas is the U.S.'s farthest inland port.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "SM4RT: Learning Structured Motion Geometry for 4D Reconstruction\" introduces a novel approach to capturing and reconstructing dynamic scenes in four dimensions, enhancing the accuracy and efficiency of motion analysis in computer vision tasks by leveraging structured motion information.",
-        "source": "llm",
-        "title": "SM4RT: Learning Structured Motion Geometry for 4D Reconstruction",
-        "link": "https://arxiv.org/abs/2607.22534v1"
-      }
-    },
     {
       "id": "2026-07-28",
       "date": "2026-07-28",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "An Optimal Agnostic PAC Algorithm",
         "link": "https://arxiv.org/abs/2608.06363v1"
+      }
+    },
+    {
+      "id": "2026-08-11",
+      "date": "2026-08-11",
+      "publishAt": "2026-08-11T00:00:00.000Z",
+      "fact": {
+        "text": "There are more ways to shuffle a single deck of cards than there are atoms on Earth.",
+        "source": "bank"
+      },
+      "trend": {
+        "text": "CalibForge: Adversarial Solver Calibration for Scaling Learnable Terminal Tasks",
+        "source": "pool",
+        "title": "CalibForge: Adversarial Solver Calibration for Scaling Learnable Terminal Tasks",
+        "link": "https://arxiv.org/abs/2608.06352v1"
       }
     }
   ]
