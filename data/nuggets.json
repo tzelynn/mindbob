@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-11T22:25:48.457Z",
+  "updated": "2026-08-12T21:07:10.197Z",
   "entries": [
-    {
-      "id": "2026-07-28",
-      "date": "2026-07-28",
-      "publishAt": "2026-07-28T00:00:00.000Z",
-      "fact": {
-        "text": "US gold coins used to say “In Gold We Trust”.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "ClinFusion introduces a vision-centric multimodal LLM that integrates clinical text and medical imaging, enhancing the model's capability for comprehensive medical understanding. This approach emphasizes the synergy between visual and textual data to improve diagnostics and knowledge extraction in healthcare.",
-        "source": "llm",
-        "title": "ClinFusion: A Vision-Centric Multimodal LLM System for Holistic Medical Understanding",
-        "link": "https://arxiv.org/abs/2607.24743v1"
-      }
-    },
     {
       "id": "2026-07-29",
       "date": "2026-07-29",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "CalibForge: Adversarial Solver Calibration for Scaling Learnable Terminal Tasks",
         "link": "https://arxiv.org/abs/2608.06352v1"
+      }
+    },
+    {
+      "id": "2026-08-12",
+      "date": "2026-08-12",
+      "publishAt": "2026-08-12T00:00:00.000Z",
+      "fact": {
+        "text": "Dr. Kellogg introduced Kellogg`s Corn Flakes in hopes that it would reduce masturbation.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Interaction Creates Dynamical AI Behavior Absent in Isolation",
+        "source": "pool",
+        "title": "Interaction Creates Dynamical AI Behavior Absent in Isolation",
+        "link": "https://arxiv.org/abs/2608.07457v1"
       }
     }
   ]
