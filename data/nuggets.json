@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-12T21:07:10.197Z",
+  "updated": "2026-08-13T21:07:19.990Z",
   "entries": [
-    {
-      "id": "2026-07-29",
-      "date": "2026-07-29",
-      "publishAt": "2026-07-29T00:00:00.000Z",
-      "fact": {
-        "text": "The Great Wall of China is the only man-made structure visible from space.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Pass the Baton: Trajectory-Relayed On-Policy Distillation\" introduces a novel method for on-policy distillation that leverages trajectory relaying to enhance the training of smaller models. This approach allows for more effective knowledge transfer from larger, complex agents during policy learning.",
-        "source": "llm",
-        "title": "Pass the Baton: Trajectory-Relayed On-Policy Distillation",
-        "link": "https://arxiv.org/abs/2607.26057v1"
-      }
-    },
     {
       "id": "2026-07-30",
       "date": "2026-07-30",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Interaction Creates Dynamical AI Behavior Absent in Isolation",
         "link": "https://arxiv.org/abs/2608.07457v1"
+      }
+    },
+    {
+      "id": "2026-08-13",
+      "date": "2026-08-13",
+      "publishAt": "2026-08-13T00:00:00.000Z",
+      "fact": {
+        "text": "Your stomach has to produce a new layer of mucus every 2 weeks otherwise it will digest itself.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "GENCO - A Unified Neural Solver Embedded in a Development Framework for Steady-State Grid Analysis",
+        "source": "pool",
+        "title": "GENCO - A Unified Neural Solver Embedded in a Development Framework for Steady-State Grid Analysis",
+        "link": "https://arxiv.org/abs/2608.09921v1"
       }
     }
   ]

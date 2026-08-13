@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-12T21:07:10.197Z",
+  "updated": "2026-08-13T21:07:19.990Z",
   "trends": [
-    {
-      "text": "Test-Time Scaling in Reasoning LLMs: Inference Regimes, Evaluation, and Reproducibility",
-      "link": "https://arxiv.org/abs/2608.04001v1"
-    },
-    {
-      "text": "Assessment of Conditional Diffusion Model for Synthetic Histopathology Image Generation",
-      "link": "https://arxiv.org/abs/2608.03990v1"
-    },
-    {
-      "text": "Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent",
-      "link": "https://arxiv.org/abs/2608.03979v1"
-    },
     {
       "text": "OctoLong: Mid-Training On Cross-Repository Code Contexts Enhances Long-Context Modeling",
       "link": "https://arxiv.org/abs/2608.05141v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.07458v1"
     },
     {
-      "text": "Interaction Creates Dynamical AI Behavior Absent in Isolation",
-      "link": "https://arxiv.org/abs/2608.07457v1"
-    },
-    {
       "text": "Strategy-first synthesis planning for complex natural products",
       "link": "https://arxiv.org/abs/2608.07454v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Test-Time Self-Evolving GUI Visual Grounding via Reflection-Guided On-Policy Self-Distillation",
       "link": "https://arxiv.org/abs/2608.11191v1"
+    },
+    {
+      "text": "AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses",
+      "link": "https://arxiv.org/abs/2608.12307v1"
+    },
+    {
+      "text": "Redistribution-based Cost Inference Improves Sparse Safe Offline RL",
+      "link": "https://arxiv.org/abs/2608.12306v1"
+    },
+    {
+      "text": "Constructing Dynamic Master Logic Models as Knowledge Graphs for Complex System Diagnostics Using Retrieval-Augmented Large Language Models",
+      "link": "https://arxiv.org/abs/2608.12304v1"
+    },
+    {
+      "text": "A Framework for Designing Reward Functions: From Objectives to Features to Human-Aligned Reward Functions",
+      "link": "https://arxiv.org/abs/2608.12302v1"
     }
   ]
 }
