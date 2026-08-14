@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-13T21:07:19.990Z",
+  "updated": "2026-08-14T20:49:57.043Z",
   "trends": [
-    {
-      "text": "OctoLong: Mid-Training On Cross-Repository Code Contexts Enhances Long-Context Modeling",
-      "link": "https://arxiv.org/abs/2608.05141v1"
-    },
-    {
-      "text": "Toward Skill-Native LLMs: Skill Entropy for Benchmarking and Training Long-Horizon Reasoning",
-      "link": "https://arxiv.org/abs/2608.05139v1"
-    },
-    {
-      "text": "The Loss Does Not See the Basis, but Adam Does",
-      "link": "https://arxiv.org/abs/2608.05136v1"
-    },
     {
       "text": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering",
       "link": "https://arxiv.org/abs/2608.06366v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.09925v1"
     },
     {
-      "text": "GENCO - A Unified Neural Solver Embedded in a Development Framework for Steady-State Grid Analysis",
-      "link": "https://arxiv.org/abs/2608.09921v1"
-    },
-    {
       "text": "DSLE: A Learning Environment for Dark Souls Boss Encounters",
       "link": "https://arxiv.org/abs/2608.09902v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "A Framework for Designing Reward Functions: From Objectives to Features to Human-Aligned Reward Functions",
       "link": "https://arxiv.org/abs/2608.12302v1"
+    },
+    {
+      "text": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
+      "link": "https://arxiv.org/abs/2608.13558v1"
+    },
+    {
+      "text": "HumanTracker: Towards Comprehensive and Human-Aligned Motion Tracking Benchmark",
+      "link": "https://arxiv.org/abs/2608.13555v1"
+    },
+    {
+      "text": "Defensive Boosting for Online Probabilistic Forecasting",
+      "link": "https://arxiv.org/abs/2608.13554v1"
+    },
+    {
+      "text": "Exponential Convex Calibration Dimension for the Multi-Label Jaccard Measure",
+      "link": "https://arxiv.org/abs/2608.13549v1"
     }
   ]
 }

@@ -1,14 +1,6 @@
 {
-  "updated": "2026-08-13T21:07:18.406Z",
+  "updated": "2026-08-14T20:49:55.800Z",
   "entries": [
-    {
-      "id": "2026-07-30-am",
-      "date": "2026-07-30",
-      "slot": "am",
-      "publishAt": "2026-07-30T00:00:00.000Z",
-      "text": "It doesn't need to be big. It just needs to be yours.",
-      "source": "fallback"
-    },
     {
       "id": "2026-07-31-am",
       "date": "2026-07-31",
@@ -110,6 +102,14 @@
       "date": "2026-08-13",
       "slot": "am",
       "publishAt": "2026-08-13T00:00:00.000Z",
+      "text": "It doesn't need to be big. It just needs to be yours.",
+      "source": "fallback"
+    },
+    {
+      "id": "2026-08-14-am",
+      "date": "2026-08-14",
+      "slot": "am",
+      "publishAt": "2026-08-14T00:00:00.000Z",
       "text": "It doesn't need to be big. It just needs to be yours.",
       "source": "fallback"
     }

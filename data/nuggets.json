@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-13T21:07:19.990Z",
+  "updated": "2026-08-14T20:49:57.043Z",
   "entries": [
-    {
-      "id": "2026-07-30",
-      "date": "2026-07-30",
-      "publishAt": "2026-07-30T00:00:00.000Z",
-      "fact": {
-        "text": "Donald Duck`s middle name is Fauntleroy.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation",
-        "source": "pool",
-        "title": "Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation",
-        "link": "https://arxiv.org/abs/2607.24731v1"
-      }
-    },
     {
       "id": "2026-07-31",
       "date": "2026-07-31",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "GENCO - A Unified Neural Solver Embedded in a Development Framework for Steady-State Grid Analysis",
         "link": "https://arxiv.org/abs/2608.09921v1"
+      }
+    },
+    {
+      "id": "2026-08-14",
+      "date": "2026-08-14",
+      "publishAt": "2026-08-14T00:00:00.000Z",
+      "fact": {
+        "text": "Arizona was the last of the 48 adjoining continental states to enter the Union.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Long-Horizon AI Research for Grothendieck Constant: A Case Study in Human-AI Mathematical Collaboration",
+        "source": "pool",
+        "title": "Long-Horizon AI Research for Grothendieck Constant: A Case Study in Human-AI Mathematical Collaboration",
+        "link": "https://arxiv.org/abs/2608.11195v1"
       }
     }
   ]
