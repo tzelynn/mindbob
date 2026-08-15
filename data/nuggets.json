@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-14T20:49:57.043Z",
+  "updated": "2026-08-15T20:43:00.263Z",
   "entries": [
-    {
-      "id": "2026-07-31",
-      "date": "2026-07-31",
-      "publishAt": "2026-07-31T00:00:00.000Z",
-      "fact": {
-        "text": "The crack of a whip is actually a tiny sonic boom, since the tip breaks the sound barrier.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Re-thinking Mammography Transfer Learning: The Dataset-Informed Transfer Learning (DITL) Framework for Breast Cancer Screening and Lesion Diagnosis",
-        "source": "pool",
-        "title": "Re-thinking Mammography Transfer Learning: The Dataset-Informed Transfer Learning (DITL) Framework for Breast Cancer Screening and Lesion Diagnosis",
-        "link": "https://arxiv.org/abs/2607.26043v1"
-      }
-    },
     {
       "id": "2026-08-01",
       "date": "2026-08-01",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Long-Horizon AI Research for Grothendieck Constant: A Case Study in Human-AI Mathematical Collaboration",
         "link": "https://arxiv.org/abs/2608.11195v1"
+      }
+    },
+    {
+      "id": "2026-08-15",
+      "date": "2026-08-15",
+      "publishAt": "2026-08-15T00:00:00.000Z",
+      "fact": {
+        "text": "There were 240 pedestrian fatalities in New York City in 1994.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Constructing Dynamic Master Logic Models as Knowledge Graphs for Complex System Diagnostics Using Retrieval-Augmented Large Language Models",
+        "source": "pool",
+        "title": "Constructing Dynamic Master Logic Models as Knowledge Graphs for Complex System Diagnostics Using Retrieval-Augmented Large Language Models",
+        "link": "https://arxiv.org/abs/2608.12304v1"
       }
     }
   ]

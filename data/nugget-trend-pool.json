@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-14T20:49:57.043Z",
+  "updated": "2026-08-15T20:43:00.263Z",
   "trends": [
-    {
-      "text": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering",
-      "link": "https://arxiv.org/abs/2608.06366v1"
-    },
-    {
-      "text": "Investigating Artificial Intelligence Digital Sovereignty in Mobile Shopping Apps: A Case Study of Nigeria",
-      "link": "https://arxiv.org/abs/2608.06364v1"
-    },
-    {
-      "text": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
-      "link": "https://arxiv.org/abs/2608.06362v1"
-    },
     {
       "text": "The Low Frequency Trap: Video Language Models Fail at Simple Event Bookkeeping",
       "link": "https://arxiv.org/abs/2608.06361v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.11197v1"
     },
     {
-      "text": "Long-Horizon AI Research for Grothendieck Constant: A Case Study in Human-AI Mathematical Collaboration",
-      "link": "https://arxiv.org/abs/2608.11195v1"
-    },
-    {
       "text": "Test-Time Self-Evolving GUI Visual Grounding via Reflection-Guided On-Policy Self-Distillation",
       "link": "https://arxiv.org/abs/2608.11191v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Exponential Convex Calibration Dimension for the Multi-Label Jaccard Measure",
       "link": "https://arxiv.org/abs/2608.13549v1"
+    },
+    {
+      "text": "QuoteBench: How Matched Scores Can Hide Command-Path Failures",
+      "link": "https://arxiv.org/abs/2608.13547v1"
+    },
+    {
+      "text": "LittleLearner: Language Models Under Pedagogically Controlled Knowledge Exposure",
+      "link": "https://arxiv.org/abs/2608.13545v1"
+    },
+    {
+      "text": "DARTree: Speculative Diffusion Decoding with Autoregressive Draft Trees",
+      "link": "https://arxiv.org/abs/2608.13524v1"
+    },
+    {
+      "text": "Vero: Can AI Agents Build Formally Verified Software Repositories?",
+      "link": "https://arxiv.org/abs/2608.13522v1"
     }
   ]
 }
