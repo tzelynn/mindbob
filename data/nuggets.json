@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-15T20:43:00.263Z",
+  "updated": "2026-08-16T20:42:03.864Z",
   "entries": [
-    {
-      "id": "2026-08-01",
-      "date": "2026-08-01",
-      "publishAt": "2026-08-01T00:00:00.000Z",
-      "fact": {
-        "text": "In the U.S, Frisbees outsell footballs, baseballs and basketballs combined.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Inverse Learning of Latent Risk-Neutral Densities from Irregular Option Quotes",
-        "source": "pool",
-        "title": "Inverse Learning of Latent Risk-Neutral Densities from Irregular Option Quotes",
-        "link": "https://arxiv.org/abs/2607.27188v1"
-      }
-    },
     {
       "id": "2026-08-02",
       "date": "2026-08-02",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Constructing Dynamic Master Logic Models as Knowledge Graphs for Complex System Diagnostics Using Retrieval-Augmented Large Language Models",
         "link": "https://arxiv.org/abs/2608.12304v1"
+      }
+    },
+    {
+      "id": "2026-08-16",
+      "date": "2026-08-16",
+      "publishAt": "2026-08-16T00:00:00.000Z",
+      "fact": {
+        "text": "The average American looks at eight houses before buying one.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Defensive Boosting for Online Probabilistic Forecasting",
+        "source": "pool",
+        "title": "Defensive Boosting for Online Probabilistic Forecasting",
+        "link": "https://arxiv.org/abs/2608.13554v1"
       }
     }
   ]

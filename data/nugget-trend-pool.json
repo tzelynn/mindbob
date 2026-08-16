@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-15T20:43:00.263Z",
+  "updated": "2026-08-16T20:42:03.864Z",
   "trends": [
-    {
-      "text": "The Low Frequency Trap: Video Language Models Fail at Simple Event Bookkeeping",
-      "link": "https://arxiv.org/abs/2608.06361v1"
-    },
-    {
-      "text": "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
-      "link": "https://arxiv.org/abs/2608.06353v1"
-    },
-    {
-      "text": "Challenges in Evaluating Explanation Methods for Static and Evolving Data",
-      "link": "https://arxiv.org/abs/2608.06351v1"
-    },
     {
       "text": "CreativeInstruct: Scalably Teaching LLMs to Balance Quality, Creativity, and Diversity",
       "link": "https://arxiv.org/abs/2608.07460v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.12306v1"
     },
     {
-      "text": "Constructing Dynamic Master Logic Models as Knowledge Graphs for Complex System Diagnostics Using Retrieval-Augmented Large Language Models",
-      "link": "https://arxiv.org/abs/2608.12304v1"
-    },
-    {
       "text": "A Framework for Designing Reward Functions: From Objectives to Features to Human-Aligned Reward Functions",
       "link": "https://arxiv.org/abs/2608.12302v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Vero: Can AI Agents Build Formally Verified Software Repositories?",
       "link": "https://arxiv.org/abs/2608.13522v1"
+    },
+    {
+      "text": "Exponential quantum advantage for learning signals with a single qubit",
+      "link": "https://arxiv.org/abs/2608.13521v1"
+    },
+    {
+      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
+    },
+    {
+      "text": "My AI skeptic friends are all nuts",
+      "link": "https://fly.io/blog/youre-all-nuts/"
+    },
+    {
+      "text": "An AI agent published a hit piece on me",
+      "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
     }
   ]
 }
