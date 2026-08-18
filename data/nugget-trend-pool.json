@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-17T20:47:26.429Z",
+  "updated": "2026-08-18T20:43:14.620Z",
   "trends": [
-    {
-      "text": "Multimodal Model Diffing for Feature Discovery and Control",
-      "link": "https://arxiv.org/abs/2608.09928v1"
-    },
-    {
-      "text": "From Values to Benchmarks: Evaluating Large Language Models for Governmental Use in Dutch",
-      "link": "https://arxiv.org/abs/2608.09925v1"
-    },
-    {
-      "text": "DSLE: A Learning Environment for Dark Souls Boss Encounters",
-      "link": "https://arxiv.org/abs/2608.09902v1"
-    },
     {
       "text": "ConVAWG: A Retrieval-Grounded Framework for Controlled Synthetic Dialogue Generation in Violence Against Women and Girls",
       "link": "https://arxiv.org/abs/2608.11200v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.13545v1"
     },
     {
-      "text": "DARTree: Speculative Diffusion Decoding with Autoregressive Draft Trees",
-      "link": "https://arxiv.org/abs/2608.13524v1"
-    },
-    {
       "text": "Vero: Can AI Agents Build Formally Verified Software Repositories?",
       "link": "https://arxiv.org/abs/2608.13522v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Learning-to-Transition for Large-scale and High-Order MIMO Detection",
       "link": "https://arxiv.org/abs/2608.14511v1"
+    },
+    {
+      "text": "Q-based Variational Inverse Reinforcement Learning",
+      "link": "https://arxiv.org/abs/2608.16888v1"
+    },
+    {
+      "text": "Improving the matrix multiplication exponent with modern optimization and AlphaEvolve",
+      "link": "https://arxiv.org/abs/2608.16884v1"
+    },
+    {
+      "text": "Spectral Gaps of Hit-and-Run and Coordinate Hit-and-Run",
+      "link": "https://arxiv.org/abs/2608.16878v1"
+    },
+    {
+      "text": "AutoSR: Automatic Symbolic Regression by Searching Research States",
+      "link": "https://arxiv.org/abs/2608.16876v1"
     }
   ]
 }

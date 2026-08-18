@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-17T20:47:26.429Z",
+  "updated": "2026-08-18T20:43:14.620Z",
   "entries": [
-    {
-      "id": "2026-08-03",
-      "date": "2026-08-03",
-      "publishAt": "2026-08-03T00:00:00.000Z",
-      "fact": {
-        "text": "During his entire life, Vincent Van Gogh sold exactly one painting, “Red Vineyard at Arles”.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments",
-        "source": "pool",
-        "title": "Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments",
-        "link": "https://arxiv.org/abs/2607.28591v1"
-      }
-    },
     {
       "id": "2026-08-04",
       "date": "2026-08-04",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "DARTree: Speculative Diffusion Decoding with Autoregressive Draft Trees",
         "link": "https://arxiv.org/abs/2608.13524v1"
+      }
+    },
+    {
+      "id": "2026-08-18",
+      "date": "2026-08-18",
+      "publishAt": "2026-08-18T00:00:00.000Z",
+      "fact": {
+        "text": "In America you will see an average of 500 advertisements a day.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "My AI skeptic friends are all nuts",
+        "source": "pool",
+        "title": "My AI skeptic friends are all nuts",
+        "link": "https://fly.io/blog/youre-all-nuts/"
       }
     }
   ]
