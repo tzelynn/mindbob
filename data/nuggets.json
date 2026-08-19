@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-18T20:43:14.620Z",
+  "updated": "2026-08-19T20:48:44.474Z",
   "entries": [
-    {
-      "id": "2026-08-04",
-      "date": "2026-08-04",
-      "publishAt": "2026-08-04T00:00:00.000Z",
-      "fact": {
-        "text": "A giraffe can clean its ears with its 21-inch tongue!",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Open source AI is the path forward",
-        "source": "pool",
-        "title": "Open source AI is the path forward",
-        "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
-      }
-    },
     {
       "id": "2026-08-05",
       "date": "2026-08-05",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "My AI skeptic friends are all nuts",
         "link": "https://fly.io/blog/youre-all-nuts/"
+      }
+    },
+    {
+      "id": "2026-08-19",
+      "date": "2026-08-19",
+      "publishAt": "2026-08-19T00:00:00.000Z",
+      "fact": {
+        "text": "Humans are the only primates that don`t have pigment in the palms of their hands.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Participatory Moral AI Is Not Neutral: The Invisible Hand of Developers",
+        "source": "pool",
+        "title": "Participatory Moral AI Is Not Neutral: The Invisible Hand of Developers",
+        "link": "https://arxiv.org/abs/2608.14522v1"
       }
     }
   ]

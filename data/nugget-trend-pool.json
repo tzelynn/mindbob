@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-18T20:43:14.620Z",
+  "updated": "2026-08-19T20:48:44.474Z",
   "trends": [
-    {
-      "text": "ConVAWG: A Retrieval-Grounded Framework for Controlled Synthetic Dialogue Generation in Violence Against Women and Girls",
-      "link": "https://arxiv.org/abs/2608.11200v1"
-    },
-    {
-      "text": "Beyond a Bag of Features: Set-Level Instability in Sparse Autoencoders",
-      "link": "https://arxiv.org/abs/2608.11197v1"
-    },
-    {
-      "text": "Test-Time Self-Evolving GUI Visual Grounding via Reflection-Guided On-Policy Self-Distillation",
-      "link": "https://arxiv.org/abs/2608.11191v1"
-    },
     {
       "text": "AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses",
       "link": "https://arxiv.org/abs/2608.12307v1"
@@ -58,10 +46,6 @@
       "link": "https://news.ycombinator.com/newsguidelines.html#generated"
     },
     {
-      "text": "My AI skeptic friends are all nuts",
-      "link": "https://fly.io/blog/youre-all-nuts/"
-    },
-    {
       "text": "An AI agent published a hit piece on me",
       "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
     },
@@ -96,6 +80,22 @@
     {
       "text": "AutoSR: Automatic Symbolic Regression by Searching Research States",
       "link": "https://arxiv.org/abs/2608.16876v1"
+    },
+    {
+      "text": "On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification",
+      "link": "https://arxiv.org/abs/2608.18066v1"
+    },
+    {
+      "text": "TokEval: A Tokenizer Evaluation Suite",
+      "link": "https://arxiv.org/abs/2608.18062v1"
+    },
+    {
+      "text": "The concentration game: Bayesian updating, regret, and information",
+      "link": "https://arxiv.org/abs/2608.18061v1"
+    },
+    {
+      "text": "Delegation Asymmetry in Agentic Recommender Systems: Measuring Two-Sided Receptivity in Online Dating",
+      "link": "https://arxiv.org/abs/2608.18058v1"
     }
   ]
 }
