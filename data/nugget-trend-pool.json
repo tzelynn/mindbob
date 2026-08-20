@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-19T20:48:44.474Z",
+  "updated": "2026-08-20T20:50:26.433Z",
   "trends": [
-    {
-      "text": "AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses",
-      "link": "https://arxiv.org/abs/2608.12307v1"
-    },
-    {
-      "text": "Redistribution-based Cost Inference Improves Sparse Safe Offline RL",
-      "link": "https://arxiv.org/abs/2608.12306v1"
-    },
-    {
-      "text": "A Framework for Designing Reward Functions: From Objectives to Features to Human-Aligned Reward Functions",
-      "link": "https://arxiv.org/abs/2608.12302v1"
-    },
     {
       "text": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
       "link": "https://arxiv.org/abs/2608.13558v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.14528v1"
     },
     {
-      "text": "Participatory Moral AI Is Not Neutral: The Invisible Hand of Developers",
-      "link": "https://arxiv.org/abs/2608.14522v1"
-    },
-    {
       "text": "Learning-to-Transition for Large-scale and High-Order MIMO Detection",
       "link": "https://arxiv.org/abs/2608.14511v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Delegation Asymmetry in Agentic Recommender Systems: Measuring Two-Sided Receptivity in Online Dating",
       "link": "https://arxiv.org/abs/2608.18058v1"
+    },
+    {
+      "text": "ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning",
+      "link": "https://arxiv.org/abs/2608.19182v1"
+    },
+    {
+      "text": "Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning",
+      "link": "https://arxiv.org/abs/2608.19181v1"
+    },
+    {
+      "text": "Finetuning Strategies for Querying Sounds by Vocal Imitation",
+      "link": "https://arxiv.org/abs/2608.19174v1"
+    },
+    {
+      "text": "Lévy Attention: Single-Pass Predictive Uncertainty for Continuous-Time Attention",
+      "link": "https://arxiv.org/abs/2608.19171v1"
     }
   ]
 }

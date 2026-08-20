@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-19T20:48:44.474Z",
+  "updated": "2026-08-20T20:50:26.433Z",
   "entries": [
-    {
-      "id": "2026-08-05",
-      "date": "2026-08-05",
-      "publishAt": "2026-08-05T00:00:00.000Z",
-      "fact": {
-        "text": "40% of all people who come to a party in your home snoop in your medicine cabinet",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Freeze, Then Select: Structured Field Adapters and Stability-Validated Weak Selection for PDE Discovery from Sparse Observations",
-        "source": "pool",
-        "title": "Freeze, Then Select: Structured Field Adapters and Stability-Validated Weak Selection for PDE Discovery from Sparse Observations",
-        "link": "https://arxiv.org/abs/2607.29665v1"
-      }
-    },
     {
       "id": "2026-08-07",
       "date": "2026-08-07",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Participatory Moral AI Is Not Neutral: The Invisible Hand of Developers",
         "link": "https://arxiv.org/abs/2608.14522v1"
+      }
+    },
+    {
+      "id": "2026-08-20",
+      "date": "2026-08-20",
+      "publishAt": "2026-08-20T00:00:00.000Z",
+      "fact": {
+        "text": "One quarter of the bones in your body, are in your feet!",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Spectral Gaps of Hit-and-Run and Coordinate Hit-and-Run",
+        "source": "pool",
+        "title": "Spectral Gaps of Hit-and-Run and Coordinate Hit-and-Run",
+        "link": "https://arxiv.org/abs/2608.16878v1"
       }
     }
   ]
