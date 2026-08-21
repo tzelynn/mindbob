@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-20T20:50:26.433Z",
+  "updated": "2026-08-21T20:43:53.124Z",
   "trends": [
-    {
-      "text": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
-      "link": "https://arxiv.org/abs/2608.13558v1"
-    },
-    {
-      "text": "HumanTracker: Towards Comprehensive and Human-Aligned Motion Tracking Benchmark",
-      "link": "https://arxiv.org/abs/2608.13555v1"
-    },
-    {
-      "text": "Exponential Convex Calibration Dimension for the Multi-Label Jaccard Measure",
-      "link": "https://arxiv.org/abs/2608.13549v1"
-    },
     {
       "text": "QuoteBench: How Matched Scores Can Hide Command-Path Failures",
       "link": "https://arxiv.org/abs/2608.13547v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.16884v1"
     },
     {
-      "text": "Spectral Gaps of Hit-and-Run and Coordinate Hit-and-Run",
-      "link": "https://arxiv.org/abs/2608.16878v1"
-    },
-    {
       "text": "AutoSR: Automatic Symbolic Regression by Searching Research States",
       "link": "https://arxiv.org/abs/2608.16876v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Lévy Attention: Single-Pass Predictive Uncertainty for Continuous-Time Attention",
       "link": "https://arxiv.org/abs/2608.19171v1"
+    },
+    {
+      "text": "G-CARL: Grounded Checklist-Aligned Reward Learning for Patient-Oriented Medical Report Interpretation",
+      "link": "https://arxiv.org/abs/2608.20331v1"
+    },
+    {
+      "text": "$TCP_α$: Margin-Controlled Confidence estimation for reliable Music Information Retrieval",
+      "link": "https://arxiv.org/abs/2608.20326v1"
+    },
+    {
+      "text": "A comparison between ceiling-mounted FMCW, IR-UWB and Wi-Fi radar for in-bedroom human activity monitoring and sleep interruption detection",
+      "link": "https://arxiv.org/abs/2608.20322v1"
+    },
+    {
+      "text": "An Agentic Approach for Active Data Collection, Travel Behavior Modeling, and Weather-Sensitive Demand Prediction",
+      "link": "https://arxiv.org/abs/2608.20320v1"
     }
   ]
 }

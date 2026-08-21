@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-20T20:50:26.433Z",
+  "updated": "2026-08-21T20:43:53.124Z",
   "entries": [
-    {
-      "id": "2026-08-07",
-      "date": "2026-08-07",
-      "publishAt": "2026-08-07T00:00:00.000Z",
-      "fact": {
-        "text": "It has been estimated that humans use only 10% of their brain.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "GradCuit: Credit-Assigned Gradient Flow Enables Robust and Interpretable Test-Time Latent Reasoning",
-        "source": "pool",
-        "title": "GradCuit: Credit-Assigned Gradient Flow Enables Robust and Interpretable Test-Time Latent Reasoning",
-        "link": "https://arxiv.org/abs/2608.02585v1"
-      }
-    },
     {
       "id": "2026-08-08",
       "date": "2026-08-08",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Spectral Gaps of Hit-and-Run and Coordinate Hit-and-Run",
         "link": "https://arxiv.org/abs/2608.16878v1"
+      }
+    },
+    {
+      "id": "2026-08-21",
+      "date": "2026-08-21",
+      "publishAt": "2026-08-21T00:00:00.000Z",
+      "fact": {
+        "text": "A piece of paper can be folded no more then 9 times.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "The concentration game: Bayesian updating, regret, and information",
+        "source": "pool",
+        "title": "The concentration game: Bayesian updating, regret, and information",
+        "link": "https://arxiv.org/abs/2608.18061v1"
       }
     }
   ]
