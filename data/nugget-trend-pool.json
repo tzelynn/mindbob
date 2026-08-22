@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-21T20:43:53.124Z",
+  "updated": "2026-08-22T20:43:09.344Z",
   "trends": [
-    {
-      "text": "QuoteBench: How Matched Scores Can Hide Command-Path Failures",
-      "link": "https://arxiv.org/abs/2608.13547v1"
-    },
-    {
-      "text": "LittleLearner: Language Models Under Pedagogically Controlled Knowledge Exposure",
-      "link": "https://arxiv.org/abs/2608.13545v1"
-    },
-    {
-      "text": "Vero: Can AI Agents Build Formally Verified Software Repositories?",
-      "link": "https://arxiv.org/abs/2608.13522v1"
-    },
     {
       "text": "Exponential quantum advantage for learning signals with a single qubit",
       "link": "https://arxiv.org/abs/2608.13521v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.18062v1"
     },
     {
-      "text": "The concentration game: Bayesian updating, regret, and information",
-      "link": "https://arxiv.org/abs/2608.18061v1"
-    },
-    {
       "text": "Delegation Asymmetry in Agentic Recommender Systems: Measuring Two-Sided Receptivity in Online Dating",
       "link": "https://arxiv.org/abs/2608.18058v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "An Agentic Approach for Active Data Collection, Travel Behavior Modeling, and Weather-Sensitive Demand Prediction",
       "link": "https://arxiv.org/abs/2608.20320v1"
+    },
+    {
+      "text": "Inducing Task Models from Computer-Use Traces",
+      "link": "https://arxiv.org/abs/2608.20319v1"
+    },
+    {
+      "text": "AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement",
+      "link": "https://arxiv.org/abs/2608.20318v1"
+    },
+    {
+      "text": "Pandora's AI Model Routing Box: Efficient Allocation with Costly Value Estimation",
+      "link": "https://arxiv.org/abs/2608.20316v1"
+    },
+    {
+      "text": "Explainable Transformer Models for Clinical Prediction Tasks on Structured Electronic Health Records",
+      "link": "https://arxiv.org/abs/2608.20315v1"
     }
   ]
 }

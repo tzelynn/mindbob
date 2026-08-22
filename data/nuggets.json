@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-21T20:43:53.124Z",
+  "updated": "2026-08-22T20:43:09.344Z",
   "entries": [
-    {
-      "id": "2026-08-08",
-      "date": "2026-08-08",
-      "publishAt": "2026-08-08T00:00:00.000Z",
-      "fact": {
-        "text": "The site with the highest number of women visitors between the age of 35 and 44 years old: Alka-Seltzer.com",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Can Large Language Models Recover Semantic Optimization Opportunities That Compilers Miss?",
-        "source": "pool",
-        "title": "Can Large Language Models Recover Semantic Optimization Opportunities That Compilers Miss?",
-        "link": "https://arxiv.org/abs/2608.03983v1"
-      }
-    },
     {
       "id": "2026-08-09",
       "date": "2026-08-09",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "The concentration game: Bayesian updating, regret, and information",
         "link": "https://arxiv.org/abs/2608.18061v1"
+      }
+    },
+    {
+      "id": "2026-08-22",
+      "date": "2026-08-22",
+      "publishAt": "2026-08-22T00:00:00.000Z",
+      "fact": {
+        "text": "This common everyday occurrence composed of 59% nitrogen, 21% hydrogen, and 9% dioxide is called a `fart`.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Finetuning Strategies for Querying Sounds by Vocal Imitation",
+        "source": "pool",
+        "title": "Finetuning Strategies for Querying Sounds by Vocal Imitation",
+        "link": "https://arxiv.org/abs/2608.19174v1"
       }
     }
   ]
