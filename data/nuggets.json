@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-22T20:43:09.344Z",
+  "updated": "2026-08-23T20:43:01.529Z",
   "entries": [
-    {
-      "id": "2026-08-09",
-      "date": "2026-08-09",
-      "publishAt": "2026-08-09T00:00:00.000Z",
-      "fact": {
-        "text": "The earth weighs around 6,588,000,000,000,000,000,000,000,000 tons.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains",
-        "source": "pool",
-        "title": "Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains",
-        "link": "https://arxiv.org/abs/2608.05138v1"
-      }
-    },
     {
       "id": "2026-08-10",
       "date": "2026-08-10",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Finetuning Strategies for Querying Sounds by Vocal Imitation",
         "link": "https://arxiv.org/abs/2608.19174v1"
+      }
+    },
+    {
+      "id": "2026-08-23",
+      "date": "2026-08-23",
+      "publishAt": "2026-08-23T00:00:00.000Z",
+      "fact": {
+        "text": "Oak trees do not produce acorns until they are fifty years of age or older.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "A comparison between ceiling-mounted FMCW, IR-UWB and Wi-Fi radar for in-bedroom human activity monitoring and sleep interruption detection",
+        "source": "pool",
+        "title": "A comparison between ceiling-mounted FMCW, IR-UWB and Wi-Fi radar for in-bedroom human activity monitoring and sleep interruption detection",
+        "link": "https://arxiv.org/abs/2608.20322v1"
       }
     }
   ]

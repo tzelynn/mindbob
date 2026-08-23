@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-22T20:43:09.344Z",
+  "updated": "2026-08-23T20:43:01.529Z",
   "trends": [
-    {
-      "text": "Exponential quantum advantage for learning signals with a single qubit",
-      "link": "https://arxiv.org/abs/2608.13521v1"
-    },
-    {
-      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
-      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
-    },
-    {
-      "text": "An AI agent published a hit piece on me",
-      "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
-    },
     {
       "text": "Marionette: Predicting World States, Rendering Geometry, Painting Appearance",
       "link": "https://arxiv.org/abs/2608.14530v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.19181v1"
     },
     {
-      "text": "Finetuning Strategies for Querying Sounds by Vocal Imitation",
-      "link": "https://arxiv.org/abs/2608.19174v1"
-    },
-    {
       "text": "Lévy Attention: Single-Pass Predictive Uncertainty for Continuous-Time Attention",
       "link": "https://arxiv.org/abs/2608.19171v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Explainable Transformer Models for Clinical Prediction Tasks on Structured Electronic Health Records",
       "link": "https://arxiv.org/abs/2608.20315v1"
+    },
+    {
+      "text": "MidTool: Mid-training Data Synthesis for Agentic Tool Use",
+      "link": "https://arxiv.org/abs/2608.20314v1"
+    },
+    {
+      "text": "Open source AI is the path forward",
+      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
+    },
+    {
+      "text": "I believe there are entire companies right now under AI psychosis",
+      "link": "https://twitter.com/mitchellh/status/2055380239711457578"
+    },
+    {
+      "text": "IDF killed Gaza aid workers at point blank range in 2025 massacre: Report",
+      "link": "https://www.dropsitenews.com/p/israeli-soldiers-tel-sultan-gaza-red-crescent-civil-defense-massacre-report-forensic-architecture-earshot"
     }
   ]
 }
