@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-23T20:43:01.529Z",
+  "updated": "2026-08-24T20:52:14.578Z",
   "entries": [
-    {
-      "id": "2026-08-10",
-      "date": "2026-08-10",
-      "publishAt": "2026-08-10T00:00:00.000Z",
-      "fact": {
-        "text": "No word in the English language rhymes with month, orange, silver, or purple.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "An Optimal Agnostic PAC Algorithm",
-        "source": "pool",
-        "title": "An Optimal Agnostic PAC Algorithm",
-        "link": "https://arxiv.org/abs/2608.06363v1"
-      }
-    },
     {
       "id": "2026-08-11",
       "date": "2026-08-11",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "A comparison between ceiling-mounted FMCW, IR-UWB and Wi-Fi radar for in-bedroom human activity monitoring and sleep interruption detection",
         "link": "https://arxiv.org/abs/2608.20322v1"
+      }
+    },
+    {
+      "id": "2026-08-24",
+      "date": "2026-08-24",
+      "publishAt": "2026-08-24T00:00:00.000Z",
+      "fact": {
+        "text": "In a test performed by Canadian scientists, using various different styles of music, it was determined that chickens lay the most eggs when pop music was played.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Pandora's AI Model Routing Box: Efficient Allocation with Costly Value Estimation",
+        "source": "pool",
+        "title": "Pandora's AI Model Routing Box: Efficient Allocation with Costly Value Estimation",
+        "link": "https://arxiv.org/abs/2608.20316v1"
       }
     }
   ]

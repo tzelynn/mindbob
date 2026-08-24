@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-23T20:43:01.529Z",
+  "updated": "2026-08-24T20:52:14.578Z",
   "trends": [
-    {
-      "text": "Marionette: Predicting World States, Rendering Geometry, Painting Appearance",
-      "link": "https://arxiv.org/abs/2608.14530v1"
-    },
-    {
-      "text": "Handover of In-Context Learning State Across Session Boundaries",
-      "link": "https://arxiv.org/abs/2608.14528v1"
-    },
-    {
-      "text": "Learning-to-Transition for Large-scale and High-Order MIMO Detection",
-      "link": "https://arxiv.org/abs/2608.14511v1"
-    },
     {
       "text": "Q-based Variational Inverse Reinforcement Learning",
       "link": "https://arxiv.org/abs/2608.16888v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.20326v1"
     },
     {
-      "text": "A comparison between ceiling-mounted FMCW, IR-UWB and Wi-Fi radar for in-bedroom human activity monitoring and sleep interruption detection",
-      "link": "https://arxiv.org/abs/2608.20322v1"
-    },
-    {
       "text": "An Agentic Approach for Active Data Collection, Travel Behavior Modeling, and Weather-Sensitive Demand Prediction",
       "link": "https://arxiv.org/abs/2608.20320v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "IDF killed Gaza aid workers at point blank range in 2025 massacre: Report",
       "link": "https://www.dropsitenews.com/p/israeli-soldiers-tel-sultan-gaza-red-crescent-civil-defense-massacre-report-forensic-architecture-earshot"
+    },
+    {
+      "text": "VIALS: A Benchmark for Visual Interpretation of Artifacts in the Life Sciences",
+      "link": "https://arxiv.org/abs/2608.21357v1"
+    },
+    {
+      "text": "AI with Authority, from Application to Silicon",
+      "link": "https://arxiv.org/abs/2608.21356v1"
+    },
+    {
+      "text": "PerturbRx: Learning Treatment-Conditioned Latent Transitions for Patient Drug Response Prediction",
+      "link": "https://arxiv.org/abs/2608.21349v1"
+    },
+    {
+      "text": "Truthful Calibration Measures for Sequential Prediction",
+      "link": "https://arxiv.org/abs/2608.21348v1"
     }
   ]
 }
