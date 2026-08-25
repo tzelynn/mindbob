@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-24T20:52:14.578Z",
+  "updated": "2026-08-25T20:49:58.713Z",
   "trends": [
-    {
-      "text": "Q-based Variational Inverse Reinforcement Learning",
-      "link": "https://arxiv.org/abs/2608.16888v1"
-    },
-    {
-      "text": "Improving the matrix multiplication exponent with modern optimization and AlphaEvolve",
-      "link": "https://arxiv.org/abs/2608.16884v1"
-    },
-    {
-      "text": "AutoSR: Automatic Symbolic Regression by Searching Research States",
-      "link": "https://arxiv.org/abs/2608.16876v1"
-    },
     {
       "text": "On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification",
       "link": "https://arxiv.org/abs/2608.18066v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.20318v1"
     },
     {
-      "text": "Pandora's AI Model Routing Box: Efficient Allocation with Costly Value Estimation",
-      "link": "https://arxiv.org/abs/2608.20316v1"
-    },
-    {
       "text": "Explainable Transformer Models for Clinical Prediction Tasks on Structured Electronic Health Records",
       "link": "https://arxiv.org/abs/2608.20315v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Truthful Calibration Measures for Sequential Prediction",
       "link": "https://arxiv.org/abs/2608.21348v1"
+    },
+    {
+      "text": "ReWorld: An Interactive World Model with Long-Horizon Memory",
+      "link": "https://arxiv.org/abs/2608.23565v1"
+    },
+    {
+      "text": "SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?",
+      "link": "https://arxiv.org/abs/2608.23564v1"
+    },
+    {
+      "text": "EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings",
+      "link": "https://arxiv.org/abs/2608.23563v1"
+    },
+    {
+      "text": "Physics-Constrained Deep Learning Model for Contactless Blood Pressure Monitoring from Triaxial Bodyseismography",
+      "link": "https://arxiv.org/abs/2608.23562v1"
     }
   ]
 }
