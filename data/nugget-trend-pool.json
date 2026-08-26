@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-25T20:49:58.713Z",
+  "updated": "2026-08-26T23:44:21.201Z",
   "trends": [
-    {
-      "text": "On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification",
-      "link": "https://arxiv.org/abs/2608.18066v1"
-    },
-    {
-      "text": "TokEval: A Tokenizer Evaluation Suite",
-      "link": "https://arxiv.org/abs/2608.18062v1"
-    },
-    {
-      "text": "Delegation Asymmetry in Agentic Recommender Systems: Measuring Two-Sided Receptivity in Online Dating",
-      "link": "https://arxiv.org/abs/2608.18058v1"
-    },
     {
       "text": "ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning",
       "link": "https://arxiv.org/abs/2608.19182v1"
@@ -58,10 +46,6 @@
       "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
     },
     {
-      "text": "I believe there are entire companies right now under AI psychosis",
-      "link": "https://twitter.com/mitchellh/status/2055380239711457578"
-    },
-    {
       "text": "IDF killed Gaza aid workers at point blank range in 2025 massacre: Report",
       "link": "https://www.dropsitenews.com/p/israeli-soldiers-tel-sultan-gaza-red-crescent-civil-defense-massacre-report-forensic-architecture-earshot"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Physics-Constrained Deep Learning Model for Contactless Blood Pressure Monitoring from Triaxial Bodyseismography",
       "link": "https://arxiv.org/abs/2608.23562v1"
+    },
+    {
+      "text": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
+      "link": "https://arxiv.org/abs/2608.24876v1"
+    },
+    {
+      "text": "SPO++: Stream-Aligned Policy Optimization for Asynchronous Agentic RL",
+      "link": "https://arxiv.org/abs/2608.24870v1"
+    },
+    {
+      "text": "Parameterized Complexity of $L_p$-Lipschitz Constants for Input Convex Neural Networks and $L_p$-Norm Maximization over Zonotopes",
+      "link": "https://arxiv.org/abs/2608.24865v1"
+    },
+    {
+      "text": "Improving Cross-Problem Vehicle Routing with Locally Augmented Preferences and Representation Disentanglement",
+      "link": "https://arxiv.org/abs/2608.24859v1"
     }
   ]
 }

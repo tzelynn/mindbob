@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-25T20:49:58.713Z",
+  "updated": "2026-08-26T23:44:21.201Z",
   "entries": [
-    {
-      "id": "2026-08-12",
-      "date": "2026-08-12",
-      "publishAt": "2026-08-12T00:00:00.000Z",
-      "fact": {
-        "text": "Dr. Kellogg introduced Kellogg`s Corn Flakes in hopes that it would reduce masturbation.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Interaction Creates Dynamical AI Behavior Absent in Isolation",
-        "source": "pool",
-        "title": "Interaction Creates Dynamical AI Behavior Absent in Isolation",
-        "link": "https://arxiv.org/abs/2608.07457v1"
-      }
-    },
     {
       "id": "2026-08-13",
       "date": "2026-08-13",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "I believe there are entire companies right now under AI psychosis",
         "link": "https://twitter.com/mitchellh/status/2055380239711457578"
+      }
+    },
+    {
+      "id": "2026-08-26",
+      "date": "2026-08-26",
+      "publishAt": "2026-08-26T00:00:00.000Z",
+      "fact": {
+        "text": "1,800 cigarettes are smoked per person each year in China.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "PerturbRx: Learning Treatment-Conditioned Latent Transitions for Patient Drug Response Prediction",
+        "source": "pool",
+        "title": "PerturbRx: Learning Treatment-Conditioned Latent Transitions for Patient Drug Response Prediction",
+        "link": "https://arxiv.org/abs/2608.21349v1"
       }
     }
   ]
