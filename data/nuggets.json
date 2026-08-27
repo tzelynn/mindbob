@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-26T23:44:21.201Z",
+  "updated": "2026-08-27T02:14:14.126Z",
   "entries": [
-    {
-      "id": "2026-08-13",
-      "date": "2026-08-13",
-      "publishAt": "2026-08-13T00:00:00.000Z",
-      "fact": {
-        "text": "Your stomach has to produce a new layer of mucus every 2 weeks otherwise it will digest itself.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "GENCO - A Unified Neural Solver Embedded in a Development Framework for Steady-State Grid Analysis",
-        "source": "pool",
-        "title": "GENCO - A Unified Neural Solver Embedded in a Development Framework for Steady-State Grid Analysis",
-        "link": "https://arxiv.org/abs/2608.09921v1"
-      }
-    },
     {
       "id": "2026-08-14",
       "date": "2026-08-14",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "PerturbRx: Learning Treatment-Conditioned Latent Transitions for Patient Drug Response Prediction",
         "link": "https://arxiv.org/abs/2608.21349v1"
+      }
+    },
+    {
+      "id": "2026-08-27",
+      "date": "2026-08-27",
+      "publishAt": "2026-08-27T00:00:00.000Z",
+      "fact": {
+        "text": "Our eyes are always the same size from birth, but our nose and ears never stop growing.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings",
+        "source": "pool",
+        "title": "EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings",
+        "link": "https://arxiv.org/abs/2608.23563v1"
       }
     }
   ]

@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-26T23:44:21.201Z",
+  "updated": "2026-08-27T02:14:14.126Z",
   "trends": [
-    {
-      "text": "ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning",
-      "link": "https://arxiv.org/abs/2608.19182v1"
-    },
-    {
-      "text": "Beyond Teacher Likelihood: Group-Calibrated On-Policy Distillation for Long-Context Reasoning",
-      "link": "https://arxiv.org/abs/2608.19181v1"
-    },
-    {
-      "text": "Lévy Attention: Single-Pass Predictive Uncertainty for Continuous-Time Attention",
-      "link": "https://arxiv.org/abs/2608.19171v1"
-    },
     {
       "text": "G-CARL: Grounded Checklist-Aligned Reward Learning for Patient-Oriented Medical Report Interpretation",
       "link": "https://arxiv.org/abs/2608.20331v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.21356v1"
     },
     {
-      "text": "PerturbRx: Learning Treatment-Conditioned Latent Transitions for Patient Drug Response Prediction",
-      "link": "https://arxiv.org/abs/2608.21349v1"
-    },
-    {
       "text": "Truthful Calibration Measures for Sequential Prediction",
       "link": "https://arxiv.org/abs/2608.21348v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Improving Cross-Problem Vehicle Routing with Locally Augmented Preferences and Representation Disentanglement",
       "link": "https://arxiv.org/abs/2608.24859v1"
+    },
+    {
+      "text": "A Statistical Audit of Physical AI Benchmark Redundancy",
+      "link": "https://arxiv.org/abs/2608.25940v1"
+    },
+    {
+      "text": "Candidate supply and answer selection shape the value of LLM judging in multi-agent systems",
+      "link": "https://arxiv.org/abs/2608.25937v1"
+    },
+    {
+      "text": "One Symptom, Three Levers: A Critical Review of On-Policy Self-Distillation",
+      "link": "https://arxiv.org/abs/2608.25936v1"
+    },
+    {
+      "text": "TAU-Agent: An Agentic Retrieval-Augmented Framework for Traffic Anomaly Understanding",
+      "link": "https://arxiv.org/abs/2608.25935v1"
     }
   ]
 }
