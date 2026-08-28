@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-27T02:14:14.126Z",
+  "updated": "2026-08-28T04:23:20.238Z",
   "entries": [
-    {
-      "id": "2026-08-14",
-      "date": "2026-08-14",
-      "publishAt": "2026-08-14T00:00:00.000Z",
-      "fact": {
-        "text": "Arizona was the last of the 48 adjoining continental states to enter the Union.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Long-Horizon AI Research for Grothendieck Constant: A Case Study in Human-AI Mathematical Collaboration",
-        "source": "pool",
-        "title": "Long-Horizon AI Research for Grothendieck Constant: A Case Study in Human-AI Mathematical Collaboration",
-        "link": "https://arxiv.org/abs/2608.11195v1"
-      }
-    },
     {
       "id": "2026-08-15",
       "date": "2026-08-15",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings",
         "link": "https://arxiv.org/abs/2608.23563v1"
+      }
+    },
+    {
+      "id": "2026-08-28",
+      "date": "2026-08-28",
+      "publishAt": "2026-08-28T00:00:00.000Z",
+      "fact": {
+        "text": "Mount Olympus Mons on Mars is three times the size of Mount Everest.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Parameterized Complexity of $L_p$-Lipschitz Constants for Input Convex Neural Networks and $L_p$-Norm Maximization over Zonotopes",
+        "source": "pool",
+        "title": "Parameterized Complexity of $L_p$-Lipschitz Constants for Input Convex Neural Networks and $L_p$-Norm Maximization over Zonotopes",
+        "link": "https://arxiv.org/abs/2608.24865v1"
       }
     }
   ]

@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-27T02:14:14.126Z",
+  "updated": "2026-08-28T04:23:20.238Z",
   "trends": [
-    {
-      "text": "G-CARL: Grounded Checklist-Aligned Reward Learning for Patient-Oriented Medical Report Interpretation",
-      "link": "https://arxiv.org/abs/2608.20331v1"
-    },
-    {
-      "text": "$TCP_α$: Margin-Controlled Confidence estimation for reliable Music Information Retrieval",
-      "link": "https://arxiv.org/abs/2608.20326v1"
-    },
-    {
-      "text": "An Agentic Approach for Active Data Collection, Travel Behavior Modeling, and Weather-Sensitive Demand Prediction",
-      "link": "https://arxiv.org/abs/2608.20320v1"
-    },
     {
       "text": "Inducing Task Models from Computer-Use Traces",
       "link": "https://arxiv.org/abs/2608.20319v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.23564v1"
     },
     {
-      "text": "EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings",
-      "link": "https://arxiv.org/abs/2608.23563v1"
-    },
-    {
       "text": "Physics-Constrained Deep Learning Model for Contactless Blood Pressure Monitoring from Triaxial Bodyseismography",
       "link": "https://arxiv.org/abs/2608.23562v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "TAU-Agent: An Agentic Retrieval-Augmented Framework for Traffic Anomaly Understanding",
       "link": "https://arxiv.org/abs/2608.25935v1"
+    },
+    {
+      "text": "SWE-Prime: Fewer Trajectories, Better Performance",
+      "link": "https://arxiv.org/abs/2608.27449v1"
+    },
+    {
+      "text": "From Static to Dynamic: Benchmarking Real-World Code Review with MCR-Bench",
+      "link": "https://arxiv.org/abs/2608.27442v1"
+    },
+    {
+      "text": "RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution",
+      "link": "https://arxiv.org/abs/2608.27439v1"
+    },
+    {
+      "text": "Mechanistic Reaction Prediction via Discrete Flow Matching on Graph-Structured Electron Occupation",
+      "link": "https://arxiv.org/abs/2608.27429v1"
     }
   ]
 }
