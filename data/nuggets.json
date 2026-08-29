@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-29T02:50:28.606Z",
+  "updated": "2026-08-29T03:23:18.869Z",
   "entries": [
     {
       "id": "2026-08-16",
@@ -201,8 +201,8 @@
       "date": "2026-08-29",
       "publishAt": "2026-08-29T00:00:00.000Z",
       "fact": {
-        "text": "There are more ways to shuffle a single deck of cards than there are atoms on Earth.",
-        "source": "bank"
+        "text": "Your tongue is the only muscle in your body that is attached at only one end.",
+        "source": "api"
       },
       "trend": {
         "text": "One Symptom, Three Levers: A Critical Review of On-Policy Self-Distillation",
