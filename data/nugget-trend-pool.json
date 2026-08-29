@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-28T04:23:20.238Z",
+  "updated": "2026-08-29T02:50:28.606Z",
   "trends": [
-    {
-      "text": "Inducing Task Models from Computer-Use Traces",
-      "link": "https://arxiv.org/abs/2608.20319v1"
-    },
-    {
-      "text": "AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement",
-      "link": "https://arxiv.org/abs/2608.20318v1"
-    },
-    {
-      "text": "Explainable Transformer Models for Clinical Prediction Tasks on Structured Electronic Health Records",
-      "link": "https://arxiv.org/abs/2608.20315v1"
-    },
     {
       "text": "MidTool: Mid-training Data Synthesis for Agentic Tool Use",
       "link": "https://arxiv.org/abs/2608.20314v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.24870v1"
     },
     {
-      "text": "Parameterized Complexity of $L_p$-Lipschitz Constants for Input Convex Neural Networks and $L_p$-Norm Maximization over Zonotopes",
-      "link": "https://arxiv.org/abs/2608.24865v1"
-    },
-    {
       "text": "Improving Cross-Problem Vehicle Routing with Locally Augmented Preferences and Representation Disentanglement",
       "link": "https://arxiv.org/abs/2608.24859v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Mechanistic Reaction Prediction via Discrete Flow Matching on Graph-Structured Electron Occupation",
       "link": "https://arxiv.org/abs/2608.27429v1"
+    },
+    {
+      "text": "Persona-Execution Separation: An Architecture Pattern for Evolving LLM Agents under Execution Audit",
+      "link": "https://arxiv.org/abs/2608.27427v1"
+    },
+    {
+      "text": "Beyond F1: Evaluating Coverage and Failure Recovery in AI Model Security Scanners",
+      "link": "https://arxiv.org/abs/2608.27424v1"
+    },
+    {
+      "text": "Learning a Continuous Sepsis Severity Score Without Hour-by-Hour Supervision: A Two-Site Retrospective Study",
+      "link": "https://arxiv.org/abs/2608.27421v1"
+    },
+    {
+      "text": "Scaling Graph Neural Networks for Friend Recommendation: Multi-Hash User Embeddings and Temporal Neighbor Sampling",
+      "link": "https://arxiv.org/abs/2608.27413v1"
     }
   ]
 }
