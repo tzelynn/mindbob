@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-29T03:23:18.869Z",
+  "updated": "2026-08-30T22:49:14.974Z",
   "entries": [
-    {
-      "id": "2026-08-16",
-      "date": "2026-08-16",
-      "publishAt": "2026-08-16T00:00:00.000Z",
-      "fact": {
-        "text": "The average American looks at eight houses before buying one.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Defensive Boosting for Online Probabilistic Forecasting",
-        "source": "pool",
-        "title": "Defensive Boosting for Online Probabilistic Forecasting",
-        "link": "https://arxiv.org/abs/2608.13554v1"
-      }
-    },
     {
       "id": "2026-08-17",
       "date": "2026-08-17",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "One Symptom, Three Levers: A Critical Review of On-Policy Self-Distillation",
         "link": "https://arxiv.org/abs/2608.25936v1"
+      }
+    },
+    {
+      "id": "2026-08-30",
+      "date": "2026-08-30",
+      "publishAt": "2026-08-30T00:00:00.000Z",
+      "fact": {
+        "text": "King Louis XIX ruled France for 15 minutes.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution",
+        "source": "pool",
+        "title": "RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution",
+        "link": "https://arxiv.org/abs/2608.27439v1"
       }
     }
   ]

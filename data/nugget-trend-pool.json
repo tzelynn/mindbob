@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-29T02:50:28.606Z",
+  "updated": "2026-08-30T22:49:14.974Z",
   "trends": [
-    {
-      "text": "MidTool: Mid-training Data Synthesis for Agentic Tool Use",
-      "link": "https://arxiv.org/abs/2608.20314v1"
-    },
-    {
-      "text": "Open source AI is the path forward",
-      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
-    },
-    {
-      "text": "IDF killed Gaza aid workers at point blank range in 2025 massacre: Report",
-      "link": "https://www.dropsitenews.com/p/israeli-soldiers-tel-sultan-gaza-red-crescent-civil-defense-massacre-report-forensic-architecture-earshot"
-    },
     {
       "text": "VIALS: A Benchmark for Visual Interpretation of Artifacts in the Life Sciences",
       "link": "https://arxiv.org/abs/2608.21357v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.25937v1"
     },
     {
-      "text": "One Symptom, Three Levers: A Critical Review of On-Policy Self-Distillation",
-      "link": "https://arxiv.org/abs/2608.25936v1"
-    },
-    {
       "text": "TAU-Agent: An Agentic Retrieval-Augmented Framework for Traffic Anomaly Understanding",
       "link": "https://arxiv.org/abs/2608.25935v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Scaling Graph Neural Networks for Friend Recommendation: Multi-Hash User Embeddings and Temporal Neighbor Sampling",
       "link": "https://arxiv.org/abs/2608.27413v1"
+    },
+    {
+      "text": "CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators",
+      "link": "https://arxiv.org/abs/2608.27406v1"
+    },
+    {
+      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
+    },
+    {
+      "text": "An AI agent published a hit piece on me",
+      "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
+    },
+    {
+      "text": "I'm Tired of Talking to AI",
+      "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
     }
   ]
 }
