@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-30T22:49:14.974Z",
+  "updated": "2026-08-31T23:54:59.989Z",
   "trends": [
-    {
-      "text": "VIALS: A Benchmark for Visual Interpretation of Artifacts in the Life Sciences",
-      "link": "https://arxiv.org/abs/2608.21357v1"
-    },
-    {
-      "text": "AI with Authority, from Application to Silicon",
-      "link": "https://arxiv.org/abs/2608.21356v1"
-    },
-    {
-      "text": "Truthful Calibration Measures for Sequential Prediction",
-      "link": "https://arxiv.org/abs/2608.21348v1"
-    },
     {
       "text": "ReWorld: An Interactive World Model with Long-Horizon Memory",
       "link": "https://arxiv.org/abs/2608.23565v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.27442v1"
     },
     {
-      "text": "RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution",
-      "link": "https://arxiv.org/abs/2608.27439v1"
-    },
-    {
       "text": "Mechanistic Reaction Prediction via Discrete Flow Matching on Graph-Structured Electron Occupation",
       "link": "https://arxiv.org/abs/2608.27429v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "I'm Tired of Talking to AI",
       "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
+    },
+    {
+      "text": "Aero Hand Open: A Simulation-Ready Tendon-Driven Hand for Dexterous Manipulation Learning",
+      "link": "https://arxiv.org/abs/2608.28578v1"
+    },
+    {
+      "text": "Learning a Size-Weight Frontier for Synthetic-Augmented Inference",
+      "link": "https://arxiv.org/abs/2608.28576v1"
+    },
+    {
+      "text": "On two proofs of $d^2$ mixing of weighted Dikin walks",
+      "link": "https://arxiv.org/abs/2608.28566v1"
+    },
+    {
+      "text": "Learning between the peaks: sharp asymptotics for kernel ridge regression under power-law anisotropy",
+      "link": "https://arxiv.org/abs/2608.28564v1"
     }
   ]
 }

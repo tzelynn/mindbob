@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-30T22:49:14.974Z",
+  "updated": "2026-08-31T23:54:59.989Z",
   "entries": [
-    {
-      "id": "2026-08-17",
-      "date": "2026-08-17",
-      "publishAt": "2026-08-17T00:00:00.000Z",
-      "fact": {
-        "text": "Your stomach has to produce a new layer of mucus every two weeks or it will digest itself.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "DARTree: Speculative Diffusion Decoding with Autoregressive Draft Trees",
-        "source": "pool",
-        "title": "DARTree: Speculative Diffusion Decoding with Autoregressive Draft Trees",
-        "link": "https://arxiv.org/abs/2608.13524v1"
-      }
-    },
     {
       "id": "2026-08-18",
       "date": "2026-08-18",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution",
         "link": "https://arxiv.org/abs/2608.27439v1"
+      }
+    },
+    {
+      "id": "2026-08-31",
+      "date": "2026-08-31",
+      "publishAt": "2026-08-31T00:00:00.000Z",
+      "fact": {
+        "text": "To \"testify\" was based on men in the Roman court swearing to a statement made by swearing on their testicles.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Learning a Continuous Sepsis Severity Score Without Hour-by-Hour Supervision: A Two-Site Retrospective Study",
+        "source": "pool",
+        "title": "Learning a Continuous Sepsis Severity Score Without Hour-by-Hour Supervision: A Two-Site Retrospective Study",
+        "link": "https://arxiv.org/abs/2608.27421v1"
       }
     }
   ]
