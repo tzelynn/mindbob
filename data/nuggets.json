@@ -1,21 +1,6 @@
 {
-  "updated": "2026-08-31T23:54:59.989Z",
+  "updated": "2026-09-01T00:48:41.410Z",
   "entries": [
-    {
-      "id": "2026-08-18",
-      "date": "2026-08-18",
-      "publishAt": "2026-08-18T00:00:00.000Z",
-      "fact": {
-        "text": "In America you will see an average of 500 advertisements a day.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "My AI skeptic friends are all nuts",
-        "source": "pool",
-        "title": "My AI skeptic friends are all nuts",
-        "link": "https://fly.io/blog/youre-all-nuts/"
-      }
-    },
     {
       "id": "2026-08-19",
       "date": "2026-08-19",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Learning a Continuous Sepsis Severity Score Without Hour-by-Hour Supervision: A Two-Site Retrospective Study",
         "link": "https://arxiv.org/abs/2608.27421v1"
+      }
+    },
+    {
+      "id": "2026-09-01",
+      "date": "2026-09-01",
+      "publishAt": "2026-09-01T00:00:00.000Z",
+      "fact": {
+        "text": "Until 1994, world maps and globes sold in Albania only had Albania on them.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "An AI agent published a hit piece on me",
+        "source": "pool",
+        "title": "An AI agent published a hit piece on me",
+        "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
       }
     }
   ]

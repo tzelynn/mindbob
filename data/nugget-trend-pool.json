@@ -1,18 +1,6 @@
 {
-  "updated": "2026-08-31T23:54:59.989Z",
+  "updated": "2026-09-01T00:48:41.410Z",
   "trends": [
-    {
-      "text": "ReWorld: An Interactive World Model with Long-Horizon Memory",
-      "link": "https://arxiv.org/abs/2608.23565v1"
-    },
-    {
-      "text": "SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?",
-      "link": "https://arxiv.org/abs/2608.23564v1"
-    },
-    {
-      "text": "Physics-Constrained Deep Learning Model for Contactless Blood Pressure Monitoring from Triaxial Bodyseismography",
-      "link": "https://arxiv.org/abs/2608.23562v1"
-    },
     {
       "text": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
       "link": "https://arxiv.org/abs/2608.24876v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.27424v1"
     },
     {
-      "text": "Learning a Continuous Sepsis Severity Score Without Hour-by-Hour Supervision: A Two-Site Retrospective Study",
-      "link": "https://arxiv.org/abs/2608.27421v1"
-    },
-    {
       "text": "Scaling Graph Neural Networks for Friend Recommendation: Multi-Hash User Embeddings and Temporal Neighbor Sampling",
       "link": "https://arxiv.org/abs/2608.27413v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Learning between the peaks: sharp asymptotics for kernel ridge regression under power-law anisotropy",
       "link": "https://arxiv.org/abs/2608.28564v1"
+    },
+    {
+      "text": "Blog: Survey of Optimizers",
+      "link": "https://arxiv.org/abs/2608.28557v1"
+    },
+    {
+      "text": "Logos: An Agent Harness on a Cross-Process Bus",
+      "link": "https://arxiv.org/abs/2608.28553v1"
+    },
+    {
+      "text": "Advancing Interaction-Sensitive Feature Selection: Novel Relief-Based Algorithms, Expanded Comparisons, and Recommendations for Biomedical Data Mining",
+      "link": "https://arxiv.org/abs/2608.28552v1"
+    },
+    {
+      "text": "Video Generative Models as Geometry Learner",
+      "link": "https://arxiv.org/abs/2608.28549v1"
     }
   ]
 }

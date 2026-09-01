@@ -1,14 +1,6 @@
 {
-  "updated": "2026-08-31T23:54:58.619Z",
+  "updated": "2026-09-01T00:48:40.154Z",
   "entries": [
-    {
-      "id": "2026-08-18-am",
-      "date": "2026-08-18",
-      "slot": "am",
-      "publishAt": "2026-08-18T00:00:00.000Z",
-      "text": "You don't have to do it all — just the next small thing.",
-      "source": "fallback"
-    },
     {
       "id": "2026-08-19-am",
       "date": "2026-08-19",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-08-31T00:00:00.000Z",
       "text": "Small steps still count as walking.",
+      "source": "fallback"
+    },
+    {
+      "id": "2026-09-01-am",
+      "date": "2026-09-01",
+      "slot": "am",
+      "publishAt": "2026-09-01T00:00:00.000Z",
+      "text": "Be a little kinder to yourself than you think you deserve. It usually balances out.",
       "source": "fallback"
     }
   ]
