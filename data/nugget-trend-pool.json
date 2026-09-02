@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-01T00:48:41.410Z",
+  "updated": "2026-09-02T22:42:04.746Z",
   "trends": [
-    {
-      "text": "Recursive Experiential-Working Memory Evolution for Long-Horizon Agent Harnesses",
-      "link": "https://arxiv.org/abs/2608.24876v1"
-    },
-    {
-      "text": "SPO++: Stream-Aligned Policy Optimization for Asynchronous Agentic RL",
-      "link": "https://arxiv.org/abs/2608.24870v1"
-    },
-    {
-      "text": "Improving Cross-Problem Vehicle Routing with Locally Augmented Preferences and Representation Disentanglement",
-      "link": "https://arxiv.org/abs/2608.24859v1"
-    },
     {
       "text": "A Statistical Audit of Physical AI Benchmark Redundancy",
       "link": "https://arxiv.org/abs/2608.25940v1"
@@ -58,10 +46,6 @@
       "link": "https://news.ycombinator.com/newsguidelines.html#generated"
     },
     {
-      "text": "An AI agent published a hit piece on me",
-      "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
-    },
-    {
       "text": "I'm Tired of Talking to AI",
       "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Video Generative Models as Geometry Learner",
       "link": "https://arxiv.org/abs/2608.28549v1"
+    },
+    {
+      "text": "Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation",
+      "link": "https://arxiv.org/abs/2609.01603v1"
+    },
+    {
+      "text": "Adaptive Critical Token-Aware Retrieval for Repository-Level Code Generation",
+      "link": "https://arxiv.org/abs/2609.01601v1"
+    },
+    {
+      "text": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
+      "link": "https://arxiv.org/abs/2609.01600v1"
+    },
+    {
+      "text": "The Rise of Verbal Reinforcement Learning",
+      "link": "https://arxiv.org/abs/2609.01597v1"
     }
   ]
 }

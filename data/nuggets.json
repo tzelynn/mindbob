@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-01T00:48:41.410Z",
+  "updated": "2026-09-02T22:42:04.746Z",
   "entries": [
-    {
-      "id": "2026-08-19",
-      "date": "2026-08-19",
-      "publishAt": "2026-08-19T00:00:00.000Z",
-      "fact": {
-        "text": "Humans are the only primates that don`t have pigment in the palms of their hands.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Participatory Moral AI Is Not Neutral: The Invisible Hand of Developers",
-        "source": "pool",
-        "title": "Participatory Moral AI Is Not Neutral: The Invisible Hand of Developers",
-        "link": "https://arxiv.org/abs/2608.14522v1"
-      }
-    },
     {
       "id": "2026-08-20",
       "date": "2026-08-20",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "An AI agent published a hit piece on me",
         "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
+      }
+    },
+    {
+      "id": "2026-09-02",
+      "date": "2026-09-02",
+      "publishAt": "2026-09-02T00:00:00.000Z",
+      "fact": {
+        "text": "Hong Kong holds the most Rolls Royce’s per capita.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "On two proofs of $d^2$ mixing of weighted Dikin walks",
+        "source": "pool",
+        "title": "On two proofs of $d^2$ mixing of weighted Dikin walks",
+        "link": "https://arxiv.org/abs/2608.28566v1"
       }
     }
   ]

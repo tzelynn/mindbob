@@ -1,14 +1,6 @@
 {
-  "updated": "2026-09-01T00:48:40.154Z",
+  "updated": "2026-09-02T22:42:03.546Z",
   "entries": [
-    {
-      "id": "2026-08-19-am",
-      "date": "2026-08-19",
-      "slot": "am",
-      "publishAt": "2026-08-19T00:00:00.000Z",
-      "text": "Whatever's half-finished is allowed to stay half-finished. Pick it up when you're ready.",
-      "source": "fallback"
-    },
     {
       "id": "2026-08-20-am",
       "date": "2026-08-20",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-09-01T00:00:00.000Z",
       "text": "Be a little kinder to yourself than you think you deserve. It usually balances out.",
+      "source": "fallback"
+    },
+    {
+      "id": "2026-09-02-am",
+      "date": "2026-09-02",
+      "slot": "am",
+      "publishAt": "2026-09-02T00:00:00.000Z",
+      "text": "You don't have to do it all — just the next small thing.",
       "source": "fallback"
     }
   ]
