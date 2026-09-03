@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-02T22:42:04.746Z",
+  "updated": "2026-09-03T22:38:45.768Z",
   "trends": [
-    {
-      "text": "A Statistical Audit of Physical AI Benchmark Redundancy",
-      "link": "https://arxiv.org/abs/2608.25940v1"
-    },
-    {
-      "text": "Candidate supply and answer selection shape the value of LLM judging in multi-agent systems",
-      "link": "https://arxiv.org/abs/2608.25937v1"
-    },
-    {
-      "text": "TAU-Agent: An Agentic Retrieval-Augmented Framework for Traffic Anomaly Understanding",
-      "link": "https://arxiv.org/abs/2608.25935v1"
-    },
     {
       "text": "SWE-Prime: Fewer Trajectories, Better Performance",
       "link": "https://arxiv.org/abs/2608.27449v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.28576v1"
     },
     {
-      "text": "On two proofs of $d^2$ mixing of weighted Dikin walks",
-      "link": "https://arxiv.org/abs/2608.28566v1"
-    },
-    {
       "text": "Learning between the peaks: sharp asymptotics for kernel ridge regression under power-law anisotropy",
       "link": "https://arxiv.org/abs/2608.28564v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "The Rise of Verbal Reinforcement Learning",
       "link": "https://arxiv.org/abs/2609.01597v1"
+    },
+    {
+      "text": "Discriminative World Models for Web Agents",
+      "link": "https://arxiv.org/abs/2609.02885v1"
+    },
+    {
+      "text": "Graph Machine: Towards Better Pretraining via Edges",
+      "link": "https://arxiv.org/abs/2609.02881v1"
+    },
+    {
+      "text": "GRADSOLVE: fast exact gradients for ODE ensembles on GPUs",
+      "link": "https://arxiv.org/abs/2609.02876v1"
+    },
+    {
+      "text": "Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework",
+      "link": "https://arxiv.org/abs/2609.02861v1"
     }
   ]
 }
