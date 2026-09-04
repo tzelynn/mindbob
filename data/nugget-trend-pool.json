@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-03T22:38:45.768Z",
+  "updated": "2026-09-04T22:24:27.032Z",
   "trends": [
-    {
-      "text": "SWE-Prime: Fewer Trajectories, Better Performance",
-      "link": "https://arxiv.org/abs/2608.27449v1"
-    },
-    {
-      "text": "From Static to Dynamic: Benchmarking Real-World Code Review with MCR-Bench",
-      "link": "https://arxiv.org/abs/2608.27442v1"
-    },
-    {
-      "text": "Mechanistic Reaction Prediction via Discrete Flow Matching on Graph-Structured Electron Occupation",
-      "link": "https://arxiv.org/abs/2608.27429v1"
-    },
     {
       "text": "Persona-Execution Separation: An Architecture Pattern for Evolving LLM Agents under Execution Audit",
       "link": "https://arxiv.org/abs/2608.27427v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2608.28553v1"
     },
     {
-      "text": "Advancing Interaction-Sensitive Feature Selection: Novel Relief-Based Algorithms, Expanded Comparisons, and Recommendations for Biomedical Data Mining",
-      "link": "https://arxiv.org/abs/2608.28552v1"
-    },
-    {
       "text": "Video Generative Models as Geometry Learner",
       "link": "https://arxiv.org/abs/2608.28549v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework",
       "link": "https://arxiv.org/abs/2609.02861v1"
+    },
+    {
+      "text": "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
+      "link": "https://arxiv.org/abs/2609.04198v1"
+    },
+    {
+      "text": "ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize",
+      "link": "https://arxiv.org/abs/2609.04197v1"
+    },
+    {
+      "text": "Legibility is Not Interpretability: Comparing Judged and Actual Importance in Chain-Of-Thought Reasoning",
+      "link": "https://arxiv.org/abs/2609.04194v1"
+    },
+    {
+      "text": "One Editor, Many Edits: A Unified Training-Free Framework for Diverse Video Editing",
+      "link": "https://arxiv.org/abs/2609.04190v1"
     }
   ]
 }

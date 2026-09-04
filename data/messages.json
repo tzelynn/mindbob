@@ -1,14 +1,6 @@
 {
-  "updated": "2026-09-03T22:38:43.312Z",
+  "updated": "2026-09-04T22:24:25.668Z",
   "entries": [
-    {
-      "id": "2026-08-21-am",
-      "date": "2026-08-21",
-      "slot": "am",
-      "publishAt": "2026-08-21T00:00:00.000Z",
-      "text": "Drink some water, unclench your jaw, and go be a person.",
-      "source": "fallback"
-    },
     {
       "id": "2026-08-22-am",
       "date": "2026-08-22",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-09-03T00:00:00.000Z",
       "text": "Whatever's half-finished is allowed to stay half-finished. Pick it up when you're ready.",
+      "source": "fallback"
+    },
+    {
+      "id": "2026-09-04-am",
+      "date": "2026-09-04",
+      "slot": "am",
+      "publishAt": "2026-09-04T00:00:00.000Z",
+      "text": "Nothing has to be figured out all at once. You're allowed to just be here for a minute.",
       "source": "fallback"
     }
   ]

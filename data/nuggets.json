@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-03T22:38:45.768Z",
+  "updated": "2026-09-04T22:24:27.032Z",
   "entries": [
-    {
-      "id": "2026-08-21",
-      "date": "2026-08-21",
-      "publishAt": "2026-08-21T00:00:00.000Z",
-      "fact": {
-        "text": "A piece of paper can be folded no more then 9 times.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "The concentration game: Bayesian updating, regret, and information",
-        "source": "pool",
-        "title": "The concentration game: Bayesian updating, regret, and information",
-        "link": "https://arxiv.org/abs/2608.18061v1"
-      }
-    },
     {
       "id": "2026-08-22",
       "date": "2026-08-22",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Advancing Interaction-Sensitive Feature Selection: Novel Relief-Based Algorithms, Expanded Comparisons, and Recommendations for Biomedical Data Mining",
         "link": "https://arxiv.org/abs/2608.28552v1"
+      }
+    },
+    {
+      "id": "2026-09-04",
+      "date": "2026-09-04",
+      "publishAt": "2026-09-04T00:00:00.000Z",
+      "fact": {
+        "text": "Negative emotions such as anxiety and depression can weaken your immune system.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
+        "source": "pool",
+        "title": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
+        "link": "https://arxiv.org/abs/2609.01600v1"
       }
     }
   ]
