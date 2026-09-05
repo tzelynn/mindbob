@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-04T22:24:27.032Z",
+  "updated": "2026-09-05T22:05:37.840Z",
   "entries": [
-    {
-      "id": "2026-08-22",
-      "date": "2026-08-22",
-      "publishAt": "2026-08-22T00:00:00.000Z",
-      "fact": {
-        "text": "This common everyday occurrence composed of 59% nitrogen, 21% hydrogen, and 9% dioxide is called a `fart`.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Finetuning Strategies for Querying Sounds by Vocal Imitation",
-        "source": "pool",
-        "title": "Finetuning Strategies for Querying Sounds by Vocal Imitation",
-        "link": "https://arxiv.org/abs/2608.19174v1"
-      }
-    },
     {
       "id": "2026-08-23",
       "date": "2026-08-23",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
         "link": "https://arxiv.org/abs/2609.01600v1"
+      }
+    },
+    {
+      "id": "2026-09-05",
+      "date": "2026-09-05",
+      "publishAt": "2026-09-05T00:00:00.000Z",
+      "fact": {
+        "text": "The average chocolate bar has 8 insects' legs in it.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "GRADSOLVE: fast exact gradients for ODE ensembles on GPUs",
+        "source": "pool",
+        "title": "GRADSOLVE: fast exact gradients for ODE ensembles on GPUs",
+        "link": "https://arxiv.org/abs/2609.02876v1"
       }
     }
   ]
