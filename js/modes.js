@@ -2,19 +2,20 @@
 // mode menu, swipe navigation, and hash parsing. Pure module (no DOM) so it is
 // unit-testable in Node.
 
-export const MODES = ["message", "doodle", "nuggets", "mood", "brain"];
+export const MODES = ["nuggets", "brain", "mood", "doodle", "message"];
 
 export function isMode(m) {
   return MODES.includes(m);
 }
 
-// dir: -1 (previous) | +1 (next). No wrap-around: at either end the move is a
-// no-op (null) — accidental over-swipes shouldn't jump to the far side.
+// dir: -1 (previous) | +1 (next). Cyclical: past the last mode the move wraps
+// round to the first (and vice versa), so swiping keeps carrying you through
+// the modes instead of dead-ending.
 export function nextMode(mode, dir) {
   const i = MODES.indexOf(mode);
   if (i < 0) return null;
-  const j = i + dir;
-  return j >= 0 && j < MODES.length ? MODES[j] : null;
+  const n = MODES.length;
+  return MODES[(((i + dir) % n) + n) % n];
 }
 
 // Classify a completed pointer gesture: -1 (go to previous mode), 0 (not a

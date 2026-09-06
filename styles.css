@@ -573,11 +573,41 @@ body {
 
 .brain-text {
   flex: 1 1 auto;
+  min-width: 0;
   font-size: clamp(1rem, 3.4vw, 1.2rem);
   line-height: 1.4;
   color: var(--ink);
   word-break: break-word;
 }
+
+/* tap/click the text to rename it (see beginEdit in brainDecorate.js) */
+.brain-text.is-editable {
+  cursor: text;
+  border-radius: 6px;
+  padding: 1px 4px;
+  margin: -1px -4px;
+  transition: background 140ms ease;
+}
+.brain-text.is-editable:hover { background: rgba(0, 0, 0, 0.04); }
+.brain-text.is-editable:focus-visible {
+  outline: none;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+/* the inline edit field swapped in for the span — same metrics, so the row
+   doesn't jump when editing starts */
+.brain-text-edit {
+  appearance: none;
+  border: 0;
+  border-bottom: 1.5px solid var(--accent);
+  background: transparent;
+  font: inherit;
+  font-size: clamp(1rem, 3.4vw, 1.2rem);
+  line-height: 1.4;
+  padding: 1px 4px;
+  margin: -1px -4px;
+}
+.brain-text-edit:focus { outline: none; }
 
 /* round check toggle — line-art tick, tinted via currentColor */
 .brain-check {
