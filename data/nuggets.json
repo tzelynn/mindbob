@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-05T22:05:37.840Z",
+  "updated": "2026-09-06T22:09:19.304Z",
   "entries": [
-    {
-      "id": "2026-08-23",
-      "date": "2026-08-23",
-      "publishAt": "2026-08-23T00:00:00.000Z",
-      "fact": {
-        "text": "Oak trees do not produce acorns until they are fifty years of age or older.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "A comparison between ceiling-mounted FMCW, IR-UWB and Wi-Fi radar for in-bedroom human activity monitoring and sleep interruption detection",
-        "source": "pool",
-        "title": "A comparison between ceiling-mounted FMCW, IR-UWB and Wi-Fi radar for in-bedroom human activity monitoring and sleep interruption detection",
-        "link": "https://arxiv.org/abs/2608.20322v1"
-      }
-    },
     {
       "id": "2026-08-24",
       "date": "2026-08-24",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "GRADSOLVE: fast exact gradients for ODE ensembles on GPUs",
         "link": "https://arxiv.org/abs/2609.02876v1"
+      }
+    },
+    {
+      "id": "2026-09-06",
+      "date": "2026-09-06",
+      "publishAt": "2026-09-06T00:00:00.000Z",
+      "fact": {
+        "text": "The first automobile race ever seen in the United States was held in Chicago in 1895. The track ran from Chicago to Evanston, Illinois. The winner was J. Frank Duryea, whose average speed was 71/2 miles per hour.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Legibility is Not Interpretability: Comparing Judged and Actual Importance in Chain-Of-Thought Reasoning",
+        "source": "pool",
+        "title": "Legibility is Not Interpretability: Comparing Judged and Actual Importance in Chain-Of-Thought Reasoning",
+        "link": "https://arxiv.org/abs/2609.04194v1"
       }
     }
   ]

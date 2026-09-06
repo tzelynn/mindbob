@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-05T22:05:37.840Z",
+  "updated": "2026-09-06T22:09:19.304Z",
   "trends": [
-    {
-      "text": "CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators",
-      "link": "https://arxiv.org/abs/2608.27406v1"
-    },
-    {
-      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
-      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
-    },
-    {
-      "text": "I'm Tired of Talking to AI",
-      "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
-    },
     {
       "text": "Aero Hand Open: A Simulation-Ready Tendon-Driven Hand for Dexterous Manipulation Learning",
       "link": "https://arxiv.org/abs/2608.28578v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.02881v1"
     },
     {
-      "text": "GRADSOLVE: fast exact gradients for ODE ensembles on GPUs",
-      "link": "https://arxiv.org/abs/2609.02876v1"
-    },
-    {
       "text": "Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework",
       "link": "https://arxiv.org/abs/2609.02861v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "A Computationally Feasible Framework for Causal Probabilistic Explanation",
       "link": "https://arxiv.org/abs/2609.04177v1"
+    },
+    {
+      "text": "Rethinking On-Policy Distillation of Large Language Models II: One Training Example",
+      "link": "https://arxiv.org/abs/2609.04172v1"
+    },
+    {
+      "text": "Open source AI is the path forward",
+      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
+    },
+    {
+      "text": "My AI skeptic friends are all nuts",
+      "link": "https://fly.io/blog/youre-all-nuts/"
+    },
+    {
+      "text": "IDF killed Gaza aid workers at point blank range in 2025 massacre: Report",
+      "link": "https://www.dropsitenews.com/p/israeli-soldiers-tel-sultan-gaza-red-crescent-civil-defense-massacre-report-forensic-architecture-earshot"
     }
   ]
 }

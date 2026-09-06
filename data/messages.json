@@ -1,14 +1,6 @@
 {
-  "updated": "2026-09-05T22:05:21.241Z",
+  "updated": "2026-09-06T22:09:17.529Z",
   "entries": [
-    {
-      "id": "2026-08-23-am",
-      "date": "2026-08-23",
-      "slot": "am",
-      "publishAt": "2026-08-23T00:00:00.000Z",
-      "text": "Low stakes. Take it gentle.",
-      "source": "fallback"
-    },
     {
       "id": "2026-08-24-am",
       "date": "2026-08-24",
@@ -111,6 +103,14 @@
       "slot": "am",
       "publishAt": "2026-09-05T00:00:00.000Z",
       "text": "Drink some water, unclench your jaw, and go be a person.",
+      "source": "fallback"
+    },
+    {
+      "id": "2026-09-06-am",
+      "date": "2026-09-06",
+      "slot": "am",
+      "publishAt": "2026-09-06T00:00:00.000Z",
+      "text": "You're allowed to start before you feel ready.",
       "source": "fallback"
     }
   ]
