@@ -145,8 +145,11 @@ function initSwipe(el) {
   let g = null; // active gesture: {id, x, y, dead}
   el.addEventListener("pointerdown", (e) => {
     // Strokes on the doodle canvas must never swipe — the canvas captures the
-    // pointer and its events still bubble through the stage.
+    // pointer and its events still bubble through the stage. Text fields are
+    // exempt too: dragging to select inside one (e.g. renaming a brain item)
+    // would otherwise swipe the mode away mid-edit.
     if (!e.isPrimary || e.target === refs.canvas) return;
+    if (e.target instanceof HTMLElement && e.target.closest("input, textarea")) return;
     g = { id: e.pointerId, x: e.clientX, y: e.clientY, dead: false };
   });
   el.addEventListener("pointermove", (e) => {

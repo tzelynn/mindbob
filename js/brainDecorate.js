@@ -7,9 +7,11 @@ import {
   readMonthly,
   addMonthlyTask,
   removeMonthlyTask,
+  updateMonthlyTask,
   toggleMonthlyDone,
   readAdhoc,
   addAdhoc,
+  updateAdhoc,
   removeAdhoc,
 } from "./brain.js";
 
@@ -51,10 +53,18 @@ function buildMonthly(refs) {
   } else {
     ordered.forEach((task) => {
       const checked = doneSet.has(task.id);
-      const item = makeItem(task.text, checked, () => {
-        toggleMonthlyDone(task.id);
-        paint(refs);
-      });
+      const item = makeItem(
+        task.text,
+        checked,
+        () => {
+          toggleMonthlyDone(task.id);
+          paint(refs);
+        },
+        (text) => {
+          updateMonthlyTask(task.id, text);
+          paint(refs);
+        }
+      );
       const remove = removeBtn("remove monthly to-do", () => {
         removeMonthlyTask(task.id);
         paint(refs);
@@ -86,16 +96,24 @@ function buildAdhoc(refs) {
     list.appendChild(emptyHint("nothing on the list"));
   } else {
     items.forEach((task) => {
-      const item = makeItem(task.text, false, (li, btn) => {
-        // Show the "done" beat, then remove and re-paint.
-        li.classList.add("is-done");
-        btn.setAttribute("aria-pressed", "true");
-        btn.disabled = true;
-        setTimeout(() => {
-          removeAdhoc(task.id);
+      const item = makeItem(
+        task.text,
+        false,
+        (li, btn) => {
+          // Show the "done" beat, then remove and re-paint.
+          li.classList.add("is-done");
+          btn.setAttribute("aria-pressed", "true");
+          btn.disabled = true;
+          setTimeout(() => {
+            removeAdhoc(task.id);
+            paint(refs);
+          }, ADHOC_FADE_MS);
+        },
+        (text) => {
+          updateAdhoc(task.id, text);
           paint(refs);
-        }, ADHOC_FADE_MS);
-      });
+        }
+      );
       list.appendChild(item);
     });
   }
@@ -111,7 +129,8 @@ function buildAdhoc(refs) {
 
 // ---------- shared item / control builders ----------
 // A list row: a check toggle + the text. onToggle receives (li, checkBtn).
-function makeItem(text, checked, onToggle) {
+// onEdit(newText) — when given, the text is click-to-edit (see beginEdit).
+function makeItem(text, checked, onToggle, onEdit) {
   const li = document.createElement("li");
   li.className = "brain-item" + (checked ? " is-done" : "");
 
@@ -127,9 +146,64 @@ function makeItem(text, checked, onToggle) {
   const span = document.createElement("span");
   span.className = "brain-text";
   span.textContent = text;
+  if (onEdit) {
+    span.classList.add("is-editable");
+    span.tabIndex = 0;
+    span.setAttribute("role", "button");
+    span.title = "edit";
+    span.setAttribute("aria-label", `edit: ${text}`);
+    span.addEventListener("click", () => beginEdit(span, text, onEdit));
+    span.addEventListener("keydown", (e) => {
+      if (e.key !== "Enter" && e.key !== " ") return;
+      e.preventDefault();
+      beginEdit(span, text, onEdit);
+    });
+  }
   li.appendChild(span);
 
   return li;
+}
+
+// Swap the text span for an inline input. Enter or blur commits, Escape
+// cancels; an empty value is a cancel too (brain.js ignores blank text, but we
+// restore the span rather than leaving a dead input behind). Committing calls
+// onEdit, which repaints the subtree — so guard against the follow-up blur
+// firing a second time.
+function beginEdit(span, text, onEdit) {
+  const input = document.createElement("input");
+  input.type = "text";
+  input.className = "brain-text brain-text-edit";
+  input.value = text;
+  input.setAttribute("aria-label", "edit to-do");
+
+  let settled = false;
+  const cancel = () => {
+    if (settled) return;
+    settled = true;
+    input.replaceWith(span);
+  };
+  const commit = () => {
+    if (settled) return;
+    const next = input.value.trim();
+    if (!next || next === text) return cancel();
+    settled = true;
+    onEdit(next);
+  };
+
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      commit();
+    } else if (e.key === "Escape") {
+      e.preventDefault();
+      cancel();
+    }
+  });
+  input.addEventListener("blur", commit);
+
+  span.replaceWith(input);
+  input.focus();
+  input.select();
 }
 
 function removeBtn(aria, onClick) {

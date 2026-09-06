@@ -4,7 +4,7 @@ import assert from "node:assert/strict";
 import { MODES, isMode, nextMode, resolveSwipe } from "../js/modes.js";
 
 test("MODES lists the five modes in display order", () => {
-  assert.deepEqual(MODES, ["message", "doodle", "nuggets", "mood", "brain"]);
+  assert.deepEqual(MODES, ["nuggets", "brain", "mood", "doodle", "message"]);
 });
 
 test("isMode accepts known modes and rejects everything else", () => {
@@ -15,15 +15,21 @@ test("isMode accepts known modes and rejects everything else", () => {
 });
 
 test("nextMode steps through the order", () => {
-  assert.equal(nextMode("message", 1), "doodle");
-  assert.equal(nextMode("doodle", 1), "nuggets");
-  assert.equal(nextMode("nuggets", -1), "doodle");
-  assert.equal(nextMode("mood", 1), "brain");
+  assert.equal(nextMode("nuggets", 1), "brain");
+  assert.equal(nextMode("brain", 1), "mood");
+  assert.equal(nextMode("mood", -1), "brain");
+  assert.equal(nextMode("doodle", 1), "message");
 });
 
-test("nextMode does not wrap at the ends", () => {
-  assert.equal(nextMode("message", -1), null);
-  assert.equal(nextMode("brain", 1), null);
+test("nextMode wraps around at both ends", () => {
+  assert.equal(nextMode("message", 1), "nuggets");
+  assert.equal(nextMode("nuggets", -1), "message");
+});
+
+test("nextMode cycles through every mode and returns home", () => {
+  let m = MODES[0];
+  for (let i = 0; i < MODES.length; i += 1) m = nextMode(m, 1);
+  assert.equal(m, MODES[0]);
 });
 
 test("nextMode returns null for unknown modes", () => {

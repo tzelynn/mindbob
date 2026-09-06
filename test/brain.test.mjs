@@ -24,9 +24,11 @@ const {
   readMonthly,
   addMonthlyTask,
   removeMonthlyTask,
+  updateMonthlyTask,
   toggleMonthlyDone,
   readAdhoc,
   addAdhoc,
+  updateAdhoc,
   removeAdhoc,
 } = await import("../js/brain.js");
 
@@ -97,6 +99,29 @@ test("removeMonthlyTask drops the definition and its done entry", () => {
   assert.deepEqual(done, []);
 });
 
+test("updateMonthlyTask renames in place, keeping id and done state", () => {
+  reset();
+  const now = new Date(2026, 6, 4);
+  addMonthlyTask("water plans", now);
+  const id = readMonthly(now).tasks[0].id;
+  toggleMonthlyDone(id, now);
+  const { tasks, done } = updateMonthlyTask(id, "  water plants  ", now);
+  assert.deepEqual(tasks, [{ id, text: "water plants" }]);
+  assert.deepEqual(done, [id]);
+  // persisted, not just returned
+  assert.equal(readMonthly(now).tasks[0].text, "water plants");
+});
+
+test("updateMonthlyTask ignores blank text and unknown ids", () => {
+  reset();
+  const now = new Date(2026, 6, 4);
+  addMonthlyTask("stretch", now);
+  const id = readMonthly(now).tasks[0].id;
+  assert.equal(updateMonthlyTask(id, "   ", now).tasks[0].text, "stretch");
+  assert.equal(updateMonthlyTask("nope", "hi", now).tasks[0].text, "stretch");
+  assert.equal(readMonthly(now).tasks[0].text, "stretch");
+});
+
 test("monthly done resets when the stored month is stale; tasks persist", () => {
   reset();
   const july = new Date(2026, 6, 4);
@@ -141,6 +166,28 @@ test("addAdhoc -> readAdhoc round-trips, remove drops the item", () => {
   items = removeAdhoc(items[0].id);
   assert.equal(items.length, 1);
   assert.equal(items[0].text, "look into rust");
+});
+
+test("updateAdhoc renames in place, keeping id and order", () => {
+  reset();
+  addAdhoc("buy milk");
+  addAdhoc("look into rust");
+  const [first, second] = readAdhoc();
+  const items = updateAdhoc(first.id, "  buy oat milk  ");
+  assert.deepEqual(items, [
+    { id: first.id, text: "buy oat milk" },
+    { id: second.id, text: "look into rust" },
+  ]);
+  assert.equal(readAdhoc()[0].text, "buy oat milk");
+});
+
+test("updateAdhoc ignores blank text and unknown ids", () => {
+  reset();
+  addAdhoc("ping alice");
+  const id = readAdhoc()[0].id;
+  assert.equal(updateAdhoc(id, "  ")[0].text, "ping alice");
+  assert.equal(updateAdhoc("nope", "hi")[0].text, "ping alice");
+  assert.equal(readAdhoc()[0].text, "ping alice");
 });
 
 test("addAdhoc trims and ignores empty text", () => {

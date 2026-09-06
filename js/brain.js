@@ -109,6 +109,19 @@ export function removeMonthlyTask(id, now = new Date()) {
   return { tasks: nextTasks, done: nextDone };
 }
 
+// Rename an existing monthly task definition. Empty/blank text is ignored (the
+// caller treats that as "cancel the edit").
+export function updateMonthlyTask(id, text, now = new Date()) {
+  const ls = storage();
+  if (!ls) return { tasks: [], done: [] };
+  const clean = String(text ?? "").trim();
+  const { tasks, done } = readMonthly(now);
+  if (!clean || !tasks.some((t) => t.id === id)) return { tasks, done };
+  const nextTasks = tasks.map((t) => (t.id === id ? { ...t, text: clean } : t));
+  writeJSON(ls, MONTHLY_KEY, { tasks: nextTasks, month: monthKey(now), done });
+  return { tasks: nextTasks, done };
+}
+
 // Toggle whether a task is checked off this month.
 export function toggleMonthlyDone(id, now = new Date()) {
   const ls = storage();
@@ -139,6 +152,18 @@ export function addAdhoc(text) {
   items.push({ id: uid(), text: clean });
   writeJSON(ls, ADHOC_KEY, items);
   return items;
+}
+
+// Rename an ad-hoc item. Empty/blank text is ignored (treated as "cancel").
+export function updateAdhoc(id, text) {
+  const ls = storage();
+  if (!ls) return [];
+  const clean = String(text ?? "").trim();
+  const items = readAdhoc();
+  if (!clean) return items;
+  const next = items.map((t) => (t.id === id ? { ...t, text: clean } : t));
+  writeJSON(ls, ADHOC_KEY, next);
+  return next;
 }
 
 export function removeAdhoc(id) {

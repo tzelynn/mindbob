@@ -106,14 +106,14 @@ Invariants:
 | `js/nuggetsDecorate.js` | Nuggets mode render (two cards) | `renderNuggets()`, `clearNuggets()` |
 | `js/mood.js` | DOM-free mood storage + calendar helpers | `readMood()`, `writeMood()`, `readAllMoods()` |
 | `js/moodDecorate.js` | Mood mode render (log strip + week/month/year grids) | `renderMood()`, `clearMood()` |
-| `js/brain.js` | DOM-free brain-dump task storage | — |
-| `js/brainDecorate.js` | Brain mode render (monthly + to-do lists) | `renderBrain()`, `clearBrain()` |
+| `js/brain.js` | DOM-free brain-dump task storage (add/rename/remove/toggle) | — |
+| `js/brainDecorate.js` | Brain mode render (monthly + to-do lists, click-to-edit items) | `renderBrain()`, `clearBrain()` |
 | `js/prompts.js` | Daily date-seeded doodle prompt word | `promptFor(dateSeed)` |
 | `js/util.js` | Hash + seeded RNG | `hashString()`, `seededRng()`, `pick()` |
 | `js/pwa.js` | Service worker registration | `registerSW()` |
 | `js/notify.js` | Bell toggle + Periodic Background Sync opt-in | `initNotifications(bell, state)` |
 
-Keep modules single-purpose and small. The decorate modules (and `galleryView.js`) are lazy-imported by `main.js`/`doodleDecorate.js` only when first needed. `setMode()` handles the five modes in `MODES` (`message` / `doodle` / `nuggets` / `mood` / `brain`); the active item is set via `setActiveTab()` and each non-current mode is cleaned up on switch. **Navigation**: the topbar has a single-icon mode menu (hamburger trigger + dropdown, items built from `MODES`), and horizontal swipes on `.stage` move between adjacent modes (no wrap-around at the ends; a `pointerdown` on the drawing canvas never starts a swipe — the canvas owns its gestures). `.stage` has `touch-action: pan-y` so vertical scrolling stays native while horizontal pans reach the swipe handler; don't remove it.
+Keep modules single-purpose and small. The decorate modules (and `galleryView.js`) are lazy-imported by `main.js`/`doodleDecorate.js` only when first needed. `setMode()` handles the five modes in `MODES` (`nuggets` / `brain` / `mood` / `doodle` / `message`); the active item is set via `setActiveTab()` and each non-current mode is cleaned up on switch. **Navigation**: the topbar has a single-icon mode menu (hamburger trigger + dropdown, items built from `MODES`), and horizontal swipes on `.stage` move between adjacent modes (**cyclical** — `nextMode` wraps past either end, so swiping keeps carousel-ing through the modes; a `pointerdown` on the drawing canvas, or inside an `input`/`textarea`, never starts a swipe — the canvas owns its gestures, and a drag-select inside a text field must not swipe the mode away mid-edit). `.stage` has `touch-action: pan-y` so vertical scrolling stays native while horizontal pans reach the swipe handler; don't remove it.
 
 Both the menu and swipes route through `navigate(mode)`, which **pushes a history entry** before rendering, so the device/browser back button steps back through modes instead of exiting the app (issue: an uninstalled/installed PWA otherwise has a single history entry). The initial mode is seeded with `replaceState`; a `popstate` listener re-renders the popped mode **without** pushing again; and a back press while the gallery overlay is open just dismisses the overlay (it has no history entry of its own) and re-asserts the current mode. `setMode()` also dismisses an open gallery on any switch, and `.topbar` sits at `z-index: 30` — **above** the gallery overlay's `z-index: 20` — so the mode dropdown stays clickable while the gallery is open (`.stage` is not a stacking context, so the overlay would otherwise paint over the topbar's dropdown).
 
@@ -143,7 +143,7 @@ Both the menu and swipes route through `navigate(mode)`, which **pushes a histor
 ```bash
 # local preview — any mode name from MODES works as a hash
 python3 -m http.server 8765
-#   http://localhost:8765/index.html            (message)
+#   http://localhost:8765/index.html            (message — the default landing mode)
 #   http://localhost:8765/index.html#doodle       (doodle mode — also used for testing)
 #   http://localhost:8765/index.html#nuggets      (nuggets mode)
 #   http://localhost:8765/index.html#mood         (mood tracker)
