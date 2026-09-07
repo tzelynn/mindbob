@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-06T22:09:19.304Z",
+  "updated": "2026-09-07T22:52:42.387Z",
   "entries": [
-    {
-      "id": "2026-08-24",
-      "date": "2026-08-24",
-      "publishAt": "2026-08-24T00:00:00.000Z",
-      "fact": {
-        "text": "In a test performed by Canadian scientists, using various different styles of music, it was determined that chickens lay the most eggs when pop music was played.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Pandora's AI Model Routing Box: Efficient Allocation with Costly Value Estimation",
-        "source": "pool",
-        "title": "Pandora's AI Model Routing Box: Efficient Allocation with Costly Value Estimation",
-        "link": "https://arxiv.org/abs/2608.20316v1"
-      }
-    },
     {
       "id": "2026-08-25",
       "date": "2026-08-25",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Legibility is Not Interpretability: Comparing Judged and Actual Importance in Chain-Of-Thought Reasoning",
         "link": "https://arxiv.org/abs/2609.04194v1"
+      }
+    },
+    {
+      "id": "2026-09-07",
+      "date": "2026-09-07",
+      "publishAt": "2026-09-07T00:00:00.000Z",
+      "fact": {
+        "text": "In the average lifetime, a person will walk the equivalent of 5 times around the equator.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views",
+        "source": "pool",
+        "title": "Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views",
+        "link": "https://arxiv.org/abs/2609.04180v1"
       }
     }
   ]

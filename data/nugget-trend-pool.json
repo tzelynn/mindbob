@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-06T22:09:19.304Z",
+  "updated": "2026-09-07T22:52:42.387Z",
   "trends": [
-    {
-      "text": "Aero Hand Open: A Simulation-Ready Tendon-Driven Hand for Dexterous Manipulation Learning",
-      "link": "https://arxiv.org/abs/2608.28578v1"
-    },
-    {
-      "text": "Learning a Size-Weight Frontier for Synthetic-Augmented Inference",
-      "link": "https://arxiv.org/abs/2608.28576v1"
-    },
-    {
-      "text": "Learning between the peaks: sharp asymptotics for kernel ridge regression under power-law anisotropy",
-      "link": "https://arxiv.org/abs/2608.28564v1"
-    },
     {
       "text": "Blog: Survey of Optimizers",
       "link": "https://arxiv.org/abs/2608.28557v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.04197v1"
     },
     {
-      "text": "Legibility is Not Interpretability: Comparing Judged and Actual Importance in Chain-Of-Thought Reasoning",
-      "link": "https://arxiv.org/abs/2609.04194v1"
-    },
-    {
       "text": "One Editor, Many Edits: A Unified Training-Free Framework for Diverse Video Editing",
       "link": "https://arxiv.org/abs/2609.04190v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "IDF killed Gaza aid workers at point blank range in 2025 massacre: Report",
       "link": "https://www.dropsitenews.com/p/israeli-soldiers-tel-sultan-gaza-red-crescent-civil-defense-massacre-report-forensic-architecture-earshot"
+    },
+    {
+      "text": "Diffusion TV: Experiencing Diffusion Models through Tangible, Embodied Interaction",
+      "link": "https://arxiv.org/abs/2609.05404v1"
+    },
+    {
+      "text": "RegionFed: Federated Learning for Personalized Query Understanding in Heterogeneous Retail Environments",
+      "link": "https://arxiv.org/abs/2609.05403v1"
+    },
+    {
+      "text": "A Deep Generative Model for Synthesizing Labeled Wireless Signals",
+      "link": "https://arxiv.org/abs/2609.05396v1"
+    },
+    {
+      "text": "Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe",
+      "link": "https://arxiv.org/abs/2609.05395v1"
     }
   ]
 }
