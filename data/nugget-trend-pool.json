@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-07T22:52:42.387Z",
+  "updated": "2026-09-08T22:44:38.523Z",
   "trends": [
-    {
-      "text": "Blog: Survey of Optimizers",
-      "link": "https://arxiv.org/abs/2608.28557v1"
-    },
-    {
-      "text": "Logos: An Agent Harness on a Cross-Process Bus",
-      "link": "https://arxiv.org/abs/2608.28553v1"
-    },
-    {
-      "text": "Video Generative Models as Geometry Learner",
-      "link": "https://arxiv.org/abs/2608.28549v1"
-    },
     {
       "text": "Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation",
       "link": "https://arxiv.org/abs/2609.01603v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.04183v1"
     },
     {
-      "text": "Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views",
-      "link": "https://arxiv.org/abs/2609.04180v1"
-    },
-    {
       "text": "A Computationally Feasible Framework for Causal Probabilistic Explanation",
       "link": "https://arxiv.org/abs/2609.04177v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe",
       "link": "https://arxiv.org/abs/2609.05395v1"
+    },
+    {
+      "text": "Necessary or Sufficient? Evaluating LLM Explanations With Behavioural Evidence",
+      "link": "https://arxiv.org/abs/2609.05385v1"
+    },
+    {
+      "text": "Reflection-aware Generative Novel View Synthesis",
+      "link": "https://arxiv.org/abs/2609.05382v1"
+    },
+    {
+      "text": "Molecular Déjà Vu: Digit-Level Retrieval of Published Values in Frontier Language Models",
+      "link": "https://arxiv.org/abs/2609.05381v1"
+    },
+    {
+      "text": "What Matters, When? Diagnosing and Improving Conditional Visual Grounding in Visuomotor Imitation Policies",
+      "link": "https://arxiv.org/abs/2609.05376v1"
     }
   ]
 }

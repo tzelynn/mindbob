@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-07T22:52:42.387Z",
+  "updated": "2026-09-08T22:44:38.523Z",
   "entries": [
-    {
-      "id": "2026-08-25",
-      "date": "2026-08-25",
-      "publishAt": "2026-08-25T00:00:00.000Z",
-      "fact": {
-        "text": "Samuel Clemens (Mark Twain) was born on and died on days when Halley’s Comet can be seen.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "I believe there are entire companies right now under AI psychosis",
-        "source": "pool",
-        "title": "I believe there are entire companies right now under AI psychosis",
-        "link": "https://twitter.com/mitchellh/status/2055380239711457578"
-      }
-    },
     {
       "id": "2026-08-26",
       "date": "2026-08-26",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views",
         "link": "https://arxiv.org/abs/2609.04180v1"
+      }
+    },
+    {
+      "id": "2026-09-08",
+      "date": "2026-09-08",
+      "publishAt": "2026-09-08T00:00:00.000Z",
+      "fact": {
+        "text": "The cheetah is the only cat that can't retract its claws.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "My AI skeptic friends are all nuts",
+        "source": "pool",
+        "title": "My AI skeptic friends are all nuts",
+        "link": "https://fly.io/blog/youre-all-nuts/"
       }
     }
   ]
