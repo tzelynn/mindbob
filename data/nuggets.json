@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-08T22:44:38.523Z",
+  "updated": "2026-09-09T22:37:03.119Z",
   "entries": [
-    {
-      "id": "2026-08-26",
-      "date": "2026-08-26",
-      "publishAt": "2026-08-26T00:00:00.000Z",
-      "fact": {
-        "text": "1,800 cigarettes are smoked per person each year in China.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "PerturbRx: Learning Treatment-Conditioned Latent Transitions for Patient Drug Response Prediction",
-        "source": "pool",
-        "title": "PerturbRx: Learning Treatment-Conditioned Latent Transitions for Patient Drug Response Prediction",
-        "link": "https://arxiv.org/abs/2608.21349v1"
-      }
-    },
     {
       "id": "2026-08-27",
       "date": "2026-08-27",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "My AI skeptic friends are all nuts",
         "link": "https://fly.io/blog/youre-all-nuts/"
+      }
+    },
+    {
+      "id": "2026-09-09",
+      "date": "2026-09-09",
+      "publishAt": "2026-09-09T00:00:00.000Z",
+      "fact": {
+        "text": "More people are killed each year from bees than from snakes.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "A Deep Generative Model for Synthesizing Labeled Wireless Signals",
+        "source": "pool",
+        "title": "A Deep Generative Model for Synthesizing Labeled Wireless Signals",
+        "link": "https://arxiv.org/abs/2609.05396v1"
       }
     }
   ]

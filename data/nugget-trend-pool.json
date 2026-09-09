@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-08T22:44:38.523Z",
+  "updated": "2026-09-09T22:37:03.119Z",
   "trends": [
-    {
-      "text": "Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation",
-      "link": "https://arxiv.org/abs/2609.01603v1"
-    },
-    {
-      "text": "Adaptive Critical Token-Aware Retrieval for Repository-Level Code Generation",
-      "link": "https://arxiv.org/abs/2609.01601v1"
-    },
-    {
-      "text": "The Rise of Verbal Reinforcement Learning",
-      "link": "https://arxiv.org/abs/2609.01597v1"
-    },
     {
       "text": "Discriminative World Models for Web Agents",
       "link": "https://arxiv.org/abs/2609.02885v1"
@@ -58,10 +46,6 @@
       "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
     },
     {
-      "text": "My AI skeptic friends are all nuts",
-      "link": "https://fly.io/blog/youre-all-nuts/"
-    },
-    {
       "text": "IDF killed Gaza aid workers at point blank range in 2025 massacre: Report",
       "link": "https://www.dropsitenews.com/p/israeli-soldiers-tel-sultan-gaza-red-crescent-civil-defense-massacre-report-forensic-architecture-earshot"
     },
@@ -96,6 +80,22 @@
     {
       "text": "What Matters, When? Diagnosing and Improving Conditional Visual Grounding in Visuomotor Imitation Policies",
       "link": "https://arxiv.org/abs/2609.05376v1"
+    },
+    {
+      "text": "Learning Length-Extrapolatable Recurrent Models",
+      "link": "https://arxiv.org/abs/2609.09157v1"
+    },
+    {
+      "text": "Procedural Graphs: Self-Evolving Execution Structures for LLM Agents",
+      "link": "https://arxiv.org/abs/2609.09153v1"
+    },
+    {
+      "text": "Silver Rate Is (Almost) Optimal for Gradient Descent Acceleration",
+      "link": "https://arxiv.org/abs/2609.09152v1"
+    },
+    {
+      "text": "NOAH: Learning the Full Patient Journey. A Longitudinal Multimodal Time-Aware Model for Representation and Forecasting",
+      "link": "https://arxiv.org/abs/2609.09140v1"
     }
   ]
 }
