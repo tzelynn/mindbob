@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-09T22:37:03.119Z",
+  "updated": "2026-09-10T22:39:41.677Z",
   "trends": [
-    {
-      "text": "Discriminative World Models for Web Agents",
-      "link": "https://arxiv.org/abs/2609.02885v1"
-    },
-    {
-      "text": "Graph Machine: Towards Better Pretraining via Edges",
-      "link": "https://arxiv.org/abs/2609.02881v1"
-    },
-    {
-      "text": "Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework",
-      "link": "https://arxiv.org/abs/2609.02861v1"
-    },
     {
       "text": "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
       "link": "https://arxiv.org/abs/2609.04198v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.05403v1"
     },
     {
-      "text": "A Deep Generative Model for Synthesizing Labeled Wireless Signals",
-      "link": "https://arxiv.org/abs/2609.05396v1"
-    },
-    {
       "text": "Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe",
       "link": "https://arxiv.org/abs/2609.05395v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "NOAH: Learning the Full Patient Journey. A Longitudinal Multimodal Time-Aware Model for Representation and Forecasting",
       "link": "https://arxiv.org/abs/2609.09140v1"
+    },
+    {
+      "text": "A positive resolution of the gap-entropy conjecture",
+      "link": "https://arxiv.org/abs/2609.10529v1"
+    },
+    {
+      "text": "Characterizing Language Generation in the Limit: Finite Witnesses and a Separation-Width Hierarch",
+      "link": "https://arxiv.org/abs/2609.10525v1"
+    },
+    {
+      "text": "Show-Harness: Just a VLM Agent Can Play Robots",
+      "link": "https://arxiv.org/abs/2609.10522v1"
+    },
+    {
+      "text": "Optimal Low-Rank Quantum State Tomography with Bounded-Sample Joint Measurements",
+      "link": "https://arxiv.org/abs/2609.10514v1"
     }
   ]
 }

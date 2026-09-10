@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-09T22:37:03.119Z",
+  "updated": "2026-09-10T22:39:41.677Z",
   "entries": [
-    {
-      "id": "2026-08-27",
-      "date": "2026-08-27",
-      "publishAt": "2026-08-27T00:00:00.000Z",
-      "fact": {
-        "text": "Our eyes are always the same size from birth, but our nose and ears never stop growing.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings",
-        "source": "pool",
-        "title": "EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings",
-        "link": "https://arxiv.org/abs/2608.23563v1"
-      }
-    },
     {
       "id": "2026-08-28",
       "date": "2026-08-28",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "A Deep Generative Model for Synthesizing Labeled Wireless Signals",
         "link": "https://arxiv.org/abs/2609.05396v1"
+      }
+    },
+    {
+      "id": "2026-09-10",
+      "date": "2026-09-10",
+      "publishAt": "2026-09-10T00:00:00.000Z",
+      "fact": {
+        "text": "Thirty-five percent of people who use personal ads for dating are already married.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Molecular Déjà Vu: Digit-Level Retrieval of Published Values in Frontier Language Models",
+        "source": "pool",
+        "title": "Molecular Déjà Vu: Digit-Level Retrieval of Published Values in Frontier Language Models",
+        "link": "https://arxiv.org/abs/2609.05381v1"
       }
     }
   ]
