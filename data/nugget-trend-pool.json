@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-10T22:39:41.677Z",
+  "updated": "2026-09-11T22:40:05.996Z",
   "trends": [
-    {
-      "text": "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
-      "link": "https://arxiv.org/abs/2609.04198v1"
-    },
-    {
-      "text": "ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize",
-      "link": "https://arxiv.org/abs/2609.04197v1"
-    },
-    {
-      "text": "One Editor, Many Edits: A Unified Training-Free Framework for Diverse Video Editing",
-      "link": "https://arxiv.org/abs/2609.04190v1"
-    },
     {
       "text": "Robust PAC Learning of Concurrent Stochastic Games",
       "link": "https://arxiv.org/abs/2609.04189v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.05382v1"
     },
     {
-      "text": "Molecular Déjà Vu: Digit-Level Retrieval of Published Values in Frontier Language Models",
-      "link": "https://arxiv.org/abs/2609.05381v1"
-    },
-    {
       "text": "What Matters, When? Diagnosing and Improving Conditional Visual Grounding in Visuomotor Imitation Policies",
       "link": "https://arxiv.org/abs/2609.05376v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Optimal Low-Rank Quantum State Tomography with Bounded-Sample Joint Measurements",
       "link": "https://arxiv.org/abs/2609.10514v1"
+    },
+    {
+      "text": "General Quantification of Covariate and Concept Shifts",
+      "link": "https://arxiv.org/abs/2609.11918v1"
+    },
+    {
+      "text": "Data Scarcity and Model Sparsity: Mixtures-of-Experts Overfit More to Repeated Data",
+      "link": "https://arxiv.org/abs/2609.11917v1"
+    },
+    {
+      "text": "Can Edge-Deployable Vision-Language Models Identify Species?",
+      "link": "https://arxiv.org/abs/2609.11916v1"
+    },
+    {
+      "text": "Generative Marketing Mix Modeling: A Causal Inference Framework Linking GEO and GEM to Business Impact",
+      "link": "https://arxiv.org/abs/2609.11915v1"
     }
   ]
 }

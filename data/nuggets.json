@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-10T22:39:41.677Z",
+  "updated": "2026-09-11T22:40:05.996Z",
   "entries": [
-    {
-      "id": "2026-08-28",
-      "date": "2026-08-28",
-      "publishAt": "2026-08-28T00:00:00.000Z",
-      "fact": {
-        "text": "Mount Olympus Mons on Mars is three times the size of Mount Everest.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Parameterized Complexity of $L_p$-Lipschitz Constants for Input Convex Neural Networks and $L_p$-Norm Maximization over Zonotopes",
-        "source": "pool",
-        "title": "Parameterized Complexity of $L_p$-Lipschitz Constants for Input Convex Neural Networks and $L_p$-Norm Maximization over Zonotopes",
-        "link": "https://arxiv.org/abs/2608.24865v1"
-      }
-    },
     {
       "id": "2026-08-29",
       "date": "2026-08-29",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Molecular Déjà Vu: Digit-Level Retrieval of Published Values in Frontier Language Models",
         "link": "https://arxiv.org/abs/2609.05381v1"
+      }
+    },
+    {
+      "id": "2026-09-11",
+      "date": "2026-09-11",
+      "publishAt": "2026-09-11T00:00:00.000Z",
+      "fact": {
+        "text": "CBS` \"60 Minutes\" is the only TV show without a theme song/music.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Silver Rate Is (Almost) Optimal for Gradient Descent Acceleration",
+        "source": "pool",
+        "title": "Silver Rate Is (Almost) Optimal for Gradient Descent Acceleration",
+        "link": "https://arxiv.org/abs/2609.09152v1"
       }
     }
   ]
