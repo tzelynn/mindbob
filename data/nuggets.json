@@ -1,81 +1,6 @@
 {
-  "updated": "2026-09-05T22:05:37.840Z",
+  "updated": "2026-09-10T22:39:41.677Z",
   "entries": [
-    {
-      "id": "2026-08-23",
-      "date": "2026-08-23",
-      "publishAt": "2026-08-23T00:00:00.000Z",
-      "fact": {
-        "text": "Oak trees do not produce acorns until they are fifty years of age or older.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "A comparison between ceiling-mounted FMCW, IR-UWB and Wi-Fi radar for in-bedroom human activity monitoring and sleep interruption detection",
-        "source": "pool",
-        "title": "A comparison between ceiling-mounted FMCW, IR-UWB and Wi-Fi radar for in-bedroom human activity monitoring and sleep interruption detection",
-        "link": "https://arxiv.org/abs/2608.20322v1"
-      }
-    },
-    {
-      "id": "2026-08-24",
-      "date": "2026-08-24",
-      "publishAt": "2026-08-24T00:00:00.000Z",
-      "fact": {
-        "text": "In a test performed by Canadian scientists, using various different styles of music, it was determined that chickens lay the most eggs when pop music was played.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Pandora's AI Model Routing Box: Efficient Allocation with Costly Value Estimation",
-        "source": "pool",
-        "title": "Pandora's AI Model Routing Box: Efficient Allocation with Costly Value Estimation",
-        "link": "https://arxiv.org/abs/2608.20316v1"
-      }
-    },
-    {
-      "id": "2026-08-25",
-      "date": "2026-08-25",
-      "publishAt": "2026-08-25T00:00:00.000Z",
-      "fact": {
-        "text": "Samuel Clemens (Mark Twain) was born on and died on days when Halley’s Comet can be seen.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "I believe there are entire companies right now under AI psychosis",
-        "source": "pool",
-        "title": "I believe there are entire companies right now under AI psychosis",
-        "link": "https://twitter.com/mitchellh/status/2055380239711457578"
-      }
-    },
-    {
-      "id": "2026-08-26",
-      "date": "2026-08-26",
-      "publishAt": "2026-08-26T00:00:00.000Z",
-      "fact": {
-        "text": "1,800 cigarettes are smoked per person each year in China.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "PerturbRx: Learning Treatment-Conditioned Latent Transitions for Patient Drug Response Prediction",
-        "source": "pool",
-        "title": "PerturbRx: Learning Treatment-Conditioned Latent Transitions for Patient Drug Response Prediction",
-        "link": "https://arxiv.org/abs/2608.21349v1"
-      }
-    },
-    {
-      "id": "2026-08-27",
-      "date": "2026-08-27",
-      "publishAt": "2026-08-27T00:00:00.000Z",
-      "fact": {
-        "text": "Our eyes are always the same size from birth, but our nose and ears never stop growing.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings",
-        "source": "pool",
-        "title": "EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings",
-        "link": "https://arxiv.org/abs/2608.23563v1"
-      }
-    },
     {
       "id": "2026-08-28",
       "date": "2026-08-28",
@@ -209,6 +134,81 @@
         "source": "pool",
         "title": "GRADSOLVE: fast exact gradients for ODE ensembles on GPUs",
         "link": "https://arxiv.org/abs/2609.02876v1"
+      }
+    },
+    {
+      "id": "2026-09-06",
+      "date": "2026-09-06",
+      "publishAt": "2026-09-06T00:00:00.000Z",
+      "fact": {
+        "text": "The first automobile race ever seen in the United States was held in Chicago in 1895. The track ran from Chicago to Evanston, Illinois. The winner was J. Frank Duryea, whose average speed was 71/2 miles per hour.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Legibility is Not Interpretability: Comparing Judged and Actual Importance in Chain-Of-Thought Reasoning",
+        "source": "pool",
+        "title": "Legibility is Not Interpretability: Comparing Judged and Actual Importance in Chain-Of-Thought Reasoning",
+        "link": "https://arxiv.org/abs/2609.04194v1"
+      }
+    },
+    {
+      "id": "2026-09-07",
+      "date": "2026-09-07",
+      "publishAt": "2026-09-07T00:00:00.000Z",
+      "fact": {
+        "text": "In the average lifetime, a person will walk the equivalent of 5 times around the equator.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views",
+        "source": "pool",
+        "title": "Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views",
+        "link": "https://arxiv.org/abs/2609.04180v1"
+      }
+    },
+    {
+      "id": "2026-09-08",
+      "date": "2026-09-08",
+      "publishAt": "2026-09-08T00:00:00.000Z",
+      "fact": {
+        "text": "The cheetah is the only cat that can't retract its claws.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "My AI skeptic friends are all nuts",
+        "source": "pool",
+        "title": "My AI skeptic friends are all nuts",
+        "link": "https://fly.io/blog/youre-all-nuts/"
+      }
+    },
+    {
+      "id": "2026-09-09",
+      "date": "2026-09-09",
+      "publishAt": "2026-09-09T00:00:00.000Z",
+      "fact": {
+        "text": "More people are killed each year from bees than from snakes.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "A Deep Generative Model for Synthesizing Labeled Wireless Signals",
+        "source": "pool",
+        "title": "A Deep Generative Model for Synthesizing Labeled Wireless Signals",
+        "link": "https://arxiv.org/abs/2609.05396v1"
+      }
+    },
+    {
+      "id": "2026-09-10",
+      "date": "2026-09-10",
+      "publishAt": "2026-09-10T00:00:00.000Z",
+      "fact": {
+        "text": "Thirty-five percent of people who use personal ads for dating are already married.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Molecular Déjà Vu: Digit-Level Retrieval of Published Values in Frontier Language Models",
+        "source": "pool",
+        "title": "Molecular Déjà Vu: Digit-Level Retrieval of Published Values in Frontier Language Models",
+        "link": "https://arxiv.org/abs/2609.05381v1"
       }
     }
   ]

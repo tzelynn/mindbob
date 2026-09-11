@@ -1,41 +1,6 @@
 {
-  "updated": "2026-09-05T22:05:21.574Z",
+  "updated": "2026-09-10T22:39:40.808Z",
   "entries": [
-    {
-      "id": "2026-08-23",
-      "date": "2026-08-23",
-      "publishAt": "2026-08-23T00:00:00.000Z",
-      "word": "hat",
-      "source": "fallback"
-    },
-    {
-      "id": "2026-08-24",
-      "date": "2026-08-24",
-      "publishAt": "2026-08-24T00:00:00.000Z",
-      "word": "frog",
-      "source": "fallback"
-    },
-    {
-      "id": "2026-08-25",
-      "date": "2026-08-25",
-      "publishAt": "2026-08-25T00:00:00.000Z",
-      "word": "shoe",
-      "source": "fallback"
-    },
-    {
-      "id": "2026-08-26",
-      "date": "2026-08-26",
-      "publishAt": "2026-08-26T00:00:00.000Z",
-      "word": "fish",
-      "source": "fallback"
-    },
-    {
-      "id": "2026-08-27",
-      "date": "2026-08-27",
-      "publishAt": "2026-08-27T00:00:00.000Z",
-      "word": "bird",
-      "source": "fallback"
-    },
     {
       "id": "2026-08-28",
       "date": "2026-08-28",
@@ -97,6 +62,41 @@
       "date": "2026-09-05",
       "publishAt": "2026-09-05T00:00:00.000Z",
       "word": "spoon",
+      "source": "fallback"
+    },
+    {
+      "id": "2026-09-06",
+      "date": "2026-09-06",
+      "publishAt": "2026-09-06T00:00:00.000Z",
+      "word": "fork",
+      "source": "fallback"
+    },
+    {
+      "id": "2026-09-07",
+      "date": "2026-09-07",
+      "publishAt": "2026-09-07T00:00:00.000Z",
+      "word": "hat",
+      "source": "fallback"
+    },
+    {
+      "id": "2026-09-08",
+      "date": "2026-09-08",
+      "publishAt": "2026-09-08T00:00:00.000Z",
+      "word": "frog",
+      "source": "fallback"
+    },
+    {
+      "id": "2026-09-09",
+      "date": "2026-09-09",
+      "publishAt": "2026-09-09T00:00:00.000Z",
+      "word": "shoe",
+      "source": "fallback"
+    },
+    {
+      "id": "2026-09-10",
+      "date": "2026-09-10",
+      "publishAt": "2026-09-10T00:00:00.000Z",
+      "word": "fish",
       "source": "fallback"
     }
   ]
