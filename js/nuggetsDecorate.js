@@ -1,6 +1,6 @@
 // NUGGETS mode: fill the two cards (fun fact + tech trend). Lazy-imported by
-// main.js on first entry into nuggets mode. Mirrors the render/clear shape of
-// js/messageDecorate.js.
+// main.js on first entry into nuggets mode (the data itself is fetched eagerly
+// in main.js — the fun fact is also the notification payload).
 
 const SOURCE_CLASS = "nugget-source";
 

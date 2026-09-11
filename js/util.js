@@ -1,5 +1,5 @@
-// Small shared helpers: deterministic hashing + seeded PRNG.
-// Same seed string -> same sequence, so a message always looks identical.
+// Small shared helpers: deterministic hashing + seeded PRNG + today's date.
+// Same seed string -> same sequence, so a given day always looks identical.
 
 // FNV-1a 32-bit string hash.
 export function hashString(str) {
@@ -32,4 +32,11 @@ export function seededRng(seedStr) {
 export function pick(arr, seedStr, salt = "") {
   if (!arr || arr.length === 0) return undefined;
   return arr[hashString(seedStr + "|" + salt) % arr.length];
+}
+
+// Today's date as YYYY-MM-DD in **UTC** — the same clock the generators stamp
+// entries with (all entries publish at 00:00 UTC), so a client-side fallback
+// seed (palette, prompt, doodle storage key) never disagrees with the data.
+export function todayDate(now = new Date()) {
+  return now.toISOString().slice(0, 10);
 }

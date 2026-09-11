@@ -2,7 +2,7 @@
 // mode menu, swipe navigation, and hash parsing. Pure module (no DOM) so it is
 // unit-testable in Node.
 
-export const MODES = ["nuggets", "brain", "mood", "doodle", "message"];
+export const MODES = ["nuggets", "brain", "mood", "doodle"];
 
 export function isMode(m) {
   return MODES.includes(m);

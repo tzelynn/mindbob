@@ -3,8 +3,8 @@ import assert from "node:assert/strict";
 
 import { MODES, isMode, nextMode, resolveSwipe } from "../js/modes.js";
 
-test("MODES lists the five modes in display order", () => {
-  assert.deepEqual(MODES, ["nuggets", "brain", "mood", "doodle", "message"]);
+test("MODES lists the four modes in display order", () => {
+  assert.deepEqual(MODES, ["nuggets", "brain", "mood", "doodle"]);
 });
 
 test("isMode accepts known modes and rejects everything else", () => {
@@ -18,12 +18,12 @@ test("nextMode steps through the order", () => {
   assert.equal(nextMode("nuggets", 1), "brain");
   assert.equal(nextMode("brain", 1), "mood");
   assert.equal(nextMode("mood", -1), "brain");
-  assert.equal(nextMode("doodle", 1), "message");
+  assert.equal(nextMode("doodle", 1), "nuggets");
 });
 
 test("nextMode wraps around at both ends", () => {
-  assert.equal(nextMode("message", 1), "nuggets");
-  assert.equal(nextMode("nuggets", -1), "message");
+  assert.equal(nextMode("doodle", 1), "nuggets");
+  assert.equal(nextMode("nuggets", -1), "doodle");
 });
 
 test("nextMode cycles through every mode and returns home", () => {

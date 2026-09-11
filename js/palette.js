@@ -1,6 +1,6 @@
-// Curated calming palettes. Each message gets one cohesive palette,
-// chosen deterministically from its id, so AM != PM and every message
-// has its own matching pencil colours (spec requirement).
+// Curated calming palettes. Each day gets one cohesive palette, chosen
+// deterministically from the date, so the app has its own matching pencil
+// colours that change daily but stay stable within a day.
 import { hashString } from "./util.js";
 
 export const PALETTES = [
@@ -50,10 +50,10 @@ export function paletteFor(seed) {
   return PALETTES[hashString("palette|" + seed) % PALETTES.length];
 }
 
-// Doodle mode gets its OWN cohesive palette that changes each day, seeded from
-// the date (a distinct namespace from paletteFor) so it varies day to day and
-// is decoupled from the message's palette — while staying deterministic within
-// a day so a persisted drawing keeps its colours across reloads.
+// Doodle mode gets its OWN cohesive palette, seeded from the date under a
+// distinct namespace from paletteFor — so it is decoupled from the rest of the
+// app's palette, while staying deterministic within a day so a persisted
+// drawing keeps its colours across reloads.
 export function doodlePaletteFor(dateSeed) {
   return PALETTES[hashString("doodle-palette|" + dateSeed) % PALETTES.length];
 }

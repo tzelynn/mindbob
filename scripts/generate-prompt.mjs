@@ -41,7 +41,7 @@ function todayUTC() {
 }
 
 // publish instant anchored to the date, NOT wall-clock now (mirrors the
-// message generator), so the client selection is stable.
+// nuggets generator), so the client selection is stable.
 function publishAtFor(date) {
   return `${date}T00:00:00.000Z`;
 }

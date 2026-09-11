@@ -1,8 +1,8 @@
 // mindbob service worker.
 // - App shell: cache-first (instant load, works offline).
-// - data/messages.json: network-first with cache fallback (fresh when online,
-//   last note when offline).
-// - everything else (doodles, etc.): stale-while-revalidate.
+// - data/nuggets.json + data/prompts.json: network-first with cache fallback
+//   (fresh when online, last known when offline).
+// - everything else: cache-first, then runtime-cached.
 //
 // Update safety: every cache read/write is scoped to THIS version's caches
 // (never the global `caches.match`, which spans all versions). Combined with
@@ -12,11 +12,13 @@
 // would crash init: stale element ids -> null refs). `skipWaiting` still makes
 // the new version take over on the next reload.
 
-const VERSION = "v10";
+const VERSION = "v11";
 const SHELL_CACHE = `mindbob-shell-${VERSION}`;
 const RUNTIME_CACHE = `mindbob-runtime-${VERSION}`;
-// Unversioned: holds the id of the last note we notified about. Must survive
-// version bumps, so it is excluded from the activate() cleanup below.
+// Unversioned: holds the id of the last nuggets entry we notified about. Must
+// survive version bumps, so it is excluded from the activate() cleanup below.
+// js/update.js purges caches from the page and skips this one for the same
+// reason — dropping it would re-notify for a fact already seen.
 const META_CACHE = "mindbob-meta";
 const LAST_NOTIFIED_KEY = "https://mindbob.local/last-notified";
 const PERIODIC_TAG = "mindbob-check";
@@ -29,11 +31,8 @@ const SHELL_ASSETS = [
   "./assets/fonts/Eggi-Regular.ttf",
   "./js/main.js",
   "./js/modes.js",
-  "./js/messages.js",
   "./js/selectEntry.js",
   "./js/palette.js",
-  "./js/doodles.js",
-  "./js/messageDecorate.js",
   "./js/doodleDecorate.js",
   "./js/galleryStore.js",
   "./js/galleryView.js",
@@ -47,6 +46,7 @@ const SHELL_ASSETS = [
   "./js/util.js",
   "./js/pwa.js",
   "./js/notify.js",
+  "./js/update.js",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
 ];
@@ -87,12 +87,6 @@ self.addEventListener("fetch", (event) => {
 
   const url = new URL(request.url);
 
-  // Messages: network-first.
-  if (url.pathname.endsWith("/data/messages.json")) {
-    event.respondWith(networkFirst(request));
-    return;
-  }
-
   // Doodle prompt: network-first (fresh when online, last word offline).
   if (url.pathname.endsWith("/data/prompts.json")) {
     event.respondWith(networkFirst(request));
@@ -102,12 +96,6 @@ self.addEventListener("fetch", (event) => {
   // Nuggets: network-first (fresh when online, last nuggets offline).
   if (url.pathname.endsWith("/data/nuggets.json")) {
     event.respondWith(networkFirst(request));
-    return;
-  }
-
-  // Doodle manifest changes when doodles are added: stale-while-revalidate.
-  if (url.pathname.endsWith("/doodles/index.json")) {
-    event.respondWith(staleWhileRevalidate(request));
     return;
   }
 
@@ -150,18 +138,6 @@ async function networkFirst(request) {
   }
 }
 
-async function staleWhileRevalidate(request) {
-  const runtime = await caches.open(RUNTIME_CACHE);
-  const cached = await runtime.match(request);
-  const fetching = fetch(request)
-    .then((res) => {
-      if (res.ok) runtime.put(request, res.clone());
-      return res;
-    })
-    .catch(() => null);
-  return cached || (await fetching) || Response.error();
-}
-
 // >>> selection-parity >>>
 // EXACT copy of pickCurrentEntry from js/selectEntry.js. This is a classic
 // worker and cannot import ES modules; test/sw-selection.test.mjs asserts the
@@ -200,14 +176,15 @@ async function setLastNotifiedId(id) {
 }
 
 function titleFor() {
-  return "mindbob · today's note";
+  return "mindbob · today's fun fact";
 }
 
-// Fetch the latest notes, pick the current one, and notify if it's new.
-async function checkForNewNote() {
+// Fetch the latest nuggets, pick the current entry, and notify its fun fact if
+// the entry is new. Selection is the same publishAt rule the page uses.
+async function checkForNewFact() {
   let data;
   try {
-    const res = await fetch("./data/messages.json", { cache: "no-store" });
+    const res = await fetch("./data/nuggets.json", { cache: "no-store" });
     if (!res.ok) return;
     data = await res.json();
   } catch {
@@ -218,22 +195,25 @@ async function checkForNewNote() {
   const entry = pickCurrentEntry(data.entries, Date.now());
   if (!entry) return;
 
+  const fact = entry.fact && entry.fact.text;
+  if (!fact) return;
+
   const last = await getLastNotifiedId();
   if (entry.id === last) return;
 
   await setLastNotifiedId(entry.id);
-  await self.registration.showNotification(titleFor(entry), {
-    body: entry.text,
+  await self.registration.showNotification(titleFor(), {
+    body: fact,
     icon: "./icons/icon-192.png",
     badge: "./icons/icon-192.png",
-    tag: "mindbob-note",
-    data: { url: self.registration.scope },
+    tag: "mindbob-fact",
+    data: { url: self.registration.scope + "#nuggets" },
   });
 }
 
 self.addEventListener("periodicsync", (event) => {
   if (event.tag === PERIODIC_TAG) {
-    event.waitUntil(checkForNewNote());
+    event.waitUntil(checkForNewFact());
   }
 });
 

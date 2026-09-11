@@ -1,6 +1,6 @@
 // Daily doodle prompt: one single-word object, chosen deterministically
-// from the date so everyone sees the same word on a given day (AM == PM) and it
-// works offline. Same seeding pattern as palette.js / doodles.js — no Math.random.
+// from the date so everyone sees the same word on a given day and it
+// works offline. Same seeding pattern as palette.js — no Math.random.
 import { hashString } from "./util.js";
 
 // Curated simple, drawable single-word nouns.
@@ -22,8 +22,8 @@ export function promptFor(dateSeed) {
 }
 
 // Select the current entry's word from data/prompts.json (greatest publishAt
-// <= now), mirroring messages.js selection. Falls back to the deterministic
-// date-seeded promptFor() when the file is missing/empty (offline, pre-cron).
+// <= now). Falls back to the deterministic date-seeded promptFor() when the
+// file is missing/empty (offline, pre-cron).
 export async function getCurrentPrompt(date, now = new Date()) {
   try {
     const res = await fetch("./data/prompts.json", { cache: "no-cache" });

@@ -1,6 +1,6 @@
-// Single source of truth for "which note is current".
+// Single source of truth for "which dated entry is current".
 // Pure: no DOM, no fetch, no service-worker globals — so it can be imported by
-// js/messages.js (page) AND unit-tested in Node. sw.js keeps a byte-identical
+// js/nuggets.js (page) AND unit-tested in Node. sw.js keeps a byte-identical
 // copy (it is a classic worker and cannot import ES modules); test/sw-selection
 // .test.mjs asserts the two stay in parity.
 //

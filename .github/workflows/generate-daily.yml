@@ -1,4 +1,4 @@
-name: Generate message
+name: Generate daily data
 
 # Two runs daily, tuned to Singapore time (UTC+8). GitHub schedules run in UTC.
 # IMPORTANT: GitHub only *queues* scheduled runs at the cron time — they
@@ -27,11 +27,11 @@ on:
         default: false
 
 permissions:
-  contents: write # commit data/messages.json, data/prompts.json, data/nuggets.json
+  contents: write # commit data/prompts.json, data/nuggets.json
   models: read # call GitHub Models
 
 concurrency:
-  group: generate-message
+  group: generate-daily-data
   cancel-in-progress: false
 
 jobs:
@@ -47,14 +47,7 @@ jobs:
       # !cancelled() on the later steps: one script's crash must not discard
       # the others' output — the job still reports failure, and whatever was
       # not generated is picked up by the retry cron (no entry -> full run).
-      - name: Generate message
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          FORCE_REGENERATE: ${{ inputs.force && '1' || '' }}
-        run: node scripts/generate-message.mjs
-
       - name: Generate doodle prompt
-        if: ${{ !cancelled() }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FORCE_REGENERATE: ${{ inputs.force && '1' || '' }}
@@ -67,19 +60,15 @@ jobs:
           FORCE_REGENERATE: ${{ inputs.force && '1' || '' }}
         run: node scripts/generate-nuggets.mjs
 
-      - name: Rebuild doodle manifest
-        if: ${{ !cancelled() }}
-        run: node scripts/build-doodle-manifest.mjs
-
       - name: Commit and push
         if: ${{ !cancelled() }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/messages.json data/prompts.json data/nuggets.json data/nugget-trend-pool.json doodles/index.json
+          git add data/prompts.json data/nuggets.json data/nugget-trend-pool.json
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: daily note for $(date -u +%F)"
+            git commit -m "chore: daily data for $(date -u +%F)"
             git push
           fi

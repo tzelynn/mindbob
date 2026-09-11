@@ -1,21 +1,18 @@
-// Entry point: load the current message, theme it, render the active mode,
+// Entry point: load today's nuggets, theme the app, render the active mode,
 // wire the mode menu + swipe navigation, and register the service worker.
-import { getCurrentEntry } from "./messages.js";
 import { MODES, isMode, nextMode, resolveSwipe } from "./modes.js";
 import { paletteFor, doodlePaletteFor, applyPalette } from "./palette.js";
-import { renderMessage, clearMessage } from "./messageDecorate.js";
 import { registerSW } from "./pwa.js";
 import { getCurrentPrompt } from "./prompts.js";
 import { initNotifications } from "./notify.js";
+import { initUpdate } from "./update.js";
 import { getCurrentNuggets } from "./nuggets.js";
+import { todayDate } from "./util.js";
 
 const refs = {
   app: document.getElementById("app"),
   stage: document.getElementById("stage"),
   canvas: document.getElementById("drawCanvas"),
-  doodleLayer: document.getElementById("doodleLayer"),
-  messageEl: document.getElementById("messageEl"),
-  messageText: document.getElementById("messageText"),
   toolbar: document.getElementById("toolbar"),
   status: document.getElementById("status"),
   modeMenu: document.getElementById("modeMenu"),
@@ -24,6 +21,7 @@ const refs = {
   modeMenuLabel: document.getElementById("modeMenuLabel"),
   doodleWord: document.getElementById("doodleWord"),
   notifyBell: document.getElementById("notifyBell"),
+  updateBtn: document.getElementById("updateBtn"),
   nuggetsEl: document.getElementById("nuggetsEl"),
   nuggetFact: document.getElementById("nuggetFact"),
   nuggetTrend: document.getElementById("nuggetTrend"),
@@ -40,14 +38,14 @@ const refs = {
 };
 
 const state = {
-  entry: null,
+  date: todayDate(), // YYYY-MM-DD (UTC) — the seed for palettes + storage keys
   palette: null,
-  doodlePalette: null, // doodle mode's own daily palette (decoupled from the note)
-  mode: "message",
+  doodlePalette: null, // doodle mode's own daily palette (a distinct seed namespace)
+  mode: MODES[0],
   promptWord: "",
   doodle: null, // lazily-loaded doodle controller
   gallery: null, // lazily-loaded gallery overlay controller
-  nuggets: null, // current nuggets entry (fetched once, on first nuggets view)
+  nuggets: null, // today's nuggets entry (fetched once, during init)
   nuggetsMod: null, // lazily-loaded nuggets render module
   moodMod: null, // lazily-loaded mood render module
   brainMod: null, // lazily-loaded brain render module
@@ -56,21 +54,20 @@ const state = {
 async function init() {
   refs.app.classList.add("is-loading");
 
-  state.entry = await getCurrentEntry();
-  state.palette = paletteFor(state.entry.id);
-  state.doodlePalette = doodlePaletteFor(state.entry.date);
+  // Nuggets are the landing content AND the notification payload, so they are
+  // fetched eagerly here rather than on first entry into nuggets mode.
+  state.nuggets = await getCurrentNuggets();
+  state.palette = paletteFor(state.date);
+  state.doodlePalette = doodlePaletteFor(state.date);
   applyPalette(state.palette, refs.app);
 
-  refs.messageText.textContent = state.entry.text;
-  refs.status.textContent = statusLine(state.entry);
-
-  state.promptWord = await getCurrentPrompt(state.entry.date);
+  state.promptWord = await getCurrentPrompt(state.date);
   refs.doodleWord.textContent = state.promptWord;
 
   buildModeMenu(); // before the first setMode — setActiveTab touches the items
 
   const hashMode = location.hash.slice(1);
-  await setMode(isMode(hashMode) ? hashMode : "message");
+  await setMode(isMode(hashMode) ? hashMode : MODES[0]);
   // seed history so the browser/PWA back button steps through modes instead of
   // exiting the app on the very first press
   history.replaceState({ mode: state.mode }, "", "#" + state.mode);
@@ -82,6 +79,7 @@ async function init() {
 
   registerSW();
   initNotifications(refs.notifyBell, state);
+  initUpdate(refs.updateBtn, refs.status);
 }
 
 // ---------- mode menu (single icon trigger + dropdown) ----------
@@ -199,13 +197,9 @@ function initHistory() {
       ? e.state.mode
       : isMode(hash)
         ? hash
-        : "message";
+        : MODES[0];
     setMode(mode); // render only — popstate must not push another entry
   });
-}
-
-function statusLine(entry) {
-  return entry.source === "builtin" ? "offline — saved note" : "today's note";
 }
 
 function setActiveTab(mode) {
@@ -227,19 +221,16 @@ async function setMode(mode) {
   setActiveTab(mode);
   refs.toolbar.hidden = mode !== "doodle"; // toolbar belongs to doodle mode only
 
-  // Doodle mode wears its own daily palette; message/nuggets wear the note's.
+  // Doodle mode wears its own daily palette; every other mode wears the day's.
   applyPalette(mode === "doodle" ? state.doodlePalette : state.palette, refs.app);
 
   // Leave-state cleanup for the modes we're not entering.
   if (mode !== "doodle" && state.doodle) state.doodle.deactivate();
-  if (mode !== "message") clearMessage(refs);
   if (mode !== "nuggets" && state.nuggetsMod) state.nuggetsMod.clearNuggets(refs);
   if (mode !== "mood" && state.moodMod) state.moodMod.clearMood(refs);
   if (mode !== "brain" && state.brainMod) state.brainMod.clearBrain(refs);
 
-  if (mode === "message") {
-    await renderMessage(refs, state.entry);
-  } else if (mode === "doodle") {
+  if (mode === "doodle") {
     if (!state.doodle) {
       const mod = await import("./doodleDecorate.js");
       state.doodle = mod.createDoodleDecorator(refs, state);
@@ -247,7 +238,6 @@ async function setMode(mode) {
     state.doodle.activate();
   } else if (mode === "nuggets") {
     if (!state.nuggetsMod) state.nuggetsMod = await import("./nuggetsDecorate.js");
-    if (!state.nuggets) state.nuggets = await getCurrentNuggets();
     state.nuggetsMod.renderNuggets(refs, state.nuggets);
   } else if (mode === "mood") {
     if (!state.moodMod) state.moodMod = await import("./moodDecorate.js");

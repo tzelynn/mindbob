@@ -1,7 +1,7 @@
 {
   "name": "mindbob",
   "short_name": "mindbob",
-  "description": "A calming feel-good note, refreshed each morning, plus daily nuggets.",
+  "description": "A calm daily fun fact and tech trend, plus a doodle canvas, mood tracker and brain dump.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

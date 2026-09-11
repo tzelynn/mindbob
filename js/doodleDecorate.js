@@ -65,7 +65,7 @@ export function createDoodleDecorator(refs, state) {
   // restored on re-entry. Only the current day's doodle is kept; a new day has
   // no saved state, so it "refreshes" with the prompt.
   function storageKey() {
-    return STORE_PREFIX + state.entry.date;
+    return STORE_PREFIX + state.date;
   }
 
   function persist() {
@@ -362,7 +362,7 @@ export function createDoodleDecorator(refs, state) {
     o.save();
     o.globalAlpha = 0.6;
     o.font = "12px" + FONTS;
-    o.fillText(state.entry.date || "", rect.width / 2, BAND - PAD - 6);
+    o.fillText(state.date || "", rect.width / 2, BAND - PAD - 6);
     o.restore();
 
     // the drawing, below the band
@@ -381,7 +381,7 @@ export function createDoodleDecorator(refs, state) {
 
   // mindbob_<prompt>_<date>.png — unique per day; empty parts dropped.
   function filename() {
-    const parts = ["mindbob", state.promptWord, state.entry.date];
+    const parts = ["mindbob", state.promptWord, state.date];
     return parts.filter(Boolean).join("_") + ".png";
   }
 

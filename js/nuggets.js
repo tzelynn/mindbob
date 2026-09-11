@@ -1,6 +1,7 @@
-// Fetches the generated nuggets file and selects the entry to show now.
-// The service worker serves a cached copy when offline. Selection reuses the
-// same publishAt-based logic as the daily note (js/selectEntry.js).
+// Fetches the generated nuggets file and selects the entry to show now — the
+// app's landing content, and the payload of the daily notification.
+// The service worker serves a cached copy when offline (and re-uses the same
+// publishAt-based selection from js/selectEntry.js).
 
 import { pickCurrentEntry } from "./selectEntry.js";
 
@@ -33,8 +34,7 @@ export async function loadNuggets() {
 }
 
 // Pick the most recent entry whose publishAt is in the past; if every entry is
-// in the future (freshly seeded data), show the oldest. Mirrors selectCurrent
-// in js/messages.js.
+// in the future (freshly seeded data), show the oldest.
 export function selectCurrentNuggets(data, now = new Date()) {
   const chosen = pickCurrentEntry(data.entries, now.getTime());
   if (chosen) return chosen;

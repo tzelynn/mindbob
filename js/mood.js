@@ -8,7 +8,8 @@ const STORE_PREFIX = "mindbob:mood:";
 const MAX_AGE_DAYS = 730;
 
 // 1..5, low -> high. Each level is a muted colour + a line-art weather glyph in
-// the same style as doodles/*.svg (viewBox 0 0 100 100, stroke="currentColor").
+// inline line-art (viewBox 0 0 100 100, stroke="currentColor") so it picks up
+// the palette accent.
 export const MOOD_LEVELS = [1, 2, 3, 4, 5];
 
 export const MOOD_LABELS = ["rough", "low", "okay", "good", "great"];

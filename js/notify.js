@@ -1,4 +1,4 @@
-// Opt-in background notifications for newly published notes.
+// Opt-in background notifications for the day's new fun fact.
 // Shows a bell toggle ONLY where Periodic Background Sync can deliver
 // (Chromium + installed PWA); hidden everywhere else, so the bell always means
 // real background push. See sw.js for the periodicsync handler and
@@ -40,7 +40,9 @@ async function isEnabled(reg) {
 function reflect(bell, on) {
   bell.classList.toggle("is-active", on);
   bell.setAttribute("aria-pressed", String(on));
-  const label = on ? "Notifications on — tap to turn off" : "Notify me of new notes";
+  const label = on
+    ? "Notifications on — tap to turn off"
+    : "Notify me of the daily fun fact";
   bell.setAttribute("aria-label", label);
   bell.title = label;
 }
@@ -53,7 +55,7 @@ async function enable(reg, currentId) {
   } catch {
     return; // browser refused (e.g. insufficient site engagement)
   }
-  // Seed so the first check doesn't notify for the note already on screen.
+  // Seed so the first check doesn't notify for the fact already on screen.
   await setLastNotifiedId(currentId);
 }
 
@@ -73,13 +75,13 @@ export async function initNotifications(bell, state) {
   reflect(bell, await isEnabled(reg));
 
   bell.addEventListener("click", async () => {
-    if (!state.entry) return;
+    if (!state.nuggets) return;
     bell.disabled = true;
     try {
       if (await isEnabled(reg)) {
         await disable(reg);
       } else {
-        await enable(reg, state.entry.id);
+        await enable(reg, state.nuggets.id);
       }
       reflect(bell, await isEnabled(reg));
       if (Notification.permission === "denied") {

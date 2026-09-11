@@ -121,7 +121,15 @@ body {
   color: var(--ink);
 }
 
-.notify-bell {
+/* Topbar action buttons (bell, update). They share one look; each keeps its
+   own class for behaviour-specific states. */
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.icon-btn {
   appearance: none;
   border: 0;
   background: transparent;
@@ -134,20 +142,29 @@ body {
   transition: color 200ms ease, opacity 200ms ease;
 }
 
-.notify-bell.is-active {
+.icon-btn.is-active {
   color: var(--ink);
 }
 
-.notify-bell:disabled {
+.icon-btn:disabled {
   opacity: 0.5;
   cursor: progress;
 }
 
-/* The button has no explicit display, so the hidden attribute hides it
+/* The buttons have no explicit display, so the hidden attribute hides them
    natively; this rule makes that intent explicit and immune to future display
    rules (same trap as .toolbar[hidden]). */
-.notify-bell[hidden] {
+.icon-btn[hidden] {
   display: none;
+}
+
+/* The update glyph spins while the check + reload is in flight. */
+.update-btn.is-busy {
+  animation: icon-spin 900ms linear infinite;
+}
+
+@keyframes icon-spin {
+  to { transform: rotate(360deg); }
 }
 
 /* ---------- Stage / layers ---------- */
@@ -180,9 +197,6 @@ body {
   pointer-events: none;           /* enabled in doodle mode by JS */
 }
 
-/* Canvas is doodle-mode only; hidden in message mode so it never shows behind doodles. */
-.app[data-mode="message"] .layer-canvas { display: none; }
-
 /* daily prompt: top of the stage, doodle mode only */
 .doodle-prompt {
   position: absolute;
@@ -198,30 +212,13 @@ body {
 .doodle-prompt strong { color: var(--accent); font-weight: inherit; }
 .app[data-mode="doodle"] .doodle-prompt { display: block; }
 
-/* the note belongs to message mode only */
-.app[data-mode="doodle"] .layer-message { display: none; }
-.app[data-mode="nuggets"] .layer-message { display: none; }
-
-/* nuggets mode hides every other layer (the canvas/prompt are doodle-only) */
+/* The canvas + prompt belong to doodle mode; every other mode hides them. */
 .app[data-mode="nuggets"] .layer-canvas,
 .app[data-mode="nuggets"] .doodle-prompt,
-.app[data-mode="nuggets"] .status { display: none; }
-
-/* mood mode hides every other layer + the note status */
-.app[data-mode="mood"] .layer-message,
 .app[data-mode="mood"] .layer-canvas,
 .app[data-mode="mood"] .doodle-prompt,
-.app[data-mode="mood"] .status { display: none; }
-
-/* brain mode hides every other layer + the note status */
-.app[data-mode="brain"] .layer-message,
 .app[data-mode="brain"] .layer-canvas,
-.app[data-mode="brain"] .doodle-prompt,
-.app[data-mode="brain"] .status { display: none; }
-
-.layer-doodle {
-  pointer-events: none;
-}
+.app[data-mode="brain"] .doodle-prompt { display: none; }
 
 /* ---------- Nuggets ---------- */
 .layer-nuggets {
@@ -480,38 +477,6 @@ body {
 }
 .mood-cell-year.is-today { box-shadow: 0 0 0 1.5px var(--ink); }
 .mood-cell-year.is-selected { box-shadow: 0 0 0 1.5px var(--accent); }
-
-/* Each doodle is anchored to a layout point (set inline as left/top %) and
-   centred on it via translate(-50%, -50%); width is set inline per count. */
-.doodle-slot {
-  position: absolute;
-}
-
-.layer-doodle svg {
-  width: min(46vw, 230px);   /* default; overridden inline per doodle count */
-  height: auto;
-  color: var(--accent);      /* inline SVGs use currentColor */
-  opacity: 0.9;
-}
-
-.layer-message {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8vmin;
-  pointer-events: none;      /* draggable only in move mode */
-}
-
-.message-text {
-  margin: 0;
-  max-width: 18ch;
-  text-align: center;
-  font-size: clamp(1.8rem, 7vw, 3.4rem);
-  line-height: 1.25;
-  color: var(--ink);
-  user-select: none;
-}
-
 
 /* ---------- Brain dump ---------- */
 .layer-brain {
@@ -826,6 +791,8 @@ body {
 .swatch.is-active { transform: scale(1.22); box-shadow: 0 0 0 2px var(--ink); }
 
 /* ---------- Status ---------- */
+/* Transient toast, used by the update button. Hidden until it has something to
+   say — .is-toast beats the per-mode rules above on specificity + order. */
 .status {
   position: absolute;
   bottom: calc(8px + var(--safe-bottom));
@@ -836,7 +803,8 @@ body {
   font-size: 0.8rem;
   color: var(--muted);
   pointer-events: none;
+  display: none;
 }
-.app[data-mode="doodle"] .status { display: none; }
+.app .status.is-toast { display: block; }
 
-.is-loading .message-text { opacity: 0.3; }
+.is-loading .layer-nuggets { opacity: 0.3; }
