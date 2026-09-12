@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-11T22:40:05.996Z",
+  "updated": "2026-09-12T22:23:42.798Z",
   "trends": [
-    {
-      "text": "Robust PAC Learning of Concurrent Stochastic Games",
-      "link": "https://arxiv.org/abs/2609.04189v1"
-    },
-    {
-      "text": "Seeing Before Synthesizing: VLM-Guided Transition Event Discovery for Weakly-Supervised Dense Video Captioning",
-      "link": "https://arxiv.org/abs/2609.04183v1"
-    },
-    {
-      "text": "A Computationally Feasible Framework for Causal Probabilistic Explanation",
-      "link": "https://arxiv.org/abs/2609.04177v1"
-    },
     {
       "text": "Rethinking On-Policy Distillation of Large Language Models II: One Training Example",
       "link": "https://arxiv.org/abs/2609.04172v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.09153v1"
     },
     {
-      "text": "Silver Rate Is (Almost) Optimal for Gradient Descent Acceleration",
-      "link": "https://arxiv.org/abs/2609.09152v1"
-    },
-    {
       "text": "NOAH: Learning the Full Patient Journey. A Longitudinal Multimodal Time-Aware Model for Representation and Forecasting",
       "link": "https://arxiv.org/abs/2609.09140v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Generative Marketing Mix Modeling: A Causal Inference Framework Linking GEO and GEM to Business Impact",
       "link": "https://arxiv.org/abs/2609.11915v1"
+    },
+    {
+      "text": "Artificial Id: Drive and Persistent Alignment in Agentic AI",
+      "link": "https://arxiv.org/abs/2609.11911v1"
+    },
+    {
+      "text": "From Protocols to Evidence: Bounded Claims for AI in Service of the Common Good",
+      "link": "https://arxiv.org/abs/2609.11910v1"
+    },
+    {
+      "text": "TART: A Modular Tool for Technique-Aware Audio-to-Tablature Guitar Transcription",
+      "link": "https://arxiv.org/abs/2609.11904v1"
+    },
+    {
+      "text": "MindTopo: Can Foundation Models Reason in Topological Space?",
+      "link": "https://arxiv.org/abs/2609.11900v1"
     }
   ]
 }

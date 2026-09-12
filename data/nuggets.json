@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-11T22:40:05.996Z",
+  "updated": "2026-09-12T22:23:42.798Z",
   "entries": [
-    {
-      "id": "2026-08-29",
-      "date": "2026-08-29",
-      "publishAt": "2026-08-29T00:00:00.000Z",
-      "fact": {
-        "text": "Your tongue is the only muscle in your body that is attached at only one end.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "One Symptom, Three Levers: A Critical Review of On-Policy Self-Distillation",
-        "source": "pool",
-        "title": "One Symptom, Three Levers: A Critical Review of On-Policy Self-Distillation",
-        "link": "https://arxiv.org/abs/2608.25936v1"
-      }
-    },
     {
       "id": "2026-08-30",
       "date": "2026-08-30",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Silver Rate Is (Almost) Optimal for Gradient Descent Acceleration",
         "link": "https://arxiv.org/abs/2609.09152v1"
+      }
+    },
+    {
+      "id": "2026-09-12",
+      "date": "2026-09-12",
+      "publishAt": "2026-09-12T00:00:00.000Z",
+      "fact": {
+        "text": "About 500 movies are made in the US and 800 in India annually.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Show-Harness: Just a VLM Agent Can Play Robots",
+        "source": "pool",
+        "title": "Show-Harness: Just a VLM Agent Can Play Robots",
+        "link": "https://arxiv.org/abs/2609.10522v1"
       }
     }
   ]
