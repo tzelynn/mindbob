@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-12T22:23:42.798Z",
+  "updated": "2026-09-13T22:28:49.403Z",
   "trends": [
-    {
-      "text": "Rethinking On-Policy Distillation of Large Language Models II: One Training Example",
-      "link": "https://arxiv.org/abs/2609.04172v1"
-    },
-    {
-      "text": "Open source AI is the path forward",
-      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
-    },
-    {
-      "text": "IDF killed Gaza aid workers at point blank range in 2025 massacre: Report",
-      "link": "https://www.dropsitenews.com/p/israeli-soldiers-tel-sultan-gaza-red-crescent-civil-defense-massacre-report-forensic-architecture-earshot"
-    },
     {
       "text": "Diffusion TV: Experiencing Diffusion Models through Tangible, Embodied Interaction",
       "link": "https://arxiv.org/abs/2609.05404v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.10525v1"
     },
     {
-      "text": "Show-Harness: Just a VLM Agent Can Play Robots",
-      "link": "https://arxiv.org/abs/2609.10522v1"
-    },
-    {
       "text": "Optimal Low-Rank Quantum State Tomography with Bounded-Sample Joint Measurements",
       "link": "https://arxiv.org/abs/2609.10514v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "MindTopo: Can Foundation Models Reason in Topological Space?",
       "link": "https://arxiv.org/abs/2609.11900v1"
+    },
+    {
+      "text": "I believe there are entire companies right now under AI psychosis",
+      "link": "https://twitter.com/mitchellh/status/2055380239711457578"
+    },
+    {
+      "text": "I'm Tired of Talking to AI",
+      "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
+    },
+    {
+      "text": "Bypassing airport security via SQL injection",
+      "link": "https://ian.sh/tsa"
+    },
+    {
+      "text": "Air Con: $1697 for an on/off switch",
+      "link": "https://blog.hopefullyuseful.com/blog/advantage-air-ezone-tablet-diy-repair/"
     }
   ]
 }

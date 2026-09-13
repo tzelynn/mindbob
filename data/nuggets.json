@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-12T22:23:42.798Z",
+  "updated": "2026-09-13T22:28:49.403Z",
   "entries": [
-    {
-      "id": "2026-08-30",
-      "date": "2026-08-30",
-      "publishAt": "2026-08-30T00:00:00.000Z",
-      "fact": {
-        "text": "King Louis XIX ruled France for 15 minutes.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution",
-        "source": "pool",
-        "title": "RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution",
-        "link": "https://arxiv.org/abs/2608.27439v1"
-      }
-    },
     {
       "id": "2026-08-31",
       "date": "2026-08-31",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Show-Harness: Just a VLM Agent Can Play Robots",
         "link": "https://arxiv.org/abs/2609.10522v1"
+      }
+    },
+    {
+      "id": "2026-09-13",
+      "date": "2026-09-13",
+      "publishAt": "2026-09-13T00:00:00.000Z",
+      "fact": {
+        "text": "The Eiffel Tower can grow more than 15 cm taller in summer as its metal expands in the heat.",
+        "source": "bank"
+      },
+      "trend": {
+        "text": "Can Edge-Deployable Vision-Language Models Identify Species?",
+        "source": "pool",
+        "title": "Can Edge-Deployable Vision-Language Models Identify Species?",
+        "link": "https://arxiv.org/abs/2609.11916v1"
       }
     }
   ]
