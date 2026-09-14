@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-13T22:28:49.403Z",
+  "updated": "2026-09-14T23:12:33.881Z",
   "entries": [
-    {
-      "id": "2026-08-31",
-      "date": "2026-08-31",
-      "publishAt": "2026-08-31T00:00:00.000Z",
-      "fact": {
-        "text": "To \"testify\" was based on men in the Roman court swearing to a statement made by swearing on their testicles.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Learning a Continuous Sepsis Severity Score Without Hour-by-Hour Supervision: A Two-Site Retrospective Study",
-        "source": "pool",
-        "title": "Learning a Continuous Sepsis Severity Score Without Hour-by-Hour Supervision: A Two-Site Retrospective Study",
-        "link": "https://arxiv.org/abs/2608.27421v1"
-      }
-    },
     {
       "id": "2026-09-01",
       "date": "2026-09-01",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Can Edge-Deployable Vision-Language Models Identify Species?",
         "link": "https://arxiv.org/abs/2609.11916v1"
+      }
+    },
+    {
+      "id": "2026-09-14",
+      "date": "2026-09-14",
+      "publishAt": "2026-09-14T00:00:00.000Z",
+      "fact": {
+        "text": "Bruce Lee was so fast that they had to slow the film down so you could see his moves.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "TART: A Modular Tool for Technique-Aware Audio-to-Tablature Guitar Transcription",
+        "source": "pool",
+        "title": "TART: A Modular Tool for Technique-Aware Audio-to-Tablature Guitar Transcription",
+        "link": "https://arxiv.org/abs/2609.11904v1"
       }
     }
   ]

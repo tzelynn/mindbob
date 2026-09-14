@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-13T22:28:49.403Z",
+  "updated": "2026-09-14T23:12:33.881Z",
   "trends": [
-    {
-      "text": "Diffusion TV: Experiencing Diffusion Models through Tangible, Embodied Interaction",
-      "link": "https://arxiv.org/abs/2609.05404v1"
-    },
-    {
-      "text": "RegionFed: Federated Learning for Personalized Query Understanding in Heterogeneous Retail Environments",
-      "link": "https://arxiv.org/abs/2609.05403v1"
-    },
-    {
-      "text": "Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe",
-      "link": "https://arxiv.org/abs/2609.05395v1"
-    },
     {
       "text": "Necessary or Sufficient? Evaluating LLM Explanations With Behavioural Evidence",
       "link": "https://arxiv.org/abs/2609.05385v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.11917v1"
     },
     {
-      "text": "Can Edge-Deployable Vision-Language Models Identify Species?",
-      "link": "https://arxiv.org/abs/2609.11916v1"
-    },
-    {
       "text": "Generative Marketing Mix Modeling: A Causal Inference Framework Linking GEO and GEM to Business Impact",
       "link": "https://arxiv.org/abs/2609.11915v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Air Con: $1697 for an on/off switch",
       "link": "https://blog.hopefullyuseful.com/blog/advantage-air-ezone-tablet-diy-repair/"
+    },
+    {
+      "text": "A Hybrid LSTM-XGBoost Framework for Multi-Horizon Stock Return Prediction Across Diversified Equity Portfolios",
+      "link": "https://arxiv.org/abs/2609.13125v1"
+    },
+    {
+      "text": "CMA-OT: Hierarchical Expert Supervision for Dance-to-Music Generation",
+      "link": "https://arxiv.org/abs/2609.13118v1"
+    },
+    {
+      "text": "A Ranking Approach for Measuring Calibration",
+      "link": "https://arxiv.org/abs/2609.13100v1"
+    },
+    {
+      "text": "ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked Robots with Language-Guided Neural-Kinematic MPC",
+      "link": "https://arxiv.org/abs/2609.13083v1"
     }
   ]
 }
