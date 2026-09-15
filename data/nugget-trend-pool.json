@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-14T23:12:33.881Z",
+  "updated": "2026-09-15T22:57:33.503Z",
   "trends": [
-    {
-      "text": "Necessary or Sufficient? Evaluating LLM Explanations With Behavioural Evidence",
-      "link": "https://arxiv.org/abs/2609.05385v1"
-    },
-    {
-      "text": "Reflection-aware Generative Novel View Synthesis",
-      "link": "https://arxiv.org/abs/2609.05382v1"
-    },
-    {
-      "text": "What Matters, When? Diagnosing and Improving Conditional Visual Grounding in Visuomotor Imitation Policies",
-      "link": "https://arxiv.org/abs/2609.05376v1"
-    },
     {
       "text": "Learning Length-Extrapolatable Recurrent Models",
       "link": "https://arxiv.org/abs/2609.09157v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.11910v1"
     },
     {
-      "text": "TART: A Modular Tool for Technique-Aware Audio-to-Tablature Guitar Transcription",
-      "link": "https://arxiv.org/abs/2609.11904v1"
-    },
-    {
       "text": "MindTopo: Can Foundation Models Reason in Topological Space?",
       "link": "https://arxiv.org/abs/2609.11900v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked Robots with Language-Guided Neural-Kinematic MPC",
       "link": "https://arxiv.org/abs/2609.13083v1"
+    },
+    {
+      "text": "Bellman Policy Optimization",
+      "link": "https://arxiv.org/abs/2609.15987v1"
+    },
+    {
+      "text": "Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science",
+      "link": "https://arxiv.org/abs/2609.15983v1"
+    },
+    {
+      "text": "The Router Within: Eliciting Native Skill Routing from a Frozen LLM",
+      "link": "https://arxiv.org/abs/2609.15982v1"
+    },
+    {
+      "text": "A Chosen Future Can Still Be Rewritten: Causal Writability in Video Models",
+      "link": "https://arxiv.org/abs/2609.15980v1"
     }
   ]
 }

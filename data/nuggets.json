@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-14T23:12:33.881Z",
+  "updated": "2026-09-15T22:57:33.503Z",
   "entries": [
-    {
-      "id": "2026-09-01",
-      "date": "2026-09-01",
-      "publishAt": "2026-09-01T00:00:00.000Z",
-      "fact": {
-        "text": "Until 1994, world maps and globes sold in Albania only had Albania on them.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "An AI agent published a hit piece on me",
-        "source": "pool",
-        "title": "An AI agent published a hit piece on me",
-        "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
-      }
-    },
     {
       "id": "2026-09-02",
       "date": "2026-09-02",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "TART: A Modular Tool for Technique-Aware Audio-to-Tablature Guitar Transcription",
         "link": "https://arxiv.org/abs/2609.11904v1"
+      }
+    },
+    {
+      "id": "2026-09-15",
+      "date": "2026-09-15",
+      "publishAt": "2026-09-15T00:00:00.000Z",
+      "fact": {
+        "text": "The surface of the Earth is about 60% water and 10% ice.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Bypassing airport security via SQL injection",
+        "source": "pool",
+        "title": "Bypassing airport security via SQL injection",
+        "link": "https://ian.sh/tsa"
       }
     }
   ]
