@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-15T22:57:33.503Z",
+  "updated": "2026-09-16T23:01:55.319Z",
   "trends": [
-    {
-      "text": "Learning Length-Extrapolatable Recurrent Models",
-      "link": "https://arxiv.org/abs/2609.09157v1"
-    },
-    {
-      "text": "Procedural Graphs: Self-Evolving Execution Structures for LLM Agents",
-      "link": "https://arxiv.org/abs/2609.09153v1"
-    },
-    {
-      "text": "NOAH: Learning the Full Patient Journey. A Longitudinal Multimodal Time-Aware Model for Representation and Forecasting",
-      "link": "https://arxiv.org/abs/2609.09140v1"
-    },
     {
       "text": "A positive resolution of the gap-entropy conjecture",
       "link": "https://arxiv.org/abs/2609.10529v1"
@@ -58,10 +46,6 @@
       "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
     },
     {
-      "text": "Bypassing airport security via SQL injection",
-      "link": "https://ian.sh/tsa"
-    },
-    {
       "text": "Air Con: $1697 for an on/off switch",
       "link": "https://blog.hopefullyuseful.com/blog/advantage-air-ezone-tablet-diy-repair/"
     },
@@ -96,6 +80,22 @@
     {
       "text": "A Chosen Future Can Still Be Rewritten: Causal Writability in Video Models",
       "link": "https://arxiv.org/abs/2609.15980v1"
+    },
+    {
+      "text": "ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents",
+      "link": "https://arxiv.org/abs/2609.17523v1"
+    },
+    {
+      "text": "PhysStream: Streaming Physics-Grounded Video Generation with Structured Scene Memory and Fine-Grained Motion Control",
+      "link": "https://arxiv.org/abs/2609.17521v1"
+    },
+    {
+      "text": "When Should LLMs Abstain? Chain-of-Self-Questioning for Selective Risk Control",
+      "link": "https://arxiv.org/abs/2609.17516v1"
+    },
+    {
+      "text": "LACE: Layer-Wise Compression for Dynamic Frame Rate Codecs",
+      "link": "https://arxiv.org/abs/2609.17509v1"
     }
   ]
 }
