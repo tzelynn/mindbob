@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-16T23:01:55.319Z",
+  "updated": "2026-09-17T22:53:54.450Z",
   "trends": [
-    {
-      "text": "A positive resolution of the gap-entropy conjecture",
-      "link": "https://arxiv.org/abs/2609.10529v1"
-    },
-    {
-      "text": "Characterizing Language Generation in the Limit: Finite Witnesses and a Separation-Width Hierarch",
-      "link": "https://arxiv.org/abs/2609.10525v1"
-    },
-    {
-      "text": "Optimal Low-Rank Quantum State Tomography with Bounded-Sample Joint Measurements",
-      "link": "https://arxiv.org/abs/2609.10514v1"
-    },
     {
       "text": "General Quantification of Covariate and Concept Shifts",
       "link": "https://arxiv.org/abs/2609.11918v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.13118v1"
     },
     {
-      "text": "A Ranking Approach for Measuring Calibration",
-      "link": "https://arxiv.org/abs/2609.13100v1"
-    },
-    {
       "text": "ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked Robots with Language-Guided Neural-Kinematic MPC",
       "link": "https://arxiv.org/abs/2609.13083v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "LACE: Layer-Wise Compression for Dynamic Frame Rate Codecs",
       "link": "https://arxiv.org/abs/2609.17509v1"
+    },
+    {
+      "text": "A Zeroth-Order Paradigm for LLM Preference Alignment",
+      "link": "https://arxiv.org/abs/2609.19144v1"
+    },
+    {
+      "text": "Dreaming the Sound of Contact: Leveraging Video and Audio Generation for Zero-Shot Force-Aware Manipulation and Data Generation",
+      "link": "https://arxiv.org/abs/2609.19137v1"
+    },
+    {
+      "text": "Exponential Hardness of Off-Policy Evaluation under History-Dependent Logging",
+      "link": "https://arxiv.org/abs/2609.19135v1"
+    },
+    {
+      "text": "Cognitive Extensions for Dual-Process Language Agents: Memory and Self-Reflection in Interactive Environments",
+      "link": "https://arxiv.org/abs/2609.19128v1"
     }
   ]
 }

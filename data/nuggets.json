@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-16T23:01:55.319Z",
+  "updated": "2026-09-17T22:53:54.450Z",
   "entries": [
-    {
-      "id": "2026-09-03",
-      "date": "2026-09-03",
-      "publishAt": "2026-09-03T00:00:00.000Z",
-      "fact": {
-        "text": "There are more ways to shuffle a single deck of cards than there are atoms on Earth.",
-        "source": "bank"
-      },
-      "trend": {
-        "text": "Advancing Interaction-Sensitive Feature Selection: Novel Relief-Based Algorithms, Expanded Comparisons, and Recommendations for Biomedical Data Mining",
-        "source": "pool",
-        "title": "Advancing Interaction-Sensitive Feature Selection: Novel Relief-Based Algorithms, Expanded Comparisons, and Recommendations for Biomedical Data Mining",
-        "link": "https://arxiv.org/abs/2608.28552v1"
-      }
-    },
     {
       "id": "2026-09-04",
       "date": "2026-09-04",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "A Ranking Approach for Measuring Calibration",
         "link": "https://arxiv.org/abs/2609.13100v1"
+      }
+    },
+    {
+      "id": "2026-09-17",
+      "date": "2026-09-17",
+      "publishAt": "2026-09-17T00:00:00.000Z",
+      "fact": {
+        "text": "Mozart wrote the nursery rhyme `twinkle, twinkle, little star` at the age of 5.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "The Router Within: Eliciting Native Skill Routing from a Frozen LLM",
+        "source": "pool",
+        "title": "The Router Within: Eliciting Native Skill Routing from a Frozen LLM",
+        "link": "https://arxiv.org/abs/2609.15982v1"
       }
     }
   ]
