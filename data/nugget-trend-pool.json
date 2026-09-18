@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-17T22:53:54.450Z",
+  "updated": "2026-09-18T22:39:34.144Z",
   "trends": [
-    {
-      "text": "General Quantification of Covariate and Concept Shifts",
-      "link": "https://arxiv.org/abs/2609.11918v1"
-    },
-    {
-      "text": "Data Scarcity and Model Sparsity: Mixtures-of-Experts Overfit More to Repeated Data",
-      "link": "https://arxiv.org/abs/2609.11917v1"
-    },
-    {
-      "text": "Generative Marketing Mix Modeling: A Causal Inference Framework Linking GEO and GEM to Business Impact",
-      "link": "https://arxiv.org/abs/2609.11915v1"
-    },
     {
       "text": "Artificial Id: Drive and Persistent Alignment in Agentic AI",
       "link": "https://arxiv.org/abs/2609.11911v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.15983v1"
     },
     {
-      "text": "The Router Within: Eliciting Native Skill Routing from a Frozen LLM",
-      "link": "https://arxiv.org/abs/2609.15982v1"
-    },
-    {
       "text": "A Chosen Future Can Still Be Rewritten: Causal Writability in Video Models",
       "link": "https://arxiv.org/abs/2609.15980v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Cognitive Extensions for Dual-Process Language Agents: Memory and Self-Reflection in Interactive Environments",
       "link": "https://arxiv.org/abs/2609.19128v1"
+    },
+    {
+      "text": "Embedding Models Measure in Peculiar Ways",
+      "link": "https://arxiv.org/abs/2609.20821v1"
+    },
+    {
+      "text": "Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision",
+      "link": "https://arxiv.org/abs/2609.20820v1"
+    },
+    {
+      "text": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
+      "link": "https://arxiv.org/abs/2609.20817v1"
+    },
+    {
+      "text": "Paint-Anything: Unified Any-Color Control for Image Generation and Editing",
+      "link": "https://arxiv.org/abs/2609.20816v1"
     }
   ]
 }

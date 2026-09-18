@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-17T22:53:54.450Z",
+  "updated": "2026-09-18T22:39:34.144Z",
   "entries": [
-    {
-      "id": "2026-09-04",
-      "date": "2026-09-04",
-      "publishAt": "2026-09-04T00:00:00.000Z",
-      "fact": {
-        "text": "Negative emotions such as anxiety and depression can weaken your immune system.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
-        "source": "pool",
-        "title": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
-        "link": "https://arxiv.org/abs/2609.01600v1"
-      }
-    },
     {
       "id": "2026-09-05",
       "date": "2026-09-05",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "The Router Within: Eliciting Native Skill Routing from a Frozen LLM",
         "link": "https://arxiv.org/abs/2609.15982v1"
+      }
+    },
+    {
+      "id": "2026-09-18",
+      "date": "2026-09-18",
+      "publishAt": "2026-09-18T00:00:00.000Z",
+      "fact": {
+        "text": "Camels have three eyelids to protect themselves from blowing sand.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "When Should LLMs Abstain? Chain-of-Self-Questioning for Selective Risk Control",
+        "source": "pool",
+        "title": "When Should LLMs Abstain? Chain-of-Self-Questioning for Selective Risk Control",
+        "link": "https://arxiv.org/abs/2609.17516v1"
       }
     }
   ]
