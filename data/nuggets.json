@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-18T22:39:34.144Z",
+  "updated": "2026-09-19T22:21:05.300Z",
   "entries": [
-    {
-      "id": "2026-09-05",
-      "date": "2026-09-05",
-      "publishAt": "2026-09-05T00:00:00.000Z",
-      "fact": {
-        "text": "The average chocolate bar has 8 insects' legs in it.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "GRADSOLVE: fast exact gradients for ODE ensembles on GPUs",
-        "source": "pool",
-        "title": "GRADSOLVE: fast exact gradients for ODE ensembles on GPUs",
-        "link": "https://arxiv.org/abs/2609.02876v1"
-      }
-    },
     {
       "id": "2026-09-06",
       "date": "2026-09-06",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "When Should LLMs Abstain? Chain-of-Self-Questioning for Selective Risk Control",
         "link": "https://arxiv.org/abs/2609.17516v1"
+      }
+    },
+    {
+      "id": "2026-09-19",
+      "date": "2026-09-19",
+      "publishAt": "2026-09-19T00:00:00.000Z",
+      "fact": {
+        "text": "There are no words in the dictionary that rhyme with orange, purple, silver and month.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Exponential Hardness of Off-Policy Evaluation under History-Dependent Logging",
+        "source": "pool",
+        "title": "Exponential Hardness of Off-Policy Evaluation under History-Dependent Logging",
+        "link": "https://arxiv.org/abs/2609.19135v1"
       }
     }
   ]
