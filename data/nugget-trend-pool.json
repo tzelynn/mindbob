@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-19T22:21:05.300Z",
+  "updated": "2026-09-20T22:33:00.045Z",
   "trends": [
-    {
-      "text": "I believe there are entire companies right now under AI psychosis",
-      "link": "https://twitter.com/mitchellh/status/2055380239711457578"
-    },
-    {
-      "text": "I'm Tired of Talking to AI",
-      "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
-    },
-    {
-      "text": "Air Con: $1697 for an on/off switch",
-      "link": "https://blog.hopefullyuseful.com/blog/advantage-air-ezone-tablet-diy-repair/"
-    },
     {
       "text": "A Hybrid LSTM-XGBoost Framework for Multi-Horizon Stock Return Prediction Across Diversified Equity Portfolios",
       "link": "https://arxiv.org/abs/2609.13125v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.19137v1"
     },
     {
-      "text": "Exponential Hardness of Off-Policy Evaluation under History-Dependent Logging",
-      "link": "https://arxiv.org/abs/2609.19135v1"
-    },
-    {
       "text": "Cognitive Extensions for Dual-Process Language Agents: Memory and Self-Reflection in Interactive Environments",
       "link": "https://arxiv.org/abs/2609.19128v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Score Centering Stabilizes Off-policy Reinforcement Learning",
       "link": "https://arxiv.org/abs/2609.20807v1"
+    },
+    {
+      "text": "An Empirical Study of Harness Design for Coding Agents",
+      "link": "https://arxiv.org/abs/2609.20804v1"
+    },
+    {
+      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
+    },
+    {
+      "text": "Open source AI is the path forward",
+      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
+    },
+    {
+      "text": "An AI agent published a hit piece on me",
+      "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
     }
   ]
 }

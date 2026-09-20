@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-19T22:21:05.300Z",
+  "updated": "2026-09-20T22:33:00.045Z",
   "entries": [
-    {
-      "id": "2026-09-06",
-      "date": "2026-09-06",
-      "publishAt": "2026-09-06T00:00:00.000Z",
-      "fact": {
-        "text": "The first automobile race ever seen in the United States was held in Chicago in 1895. The track ran from Chicago to Evanston, Illinois. The winner was J. Frank Duryea, whose average speed was 71/2 miles per hour.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Legibility is Not Interpretability: Comparing Judged and Actual Importance in Chain-Of-Thought Reasoning",
-        "source": "pool",
-        "title": "Legibility is Not Interpretability: Comparing Judged and Actual Importance in Chain-Of-Thought Reasoning",
-        "link": "https://arxiv.org/abs/2609.04194v1"
-      }
-    },
     {
       "id": "2026-09-07",
       "date": "2026-09-07",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Exponential Hardness of Off-Policy Evaluation under History-Dependent Logging",
         "link": "https://arxiv.org/abs/2609.19135v1"
+      }
+    },
+    {
+      "id": "2026-09-20",
+      "date": "2026-09-20",
+      "publishAt": "2026-09-20T00:00:00.000Z",
+      "fact": {
+        "text": "Wombat poop is cube-shaped, which stops it rolling away and helps the wombat mark its territory.",
+        "source": "bank"
+      },
+      "trend": {
+        "text": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
+        "source": "pool",
+        "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
+        "link": "https://arxiv.org/abs/2609.20817v1"
       }
     }
   ]
