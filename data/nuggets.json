@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20T22:33:00.045Z",
+  "updated": "2026-09-20T23:32:57.972Z",
   "entries": [
     {
       "id": "2026-09-07",
@@ -201,8 +201,8 @@
       "date": "2026-09-20",
       "publishAt": "2026-09-20T00:00:00.000Z",
       "fact": {
-        "text": "Wombat poop is cube-shaped, which stops it rolling away and helps the wombat mark its territory.",
-        "source": "bank"
+        "text": "At the height of its power in 400 BC, the Greek city of Sparta had 25,000 citizens and 500,000 slaves.",
+        "source": "api"
       },
       "trend": {
         "text": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
