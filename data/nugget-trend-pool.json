@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-20T22:33:00.045Z",
+  "updated": "2026-09-21T23:22:25.603Z",
   "trends": [
-    {
-      "text": "A Hybrid LSTM-XGBoost Framework for Multi-Horizon Stock Return Prediction Across Diversified Equity Portfolios",
-      "link": "https://arxiv.org/abs/2609.13125v1"
-    },
-    {
-      "text": "CMA-OT: Hierarchical Expert Supervision for Dance-to-Music Generation",
-      "link": "https://arxiv.org/abs/2609.13118v1"
-    },
-    {
-      "text": "ASTRIL-MPC: Autonomous Traversal Framework of Articulated Tracked Robots with Language-Guided Neural-Kinematic MPC",
-      "link": "https://arxiv.org/abs/2609.13083v1"
-    },
     {
       "text": "Bellman Policy Optimization",
       "link": "https://arxiv.org/abs/2609.15987v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.20820v1"
     },
     {
-      "text": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
-      "link": "https://arxiv.org/abs/2609.20817v1"
-    },
-    {
       "text": "Paint-Anything: Unified Any-Color Control for Image Generation and Editing",
       "link": "https://arxiv.org/abs/2609.20816v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "An AI agent published a hit piece on me",
       "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
+    },
+    {
+      "text": "CodeMidas: Scaling Agentic Coding RL Environments from Code Itself",
+      "link": "https://arxiv.org/abs/2609.22068v1"
+    },
+    {
+      "text": "Value-Sensitive Delegation in Everyday AI Agent Use: Evidence from OpenClaw",
+      "link": "https://arxiv.org/abs/2609.22067v1"
+    },
+    {
+      "text": "BrainWideBench: Benchmarking large-scale pretraining and across-animal transfer in multi-region neural recordings",
+      "link": "https://arxiv.org/abs/2609.22064v1"
+    },
+    {
+      "text": "Predictable Failure in Multi-Hop Retrieval: Score-Distributional Confidence Scoring and Abstention",
+      "link": "https://arxiv.org/abs/2609.22056v1"
     }
   ]
 }

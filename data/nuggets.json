@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-20T23:32:57.972Z",
+  "updated": "2026-09-21T23:22:25.603Z",
   "entries": [
-    {
-      "id": "2026-09-07",
-      "date": "2026-09-07",
-      "publishAt": "2026-09-07T00:00:00.000Z",
-      "fact": {
-        "text": "In the average lifetime, a person will walk the equivalent of 5 times around the equator.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views",
-        "source": "pool",
-        "title": "Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views",
-        "link": "https://arxiv.org/abs/2609.04180v1"
-      }
-    },
     {
       "id": "2026-09-08",
       "date": "2026-09-08",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
         "link": "https://arxiv.org/abs/2609.20817v1"
+      }
+    },
+    {
+      "id": "2026-09-21",
+      "date": "2026-09-21",
+      "publishAt": "2026-09-21T00:00:00.000Z",
+      "fact": {
+        "text": "Samuel Clemens (Mark Twain) was born on and died on days when Halley’s Comet can be seen.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
+        "source": "pool",
+        "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
+        "link": "https://arxiv.org/abs/2609.20812v1"
       }
     }
   ]
