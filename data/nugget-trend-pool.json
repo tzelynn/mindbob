@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-21T23:22:25.603Z",
+  "updated": "2026-09-22T00:17:50.724Z",
   "trends": [
-    {
-      "text": "Bellman Policy Optimization",
-      "link": "https://arxiv.org/abs/2609.15987v1"
-    },
-    {
-      "text": "Stellar Colosseum: A Many-Agent Harness for Long-Horizon Research in Mathematics and Theoretical Computer Science",
-      "link": "https://arxiv.org/abs/2609.15983v1"
-    },
-    {
-      "text": "A Chosen Future Can Still Be Rewritten: Causal Writability in Video Models",
-      "link": "https://arxiv.org/abs/2609.15980v1"
-    },
     {
       "text": "ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents",
       "link": "https://arxiv.org/abs/2609.17523v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.20814v1"
     },
     {
-      "text": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
-      "link": "https://arxiv.org/abs/2609.20812v1"
-    },
-    {
       "text": "Score Centering Stabilizes Off-policy Reinforcement Learning",
       "link": "https://arxiv.org/abs/2609.20807v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Predictable Failure in Multi-Hop Retrieval: Score-Distributional Confidence Scoring and Abstention",
       "link": "https://arxiv.org/abs/2609.22056v1"
+    },
+    {
+      "text": "Benchmarking World Models for Continual Learning on Compositional Tasks",
+      "link": "https://arxiv.org/abs/2609.22055v1"
+    },
+    {
+      "text": "Particle Competition and Cooperation for Robust Graph Convolutional Network Learning Under Label Noise",
+      "link": "https://arxiv.org/abs/2609.22053v1"
+    },
+    {
+      "text": "Available Guardrails: Certifying Selective Prediction across ML Systems",
+      "link": "https://arxiv.org/abs/2609.22048v1"
+    },
+    {
+      "text": "$λ$-Controlled GRPO: Turning Flow-Matching Ratio Instability into a Budgeted Resource",
+      "link": "https://arxiv.org/abs/2609.22041v1"
     }
   ]
 }

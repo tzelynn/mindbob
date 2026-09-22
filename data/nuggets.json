@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-21T23:22:25.603Z",
+  "updated": "2026-09-22T00:17:50.724Z",
   "entries": [
-    {
-      "id": "2026-09-08",
-      "date": "2026-09-08",
-      "publishAt": "2026-09-08T00:00:00.000Z",
-      "fact": {
-        "text": "The cheetah is the only cat that can't retract its claws.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "My AI skeptic friends are all nuts",
-        "source": "pool",
-        "title": "My AI skeptic friends are all nuts",
-        "link": "https://fly.io/blog/youre-all-nuts/"
-      }
-    },
     {
       "id": "2026-09-09",
       "date": "2026-09-09",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
         "link": "https://arxiv.org/abs/2609.20812v1"
+      }
+    },
+    {
+      "id": "2026-09-22",
+      "date": "2026-09-22",
+      "publishAt": "2026-09-22T00:00:00.000Z",
+      "fact": {
+        "text": "The longest word comprised of one row on the keyboard is: TYPEWRITER",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Open source AI is the path forward",
+        "source": "pool",
+        "title": "Open source AI is the path forward",
+        "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
       }
     }
   ]
