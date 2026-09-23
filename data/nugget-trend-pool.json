@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-22T00:17:50.724Z",
+  "updated": "2026-09-23T22:59:39.247Z",
   "trends": [
-    {
-      "text": "ScienceBuddy: Recursive-in-Recursive Self-Improvement for Interactive Scientific Agents",
-      "link": "https://arxiv.org/abs/2609.17523v1"
-    },
-    {
-      "text": "PhysStream: Streaming Physics-Grounded Video Generation with Structured Scene Memory and Fine-Grained Motion Control",
-      "link": "https://arxiv.org/abs/2609.17521v1"
-    },
-    {
-      "text": "LACE: Layer-Wise Compression for Dynamic Frame Rate Codecs",
-      "link": "https://arxiv.org/abs/2609.17509v1"
-    },
     {
       "text": "A Zeroth-Order Paradigm for LLM Preference Alignment",
       "link": "https://arxiv.org/abs/2609.19144v1"
@@ -58,10 +46,6 @@
       "link": "https://news.ycombinator.com/newsguidelines.html#generated"
     },
     {
-      "text": "Open source AI is the path forward",
-      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
-    },
-    {
       "text": "An AI agent published a hit piece on me",
       "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
     },
@@ -96,6 +80,22 @@
     {
       "text": "$λ$-Controlled GRPO: Turning Flow-Matching Ratio Instability into a Budgeted Resource",
       "link": "https://arxiv.org/abs/2609.22041v1"
+    },
+    {
+      "text": "SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue",
+      "link": "https://arxiv.org/abs/2609.26780v1"
+    },
+    {
+      "text": "CliffCompaction: Cost-Efficient Compaction for Long-Horizon Coding Agents",
+      "link": "https://arxiv.org/abs/2609.26779v1"
+    },
+    {
+      "text": "SWE-Serve: Benchmarking Agentic Engineering For Production Inference Serving",
+      "link": "https://arxiv.org/abs/2609.26777v1"
+    },
+    {
+      "text": "A2M: Trace-Optimized Agent Hijacking in the MCP Ecosystem",
+      "link": "https://arxiv.org/abs/2609.26761v1"
     }
   ]
 }
