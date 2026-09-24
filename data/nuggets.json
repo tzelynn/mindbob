@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-23T22:59:39.247Z",
+  "updated": "2026-09-24T23:15:36.455Z",
   "entries": [
-    {
-      "id": "2026-09-10",
-      "date": "2026-09-10",
-      "publishAt": "2026-09-10T00:00:00.000Z",
-      "fact": {
-        "text": "Thirty-five percent of people who use personal ads for dating are already married.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Molecular Déjà Vu: Digit-Level Retrieval of Published Values in Frontier Language Models",
-        "source": "pool",
-        "title": "Molecular Déjà Vu: Digit-Level Retrieval of Published Values in Frontier Language Models",
-        "link": "https://arxiv.org/abs/2609.05381v1"
-      }
-    },
     {
       "id": "2026-09-11",
       "date": "2026-09-11",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "BrainWideBench: Benchmarking large-scale pretraining and across-animal transfer in multi-region neural recordings",
         "link": "https://arxiv.org/abs/2609.22064v1"
+      }
+    },
+    {
+      "id": "2026-09-24",
+      "date": "2026-09-24",
+      "publishAt": "2026-09-24T00:00:00.000Z",
+      "fact": {
+        "text": "The storage capacity of human brain exceeds 4 Terabytes.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Available Guardrails: Certifying Selective Prediction across ML Systems",
+        "source": "pool",
+        "title": "Available Guardrails: Certifying Selective Prediction across ML Systems",
+        "link": "https://arxiv.org/abs/2609.22048v1"
       }
     }
   ]

@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-23T22:59:39.247Z",
+  "updated": "2026-09-24T23:15:36.455Z",
   "trends": [
-    {
-      "text": "A Zeroth-Order Paradigm for LLM Preference Alignment",
-      "link": "https://arxiv.org/abs/2609.19144v1"
-    },
-    {
-      "text": "Dreaming the Sound of Contact: Leveraging Video and Audio Generation for Zero-Shot Force-Aware Manipulation and Data Generation",
-      "link": "https://arxiv.org/abs/2609.19137v1"
-    },
-    {
-      "text": "Cognitive Extensions for Dual-Process Language Agents: Memory and Self-Reflection in Interactive Environments",
-      "link": "https://arxiv.org/abs/2609.19128v1"
-    },
     {
       "text": "Embedding Models Measure in Peculiar Ways",
       "link": "https://arxiv.org/abs/2609.20821v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.22067v1"
     },
     {
-      "text": "BrainWideBench: Benchmarking large-scale pretraining and across-animal transfer in multi-region neural recordings",
-      "link": "https://arxiv.org/abs/2609.22064v1"
-    },
-    {
       "text": "Predictable Failure in Multi-Hop Retrieval: Score-Distributional Confidence Scoring and Abstention",
       "link": "https://arxiv.org/abs/2609.22056v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "A2M: Trace-Optimized Agent Hijacking in the MCP Ecosystem",
       "link": "https://arxiv.org/abs/2609.26761v1"
+    },
+    {
+      "text": "Contrastive Learning for Authorship Verification",
+      "link": "https://arxiv.org/abs/2609.28471v1"
+    },
+    {
+      "text": "StudentBench: AI and human tutoring yield equivalent GRE learning gains",
+      "link": "https://arxiv.org/abs/2609.28470v1"
+    },
+    {
+      "text": "Where Should I Join? Robot Group Joining via Language-Guided Goal Prediction",
+      "link": "https://arxiv.org/abs/2609.28467v1"
+    },
+    {
+      "text": "Even Sharper Bounds for Transductive Learning and Its Applications",
+      "link": "https://arxiv.org/abs/2609.28459v1"
     }
   ]
 }
