@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-24T23:15:36.455Z",
+  "updated": "2026-09-25T00:01:06.512Z",
   "trends": [
-    {
-      "text": "Embedding Models Measure in Peculiar Ways",
-      "link": "https://arxiv.org/abs/2609.20821v1"
-    },
-    {
-      "text": "Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision",
-      "link": "https://arxiv.org/abs/2609.20820v1"
-    },
-    {
-      "text": "Paint-Anything: Unified Any-Color Control for Image Generation and Editing",
-      "link": "https://arxiv.org/abs/2609.20816v1"
-    },
     {
       "text": "ERCPMP-Gx: Endoscopic Image and Video Dataset for Morphological, Histopathological, and Genomic Characterization of Colorectal Polyposis",
       "link": "https://arxiv.org/abs/2609.20815v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.22053v1"
     },
     {
-      "text": "Available Guardrails: Certifying Selective Prediction across ML Systems",
-      "link": "https://arxiv.org/abs/2609.22048v1"
-    },
-    {
       "text": "$λ$-Controlled GRPO: Turning Flow-Matching Ratio Instability into a Budgeted Resource",
       "link": "https://arxiv.org/abs/2609.22041v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Even Sharper Bounds for Transductive Learning and Its Applications",
       "link": "https://arxiv.org/abs/2609.28459v1"
+    },
+    {
+      "text": "Can LLMs Reason About Runtime Behavior? A Repository-Level Dynamic Benchmark",
+      "link": "https://arxiv.org/abs/2609.28449v1"
+    },
+    {
+      "text": "Nonequilibrium Phases of Repulsive Self-Attention: Chaos, Attention Condensation, and Emergent Locality",
+      "link": "https://arxiv.org/abs/2609.28448v1"
+    },
+    {
+      "text": "Order-Invariant Answers, Order-Sensitive Representations in Mathematical Reasoning",
+      "link": "https://arxiv.org/abs/2609.28442v1"
+    },
+    {
+      "text": "Minimal-Norm Univariate Two-Layer ReLU Classification: Exact Solutions and Global Optimality with Skip Connections",
+      "link": "https://arxiv.org/abs/2609.28438v1"
     }
   ]
 }

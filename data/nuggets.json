@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-24T23:15:36.455Z",
+  "updated": "2026-09-25T00:01:06.512Z",
   "entries": [
-    {
-      "id": "2026-09-11",
-      "date": "2026-09-11",
-      "publishAt": "2026-09-11T00:00:00.000Z",
-      "fact": {
-        "text": "CBS` \"60 Minutes\" is the only TV show without a theme song/music.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Silver Rate Is (Almost) Optimal for Gradient Descent Acceleration",
-        "source": "pool",
-        "title": "Silver Rate Is (Almost) Optimal for Gradient Descent Acceleration",
-        "link": "https://arxiv.org/abs/2609.09152v1"
-      }
-    },
     {
       "id": "2026-09-12",
       "date": "2026-09-12",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Available Guardrails: Certifying Selective Prediction across ML Systems",
         "link": "https://arxiv.org/abs/2609.22048v1"
+      }
+    },
+    {
+      "id": "2026-09-25",
+      "date": "2026-09-25",
+      "publishAt": "2026-09-25T00:00:00.000Z",
+      "fact": {
+        "text": "In the 1980`s American migraines increased by 60%.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "SWE-Serve: Benchmarking Agentic Engineering For Production Inference Serving",
+        "source": "pool",
+        "title": "SWE-Serve: Benchmarking Agentic Engineering For Production Inference Serving",
+        "link": "https://arxiv.org/abs/2609.26777v1"
       }
     }
   ]
