@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-25T00:01:06.512Z",
+  "updated": "2026-09-26T00:11:09.539Z",
   "trends": [
-    {
-      "text": "ERCPMP-Gx: Endoscopic Image and Video Dataset for Morphological, Histopathological, and Genomic Characterization of Colorectal Polyposis",
-      "link": "https://arxiv.org/abs/2609.20815v1"
-    },
-    {
-      "text": "How Does Distribution Shift Shape Pretraining Gains in Neural PDE Surrogates?",
-      "link": "https://arxiv.org/abs/2609.20814v1"
-    },
-    {
-      "text": "Score Centering Stabilizes Off-policy Reinforcement Learning",
-      "link": "https://arxiv.org/abs/2609.20807v1"
-    },
     {
       "text": "An Empirical Study of Harness Design for Coding Agents",
       "link": "https://arxiv.org/abs/2609.20804v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.26779v1"
     },
     {
-      "text": "SWE-Serve: Benchmarking Agentic Engineering For Production Inference Serving",
-      "link": "https://arxiv.org/abs/2609.26777v1"
-    },
-    {
       "text": "A2M: Trace-Optimized Agent Hijacking in the MCP Ecosystem",
       "link": "https://arxiv.org/abs/2609.26761v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Minimal-Norm Univariate Two-Layer ReLU Classification: Exact Solutions and Global Optimality with Skip Connections",
       "link": "https://arxiv.org/abs/2609.28438v1"
+    },
+    {
+      "text": "AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control",
+      "link": "https://arxiv.org/abs/2609.30264v1"
+    },
+    {
+      "text": "Temporal Gradient Inversion for Private Trajectory Reconstruction in Embodied Reinforcement Learning",
+      "link": "https://arxiv.org/abs/2609.30258v1"
+    },
+    {
+      "text": "Agentic Detection of Online Conspiracies",
+      "link": "https://arxiv.org/abs/2609.30250v1"
+    },
+    {
+      "text": "RAPID: Robot Agentic Programming from Demonstrations",
+      "link": "https://arxiv.org/abs/2609.30249v1"
     }
   ]
 }

@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-25T00:01:06.512Z",
+  "updated": "2026-09-26T00:11:09.539Z",
   "entries": [
-    {
-      "id": "2026-09-12",
-      "date": "2026-09-12",
-      "publishAt": "2026-09-12T00:00:00.000Z",
-      "fact": {
-        "text": "About 500 movies are made in the US and 800 in India annually.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Show-Harness: Just a VLM Agent Can Play Robots",
-        "source": "pool",
-        "title": "Show-Harness: Just a VLM Agent Can Play Robots",
-        "link": "https://arxiv.org/abs/2609.10522v1"
-      }
-    },
     {
       "id": "2026-09-13",
       "date": "2026-09-13",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "SWE-Serve: Benchmarking Agentic Engineering For Production Inference Serving",
         "link": "https://arxiv.org/abs/2609.26777v1"
+      }
+    },
+    {
+      "id": "2026-09-26",
+      "date": "2026-09-26",
+      "publishAt": "2026-09-26T00:00:00.000Z",
+      "fact": {
+        "text": "About 200,000,000 M&Ms are sold each day in the United States.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Where Should I Join? Robot Group Joining via Language-Guided Goal Prediction",
+        "source": "pool",
+        "title": "Where Should I Join? Robot Group Joining via Language-Guided Goal Prediction",
+        "link": "https://arxiv.org/abs/2609.28467v1"
       }
     }
   ]
