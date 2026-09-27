@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-26T00:11:09.539Z",
+  "updated": "2026-09-27T23:08:06.410Z",
   "trends": [
-    {
-      "text": "An Empirical Study of Harness Design for Coding Agents",
-      "link": "https://arxiv.org/abs/2609.20804v1"
-    },
-    {
-      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
-      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
-    },
-    {
-      "text": "An AI agent published a hit piece on me",
-      "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
-    },
     {
       "text": "CodeMidas: Scaling Agentic Coding RL Environments from Code Itself",
       "link": "https://arxiv.org/abs/2609.22068v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.28470v1"
     },
     {
-      "text": "Where Should I Join? Robot Group Joining via Language-Guided Goal Prediction",
-      "link": "https://arxiv.org/abs/2609.28467v1"
-    },
-    {
       "text": "Even Sharper Bounds for Transductive Learning and Its Applications",
       "link": "https://arxiv.org/abs/2609.28459v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "RAPID: Robot Agentic Programming from Demonstrations",
       "link": "https://arxiv.org/abs/2609.30249v1"
+    },
+    {
+      "text": "Rolling-WAM: World Action Models with Rolling Imagination",
+      "link": "https://arxiv.org/abs/2609.30247v1"
+    },
+    {
+      "text": "Coding Agents for Generalized Task and Motion Planning Problems",
+      "link": "https://arxiv.org/abs/2609.30233v1"
+    },
+    {
+      "text": "To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech",
+      "link": "https://arxiv.org/abs/2609.30227v1"
+    },
+    {
+      "text": "PoEM: Predicting RL Outcomes from Existing Policies",
+      "link": "https://arxiv.org/abs/2609.30226v1"
     }
   ]
 }
