@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-27T23:08:06.410Z",
+  "updated": "2026-09-29T00:25:26.824Z",
   "trends": [
-    {
-      "text": "CodeMidas: Scaling Agentic Coding RL Environments from Code Itself",
-      "link": "https://arxiv.org/abs/2609.22068v1"
-    },
-    {
-      "text": "Value-Sensitive Delegation in Everyday AI Agent Use: Evidence from OpenClaw",
-      "link": "https://arxiv.org/abs/2609.22067v1"
-    },
-    {
-      "text": "Predictable Failure in Multi-Hop Retrieval: Score-Distributional Confidence Scoring and Abstention",
-      "link": "https://arxiv.org/abs/2609.22056v1"
-    },
     {
       "text": "Benchmarking World Models for Continual Learning on Compositional Tasks",
       "link": "https://arxiv.org/abs/2609.22055v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.28448v1"
     },
     {
-      "text": "Order-Invariant Answers, Order-Sensitive Representations in Mathematical Reasoning",
-      "link": "https://arxiv.org/abs/2609.28442v1"
-    },
-    {
       "text": "Minimal-Norm Univariate Two-Layer ReLU Classification: Exact Solutions and Global Optimality with Skip Connections",
       "link": "https://arxiv.org/abs/2609.28438v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "PoEM: Predicting RL Outcomes from Existing Policies",
       "link": "https://arxiv.org/abs/2609.30226v1"
+    },
+    {
+      "text": "Gap-free Differentially Private PCA for Gaussian Data",
+      "link": "https://arxiv.org/abs/2609.31614v1"
+    },
+    {
+      "text": "First-Order Stationarity of Reverse Diffusions",
+      "link": "https://arxiv.org/abs/2609.31612v1"
+    },
+    {
+      "text": "Statistical attribute alignment for black-box generative AI via output post-processing",
+      "link": "https://arxiv.org/abs/2609.31607v1"
+    },
+    {
+      "text": "User Model Extraction via Belief Self-Distillation",
+      "link": "https://arxiv.org/abs/2609.31603v1"
     }
   ]
 }

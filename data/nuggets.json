@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-27T23:08:06.410Z",
+  "updated": "2026-09-29T00:25:26.824Z",
   "entries": [
-    {
-      "id": "2026-09-14",
-      "date": "2026-09-14",
-      "publishAt": "2026-09-14T00:00:00.000Z",
-      "fact": {
-        "text": "Bruce Lee was so fast that they had to slow the film down so you could see his moves.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "TART: A Modular Tool for Technique-Aware Audio-to-Tablature Guitar Transcription",
-        "source": "pool",
-        "title": "TART: A Modular Tool for Technique-Aware Audio-to-Tablature Guitar Transcription",
-        "link": "https://arxiv.org/abs/2609.11904v1"
-      }
-    },
     {
       "id": "2026-09-15",
       "date": "2026-09-15",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Order-Invariant Answers, Order-Sensitive Representations in Mathematical Reasoning",
         "link": "https://arxiv.org/abs/2609.28442v1"
+      }
+    },
+    {
+      "id": "2026-09-29",
+      "date": "2026-09-29",
+      "publishAt": "2026-09-29T00:00:00.000Z",
+      "fact": {
+        "text": "The buzz from an electric razor in America plays in the key of B flat; Key of G in England.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Agentic Detection of Online Conspiracies",
+        "source": "pool",
+        "title": "Agentic Detection of Online Conspiracies",
+        "link": "https://arxiv.org/abs/2609.30250v1"
       }
     }
   ]
