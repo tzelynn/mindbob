@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-29T00:25:26.824Z",
+  "updated": "2026-09-30T00:46:22.085Z",
   "entries": [
-    {
-      "id": "2026-09-15",
-      "date": "2026-09-15",
-      "publishAt": "2026-09-15T00:00:00.000Z",
-      "fact": {
-        "text": "The surface of the Earth is about 60% water and 10% ice.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Bypassing airport security via SQL injection",
-        "source": "pool",
-        "title": "Bypassing airport security via SQL injection",
-        "link": "https://ian.sh/tsa"
-      }
-    },
     {
       "id": "2026-09-16",
       "date": "2026-09-16",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Agentic Detection of Online Conspiracies",
         "link": "https://arxiv.org/abs/2609.30250v1"
+      }
+    },
+    {
+      "id": "2026-09-30",
+      "date": "2026-09-30",
+      "publishAt": "2026-09-30T00:00:00.000Z",
+      "fact": {
+        "text": "A raisin dropped in a glass of fresh champagne will bounce up and down continually from the bottom of the glass to the top.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech",
+        "source": "pool",
+        "title": "To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech",
+        "link": "https://arxiv.org/abs/2609.30227v1"
       }
     }
   ]

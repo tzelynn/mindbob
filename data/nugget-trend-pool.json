@@ -1,18 +1,6 @@
 {
-  "updated": "2026-09-29T00:25:26.824Z",
+  "updated": "2026-09-30T00:46:22.085Z",
   "trends": [
-    {
-      "text": "Benchmarking World Models for Continual Learning on Compositional Tasks",
-      "link": "https://arxiv.org/abs/2609.22055v1"
-    },
-    {
-      "text": "Particle Competition and Cooperation for Robust Graph Convolutional Network Learning Under Label Noise",
-      "link": "https://arxiv.org/abs/2609.22053v1"
-    },
-    {
-      "text": "$λ$-Controlled GRPO: Turning Flow-Matching Ratio Instability into a Budgeted Resource",
-      "link": "https://arxiv.org/abs/2609.22041v1"
-    },
     {
       "text": "SpeakerMem-R1: Speaker-Centered Dual-Track Memory for Multi-Party Dialogue",
       "link": "https://arxiv.org/abs/2609.26780v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.30258v1"
     },
     {
-      "text": "Agentic Detection of Online Conspiracies",
-      "link": "https://arxiv.org/abs/2609.30250v1"
-    },
-    {
       "text": "RAPID: Robot Agentic Programming from Demonstrations",
       "link": "https://arxiv.org/abs/2609.30249v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "User Model Extraction via Belief Self-Distillation",
       "link": "https://arxiv.org/abs/2609.31603v1"
+    },
+    {
+      "text": "Telescopic Language Models",
+      "link": "https://arxiv.org/abs/2609.35769v1"
+    },
+    {
+      "text": "PDMD: Projected Distribution Matching Distillation for Video Diffusion Models",
+      "link": "https://arxiv.org/abs/2609.35768v1"
+    },
+    {
+      "text": "Learning Native Reflection in Unified Models with Interleaved Reinforcement Learning",
+      "link": "https://arxiv.org/abs/2609.35767v1"
+    },
+    {
+      "text": "Unifying Distributional Training for One-Step Visual Generation",
+      "link": "https://arxiv.org/abs/2609.35763v1"
     }
   ]
 }
