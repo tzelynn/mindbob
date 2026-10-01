@@ -1,21 +1,6 @@
 {
-  "updated": "2026-09-30T00:46:22.085Z",
+  "updated": "2026-10-01T00:50:46.051Z",
   "entries": [
-    {
-      "id": "2026-09-16",
-      "date": "2026-09-16",
-      "publishAt": "2026-09-16T00:00:00.000Z",
-      "fact": {
-        "text": "Bullet proof vests, fire escapes, windshield wipers, and laser printers were all invented by women",
-        "source": "api"
-      },
-      "trend": {
-        "text": "A Ranking Approach for Measuring Calibration",
-        "source": "pool",
-        "title": "A Ranking Approach for Measuring Calibration",
-        "link": "https://arxiv.org/abs/2609.13100v1"
-      }
-    },
     {
       "id": "2026-09-17",
       "date": "2026-09-17",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech",
         "link": "https://arxiv.org/abs/2609.30227v1"
+      }
+    },
+    {
+      "id": "2026-10-01",
+      "date": "2026-10-01",
+      "publishAt": "2026-10-01T00:00:00.000Z",
+      "fact": {
+        "text": "Most collect calls are made on father`s day.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Statistical attribute alignment for black-box generative AI via output post-processing",
+        "source": "pool",
+        "title": "Statistical attribute alignment for black-box generative AI via output post-processing",
+        "link": "https://arxiv.org/abs/2609.31607v1"
       }
     }
   ]
