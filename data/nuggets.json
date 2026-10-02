@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-01T00:50:46.051Z",
+  "updated": "2026-10-02T01:05:11.561Z",
   "entries": [
-    {
-      "id": "2026-09-17",
-      "date": "2026-09-17",
-      "publishAt": "2026-09-17T00:00:00.000Z",
-      "fact": {
-        "text": "Mozart wrote the nursery rhyme `twinkle, twinkle, little star` at the age of 5.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "The Router Within: Eliciting Native Skill Routing from a Frozen LLM",
-        "source": "pool",
-        "title": "The Router Within: Eliciting Native Skill Routing from a Frozen LLM",
-        "link": "https://arxiv.org/abs/2609.15982v1"
-      }
-    },
     {
       "id": "2026-09-18",
       "date": "2026-09-18",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Statistical attribute alignment for black-box generative AI via output post-processing",
         "link": "https://arxiv.org/abs/2609.31607v1"
+      }
+    },
+    {
+      "id": "2026-10-02",
+      "date": "2026-10-02",
+      "publishAt": "2026-10-02T00:00:00.000Z",
+      "fact": {
+        "text": "In 1386, a pig in France was executed by public hanging for the murder of a child",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Learning Native Reflection in Unified Models with Interleaved Reinforcement Learning",
+        "source": "pool",
+        "title": "Learning Native Reflection in Unified Models with Interleaved Reinforcement Learning",
+        "link": "https://arxiv.org/abs/2609.35767v1"
       }
     }
   ]

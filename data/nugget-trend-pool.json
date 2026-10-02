@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-01T00:50:46.051Z",
+  "updated": "2026-10-02T01:05:11.561Z",
   "trends": [
-    {
-      "text": "Contrastive Learning for Authorship Verification",
-      "link": "https://arxiv.org/abs/2609.28471v1"
-    },
-    {
-      "text": "StudentBench: AI and human tutoring yield equivalent GRE learning gains",
-      "link": "https://arxiv.org/abs/2609.28470v1"
-    },
-    {
-      "text": "Even Sharper Bounds for Transductive Learning and Its Applications",
-      "link": "https://arxiv.org/abs/2609.28459v1"
-    },
     {
       "text": "Can LLMs Reason About Runtime Behavior? A Repository-Level Dynamic Benchmark",
       "link": "https://arxiv.org/abs/2609.28449v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.31612v1"
     },
     {
-      "text": "Statistical attribute alignment for black-box generative AI via output post-processing",
-      "link": "https://arxiv.org/abs/2609.31607v1"
-    },
-    {
       "text": "User Model Extraction via Belief Self-Distillation",
       "link": "https://arxiv.org/abs/2609.31603v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Cropland PAtteRNS: Parallel Dimensional Attention Networks and Attention to Dataset Disparity for Crop Segmentation in Satellite Imagery Time Series Data",
       "link": "https://arxiv.org/abs/2609.38165v1"
+    },
+    {
+      "text": "Semifactual Credit-Augmented Policy Optimization",
+      "link": "https://arxiv.org/abs/2609.40360v1"
+    },
+    {
+      "text": "Removing Timing Shortcuts Improves Non-Invasive Brain-to-Text",
+      "link": "https://arxiv.org/abs/2609.40359v1"
+    },
+    {
+      "text": "ViTeX-Bench: Benchmarking High-Fidelity Video Scene Text Editing",
+      "link": "https://arxiv.org/abs/2609.40356v1"
+    },
+    {
+      "text": "Image Classifiers are Efficient Self-Supervised Video Representation Learners",
+      "link": "https://arxiv.org/abs/2609.40347v1"
     }
   ]
 }
