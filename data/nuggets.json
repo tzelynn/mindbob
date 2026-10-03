@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-02T01:05:11.561Z",
+  "updated": "2026-10-03T00:44:53.662Z",
   "entries": [
-    {
-      "id": "2026-09-18",
-      "date": "2026-09-18",
-      "publishAt": "2026-09-18T00:00:00.000Z",
-      "fact": {
-        "text": "Camels have three eyelids to protect themselves from blowing sand.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "When Should LLMs Abstain? Chain-of-Self-Questioning for Selective Risk Control",
-        "source": "pool",
-        "title": "When Should LLMs Abstain? Chain-of-Self-Questioning for Selective Risk Control",
-        "link": "https://arxiv.org/abs/2609.17516v1"
-      }
-    },
     {
       "id": "2026-09-19",
       "date": "2026-09-19",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Learning Native Reflection in Unified Models with Interleaved Reinforcement Learning",
         "link": "https://arxiv.org/abs/2609.35767v1"
+      }
+    },
+    {
+      "id": "2026-10-03",
+      "date": "2026-10-03",
+      "publishAt": "2026-10-03T00:00:00.000Z",
+      "fact": {
+        "text": "A spider has transparent blood.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "LeapQuant: Efficient Linear Attention with Accurate Recurrent State Quantization",
+        "source": "pool",
+        "title": "LeapQuant: Efficient Linear Attention with Accurate Recurrent State Quantization",
+        "link": "https://arxiv.org/abs/2609.38166v1"
       }
     }
   ]

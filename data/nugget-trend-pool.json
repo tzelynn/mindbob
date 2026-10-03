@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-02T01:05:11.561Z",
+  "updated": "2026-10-03T00:44:53.662Z",
   "trends": [
-    {
-      "text": "Can LLMs Reason About Runtime Behavior? A Repository-Level Dynamic Benchmark",
-      "link": "https://arxiv.org/abs/2609.28449v1"
-    },
-    {
-      "text": "Nonequilibrium Phases of Repulsive Self-Attention: Chaos, Attention Condensation, and Emergent Locality",
-      "link": "https://arxiv.org/abs/2609.28448v1"
-    },
-    {
-      "text": "Minimal-Norm Univariate Two-Layer ReLU Classification: Exact Solutions and Global Optimality with Skip Connections",
-      "link": "https://arxiv.org/abs/2609.28438v1"
-    },
     {
       "text": "AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control",
       "link": "https://arxiv.org/abs/2609.30264v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.35768v1"
     },
     {
-      "text": "Learning Native Reflection in Unified Models with Interleaved Reinforcement Learning",
-      "link": "https://arxiv.org/abs/2609.35767v1"
-    },
-    {
       "text": "Unifying Distributional Training for One-Step Visual Generation",
       "link": "https://arxiv.org/abs/2609.35763v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Image Classifiers are Efficient Self-Supervised Video Representation Learners",
       "link": "https://arxiv.org/abs/2609.40347v1"
+    },
+    {
+      "text": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
+      "link": "https://arxiv.org/abs/2610.02206v1"
+    },
+    {
+      "text": "Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents",
+      "link": "https://arxiv.org/abs/2610.02204v1"
+    },
+    {
+      "text": "Embedding Prediction Helps Image Generation",
+      "link": "https://arxiv.org/abs/2610.02203v1"
+    },
+    {
+      "text": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
+      "link": "https://arxiv.org/abs/2610.02202v1"
     }
   ]
 }
