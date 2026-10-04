@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-03T00:44:53.662Z",
+  "updated": "2026-10-04T00:03:48.294Z",
   "entries": [
-    {
-      "id": "2026-09-19",
-      "date": "2026-09-19",
-      "publishAt": "2026-09-19T00:00:00.000Z",
-      "fact": {
-        "text": "There are no words in the dictionary that rhyme with orange, purple, silver and month.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Exponential Hardness of Off-Policy Evaluation under History-Dependent Logging",
-        "source": "pool",
-        "title": "Exponential Hardness of Off-Policy Evaluation under History-Dependent Logging",
-        "link": "https://arxiv.org/abs/2609.19135v1"
-      }
-    },
     {
       "id": "2026-09-20",
       "date": "2026-09-20",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "LeapQuant: Efficient Linear Attention with Accurate Recurrent State Quantization",
         "link": "https://arxiv.org/abs/2609.38166v1"
+      }
+    },
+    {
+      "id": "2026-10-04",
+      "date": "2026-10-04",
+      "publishAt": "2026-10-04T00:00:00.000Z",
+      "fact": {
+        "text": "The Falkland Isles (pop. about 2000) has over 700000 sheep (350 per person).",
+        "source": "api"
+      },
+      "trend": {
+        "text": "ViTeX-Bench: Benchmarking High-Fidelity Video Scene Text Editing",
+        "source": "pool",
+        "title": "ViTeX-Bench: Benchmarking High-Fidelity Video Scene Text Editing",
+        "link": "https://arxiv.org/abs/2609.40356v1"
       }
     }
   ]

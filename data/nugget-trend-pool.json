@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-03T00:44:53.662Z",
+  "updated": "2026-10-04T00:03:48.294Z",
   "trends": [
-    {
-      "text": "AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control",
-      "link": "https://arxiv.org/abs/2609.30264v1"
-    },
-    {
-      "text": "Temporal Gradient Inversion for Private Trajectory Reconstruction in Embodied Reinforcement Learning",
-      "link": "https://arxiv.org/abs/2609.30258v1"
-    },
-    {
-      "text": "RAPID: Robot Agentic Programming from Demonstrations",
-      "link": "https://arxiv.org/abs/2609.30249v1"
-    },
     {
       "text": "Rolling-WAM: World Action Models with Rolling Imagination",
       "link": "https://arxiv.org/abs/2609.30247v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.38169v1"
     },
     {
-      "text": "LeapQuant: Efficient Linear Attention with Accurate Recurrent State Quantization",
-      "link": "https://arxiv.org/abs/2609.38166v1"
-    },
-    {
       "text": "Cropland PAtteRNS: Parallel Dimensional Attention Networks and Attention to Dataset Disparity for Crop Segmentation in Satellite Imagery Time Series Data",
       "link": "https://arxiv.org/abs/2609.38165v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
       "link": "https://arxiv.org/abs/2610.02202v1"
+    },
+    {
+      "text": "SILSA: Sliding-Window Slice Latents for Topology-Preserving High-Resolution 3D Generation",
+      "link": "https://arxiv.org/abs/2610.02201v1"
+    },
+    {
+      "text": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+      "link": "https://arxiv.org/abs/2610.02200v1"
+    },
+    {
+      "text": "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning",
+      "link": "https://arxiv.org/abs/2610.02199v1"
+    },
+    {
+      "text": "FERPO: Forward Entropy-Regularized Policy Optimization",
+      "link": "https://arxiv.org/abs/2610.02198v1"
     }
   ]
 }
