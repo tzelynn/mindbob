@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-04T00:03:48.294Z",
+  "updated": "2026-10-05T00:11:22.474Z",
   "entries": [
-    {
-      "id": "2026-09-20",
-      "date": "2026-09-20",
-      "publishAt": "2026-09-20T00:00:00.000Z",
-      "fact": {
-        "text": "At the height of its power in 400 BC, the Greek city of Sparta had 25,000 citizens and 500,000 slaves.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
-        "source": "pool",
-        "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
-        "link": "https://arxiv.org/abs/2609.20817v1"
-      }
-    },
     {
       "id": "2026-09-21",
       "date": "2026-09-21",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "ViTeX-Bench: Benchmarking High-Fidelity Video Scene Text Editing",
         "link": "https://arxiv.org/abs/2609.40356v1"
+      }
+    },
+    {
+      "id": "2026-10-05",
+      "date": "2026-10-05",
+      "publishAt": "2026-10-05T00:00:00.000Z",
+      "fact": {
+        "text": "All of the clocks in the movie \"Pulp Fiction\" are stuck on 4:20.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Embedding Prediction Helps Image Generation",
+        "source": "pool",
+        "title": "Embedding Prediction Helps Image Generation",
+        "link": "https://arxiv.org/abs/2610.02203v1"
       }
     }
   ]

@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-04T00:03:48.294Z",
+  "updated": "2026-10-05T00:11:22.474Z",
   "trends": [
-    {
-      "text": "Rolling-WAM: World Action Models with Rolling Imagination",
-      "link": "https://arxiv.org/abs/2609.30247v1"
-    },
-    {
-      "text": "Coding Agents for Generalized Task and Motion Planning Problems",
-      "link": "https://arxiv.org/abs/2609.30233v1"
-    },
-    {
-      "text": "PoEM: Predicting RL Outcomes from Existing Policies",
-      "link": "https://arxiv.org/abs/2609.30226v1"
-    },
     {
       "text": "Gap-free Differentially Private PCA for Gaussian Data",
       "link": "https://arxiv.org/abs/2609.31614v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2609.40359v1"
     },
     {
-      "text": "ViTeX-Bench: Benchmarking High-Fidelity Video Scene Text Editing",
-      "link": "https://arxiv.org/abs/2609.40356v1"
-    },
-    {
       "text": "Image Classifiers are Efficient Self-Supervised Video Representation Learners",
       "link": "https://arxiv.org/abs/2609.40347v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "FERPO: Forward Entropy-Regularized Policy Optimization",
       "link": "https://arxiv.org/abs/2610.02198v1"
+    },
+    {
+      "text": "Cost-augmented Schrödinger bridges on graphs are exactly solvable: a Feynman-Kac tilt replaces learned control",
+      "link": "https://arxiv.org/abs/2610.02195v1"
+    },
+    {
+      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
+    },
+    {
+      "text": "My AI skeptic friends are all nuts",
+      "link": "https://fly.io/blog/youre-all-nuts/"
+    },
+    {
+      "text": "An AI agent published a hit piece on me",
+      "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
     }
   ]
 }
