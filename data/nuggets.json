@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-05T00:11:22.474Z",
+  "updated": "2026-10-06T01:20:09.368Z",
   "entries": [
-    {
-      "id": "2026-09-21",
-      "date": "2026-09-21",
-      "publishAt": "2026-09-21T00:00:00.000Z",
-      "fact": {
-        "text": "Samuel Clemens (Mark Twain) was born on and died on days when Halley’s Comet can be seen.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
-        "source": "pool",
-        "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
-        "link": "https://arxiv.org/abs/2609.20812v1"
-      }
-    },
     {
       "id": "2026-09-22",
       "date": "2026-09-22",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Embedding Prediction Helps Image Generation",
         "link": "https://arxiv.org/abs/2610.02203v1"
+      }
+    },
+    {
+      "id": "2026-10-06",
+      "date": "2026-10-06",
+      "publishAt": "2026-10-06T00:00:00.000Z",
+      "fact": {
+        "text": "The average person spends 12 weeks a year `looking for things`.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning",
+        "source": "pool",
+        "title": "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning",
+        "link": "https://arxiv.org/abs/2610.02199v1"
       }
     }
   ]

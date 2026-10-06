@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-05T00:11:22.474Z",
+  "updated": "2026-10-06T01:20:09.368Z",
   "trends": [
-    {
-      "text": "Gap-free Differentially Private PCA for Gaussian Data",
-      "link": "https://arxiv.org/abs/2609.31614v1"
-    },
-    {
-      "text": "First-Order Stationarity of Reverse Diffusions",
-      "link": "https://arxiv.org/abs/2609.31612v1"
-    },
-    {
-      "text": "User Model Extraction via Belief Self-Distillation",
-      "link": "https://arxiv.org/abs/2609.31603v1"
-    },
     {
       "text": "Telescopic Language Models",
       "link": "https://arxiv.org/abs/2609.35769v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.02204v1"
     },
     {
-      "text": "Embedding Prediction Helps Image Generation",
-      "link": "https://arxiv.org/abs/2610.02203v1"
-    },
-    {
       "text": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
       "link": "https://arxiv.org/abs/2610.02202v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "An AI agent published a hit piece on me",
       "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
+    },
+    {
+      "text": "4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes",
+      "link": "https://arxiv.org/abs/2610.03715v1"
+    },
+    {
+      "text": "What Should World Models Forget? Stratified Retention for Continual Adaptation",
+      "link": "https://arxiv.org/abs/2610.03713v1"
+    },
+    {
+      "text": "RNADyn: A Benchmark for Generating and Understanding RNA Dynamics",
+      "link": "https://arxiv.org/abs/2610.03712v1"
+    },
+    {
+      "text": "EyeRobot 2.0: Active Gaze for Precise Manipulation without Wrist Cameras",
+      "link": "https://arxiv.org/abs/2610.03710v1"
     }
   ]
 }
