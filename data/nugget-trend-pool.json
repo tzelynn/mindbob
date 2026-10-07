@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-06T01:20:09.368Z",
+  "updated": "2026-10-07T01:01:34.502Z",
   "trends": [
-    {
-      "text": "Telescopic Language Models",
-      "link": "https://arxiv.org/abs/2609.35769v1"
-    },
-    {
-      "text": "PDMD: Projected Distribution Matching Distillation for Video Diffusion Models",
-      "link": "https://arxiv.org/abs/2609.35768v1"
-    },
-    {
-      "text": "Unifying Distributional Training for One-Step Visual Generation",
-      "link": "https://arxiv.org/abs/2609.35763v1"
-    },
     {
       "text": "Breakdown of Local Denoising as Semantic Speciation",
       "link": "https://arxiv.org/abs/2609.38176v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.02200v1"
     },
     {
-      "text": "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning",
-      "link": "https://arxiv.org/abs/2610.02199v1"
-    },
-    {
       "text": "FERPO: Forward Entropy-Regularized Policy Optimization",
       "link": "https://arxiv.org/abs/2610.02198v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "EyeRobot 2.0: Active Gaze for Precise Manipulation without Wrist Cameras",
       "link": "https://arxiv.org/abs/2610.03710v1"
+    },
+    {
+      "text": "Test-Time Agent Evolution for Long-Horizon Legal Reasoning",
+      "link": "https://arxiv.org/abs/2610.08138v1"
+    },
+    {
+      "text": "Beyond Marginal Monitoring: Distributed Joint-Distribution Testing for Data Concept Drift in Large Scale E-Commerce Operations",
+      "link": "https://arxiv.org/abs/2610.08132v1"
+    },
+    {
+      "text": "Mu-DisCoCat: A Variational Pipeline for Compositional Generalization on Quantum Processors",
+      "link": "https://arxiv.org/abs/2610.08131v1"
+    },
+    {
+      "text": "Do LLMs Act on What They Know? From Partner Representations to Cooperative Actions",
+      "link": "https://arxiv.org/abs/2610.08129v1"
     }
   ]
 }

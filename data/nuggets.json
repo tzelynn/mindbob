@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-06T01:20:09.368Z",
+  "updated": "2026-10-07T01:01:34.502Z",
   "entries": [
-    {
-      "id": "2026-09-22",
-      "date": "2026-09-22",
-      "publishAt": "2026-09-22T00:00:00.000Z",
-      "fact": {
-        "text": "The longest word comprised of one row on the keyboard is: TYPEWRITER",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Open source AI is the path forward",
-        "source": "pool",
-        "title": "Open source AI is the path forward",
-        "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
-      }
-    },
     {
       "id": "2026-09-23",
       "date": "2026-09-23",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning",
         "link": "https://arxiv.org/abs/2610.02199v1"
+      }
+    },
+    {
+      "id": "2026-10-07",
+      "date": "2026-10-07",
+      "publishAt": "2026-10-07T00:00:00.000Z",
+      "fact": {
+        "text": "The catfish has over 27000 taste buds (more than any other animal)",
+        "source": "api"
+      },
+      "trend": {
+        "text": "My AI skeptic friends are all nuts",
+        "source": "pool",
+        "title": "My AI skeptic friends are all nuts",
+        "link": "https://fly.io/blog/youre-all-nuts/"
       }
     }
   ]
