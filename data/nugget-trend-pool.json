@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-07T01:01:34.502Z",
+  "updated": "2026-10-08T00:15:40.226Z",
   "trends": [
-    {
-      "text": "Breakdown of Local Denoising as Semantic Speciation",
-      "link": "https://arxiv.org/abs/2609.38176v1"
-    },
-    {
-      "text": "STEPQuant: When and Where Errors Matter in Delta-Rule Recurrent State Quantization",
-      "link": "https://arxiv.org/abs/2609.38169v1"
-    },
-    {
-      "text": "Cropland PAtteRNS: Parallel Dimensional Attention Networks and Attention to Dataset Disparity for Crop Segmentation in Satellite Imagery Time Series Data",
-      "link": "https://arxiv.org/abs/2609.38165v1"
-    },
     {
       "text": "Semifactual Credit-Augmented Policy Optimization",
       "link": "https://arxiv.org/abs/2609.40360v1"
@@ -58,10 +46,6 @@
       "link": "https://news.ycombinator.com/newsguidelines.html#generated"
     },
     {
-      "text": "My AI skeptic friends are all nuts",
-      "link": "https://fly.io/blog/youre-all-nuts/"
-    },
-    {
       "text": "An AI agent published a hit piece on me",
       "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Do LLMs Act on What They Know? From Partner Representations to Cooperative Actions",
       "link": "https://arxiv.org/abs/2610.08129v1"
+    },
+    {
+      "text": "Conformal Prediction Sets Quantify Information Gain: A Theoretical Perspective",
+      "link": "https://arxiv.org/abs/2610.08785v1"
+    },
+    {
+      "text": "4D-HOF: Hand-Object Flow Matching for Feed-Forward 4D Interaction Reconstruction",
+      "link": "https://arxiv.org/abs/2610.08782v1"
+    },
+    {
+      "text": "IdeaAnchor: Teaching LLMs to Turn Literature into Research Ideas",
+      "link": "https://arxiv.org/abs/2610.08781v1"
+    },
+    {
+      "text": "DepthWorld: 3D World Model for Robot Manipulation",
+      "link": "https://arxiv.org/abs/2610.08780v1"
     }
   ]
 }
