@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-08T00:15:40.226Z",
+  "updated": "2026-10-09T00:28:26.626Z",
   "entries": [
-    {
-      "id": "2026-09-24",
-      "date": "2026-09-24",
-      "publishAt": "2026-09-24T00:00:00.000Z",
-      "fact": {
-        "text": "The storage capacity of human brain exceeds 4 Terabytes.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Available Guardrails: Certifying Selective Prediction across ML Systems",
-        "source": "pool",
-        "title": "Available Guardrails: Certifying Selective Prediction across ML Systems",
-        "link": "https://arxiv.org/abs/2609.22048v1"
-      }
-    },
     {
       "id": "2026-09-25",
       "date": "2026-09-25",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "RNADyn: A Benchmark for Generating and Understanding RNA Dynamics",
         "link": "https://arxiv.org/abs/2610.03712v1"
+      }
+    },
+    {
+      "id": "2026-10-09",
+      "date": "2026-10-09",
+      "publishAt": "2026-10-09T00:00:00.000Z",
+      "fact": {
+        "text": "There are 41,806 different spoken languages in the world today.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Mu-DisCoCat: A Variational Pipeline for Compositional Generalization on Quantum Processors",
+        "source": "pool",
+        "title": "Mu-DisCoCat: A Variational Pipeline for Compositional Generalization on Quantum Processors",
+        "link": "https://arxiv.org/abs/2610.08131v1"
       }
     }
   ]

@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-08T00:15:40.226Z",
+  "updated": "2026-10-09T00:28:26.626Z",
   "trends": [
-    {
-      "text": "Semifactual Credit-Augmented Policy Optimization",
-      "link": "https://arxiv.org/abs/2609.40360v1"
-    },
-    {
-      "text": "Removing Timing Shortcuts Improves Non-Invasive Brain-to-Text",
-      "link": "https://arxiv.org/abs/2609.40359v1"
-    },
-    {
-      "text": "Image Classifiers are Efficient Self-Supervised Video Representation Learners",
-      "link": "https://arxiv.org/abs/2609.40347v1"
-    },
     {
       "text": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
       "link": "https://arxiv.org/abs/2610.02206v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.03713v1"
     },
     {
-      "text": "RNADyn: A Benchmark for Generating and Understanding RNA Dynamics",
-      "link": "https://arxiv.org/abs/2610.03712v1"
-    },
-    {
       "text": "EyeRobot 2.0: Active Gaze for Precise Manipulation without Wrist Cameras",
       "link": "https://arxiv.org/abs/2610.03710v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "DepthWorld: 3D World Model for Robot Manipulation",
       "link": "https://arxiv.org/abs/2610.08780v1"
+    },
+    {
+      "text": "Decoupling Exploration from Optimization in RLVR",
+      "link": "https://arxiv.org/abs/2610.10536v1"
+    },
+    {
+      "text": "Long-WAM: Scaling the Context of World-Action Models",
+      "link": "https://arxiv.org/abs/2610.10528v1"
+    },
+    {
+      "text": "Decentralized SGD under Heavy-Tailed Noise: Optimal Convergence Rates and the Role of Gradient Clipping",
+      "link": "https://arxiv.org/abs/2610.10527v1"
+    },
+    {
+      "text": "Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models",
+      "link": "https://arxiv.org/abs/2610.10526v1"
     }
   ]
 }
