@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-09T00:28:26.626Z",
+  "updated": "2026-10-10T00:05:32.811Z",
   "trends": [
-    {
-      "text": "KaliBench: A Fine-Grained Benchmark for Cybersecurity Tool Use on Kali Linux with Runtime-Free Verifiable Rewards",
-      "link": "https://arxiv.org/abs/2610.02206v1"
-    },
-    {
-      "text": "Reconstruct, Practice, Go Real: Guided Self-Improvement for Embodied Agents",
-      "link": "https://arxiv.org/abs/2610.02204v1"
-    },
-    {
-      "text": "ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research",
-      "link": "https://arxiv.org/abs/2610.02202v1"
-    },
     {
       "text": "SILSA: Sliding-Window Slice Latents for Topology-Preserving High-Resolution 3D Generation",
       "link": "https://arxiv.org/abs/2610.02201v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.08132v1"
     },
     {
-      "text": "Mu-DisCoCat: A Variational Pipeline for Compositional Generalization on Quantum Processors",
-      "link": "https://arxiv.org/abs/2610.08131v1"
-    },
-    {
       "text": "Do LLMs Act on What They Know? From Partner Representations to Cooperative Actions",
       "link": "https://arxiv.org/abs/2610.08129v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models",
       "link": "https://arxiv.org/abs/2610.10526v1"
+    },
+    {
+      "text": "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
+      "link": "https://arxiv.org/abs/2610.12466v1"
+    },
+    {
+      "text": "A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control",
+      "link": "https://arxiv.org/abs/2610.12465v1"
+    },
+    {
+      "text": "From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents",
+      "link": "https://arxiv.org/abs/2610.12463v1"
+    },
+    {
+      "text": "BrickBench: Evaluating Agentic Brick Design",
+      "link": "https://arxiv.org/abs/2610.12452v1"
     }
   ]
 }

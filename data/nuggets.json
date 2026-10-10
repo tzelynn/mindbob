@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-09T00:28:26.626Z",
+  "updated": "2026-10-10T00:05:32.811Z",
   "entries": [
-    {
-      "id": "2026-09-25",
-      "date": "2026-09-25",
-      "publishAt": "2026-09-25T00:00:00.000Z",
-      "fact": {
-        "text": "In the 1980`s American migraines increased by 60%.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "SWE-Serve: Benchmarking Agentic Engineering For Production Inference Serving",
-        "source": "pool",
-        "title": "SWE-Serve: Benchmarking Agentic Engineering For Production Inference Serving",
-        "link": "https://arxiv.org/abs/2609.26777v1"
-      }
-    },
     {
       "id": "2026-09-26",
       "date": "2026-09-26",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Mu-DisCoCat: A Variational Pipeline for Compositional Generalization on Quantum Processors",
         "link": "https://arxiv.org/abs/2610.08131v1"
+      }
+    },
+    {
+      "id": "2026-10-10",
+      "date": "2026-10-10",
+      "publishAt": "2026-10-10T00:00:00.000Z",
+      "fact": {
+        "text": "The sound of E.T. walking was made by someone squishing her hands in jelly.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "IdeaAnchor: Teaching LLMs to Turn Literature into Research Ideas",
+        "source": "pool",
+        "title": "IdeaAnchor: Teaching LLMs to Turn Literature into Research Ideas",
+        "link": "https://arxiv.org/abs/2610.08781v1"
       }
     }
   ]
