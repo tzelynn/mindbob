@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-10T00:05:32.811Z",
+  "updated": "2026-10-11T00:30:23.291Z",
   "entries": [
-    {
-      "id": "2026-09-26",
-      "date": "2026-09-26",
-      "publishAt": "2026-09-26T00:00:00.000Z",
-      "fact": {
-        "text": "About 200,000,000 M&Ms are sold each day in the United States.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Where Should I Join? Robot Group Joining via Language-Guided Goal Prediction",
-        "source": "pool",
-        "title": "Where Should I Join? Robot Group Joining via Language-Guided Goal Prediction",
-        "link": "https://arxiv.org/abs/2609.28467v1"
-      }
-    },
     {
       "id": "2026-09-27",
       "date": "2026-09-27",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "IdeaAnchor: Teaching LLMs to Turn Literature into Research Ideas",
         "link": "https://arxiv.org/abs/2610.08781v1"
+      }
+    },
+    {
+      "id": "2026-10-11",
+      "date": "2026-10-11",
+      "publishAt": "2026-10-11T00:00:00.000Z",
+      "fact": {
+        "text": "In 10 minutes, a hurricane releases more energy than all of the world's nuclear weapons combined.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Decentralized SGD under Heavy-Tailed Noise: Optimal Convergence Rates and the Role of Gradient Clipping",
+        "source": "pool",
+        "title": "Decentralized SGD under Heavy-Tailed Noise: Optimal Convergence Rates and the Role of Gradient Clipping",
+        "link": "https://arxiv.org/abs/2610.10527v1"
       }
     }
   ]

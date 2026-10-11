@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-10T00:05:32.811Z",
+  "updated": "2026-10-11T00:30:23.291Z",
   "trends": [
-    {
-      "text": "SILSA: Sliding-Window Slice Latents for Topology-Preserving High-Resolution 3D Generation",
-      "link": "https://arxiv.org/abs/2610.02201v1"
-    },
-    {
-      "text": "VISTA: A Visual Harness for Reasoning in an Interactive World",
-      "link": "https://arxiv.org/abs/2610.02200v1"
-    },
-    {
-      "text": "FERPO: Forward Entropy-Regularized Policy Optimization",
-      "link": "https://arxiv.org/abs/2610.02198v1"
-    },
     {
       "text": "Cost-augmented Schrödinger bridges on graphs are exactly solvable: a Feynman-Kac tilt replaces learned control",
       "link": "https://arxiv.org/abs/2610.02195v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.08782v1"
     },
     {
-      "text": "IdeaAnchor: Teaching LLMs to Turn Literature into Research Ideas",
-      "link": "https://arxiv.org/abs/2610.08781v1"
-    },
-    {
       "text": "DepthWorld: 3D World Model for Robot Manipulation",
       "link": "https://arxiv.org/abs/2610.08780v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "BrickBench: Evaluating Agentic Brick Design",
       "link": "https://arxiv.org/abs/2610.12452v1"
+    },
+    {
+      "text": "One Block, Multiple Depths: Recurrent Vision Transformers with Depth-Programmed Experts",
+      "link": "https://arxiv.org/abs/2610.12448v1"
+    },
+    {
+      "text": "Bi-FORK: Generative Modeling of High-Dimensional Bifurcating Systems",
+      "link": "https://arxiv.org/abs/2610.12449v1"
+    },
+    {
+      "text": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
+      "link": "https://arxiv.org/abs/2610.12445v1"
+    },
+    {
+      "text": "Rounding in Preconditioner Space: Redesigning 4-bit AdamW Optimizer-State Quantization",
+      "link": "https://arxiv.org/abs/2610.12444v1"
     }
   ]
 }
