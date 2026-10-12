@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-11T00:30:23.291Z",
+  "updated": "2026-10-12T00:44:16.145Z",
   "trends": [
-    {
-      "text": "Cost-augmented Schrödinger bridges on graphs are exactly solvable: a Feynman-Kac tilt replaces learned control",
-      "link": "https://arxiv.org/abs/2610.02195v1"
-    },
-    {
-      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
-      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
-    },
-    {
-      "text": "An AI agent published a hit piece on me",
-      "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
-    },
     {
       "text": "4DCodeBench: Benchmarking Agents on Inverse Graphics of Dynamic Scenes",
       "link": "https://arxiv.org/abs/2610.03715v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.10528v1"
     },
     {
-      "text": "Decentralized SGD under Heavy-Tailed Noise: Optimal Convergence Rates and the Role of Gradient Clipping",
-      "link": "https://arxiv.org/abs/2610.10527v1"
-    },
-    {
       "text": "Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models",
       "link": "https://arxiv.org/abs/2610.10526v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Rounding in Preconditioner Space: Redesigning 4-bit AdamW Optimizer-State Quantization",
       "link": "https://arxiv.org/abs/2610.12444v1"
+    },
+    {
+      "text": "Density Ratio Estimation with Stein Displacement Fields",
+      "link": "https://arxiv.org/abs/2610.12437v1"
+    },
+    {
+      "text": "Open source AI is the path forward",
+      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
+    },
+    {
+      "text": "I believe there are entire companies right now under AI psychosis",
+      "link": "https://twitter.com/mitchellh/status/2055380239711457578"
+    },
+    {
+      "text": "IDF killed Gaza aid workers at point blank range in 2025 massacre: Report",
+      "link": "https://www.dropsitenews.com/p/israeli-soldiers-tel-sultan-gaza-red-crescent-civil-defense-massacre-report-forensic-architecture-earshot"
     }
   ]
 }

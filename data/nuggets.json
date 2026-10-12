@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-11T00:30:23.291Z",
+  "updated": "2026-10-12T00:44:16.145Z",
   "entries": [
-    {
-      "id": "2026-09-27",
-      "date": "2026-09-27",
-      "publishAt": "2026-09-27T00:00:00.000Z",
-      "fact": {
-        "text": "Almonds are a member of the peach family.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Order-Invariant Answers, Order-Sensitive Representations in Mathematical Reasoning",
-        "source": "pool",
-        "title": "Order-Invariant Answers, Order-Sensitive Representations in Mathematical Reasoning",
-        "link": "https://arxiv.org/abs/2609.28442v1"
-      }
-    },
     {
       "id": "2026-09-29",
       "date": "2026-09-29",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Decentralized SGD under Heavy-Tailed Noise: Optimal Convergence Rates and the Role of Gradient Clipping",
         "link": "https://arxiv.org/abs/2610.10527v1"
+      }
+    },
+    {
+      "id": "2026-10-12",
+      "date": "2026-10-12",
+      "publishAt": "2026-10-12T00:00:00.000Z",
+      "fact": {
+        "text": "The Hawaiian alphabet has only 12 letters.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents",
+        "source": "pool",
+        "title": "From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents",
+        "link": "https://arxiv.org/abs/2610.12463v1"
       }
     }
   ]
