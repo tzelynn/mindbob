@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-12T00:44:16.145Z",
+  "updated": "2026-10-13T02:06:41.388Z",
   "entries": [
-    {
-      "id": "2026-09-29",
-      "date": "2026-09-29",
-      "publishAt": "2026-09-29T00:00:00.000Z",
-      "fact": {
-        "text": "The buzz from an electric razor in America plays in the key of B flat; Key of G in England.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Agentic Detection of Online Conspiracies",
-        "source": "pool",
-        "title": "Agentic Detection of Online Conspiracies",
-        "link": "https://arxiv.org/abs/2609.30250v1"
-      }
-    },
     {
       "id": "2026-09-30",
       "date": "2026-09-30",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents",
         "link": "https://arxiv.org/abs/2610.12463v1"
+      }
+    },
+    {
+      "id": "2026-10-13",
+      "date": "2026-10-13",
+      "publishAt": "2026-10-13T00:00:00.000Z",
+      "fact": {
+        "text": "Only one person in two billion will live to be 116 or older.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
+        "source": "pool",
+        "title": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
+        "link": "https://arxiv.org/abs/2610.12445v1"
       }
     }
   ]
