@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-13T02:06:41.388Z",
+  "updated": "2026-10-14T00:37:32.615Z",
   "trends": [
-    {
-      "text": "Test-Time Agent Evolution for Long-Horizon Legal Reasoning",
-      "link": "https://arxiv.org/abs/2610.08138v1"
-    },
-    {
-      "text": "Beyond Marginal Monitoring: Distributed Joint-Distribution Testing for Data Concept Drift in Large Scale E-Commerce Operations",
-      "link": "https://arxiv.org/abs/2610.08132v1"
-    },
-    {
-      "text": "Do LLMs Act on What They Know? From Partner Representations to Cooperative Actions",
-      "link": "https://arxiv.org/abs/2610.08129v1"
-    },
     {
       "text": "Conformal Prediction Sets Quantify Information Gain: A Theoretical Perspective",
       "link": "https://arxiv.org/abs/2610.08785v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.12449v1"
     },
     {
-      "text": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
-      "link": "https://arxiv.org/abs/2610.12445v1"
-    },
-    {
       "text": "Rounding in Preconditioner Space: Redesigning 4-bit AdamW Optimizer-State Quantization",
       "link": "https://arxiv.org/abs/2610.12444v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "KL Before and After Mixing: A Round-Complexity Separation in Parallel Sampling",
       "link": "https://arxiv.org/abs/2610.13924v1"
+    },
+    {
+      "text": "Goal-Oriented Bundle Management and Flow Control for Deep-Space Communications via Reinforcement Learning",
+      "link": "https://arxiv.org/abs/2610.13923v1"
+    },
+    {
+      "text": "DyssomniaNN: Multi-Scale Spiking Neural Modeling of Human Sleep Disorders and Perceived Restedness",
+      "link": "https://arxiv.org/abs/2610.13918v1"
+    },
+    {
+      "text": "Designing Protein Structures from Natural Language",
+      "link": "https://arxiv.org/abs/2610.13917v1"
+    },
+    {
+      "text": "Revisiting Tabular Deep Regression: Objectives and the Limits of Global Early Stopping",
+      "link": "https://arxiv.org/abs/2610.13909v1"
     }
   ]
 }

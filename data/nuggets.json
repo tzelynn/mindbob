@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-13T02:06:41.388Z",
+  "updated": "2026-10-14T00:37:32.615Z",
   "entries": [
-    {
-      "id": "2026-09-30",
-      "date": "2026-09-30",
-      "publishAt": "2026-09-30T00:00:00.000Z",
-      "fact": {
-        "text": "A raisin dropped in a glass of fresh champagne will bounce up and down continually from the bottom of the glass to the top.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech",
-        "source": "pool",
-        "title": "To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech",
-        "link": "https://arxiv.org/abs/2609.30227v1"
-      }
-    },
     {
       "id": "2026-10-01",
       "date": "2026-10-01",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
         "link": "https://arxiv.org/abs/2610.12445v1"
+      }
+    },
+    {
+      "id": "2026-10-14",
+      "date": "2026-10-14",
+      "publishAt": "2026-10-14T00:00:00.000Z",
+      "fact": {
+        "text": "Slugs have four noses.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "I believe there are entire companies right now under AI psychosis",
+        "source": "pool",
+        "title": "I believe there are entire companies right now under AI psychosis",
+        "link": "https://twitter.com/mitchellh/status/2055380239711457578"
       }
     }
   ]
