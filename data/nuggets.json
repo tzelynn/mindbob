@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-14T00:37:32.615Z",
+  "updated": "2026-10-15T00:07:55.511Z",
   "entries": [
-    {
-      "id": "2026-10-01",
-      "date": "2026-10-01",
-      "publishAt": "2026-10-01T00:00:00.000Z",
-      "fact": {
-        "text": "Most collect calls are made on father`s day.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Statistical attribute alignment for black-box generative AI via output post-processing",
-        "source": "pool",
-        "title": "Statistical attribute alignment for black-box generative AI via output post-processing",
-        "link": "https://arxiv.org/abs/2609.31607v1"
-      }
-    },
     {
       "id": "2026-10-02",
       "date": "2026-10-02",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "I believe there are entire companies right now under AI psychosis",
         "link": "https://twitter.com/mitchellh/status/2055380239711457578"
+      }
+    },
+    {
+      "id": "2026-10-15",
+      "date": "2026-10-15",
+      "publishAt": "2026-10-15T00:00:00.000Z",
+      "fact": {
+        "text": "Average number of days a West German goes without washing his underwear: 7",
+        "source": "api"
+      },
+      "trend": {
+        "text": "AI Models Can Provably Hide Arbitrary Capabilities",
+        "source": "pool",
+        "title": "AI Models Can Provably Hide Arbitrary Capabilities",
+        "link": "https://arxiv.org/abs/2610.13928v1"
       }
     }
   ]
