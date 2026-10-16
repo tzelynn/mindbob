@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-15T00:07:55.511Z",
+  "updated": "2026-10-16T22:54:02.703Z",
   "entries": [
-    {
-      "id": "2026-10-02",
-      "date": "2026-10-02",
-      "publishAt": "2026-10-02T00:00:00.000Z",
-      "fact": {
-        "text": "In 1386, a pig in France was executed by public hanging for the murder of a child",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Learning Native Reflection in Unified Models with Interleaved Reinforcement Learning",
-        "source": "pool",
-        "title": "Learning Native Reflection in Unified Models with Interleaved Reinforcement Learning",
-        "link": "https://arxiv.org/abs/2609.35767v1"
-      }
-    },
     {
       "id": "2026-10-03",
       "date": "2026-10-03",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "AI Models Can Provably Hide Arbitrary Capabilities",
         "link": "https://arxiv.org/abs/2610.13928v1"
+      }
+    },
+    {
+      "id": "2026-10-16",
+      "date": "2026-10-16",
+      "publishAt": "2026-10-16T00:00:00.000Z",
+      "fact": {
+        "text": "The skeleton of Jeremy Bentham is present at all important meetings of the University of London",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Designing Protein Structures from Natural Language",
+        "source": "pool",
+        "title": "Designing Protein Structures from Natural Language",
+        "link": "https://arxiv.org/abs/2610.13917v1"
       }
     }
   ]

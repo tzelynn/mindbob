@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-15T00:07:55.511Z",
+  "updated": "2026-10-16T22:54:02.703Z",
   "trends": [
-    {
-      "text": "Decoupling Exploration from Optimization in RLVR",
-      "link": "https://arxiv.org/abs/2610.10536v1"
-    },
-    {
-      "text": "Long-WAM: Scaling the Context of World-Action Models",
-      "link": "https://arxiv.org/abs/2610.10528v1"
-    },
-    {
-      "text": "Rephrase Before You Act: Characterizing and Mitigating Language Sensitivity in Vision-Language-Action Models",
-      "link": "https://arxiv.org/abs/2610.10526v1"
-    },
     {
       "text": "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
       "link": "https://arxiv.org/abs/2610.12466v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.13931v1"
     },
     {
-      "text": "AI Models Can Provably Hide Arbitrary Capabilities",
-      "link": "https://arxiv.org/abs/2610.13928v1"
-    },
-    {
       "text": "KL Before and After Mixing: A Round-Complexity Separation in Parallel Sampling",
       "link": "https://arxiv.org/abs/2610.13924v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Data Free Training of Diffusion Models for Lattice Field Theories",
       "link": "https://arxiv.org/abs/2610.18863v1"
+    },
+    {
+      "text": "Discovering state-of-the-art quantum circuits with large language models",
+      "link": "https://arxiv.org/abs/2610.22367v1"
+    },
+    {
+      "text": "T2-z: Test-Time Optimization of Environment Latents for Robotic World Models",
+      "link": "https://arxiv.org/abs/2610.22364v1"
+    },
+    {
+      "text": "CoDA: Co-Evolution of Data Engines and Action Policies",
+      "link": "https://arxiv.org/abs/2610.22362v1"
+    },
+    {
+      "text": "PathFM: Fast Generative Forecasting of Multivariate Trajectories",
+      "link": "https://arxiv.org/abs/2610.22358v1"
     }
   ]
 }
