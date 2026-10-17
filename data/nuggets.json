@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-16T22:54:02.703Z",
+  "updated": "2026-10-17T22:26:24.185Z",
   "entries": [
-    {
-      "id": "2026-10-03",
-      "date": "2026-10-03",
-      "publishAt": "2026-10-03T00:00:00.000Z",
-      "fact": {
-        "text": "A spider has transparent blood.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "LeapQuant: Efficient Linear Attention with Accurate Recurrent State Quantization",
-        "source": "pool",
-        "title": "LeapQuant: Efficient Linear Attention with Accurate Recurrent State Quantization",
-        "link": "https://arxiv.org/abs/2609.38166v1"
-      }
-    },
     {
       "id": "2026-10-04",
       "date": "2026-10-04",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Designing Protein Structures from Natural Language",
         "link": "https://arxiv.org/abs/2610.13917v1"
+      }
+    },
+    {
+      "id": "2026-10-17",
+      "date": "2026-10-17",
+      "publishAt": "2026-10-17T00:00:00.000Z",
+      "fact": {
+        "text": "There were always 56 curls in Shirley Temple`s hair.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards",
+        "source": "pool",
+        "title": "Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards",
+        "link": "https://arxiv.org/abs/2610.18868v1"
       }
     }
   ]

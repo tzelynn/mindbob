@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-16T22:54:02.703Z",
+  "updated": "2026-10-17T22:26:24.185Z",
   "trends": [
-    {
-      "text": "On the estimation and validity of AI time horizons---a statistical look at the METR plot",
-      "link": "https://arxiv.org/abs/2610.12466v1"
-    },
-    {
-      "text": "A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control",
-      "link": "https://arxiv.org/abs/2610.12465v1"
-    },
-    {
-      "text": "BrickBench: Evaluating Agentic Brick Design",
-      "link": "https://arxiv.org/abs/2610.12452v1"
-    },
     {
       "text": "One Block, Multiple Depths: Recurrent Vision Transformers with Depth-Programmed Experts",
       "link": "https://arxiv.org/abs/2610.12448v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.13918v1"
     },
     {
-      "text": "Designing Protein Structures from Natural Language",
-      "link": "https://arxiv.org/abs/2610.13917v1"
-    },
-    {
       "text": "Revisiting Tabular Deep Regression: Objectives and the Limits of Global Early Stopping",
       "link": "https://arxiv.org/abs/2610.13909v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "PathFM: Fast Generative Forecasting of Multivariate Trajectories",
       "link": "https://arxiv.org/abs/2610.22358v1"
+    },
+    {
+      "text": "Rethinking Routing Exploration in Modern Mixture-of-Experts",
+      "link": "https://arxiv.org/abs/2610.22353v1"
+    },
+    {
+      "text": "FDE-Gym: The Last Mile of AI Delivery",
+      "link": "https://arxiv.org/abs/2610.22350v1"
+    },
+    {
+      "text": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
+      "link": "https://arxiv.org/abs/2610.22344v1"
+    },
+    {
+      "text": "GeoState: Learning View-Decoupled Geometry States for 3D World Modeling",
+      "link": "https://arxiv.org/abs/2610.22343v1"
     }
   ]
 }

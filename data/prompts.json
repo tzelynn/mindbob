@@ -1,13 +1,6 @@
 {
-  "updated": "2026-10-16T22:54:01.800Z",
+  "updated": "2026-10-17T22:26:23.472Z",
   "entries": [
-    {
-      "id": "2026-10-03",
-      "date": "2026-10-03",
-      "publishAt": "2026-10-03T00:00:00.000Z",
-      "word": "cup",
-      "source": "fallback"
-    },
     {
       "id": "2026-10-04",
       "date": "2026-10-04",
@@ -97,6 +90,13 @@
       "date": "2026-10-16",
       "publishAt": "2026-10-16T00:00:00.000Z",
       "word": "snail",
+      "source": "fallback"
+    },
+    {
+      "id": "2026-10-17",
+      "date": "2026-10-17",
+      "publishAt": "2026-10-17T00:00:00.000Z",
+      "word": "butterfly",
       "source": "fallback"
     }
   ]
