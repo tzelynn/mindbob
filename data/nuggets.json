@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-17T22:26:24.185Z",
+  "updated": "2026-10-18T22:28:29.578Z",
   "entries": [
-    {
-      "id": "2026-10-04",
-      "date": "2026-10-04",
-      "publishAt": "2026-10-04T00:00:00.000Z",
-      "fact": {
-        "text": "The Falkland Isles (pop. about 2000) has over 700000 sheep (350 per person).",
-        "source": "api"
-      },
-      "trend": {
-        "text": "ViTeX-Bench: Benchmarking High-Fidelity Video Scene Text Editing",
-        "source": "pool",
-        "title": "ViTeX-Bench: Benchmarking High-Fidelity Video Scene Text Editing",
-        "link": "https://arxiv.org/abs/2609.40356v1"
-      }
-    },
     {
       "id": "2026-10-05",
       "date": "2026-10-05",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards",
         "link": "https://arxiv.org/abs/2610.18868v1"
+      }
+    },
+    {
+      "id": "2026-10-18",
+      "date": "2026-10-18",
+      "publishAt": "2026-10-18T00:00:00.000Z",
+      "fact": {
+        "text": "The top 3 health-related searches on the Internet are (in this order): Depression, Allergies, & Cancer.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "CoDA: Co-Evolution of Data Engines and Action Policies",
+        "source": "pool",
+        "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
+        "link": "https://arxiv.org/abs/2610.22362v1"
       }
     }
   ]

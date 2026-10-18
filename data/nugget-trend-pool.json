@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-17T22:26:24.185Z",
+  "updated": "2026-10-18T22:28:29.578Z",
   "trends": [
-    {
-      "text": "One Block, Multiple Depths: Recurrent Vision Transformers with Depth-Programmed Experts",
-      "link": "https://arxiv.org/abs/2610.12448v1"
-    },
-    {
-      "text": "Bi-FORK: Generative Modeling of High-Dimensional Bifurcating Systems",
-      "link": "https://arxiv.org/abs/2610.12449v1"
-    },
-    {
-      "text": "Rounding in Preconditioner Space: Redesigning 4-bit AdamW Optimizer-State Quantization",
-      "link": "https://arxiv.org/abs/2610.12444v1"
-    },
     {
       "text": "Density Ratio Estimation with Stein Displacement Fields",
       "link": "https://arxiv.org/abs/2610.12437v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.18869v1"
     },
     {
-      "text": "Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards",
-      "link": "https://arxiv.org/abs/2610.18868v1"
-    },
-    {
       "text": "Data Free Training of Diffusion Models for Lattice Field Theories",
       "link": "https://arxiv.org/abs/2610.18863v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "GeoState: Learning View-Decoupled Geometry States for 3D World Modeling",
       "link": "https://arxiv.org/abs/2610.22343v1"
+    },
+    {
+      "text": "3DCodeVerse: Exploring 3D Worlds as Code",
+      "link": "https://arxiv.org/abs/2610.22341v1"
+    },
+    {
+      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
+    },
+    {
+      "text": "An AI agent published a hit piece on me",
+      "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
+    },
+    {
+      "text": "I'm Tired of Talking to AI",
+      "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
     }
   ]
 }
