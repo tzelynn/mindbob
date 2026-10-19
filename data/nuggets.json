@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-18T22:28:29.578Z",
+  "updated": "2026-10-19T23:47:49.688Z",
   "entries": [
-    {
-      "id": "2026-10-05",
-      "date": "2026-10-05",
-      "publishAt": "2026-10-05T00:00:00.000Z",
-      "fact": {
-        "text": "All of the clocks in the movie \"Pulp Fiction\" are stuck on 4:20.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Embedding Prediction Helps Image Generation",
-        "source": "pool",
-        "title": "Embedding Prediction Helps Image Generation",
-        "link": "https://arxiv.org/abs/2610.02203v1"
-      }
-    },
     {
       "id": "2026-10-06",
       "date": "2026-10-06",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
         "link": "https://arxiv.org/abs/2610.22362v1"
+      }
+    },
+    {
+      "id": "2026-10-19",
+      "date": "2026-10-19",
+      "publishAt": "2026-10-19T00:00:00.000Z",
+      "fact": {
+        "text": "In a lifetime the average human produces enough quarts of spit to fill 2 swimming pools.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
+        "source": "pool",
+        "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
+        "link": "https://arxiv.org/abs/2610.22344v1"
       }
     }
   ]

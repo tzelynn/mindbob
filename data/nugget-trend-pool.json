@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-18T22:28:29.578Z",
+  "updated": "2026-10-19T23:47:49.688Z",
   "trends": [
-    {
-      "text": "Density Ratio Estimation with Stein Displacement Fields",
-      "link": "https://arxiv.org/abs/2610.12437v1"
-    },
-    {
-      "text": "Open source AI is the path forward",
-      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
-    },
-    {
-      "text": "IDF killed Gaza aid workers at point blank range in 2025 massacre: Report",
-      "link": "https://www.dropsitenews.com/p/israeli-soldiers-tel-sultan-gaza-red-crescent-civil-defense-massacre-report-forensic-architecture-earshot"
-    },
     {
       "text": "Hide and Seek: HIDE Concepts to SEEK explanations for black box models",
       "link": "https://arxiv.org/abs/2610.13935v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.22364v1"
     },
     {
-      "text": "CoDA: Co-Evolution of Data Engines and Action Policies",
-      "link": "https://arxiv.org/abs/2610.22362v1"
-    },
-    {
       "text": "PathFM: Fast Generative Forecasting of Multivariate Trajectories",
       "link": "https://arxiv.org/abs/2610.22358v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "I'm Tired of Talking to AI",
       "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
+    },
+    {
+      "text": "Behavioral Couplings: From Formation to Behavioral Emergence in Language Models",
+      "link": "https://arxiv.org/abs/2610.23847v1"
+    },
+    {
+      "text": "AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery",
+      "link": "https://arxiv.org/abs/2610.23845v1"
+    },
+    {
+      "text": "Task-aligned spectral inductive biases in parameterized quantum circuits",
+      "link": "https://arxiv.org/abs/2610.23834v1"
+    },
+    {
+      "text": "Beyond the Answer: Student-Conditioned Trace Construction for Reasoning Distillation",
+      "link": "https://arxiv.org/abs/2610.23831v1"
     }
   ]
 }
