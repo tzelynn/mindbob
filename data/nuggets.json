@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-19T23:47:49.688Z",
+  "updated": "2026-10-20T00:40:53.487Z",
   "entries": [
-    {
-      "id": "2026-10-06",
-      "date": "2026-10-06",
-      "publishAt": "2026-10-06T00:00:00.000Z",
-      "fact": {
-        "text": "The average person spends 12 weeks a year `looking for things`.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning",
-        "source": "pool",
-        "title": "TACO: Ternary Absolute-max Column-wise One-sparse Optimizer for LLM Fine-Tuning",
-        "link": "https://arxiv.org/abs/2610.02199v1"
-      }
-    },
     {
       "id": "2026-10-07",
       "date": "2026-10-07",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
         "link": "https://arxiv.org/abs/2610.22344v1"
+      }
+    },
+    {
+      "id": "2026-10-20",
+      "date": "2026-10-20",
+      "publishAt": "2026-10-20T00:00:00.000Z",
+      "fact": {
+        "text": "Only one in two billion people will live to be 116 or older.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "An AI agent published a hit piece on me",
+        "source": "pool",
+        "title": "An AI agent published a hit piece on me",
+        "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
       }
     }
   ]

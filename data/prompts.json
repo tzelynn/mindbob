@@ -1,13 +1,6 @@
 {
-  "updated": "2026-10-19T23:47:48.237Z",
+  "updated": "2026-10-20T00:40:52.365Z",
   "entries": [
-    {
-      "id": "2026-10-06",
-      "date": "2026-10-06",
-      "publishAt": "2026-10-06T00:00:00.000Z",
-      "word": "spoon",
-      "source": "fallback"
-    },
     {
       "id": "2026-10-07",
       "date": "2026-10-07",
@@ -97,6 +90,13 @@
       "date": "2026-10-19",
       "publishAt": "2026-10-19T00:00:00.000Z",
       "word": "mug",
+      "source": "fallback"
+    },
+    {
+      "id": "2026-10-20",
+      "date": "2026-10-20",
+      "publishAt": "2026-10-20T00:00:00.000Z",
+      "word": "teapot",
       "source": "fallback"
     }
   ]

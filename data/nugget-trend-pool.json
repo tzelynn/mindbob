@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-19T23:47:49.688Z",
+  "updated": "2026-10-20T00:40:53.487Z",
   "trends": [
-    {
-      "text": "Hide and Seek: HIDE Concepts to SEEK explanations for black box models",
-      "link": "https://arxiv.org/abs/2610.13935v1"
-    },
-    {
-      "text": "Constructive Bounds for the Topological Expressivity of Neural Networks",
-      "link": "https://arxiv.org/abs/2610.13931v1"
-    },
-    {
-      "text": "KL Before and After Mixing: A Round-Complexity Separation in Parallel Sampling",
-      "link": "https://arxiv.org/abs/2610.13924v1"
-    },
     {
       "text": "Goal-Oriented Bundle Management and Flow Control for Deep-Space Communications via Reinforcement Learning",
       "link": "https://arxiv.org/abs/2610.13923v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.22350v1"
     },
     {
-      "text": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
-      "link": "https://arxiv.org/abs/2610.22344v1"
-    },
-    {
       "text": "GeoState: Learning View-Decoupled Geometry States for 3D World Modeling",
       "link": "https://arxiv.org/abs/2610.22343v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Beyond the Answer: Student-Conditioned Trace Construction for Reasoning Distillation",
       "link": "https://arxiv.org/abs/2610.23831v1"
+    },
+    {
+      "text": "Waiting Buys Exactly Two Moments: Endogenous Identification in Prediction-Driven Allocation",
+      "link": "https://arxiv.org/abs/2610.23830v1"
+    },
+    {
+      "text": "Quality-of-Transmission Estimation in Quantum Networks: Compute, Simulate, or Learn?",
+      "link": "https://arxiv.org/abs/2610.23827v1"
+    },
+    {
+      "text": "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference",
+      "link": "https://arxiv.org/abs/2610.23825v1"
+    },
+    {
+      "text": "Learning without relearning physical symmetry: an SO(3)-equivariant convolutional network (CNN) on the sphere",
+      "link": "https://arxiv.org/abs/2610.23821v1"
     }
   ]
 }
