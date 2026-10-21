@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-20T00:40:53.487Z",
+  "updated": "2026-10-21T00:09:14.209Z",
   "entries": [
-    {
-      "id": "2026-10-07",
-      "date": "2026-10-07",
-      "publishAt": "2026-10-07T00:00:00.000Z",
-      "fact": {
-        "text": "The catfish has over 27000 taste buds (more than any other animal)",
-        "source": "api"
-      },
-      "trend": {
-        "text": "My AI skeptic friends are all nuts",
-        "source": "pool",
-        "title": "My AI skeptic friends are all nuts",
-        "link": "https://fly.io/blog/youre-all-nuts/"
-      }
-    },
     {
       "id": "2026-10-08",
       "date": "2026-10-08",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "An AI agent published a hit piece on me",
         "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
+      }
+    },
+    {
+      "id": "2026-10-21",
+      "date": "2026-10-21",
+      "publishAt": "2026-10-21T00:00:00.000Z",
+      "fact": {
+        "text": "Firehouses have circular stairways originating from the old days when the engines were pulled by horses. The horses were stabled on the ground floor and figured out how to walk up straight staircases.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Task-aligned spectral inductive biases in parameterized quantum circuits",
+        "source": "pool",
+        "title": "Task-aligned spectral inductive biases in parameterized quantum circuits",
+        "link": "https://arxiv.org/abs/2610.23834v1"
       }
     }
   ]

@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-20T00:40:53.487Z",
+  "updated": "2026-10-21T00:09:14.209Z",
   "trends": [
-    {
-      "text": "Goal-Oriented Bundle Management and Flow Control for Deep-Space Communications via Reinforcement Learning",
-      "link": "https://arxiv.org/abs/2610.13923v1"
-    },
-    {
-      "text": "DyssomniaNN: Multi-Scale Spiking Neural Modeling of Human Sleep Disorders and Perceived Restedness",
-      "link": "https://arxiv.org/abs/2610.13918v1"
-    },
-    {
-      "text": "Revisiting Tabular Deep Regression: Objectives and the Limits of Global Early Stopping",
-      "link": "https://arxiv.org/abs/2610.13909v1"
-    },
     {
       "text": "Cepheid: Decoupling Scale from Structure for Cross-Family Motion Completion",
       "link": "https://arxiv.org/abs/2610.18871v1"
@@ -58,10 +46,6 @@
       "link": "https://news.ycombinator.com/newsguidelines.html#generated"
     },
     {
-      "text": "An AI agent published a hit piece on me",
-      "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
-    },
-    {
       "text": "I'm Tired of Talking to AI",
       "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Learning without relearning physical symmetry: an SO(3)-equivariant convolutional network (CNN) on the sphere",
       "link": "https://arxiv.org/abs/2610.23821v1"
+    },
+    {
+      "text": "OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory",
+      "link": "https://arxiv.org/abs/2610.26860v1"
+    },
+    {
+      "text": "Reinforcement Learning with Visually Attributable On-Policy Self-Distillation",
+      "link": "https://arxiv.org/abs/2610.26856v1"
+    },
+    {
+      "text": "CoopUQ: Robust Multi-Robot Social Navigation via Uncertainty-Aware Cooperative Forecasting",
+      "link": "https://arxiv.org/abs/2610.26852v1"
+    },
+    {
+      "text": "Where is Physical RSI capability from? An Observational Scaling Law of LLM-as-policy",
+      "link": "https://arxiv.org/abs/2610.26848v1"
     }
   ]
 }
