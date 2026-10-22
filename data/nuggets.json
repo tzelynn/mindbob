@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-21T00:09:14.209Z",
+  "updated": "2026-10-22T00:15:01.545Z",
   "entries": [
-    {
-      "id": "2026-10-08",
-      "date": "2026-10-08",
-      "publishAt": "2026-10-08T00:00:00.000Z",
-      "fact": {
-        "text": "The value of Pi will be officially \"rounded down\" to 3.14 from 3.14159265359 on December 31, 1999.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "RNADyn: A Benchmark for Generating and Understanding RNA Dynamics",
-        "source": "pool",
-        "title": "RNADyn: A Benchmark for Generating and Understanding RNA Dynamics",
-        "link": "https://arxiv.org/abs/2610.03712v1"
-      }
-    },
     {
       "id": "2026-10-09",
       "date": "2026-10-09",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Task-aligned spectral inductive biases in parameterized quantum circuits",
         "link": "https://arxiv.org/abs/2610.23834v1"
+      }
+    },
+    {
+      "id": "2026-10-22",
+      "date": "2026-10-22",
+      "publishAt": "2026-10-22T00:00:00.000Z",
+      "fact": {
+        "text": "There are more ways to shuffle a single deck of cards than there are atoms on Earth.",
+        "source": "bank"
+      },
+      "trend": {
+        "text": "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference",
+        "source": "pool",
+        "title": "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference",
+        "link": "https://arxiv.org/abs/2610.23825v1"
       }
     }
   ]

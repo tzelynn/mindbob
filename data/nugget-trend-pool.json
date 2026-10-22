@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-21T00:09:14.209Z",
+  "updated": "2026-10-22T00:15:01.545Z",
   "trends": [
-    {
-      "text": "Cepheid: Decoupling Scale from Structure for Cross-Family Motion Completion",
-      "link": "https://arxiv.org/abs/2610.18871v1"
-    },
-    {
-      "text": "What Matters in Quality-Aware VLA Pretraining: A Benchmark and Empirical Study",
-      "link": "https://arxiv.org/abs/2610.18869v1"
-    },
-    {
-      "text": "Data Free Training of Diffusion Models for Lattice Field Theories",
-      "link": "https://arxiv.org/abs/2610.18863v1"
-    },
     {
       "text": "Discovering state-of-the-art quantum circuits with large language models",
       "link": "https://arxiv.org/abs/2610.22367v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.23845v1"
     },
     {
-      "text": "Task-aligned spectral inductive biases in parameterized quantum circuits",
-      "link": "https://arxiv.org/abs/2610.23834v1"
-    },
-    {
       "text": "Beyond the Answer: Student-Conditioned Trace Construction for Reasoning Distillation",
       "link": "https://arxiv.org/abs/2610.23831v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Where is Physical RSI capability from? An Observational Scaling Law of LLM-as-policy",
       "link": "https://arxiv.org/abs/2610.26848v1"
+    },
+    {
+      "text": "GBClaw: An agentic AI framework for atomistic grain boundary research and mechanistic discovery",
+      "link": "https://arxiv.org/abs/2610.28629v1"
+    },
+    {
+      "text": "Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking",
+      "link": "https://arxiv.org/abs/2610.28628v1"
+    },
+    {
+      "text": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
+      "link": "https://arxiv.org/abs/2610.28626v1"
+    },
+    {
+      "text": "Industrial ReMEmbR: Scaling Spatiotemporal Memory to Robot Fleets",
+      "link": "https://arxiv.org/abs/2610.28624v1"
     }
   ]
 }
