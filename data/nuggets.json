@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T00:15:01.545Z",
+  "updated": "2026-10-22T23:27:27.647Z",
   "entries": [
     {
       "id": "2026-10-09",
@@ -201,8 +201,8 @@
       "date": "2026-10-22",
       "publishAt": "2026-10-22T00:00:00.000Z",
       "fact": {
-        "text": "There are more ways to shuffle a single deck of cards than there are atoms on Earth.",
-        "source": "bank"
+        "text": "Over 1000 birds a year die from smashing into windows!",
+        "source": "api"
       },
       "trend": {
         "text": "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference",
