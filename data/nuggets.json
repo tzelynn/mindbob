@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-22T23:27:27.647Z",
+  "updated": "2026-10-23T00:10:43.849Z",
   "entries": [
-    {
-      "id": "2026-10-09",
-      "date": "2026-10-09",
-      "publishAt": "2026-10-09T00:00:00.000Z",
-      "fact": {
-        "text": "There are 41,806 different spoken languages in the world today.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Mu-DisCoCat: A Variational Pipeline for Compositional Generalization on Quantum Processors",
-        "source": "pool",
-        "title": "Mu-DisCoCat: A Variational Pipeline for Compositional Generalization on Quantum Processors",
-        "link": "https://arxiv.org/abs/2610.08131v1"
-      }
-    },
     {
       "id": "2026-10-10",
       "date": "2026-10-10",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference",
         "link": "https://arxiv.org/abs/2610.23825v1"
+      }
+    },
+    {
+      "id": "2026-10-23",
+      "date": "2026-10-23",
+      "publishAt": "2026-10-23T00:00:00.000Z",
+      "fact": {
+        "text": "Mike Nesmith`s (the guitarist of The Monkeys) mom invented White Out.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "CoopUQ: Robust Multi-Robot Social Navigation via Uncertainty-Aware Cooperative Forecasting",
+        "source": "pool",
+        "title": "CoopUQ: Robust Multi-Robot Social Navigation via Uncertainty-Aware Cooperative Forecasting",
+        "link": "https://arxiv.org/abs/2610.26852v1"
       }
     }
   ]

@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-22T00:15:01.545Z",
+  "updated": "2026-10-23T00:10:43.849Z",
   "trends": [
-    {
-      "text": "Discovering state-of-the-art quantum circuits with large language models",
-      "link": "https://arxiv.org/abs/2610.22367v1"
-    },
-    {
-      "text": "T2-z: Test-Time Optimization of Environment Latents for Robotic World Models",
-      "link": "https://arxiv.org/abs/2610.22364v1"
-    },
-    {
-      "text": "PathFM: Fast Generative Forecasting of Multivariate Trajectories",
-      "link": "https://arxiv.org/abs/2610.22358v1"
-    },
     {
       "text": "Rethinking Routing Exploration in Modern Mixture-of-Experts",
       "link": "https://arxiv.org/abs/2610.22353v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.23827v1"
     },
     {
-      "text": "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference",
-      "link": "https://arxiv.org/abs/2610.23825v1"
-    },
-    {
       "text": "Learning without relearning physical symmetry: an SO(3)-equivariant convolutional network (CNN) on the sphere",
       "link": "https://arxiv.org/abs/2610.23821v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Industrial ReMEmbR: Scaling Spatiotemporal Memory to Robot Fleets",
       "link": "https://arxiv.org/abs/2610.28624v1"
+    },
+    {
+      "text": "Think Harder Where It Matters: Item-Level Adaptive Recursion for Sequential Recommendation",
+      "link": "https://arxiv.org/abs/2610.30128v1"
+    },
+    {
+      "text": "PhysiCalWorld: In-Context Physics Calibration for World Models",
+      "link": "https://arxiv.org/abs/2610.30125v1"
+    },
+    {
+      "text": "A Quasipolynomial Algorithm for $\\ell_\\infty$ Contractions",
+      "link": "https://arxiv.org/abs/2610.30122v1"
+    },
+    {
+      "text": "Self-normalized Bernstein Inequalities for Regenerative Processes and Applications to Learning Without Independence",
+      "link": "https://arxiv.org/abs/2610.30119v1"
     }
   ]
 }
