@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-23T00:10:43.849Z",
+  "updated": "2026-10-24T00:02:58.557Z",
   "entries": [
-    {
-      "id": "2026-10-10",
-      "date": "2026-10-10",
-      "publishAt": "2026-10-10T00:00:00.000Z",
-      "fact": {
-        "text": "The sound of E.T. walking was made by someone squishing her hands in jelly.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "IdeaAnchor: Teaching LLMs to Turn Literature into Research Ideas",
-        "source": "pool",
-        "title": "IdeaAnchor: Teaching LLMs to Turn Literature into Research Ideas",
-        "link": "https://arxiv.org/abs/2610.08781v1"
-      }
-    },
     {
       "id": "2026-10-11",
       "date": "2026-10-11",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "CoopUQ: Robust Multi-Robot Social Navigation via Uncertainty-Aware Cooperative Forecasting",
         "link": "https://arxiv.org/abs/2610.26852v1"
+      }
+    },
+    {
+      "id": "2026-10-24",
+      "date": "2026-10-24",
+      "publishAt": "2026-10-24T00:00:00.000Z",
+      "fact": {
+        "text": "A rainbow can be seen only in the morning or late afternoon. It can occur only when the sun is 40 degrees or less above the horizon.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
+        "source": "pool",
+        "title": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
+        "link": "https://arxiv.org/abs/2610.28626v1"
       }
     }
   ]

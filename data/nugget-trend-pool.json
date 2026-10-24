@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-23T00:10:43.849Z",
+  "updated": "2026-10-24T00:02:58.557Z",
   "trends": [
-    {
-      "text": "Rethinking Routing Exploration in Modern Mixture-of-Experts",
-      "link": "https://arxiv.org/abs/2610.22353v1"
-    },
-    {
-      "text": "FDE-Gym: The Last Mile of AI Delivery",
-      "link": "https://arxiv.org/abs/2610.22350v1"
-    },
-    {
-      "text": "GeoState: Learning View-Decoupled Geometry States for 3D World Modeling",
-      "link": "https://arxiv.org/abs/2610.22343v1"
-    },
     {
       "text": "3DCodeVerse: Exploring 3D Worlds as Code",
       "link": "https://arxiv.org/abs/2610.22341v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.26856v1"
     },
     {
-      "text": "CoopUQ: Robust Multi-Robot Social Navigation via Uncertainty-Aware Cooperative Forecasting",
-      "link": "https://arxiv.org/abs/2610.26852v1"
-    },
-    {
       "text": "Where is Physical RSI capability from? An Observational Scaling Law of LLM-as-policy",
       "link": "https://arxiv.org/abs/2610.26848v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Self-normalized Bernstein Inequalities for Regenerative Processes and Applications to Learning Without Independence",
       "link": "https://arxiv.org/abs/2610.30119v1"
+    },
+    {
+      "text": "Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning",
+      "link": "https://arxiv.org/abs/2610.31667v1"
+    },
+    {
+      "text": "Phase Transition from Random Features to Fully Trainable Networks",
+      "link": "https://arxiv.org/abs/2610.31663v1"
+    },
+    {
+      "text": "Reliable AI-Assisted Decisions via Selective Auditing",
+      "link": "https://arxiv.org/abs/2610.31662v1"
+    },
+    {
+      "text": "SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing",
+      "link": "https://arxiv.org/abs/2610.31659v1"
     }
   ]
 }
