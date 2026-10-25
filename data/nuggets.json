@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-24T00:02:58.557Z",
+  "updated": "2026-10-25T22:39:11.552Z",
   "entries": [
-    {
-      "id": "2026-10-11",
-      "date": "2026-10-11",
-      "publishAt": "2026-10-11T00:00:00.000Z",
-      "fact": {
-        "text": "In 10 minutes, a hurricane releases more energy than all of the world's nuclear weapons combined.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Decentralized SGD under Heavy-Tailed Noise: Optimal Convergence Rates and the Role of Gradient Clipping",
-        "source": "pool",
-        "title": "Decentralized SGD under Heavy-Tailed Noise: Optimal Convergence Rates and the Role of Gradient Clipping",
-        "link": "https://arxiv.org/abs/2610.10527v1"
-      }
-    },
     {
       "id": "2026-10-12",
       "date": "2026-10-12",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
         "link": "https://arxiv.org/abs/2610.28626v1"
+      }
+    },
+    {
+      "id": "2026-10-25",
+      "date": "2026-10-25",
+      "publishAt": "2026-10-25T00:00:00.000Z",
+      "fact": {
+        "text": "If you went out into space, you would explode before you suffocated because there`s no air pressure.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "A Quasipolynomial Algorithm for $\\ell_\\infty$ Contractions",
+        "source": "pool",
+        "title": "A Quasipolynomial Algorithm for $\\ell_\\infty$ Contractions",
+        "link": "https://arxiv.org/abs/2610.30122v1"
       }
     }
   ]

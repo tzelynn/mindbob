@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-24T00:02:58.557Z",
+  "updated": "2026-10-25T22:39:11.552Z",
   "trends": [
-    {
-      "text": "3DCodeVerse: Exploring 3D Worlds as Code",
-      "link": "https://arxiv.org/abs/2610.22341v1"
-    },
-    {
-      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
-      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
-    },
-    {
-      "text": "I'm Tired of Talking to AI",
-      "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
-    },
     {
       "text": "Behavioral Couplings: From Formation to Behavioral Emergence in Language Models",
       "link": "https://arxiv.org/abs/2610.23847v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.28628v1"
     },
     {
-      "text": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
-      "link": "https://arxiv.org/abs/2610.28626v1"
-    },
-    {
       "text": "Industrial ReMEmbR: Scaling Spatiotemporal Memory to Robot Fleets",
       "link": "https://arxiv.org/abs/2610.28624v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing",
       "link": "https://arxiv.org/abs/2610.31659v1"
+    },
+    {
+      "text": "Cost-Aware Abstention for LLM-Based IT Ticket Classification",
+      "link": "https://arxiv.org/abs/2610.31657v1"
+    },
+    {
+      "text": "METTA: Memory-Enhanced Test-Time Adaptation for Meta-Reinforcement Learning",
+      "link": "https://arxiv.org/abs/2610.31656v1"
+    },
+    {
+      "text": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+      "link": "https://arxiv.org/abs/2610.31650v1"
+    },
+    {
+      "text": "Low-Bit N-Gram Embeddings for Language Models",
+      "link": "https://arxiv.org/abs/2610.31646v1"
     }
   ]
 }
