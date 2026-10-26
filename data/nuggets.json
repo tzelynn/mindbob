@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-25T22:39:11.552Z",
+  "updated": "2026-10-26T23:56:36.124Z",
   "entries": [
-    {
-      "id": "2026-10-12",
-      "date": "2026-10-12",
-      "publishAt": "2026-10-12T00:00:00.000Z",
-      "fact": {
-        "text": "The Hawaiian alphabet has only 12 letters.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents",
-        "source": "pool",
-        "title": "From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents",
-        "link": "https://arxiv.org/abs/2610.12463v1"
-      }
-    },
     {
       "id": "2026-10-13",
       "date": "2026-10-13",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "A Quasipolynomial Algorithm for $\\ell_\\infty$ Contractions",
         "link": "https://arxiv.org/abs/2610.30122v1"
+      }
+    },
+    {
+      "id": "2026-10-26",
+      "date": "2026-10-26",
+      "publishAt": "2026-10-26T00:00:00.000Z",
+      "fact": {
+        "text": "0.3% of all road accidents in Canada involve a Moose.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Reliable AI-Assisted Decisions via Selective Auditing",
+        "source": "pool",
+        "title": "Reliable AI-Assisted Decisions via Selective Auditing",
+        "link": "https://arxiv.org/abs/2610.31662v1"
       }
     }
   ]
