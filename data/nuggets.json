@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-26T23:56:36.124Z",
+  "updated": "2026-10-27T00:51:06.206Z",
   "entries": [
-    {
-      "id": "2026-10-13",
-      "date": "2026-10-13",
-      "publishAt": "2026-10-13T00:00:00.000Z",
-      "fact": {
-        "text": "Only one person in two billion will live to be 116 or older.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
-        "source": "pool",
-        "title": "Caught in the Act: Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
-        "link": "https://arxiv.org/abs/2610.12445v1"
-      }
-    },
     {
       "id": "2026-10-14",
       "date": "2026-10-14",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Reliable AI-Assisted Decisions via Selective Auditing",
         "link": "https://arxiv.org/abs/2610.31662v1"
+      }
+    },
+    {
+      "id": "2026-10-27",
+      "date": "2026-10-27",
+      "publishAt": "2026-10-27T00:00:00.000Z",
+      "fact": {
+        "text": "The name Jeep came from the abbreviation used in the army. G.P. for `General Purpose` vehicle.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+        "source": "pool",
+        "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
+        "link": "https://arxiv.org/abs/2610.31650v1"
       }
     }
   ]
