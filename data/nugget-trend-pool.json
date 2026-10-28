@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-27T00:51:06.206Z",
+  "updated": "2026-10-28T00:44:56.869Z",
   "trends": [
-    {
-      "text": "OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory",
-      "link": "https://arxiv.org/abs/2610.26860v1"
-    },
-    {
-      "text": "Reinforcement Learning with Visually Attributable On-Policy Self-Distillation",
-      "link": "https://arxiv.org/abs/2610.26856v1"
-    },
-    {
-      "text": "Where is Physical RSI capability from? An Observational Scaling Law of LLM-as-policy",
-      "link": "https://arxiv.org/abs/2610.26848v1"
-    },
     {
       "text": "GBClaw: An agentic AI framework for atomistic grain boundary research and mechanistic discovery",
       "link": "https://arxiv.org/abs/2610.28629v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.31656v1"
     },
     {
-      "text": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
-      "link": "https://arxiv.org/abs/2610.31650v1"
-    },
-    {
       "text": "Low-Bit N-Gram Embeddings for Language Models",
       "link": "https://arxiv.org/abs/2610.31646v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Knowledge Distillation across Item and Code Spaces for Parallel Generative Recommendation",
       "link": "https://arxiv.org/abs/2610.32943v1"
+    },
+    {
+      "text": "Center-of-Mass Interpretation of Evolution Strategies",
+      "link": "https://arxiv.org/abs/2610.35865v1"
+    },
+    {
+      "text": "Auto-Research Arena: Benchmarking and Advancing Auto-Research in Language Modeling",
+      "link": "https://arxiv.org/abs/2610.35866v1"
+    },
+    {
+      "text": "Learning Force-Reactive Humanoid Loco-Manipulation",
+      "link": "https://arxiv.org/abs/2610.35862v1"
+    },
+    {
+      "text": "On the stability of learning",
+      "link": "https://arxiv.org/abs/2610.35856v1"
     }
   ]
 }

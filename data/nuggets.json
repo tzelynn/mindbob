@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-27T00:51:06.206Z",
+  "updated": "2026-10-28T00:44:56.869Z",
   "entries": [
-    {
-      "id": "2026-10-14",
-      "date": "2026-10-14",
-      "publishAt": "2026-10-14T00:00:00.000Z",
-      "fact": {
-        "text": "Slugs have four noses.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "I believe there are entire companies right now under AI psychosis",
-        "source": "pool",
-        "title": "I believe there are entire companies right now under AI psychosis",
-        "link": "https://twitter.com/mitchellh/status/2055380239711457578"
-      }
-    },
     {
       "id": "2026-10-15",
       "date": "2026-10-15",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
         "link": "https://arxiv.org/abs/2610.31650v1"
+      }
+    },
+    {
+      "id": "2026-10-28",
+      "date": "2026-10-28",
+      "publishAt": "2026-10-28T00:00:00.000Z",
+      "fact": {
+        "text": "Only one person in two billion will live to be 116 or older.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Flownomaly: Single-Step Conditional-Mean Recovery for Few-Shot Anomaly Detection",
+        "source": "pool",
+        "title": "Flownomaly: Single-Step Conditional-Mean Recovery for Few-Shot Anomaly Detection",
+        "link": "https://arxiv.org/abs/2610.32964v1"
       }
     }
   ]
