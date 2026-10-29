@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-28T00:44:56.869Z",
+  "updated": "2026-10-29T00:04:02.290Z",
   "trends": [
-    {
-      "text": "GBClaw: An agentic AI framework for atomistic grain boundary research and mechanistic discovery",
-      "link": "https://arxiv.org/abs/2610.28629v1"
-    },
-    {
-      "text": "Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking",
-      "link": "https://arxiv.org/abs/2610.28628v1"
-    },
-    {
-      "text": "Industrial ReMEmbR: Scaling Spatiotemporal Memory to Robot Fleets",
-      "link": "https://arxiv.org/abs/2610.28624v1"
-    },
     {
       "text": "Think Harder Where It Matters: Item-Level Adaptive Recursion for Sequential Recommendation",
       "link": "https://arxiv.org/abs/2610.30128v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.32969v1"
     },
     {
-      "text": "Flownomaly: Single-Step Conditional-Mean Recovery for Few-Shot Anomaly Detection",
-      "link": "https://arxiv.org/abs/2610.32964v1"
-    },
-    {
       "text": "Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox",
       "link": "https://arxiv.org/abs/2610.32955v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "On the stability of learning",
       "link": "https://arxiv.org/abs/2610.35856v1"
+    },
+    {
+      "text": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+      "link": "https://arxiv.org/abs/2610.37666v1"
+    },
+    {
+      "text": "When Should We Intervene at Test Time?",
+      "link": "https://arxiv.org/abs/2610.37658v1"
+    },
+    {
+      "text": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
+      "link": "https://arxiv.org/abs/2610.37657v1"
+    },
+    {
+      "text": "Attention as Lattice Gauge Theory: Relations Interact Only Through Wilson Loops",
+      "link": "https://arxiv.org/abs/2610.37656v1"
     }
   ]
 }

@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-28T00:44:56.869Z",
+  "updated": "2026-10-29T00:04:02.290Z",
   "entries": [
-    {
-      "id": "2026-10-15",
-      "date": "2026-10-15",
-      "publishAt": "2026-10-15T00:00:00.000Z",
-      "fact": {
-        "text": "Average number of days a West German goes without washing his underwear: 7",
-        "source": "api"
-      },
-      "trend": {
-        "text": "AI Models Can Provably Hide Arbitrary Capabilities",
-        "source": "pool",
-        "title": "AI Models Can Provably Hide Arbitrary Capabilities",
-        "link": "https://arxiv.org/abs/2610.13928v1"
-      }
-    },
     {
       "id": "2026-10-16",
       "date": "2026-10-16",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Flownomaly: Single-Step Conditional-Mean Recovery for Few-Shot Anomaly Detection",
         "link": "https://arxiv.org/abs/2610.32964v1"
+      }
+    },
+    {
+      "id": "2026-10-29",
+      "date": "2026-10-29",
+      "publishAt": "2026-10-29T00:00:00.000Z",
+      "fact": {
+        "text": "Nutmeg is extremely poisonous if injected intravenously.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Monetizing Intelligence: Advertising and Subscription Design on LLM Platforms",
+        "source": "pool",
+        "title": "Monetizing Intelligence: Advertising and Subscription Design on LLM Platforms",
+        "link": "https://arxiv.org/abs/2610.32945v1"
       }
     }
   ]
