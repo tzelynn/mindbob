@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-29T00:04:02.290Z",
+  "updated": "2026-10-30T01:21:18.603Z",
   "entries": [
-    {
-      "id": "2026-10-16",
-      "date": "2026-10-16",
-      "publishAt": "2026-10-16T00:00:00.000Z",
-      "fact": {
-        "text": "The skeleton of Jeremy Bentham is present at all important meetings of the University of London",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Designing Protein Structures from Natural Language",
-        "source": "pool",
-        "title": "Designing Protein Structures from Natural Language",
-        "link": "https://arxiv.org/abs/2610.13917v1"
-      }
-    },
     {
       "id": "2026-10-17",
       "date": "2026-10-17",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Monetizing Intelligence: Advertising and Subscription Design on LLM Platforms",
         "link": "https://arxiv.org/abs/2610.32945v1"
+      }
+    },
+    {
+      "id": "2026-10-30",
+      "date": "2026-10-30",
+      "publishAt": "2026-10-30T00:00:00.000Z",
+      "fact": {
+        "text": "If we had the same mortality rate now as in 1900, more than half the people in the world today would not be alive.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Learning Force-Reactive Humanoid Loco-Manipulation",
+        "source": "pool",
+        "title": "Learning Force-Reactive Humanoid Loco-Manipulation",
+        "link": "https://arxiv.org/abs/2610.35862v1"
       }
     }
   ]

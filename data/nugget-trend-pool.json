@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-29T00:04:02.290Z",
+  "updated": "2026-10-30T01:21:18.603Z",
   "trends": [
-    {
-      "text": "Think Harder Where It Matters: Item-Level Adaptive Recursion for Sequential Recommendation",
-      "link": "https://arxiv.org/abs/2610.30128v1"
-    },
-    {
-      "text": "PhysiCalWorld: In-Context Physics Calibration for World Models",
-      "link": "https://arxiv.org/abs/2610.30125v1"
-    },
-    {
-      "text": "Self-normalized Bernstein Inequalities for Regenerative Processes and Applications to Learning Without Independence",
-      "link": "https://arxiv.org/abs/2610.30119v1"
-    },
     {
       "text": "Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning",
       "link": "https://arxiv.org/abs/2610.31667v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.32948v1"
     },
     {
-      "text": "Monetizing Intelligence: Advertising and Subscription Design on LLM Platforms",
-      "link": "https://arxiv.org/abs/2610.32945v1"
-    },
-    {
       "text": "Knowledge Distillation across Item and Code Spaces for Parallel Generative Recommendation",
       "link": "https://arxiv.org/abs/2610.32943v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Attention as Lattice Gauge Theory: Relations Interact Only Through Wilson Loops",
       "link": "https://arxiv.org/abs/2610.37656v1"
+    },
+    {
+      "text": "KPPax: preprocess differentiable kinetic ODE for machine learning in atmospheric chemistry",
+      "link": "https://arxiv.org/abs/2610.37655v1"
+    },
+    {
+      "text": "Pushing Dexterity and Safety for In-Hand Object Pose Reaching That Works Remarkably Well",
+      "link": "https://arxiv.org/abs/2610.37652v1"
+    },
+    {
+      "text": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+      "link": "https://arxiv.org/abs/2610.37649v1"
+    },
+    {
+      "text": "Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis",
+      "link": "https://arxiv.org/abs/2610.37648v1"
     }
   ]
 }
