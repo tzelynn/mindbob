@@ -1,18 +1,6 @@
 {
-  "updated": "2026-10-30T01:21:18.603Z",
+  "updated": "2026-10-31T01:04:37.295Z",
   "trends": [
-    {
-      "text": "Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning",
-      "link": "https://arxiv.org/abs/2610.31667v1"
-    },
-    {
-      "text": "Phase Transition from Random Features to Fully Trainable Networks",
-      "link": "https://arxiv.org/abs/2610.31663v1"
-    },
-    {
-      "text": "SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing",
-      "link": "https://arxiv.org/abs/2610.31659v1"
-    },
     {
       "text": "Cost-Aware Abstention for LLM-Based IT Ticket Classification",
       "link": "https://arxiv.org/abs/2610.31657v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.35866v1"
     },
     {
-      "text": "Learning Force-Reactive Humanoid Loco-Manipulation",
-      "link": "https://arxiv.org/abs/2610.35862v1"
-    },
-    {
       "text": "On the stability of learning",
       "link": "https://arxiv.org/abs/2610.35856v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis",
       "link": "https://arxiv.org/abs/2610.37648v1"
+    },
+    {
+      "text": "Rethinking Neural Thickets Without Weight Perturbations",
+      "link": "https://arxiv.org/abs/2610.40649v1"
+    },
+    {
+      "text": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers",
+      "link": "https://arxiv.org/abs/2610.40647v1"
+    },
+    {
+      "text": "Adaptive Scenario Generation for KL-DRO Around a Learned Density Model",
+      "link": "https://arxiv.org/abs/2610.40644v1"
+    },
+    {
+      "text": "Luggage re-identification: A study of strategies towards a real-world application",
+      "link": "https://arxiv.org/abs/2610.40643v1"
     }
   ]
 }

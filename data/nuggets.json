@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-30T01:21:18.603Z",
+  "updated": "2026-10-31T01:04:37.295Z",
   "entries": [
-    {
-      "id": "2026-10-17",
-      "date": "2026-10-17",
-      "publishAt": "2026-10-17T00:00:00.000Z",
-      "fact": {
-        "text": "There were always 56 curls in Shirley Temple`s hair.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards",
-        "source": "pool",
-        "title": "Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards",
-        "link": "https://arxiv.org/abs/2610.18868v1"
-      }
-    },
     {
       "id": "2026-10-18",
       "date": "2026-10-18",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Learning Force-Reactive Humanoid Loco-Manipulation",
         "link": "https://arxiv.org/abs/2610.35862v1"
+      }
+    },
+    {
+      "id": "2026-10-31",
+      "date": "2026-10-31",
+      "publishAt": "2026-10-31T00:00:00.000Z",
+      "fact": {
+        "text": "The San Francisco Cable cars are the only mobile National Monuments.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
+        "source": "pool",
+        "title": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
+        "link": "https://arxiv.org/abs/2610.37657v1"
       }
     }
   ]
