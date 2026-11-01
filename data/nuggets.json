@@ -1,21 +1,6 @@
 {
-  "updated": "2026-10-31T01:04:37.295Z",
+  "updated": "2026-11-01T00:26:28.959Z",
   "entries": [
-    {
-      "id": "2026-10-18",
-      "date": "2026-10-18",
-      "publishAt": "2026-10-18T00:00:00.000Z",
-      "fact": {
-        "text": "The top 3 health-related searches on the Internet are (in this order): Depression, Allergies, & Cancer.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "CoDA: Co-Evolution of Data Engines and Action Policies",
-        "source": "pool",
-        "title": "CoDA: Co-Evolution of Data Engines and Action Policies",
-        "link": "https://arxiv.org/abs/2610.22362v1"
-      }
-    },
     {
       "id": "2026-10-19",
       "date": "2026-10-19",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
         "link": "https://arxiv.org/abs/2610.37657v1"
+      }
+    },
+    {
+      "id": "2026-11-01",
+      "date": "2026-11-01",
+      "publishAt": "2026-11-01T00:00:00.000Z",
+      "fact": {
+        "text": "Albert Einstein and Charles Darwin both married their first cousins",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+        "source": "pool",
+        "title": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+        "link": "https://arxiv.org/abs/2610.37649v1"
       }
     }
   ]
