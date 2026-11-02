@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-01T00:26:28.959Z",
+  "updated": "2026-11-02T01:02:11.253Z",
   "trends": [
-    {
-      "text": "RobustRLlib: A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms",
-      "link": "https://arxiv.org/abs/2610.32971v1"
-    },
-    {
-      "text": "DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection",
-      "link": "https://arxiv.org/abs/2610.32969v1"
-    },
-    {
-      "text": "Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox",
-      "link": "https://arxiv.org/abs/2610.32955v1"
-    },
     {
       "text": "Where Rounding Happens Matters: Rounding-Location Alignment Stabilizes LLM Reinforcement Learning",
       "link": "https://arxiv.org/abs/2610.32951v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.37652v1"
     },
     {
-      "text": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
-      "link": "https://arxiv.org/abs/2610.37649v1"
-    },
-    {
       "text": "Scaling Laws for Tool-Use Agents via Controllable Environment Synthesis",
       "link": "https://arxiv.org/abs/2610.37648v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "An ODE-based Sampler for Discrete Diffusion Models",
       "link": "https://arxiv.org/abs/2610.40618v1"
+    },
+    {
+      "text": "Difficulty Calibration Across Time for Membership Inference in Diffusion Models",
+      "link": "https://arxiv.org/abs/2610.40616v1"
+    },
+    {
+      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
+    },
+    {
+      "text": "Open source AI is the path forward",
+      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
+    },
+    {
+      "text": "My AI skeptic friends are all nuts",
+      "link": "https://fly.io/blog/youre-all-nuts/"
     }
   ]
 }

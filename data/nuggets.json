@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-01T00:26:28.959Z",
+  "updated": "2026-11-02T01:02:11.253Z",
   "entries": [
-    {
-      "id": "2026-10-19",
-      "date": "2026-10-19",
-      "publishAt": "2026-10-19T00:00:00.000Z",
-      "fact": {
-        "text": "In a lifetime the average human produces enough quarts of spit to fill 2 swimming pools.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
-        "source": "pool",
-        "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
-        "link": "https://arxiv.org/abs/2610.22344v1"
-      }
-    },
     {
       "id": "2026-10-20",
       "date": "2026-10-20",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
         "link": "https://arxiv.org/abs/2610.37649v1"
+      }
+    },
+    {
+      "id": "2026-11-02",
+      "date": "2026-11-02",
+      "publishAt": "2026-11-02T00:00:00.000Z",
+      "fact": {
+        "text": "There are a million ants for every person on Earth.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Adaptive Scenario Generation for KL-DRO Around a Learned Density Model",
+        "source": "pool",
+        "title": "Adaptive Scenario Generation for KL-DRO Around a Learned Density Model",
+        "link": "https://arxiv.org/abs/2610.40644v1"
       }
     }
   ]
