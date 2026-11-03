@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-02T01:02:11.253Z",
+  "updated": "2026-11-03T02:26:13.335Z",
   "entries": [
-    {
-      "id": "2026-10-20",
-      "date": "2026-10-20",
-      "publishAt": "2026-10-20T00:00:00.000Z",
-      "fact": {
-        "text": "Only one in two billion people will live to be 116 or older.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "An AI agent published a hit piece on me",
-        "source": "pool",
-        "title": "An AI agent published a hit piece on me",
-        "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
-      }
-    },
     {
       "id": "2026-10-21",
       "date": "2026-10-21",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Adaptive Scenario Generation for KL-DRO Around a Learned Density Model",
         "link": "https://arxiv.org/abs/2610.40644v1"
+      }
+    },
+    {
+      "id": "2026-11-03",
+      "date": "2026-11-03",
+      "publishAt": "2026-11-03T00:00:00.000Z",
+      "fact": {
+        "text": "It`s possible to lead a cow upstairs but not downstairs.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Probing Spatial State Representations in Visual Foundation Models",
+        "source": "pool",
+        "title": "Probing Spatial State Representations in Visual Foundation Models",
+        "link": "https://arxiv.org/abs/2610.40636v1"
       }
     }
   ]

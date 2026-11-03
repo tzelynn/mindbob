@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-02T01:02:11.253Z",
+  "updated": "2026-11-03T02:26:13.335Z",
   "trends": [
-    {
-      "text": "Where Rounding Happens Matters: Rounding-Location Alignment Stabilizes LLM Reinforcement Learning",
-      "link": "https://arxiv.org/abs/2610.32951v1"
-    },
-    {
-      "text": "Beyond Discrete Tokens: Preserving Numerical Continuity in Medical Vision-Language Models",
-      "link": "https://arxiv.org/abs/2610.32948v1"
-    },
-    {
-      "text": "Knowledge Distillation across Item and Code Spaces for Parallel Generative Recommendation",
-      "link": "https://arxiv.org/abs/2610.32943v1"
-    },
     {
       "text": "Center-of-Mass Interpretation of Evolution Strategies",
       "link": "https://arxiv.org/abs/2610.35865v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.40647v1"
     },
     {
-      "text": "Adaptive Scenario Generation for KL-DRO Around a Learned Density Model",
-      "link": "https://arxiv.org/abs/2610.40644v1"
-    },
-    {
       "text": "Luggage re-identification: A study of strategies towards a real-world application",
       "link": "https://arxiv.org/abs/2610.40643v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "My AI skeptic friends are all nuts",
       "link": "https://fly.io/blog/youre-all-nuts/"
+    },
+    {
+      "text": "Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention",
+      "link": "https://arxiv.org/abs/2610.42147v1"
+    },
+    {
+      "text": "Hierarchical World Models with Implicit Dynamics",
+      "link": "https://arxiv.org/abs/2610.42146v1"
+    },
+    {
+      "text": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
+      "link": "https://arxiv.org/abs/2610.42141v1"
+    },
+    {
+      "text": "Counting on Dummies: Privacy Amplification with Observable Counts and Truncated Batches",
+      "link": "https://arxiv.org/abs/2610.42139v1"
     }
   ]
 }
