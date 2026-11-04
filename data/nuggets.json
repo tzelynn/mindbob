@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-03T02:26:13.335Z",
+  "updated": "2026-11-04T00:41:18.226Z",
   "entries": [
-    {
-      "id": "2026-10-21",
-      "date": "2026-10-21",
-      "publishAt": "2026-10-21T00:00:00.000Z",
-      "fact": {
-        "text": "Firehouses have circular stairways originating from the old days when the engines were pulled by horses. The horses were stabled on the ground floor and figured out how to walk up straight staircases.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Task-aligned spectral inductive biases in parameterized quantum circuits",
-        "source": "pool",
-        "title": "Task-aligned spectral inductive biases in parameterized quantum circuits",
-        "link": "https://arxiv.org/abs/2610.23834v1"
-      }
-    },
     {
       "id": "2026-10-22",
       "date": "2026-10-22",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Probing Spatial State Representations in Visual Foundation Models",
         "link": "https://arxiv.org/abs/2610.40636v1"
+      }
+    },
+    {
+      "id": "2026-11-04",
+      "date": "2026-11-04",
+      "publishAt": "2026-11-04T00:00:00.000Z",
+      "fact": {
+        "text": "Sex is biochemically no different from eating large quantities of chocolate.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Open source AI is the path forward",
+        "source": "pool",
+        "title": "Open source AI is the path forward",
+        "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
       }
     }
   ]

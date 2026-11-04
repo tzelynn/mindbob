@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-03T02:26:13.335Z",
+  "updated": "2026-11-04T00:41:18.226Z",
   "trends": [
-    {
-      "text": "Center-of-Mass Interpretation of Evolution Strategies",
-      "link": "https://arxiv.org/abs/2610.35865v1"
-    },
-    {
-      "text": "Auto-Research Arena: Benchmarking and Advancing Auto-Research in Language Modeling",
-      "link": "https://arxiv.org/abs/2610.35866v1"
-    },
-    {
-      "text": "On the stability of learning",
-      "link": "https://arxiv.org/abs/2610.35856v1"
-    },
     {
       "text": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
       "link": "https://arxiv.org/abs/2610.37666v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2610.40637v1"
     },
     {
-      "text": "Probing Spatial State Representations in Visual Foundation Models",
-      "link": "https://arxiv.org/abs/2610.40636v1"
-    },
-    {
       "text": "An ODE-based Sampler for Discrete Diffusion Models",
       "link": "https://arxiv.org/abs/2610.40618v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Counting on Dummies: Privacy Amplification with Observable Counts and Truncated Batches",
       "link": "https://arxiv.org/abs/2610.42139v1"
+    },
+    {
+      "text": "Pixel: A Co-Designed Full-Stack Robot System for Learning General-Purpose Mobile Manipulation",
+      "link": "https://arxiv.org/abs/2611.03648v1"
+    },
+    {
+      "text": "From Natural Language to Exact Cover: A Neuro-Symbolic Approach to Zebra Puzzles",
+      "link": "https://arxiv.org/abs/2611.03641v1"
+    },
+    {
+      "text": "WebHarbor: Docking Real Websites for Evolving GUI Agent Environments",
+      "link": "https://arxiv.org/abs/2611.03634v1"
+    },
+    {
+      "text": "Pretraining Data Scale Reverses the Muon-AdamW Fine-Tuning Gap",
+      "link": "https://arxiv.org/abs/2611.03633v1"
     }
   ]
 }
