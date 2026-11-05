@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-04T00:41:18.226Z",
+  "updated": "2026-11-05T00:56:13.630Z",
   "entries": [
-    {
-      "id": "2026-10-22",
-      "date": "2026-10-22",
-      "publishAt": "2026-10-22T00:00:00.000Z",
-      "fact": {
-        "text": "Over 1000 birds a year die from smashing into windows!",
-        "source": "api"
-      },
-      "trend": {
-        "text": "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference",
-        "source": "pool",
-        "title": "ENFR: Evidence Networks with Flow-Matched References for Amortized Simulation-Based Model Inference",
-        "link": "https://arxiv.org/abs/2610.23825v1"
-      }
-    },
     {
       "id": "2026-10-23",
       "date": "2026-10-23",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Open source AI is the path forward",
         "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
+      }
+    },
+    {
+      "id": "2026-11-05",
+      "date": "2026-11-05",
+      "publishAt": "2026-11-05T00:00:00.000Z",
+      "fact": {
+        "text": "The past-tense of the English word “dare” is “durst",
+        "source": "api"
+      },
+      "trend": {
+        "text": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
+        "source": "pool",
+        "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
+        "link": "https://arxiv.org/abs/2610.42141v1"
       }
     }
   ]

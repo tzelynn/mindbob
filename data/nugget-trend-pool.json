@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-04T00:41:18.226Z",
+  "updated": "2026-11-05T00:56:13.630Z",
   "trends": [
-    {
-      "text": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
-      "link": "https://arxiv.org/abs/2610.37666v1"
-    },
-    {
-      "text": "When Should We Intervene at Test Time?",
-      "link": "https://arxiv.org/abs/2610.37658v1"
-    },
-    {
-      "text": "Attention as Lattice Gauge Theory: Relations Interact Only Through Wilson Loops",
-      "link": "https://arxiv.org/abs/2610.37656v1"
-    },
     {
       "text": "KPPax: preprocess differentiable kinetic ODE for machine learning in atmospheric chemistry",
       "link": "https://arxiv.org/abs/2610.37655v1"
@@ -58,10 +46,6 @@
       "link": "https://news.ycombinator.com/newsguidelines.html#generated"
     },
     {
-      "text": "Open source AI is the path forward",
-      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
-    },
-    {
       "text": "My AI skeptic friends are all nuts",
       "link": "https://fly.io/blog/youre-all-nuts/"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Pretraining Data Scale Reverses the Muon-AdamW Fine-Tuning Gap",
       "link": "https://arxiv.org/abs/2611.03633v1"
+    },
+    {
+      "text": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
+      "link": "https://arxiv.org/abs/2611.05376v1"
+    },
+    {
+      "text": "Aligning Language Models with General Preferences: An Empirical Study of Direct Nash Optimization",
+      "link": "https://arxiv.org/abs/2611.05373v1"
+    },
+    {
+      "text": "PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning",
+      "link": "https://arxiv.org/abs/2611.05372v1"
+    },
+    {
+      "text": "GUILD: Guided Iterative Data Collection for Imitation Learning",
+      "link": "https://arxiv.org/abs/2611.05368v1"
     }
   ]
 }
