@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-05T00:56:13.630Z",
+  "updated": "2026-11-06T00:58:57.331Z",
   "entries": [
-    {
-      "id": "2026-10-23",
-      "date": "2026-10-23",
-      "publishAt": "2026-10-23T00:00:00.000Z",
-      "fact": {
-        "text": "Mike Nesmith`s (the guitarist of The Monkeys) mom invented White Out.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "CoopUQ: Robust Multi-Robot Social Navigation via Uncertainty-Aware Cooperative Forecasting",
-        "source": "pool",
-        "title": "CoopUQ: Robust Multi-Robot Social Navigation via Uncertainty-Aware Cooperative Forecasting",
-        "link": "https://arxiv.org/abs/2610.26852v1"
-      }
-    },
     {
       "id": "2026-10-24",
       "date": "2026-10-24",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
         "link": "https://arxiv.org/abs/2610.42141v1"
+      }
+    },
+    {
+      "id": "2026-11-06",
+      "date": "2026-11-06",
+      "publishAt": "2026-11-06T00:00:00.000Z",
+      "fact": {
+        "text": "Canada” is an Indian word meaning “Big Village”.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "WebHarbor: Docking Real Websites for Evolving GUI Agent Environments",
+        "source": "pool",
+        "title": "WebHarbor: Docking Real Websites for Evolving GUI Agent Environments",
+        "link": "https://arxiv.org/abs/2611.03634v1"
       }
     }
   ]
