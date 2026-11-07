@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-06T00:58:57.331Z",
+  "updated": "2026-11-07T00:09:01.936Z",
   "entries": [
-    {
-      "id": "2026-10-24",
-      "date": "2026-10-24",
-      "publishAt": "2026-10-24T00:00:00.000Z",
-      "fact": {
-        "text": "A rainbow can be seen only in the morning or late afternoon. It can occur only when the sun is 40 degrees or less above the horizon.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
-        "source": "pool",
-        "title": "UniWALM: Unified World Action Language Model for Embodied Robot Control",
-        "link": "https://arxiv.org/abs/2610.28626v1"
-      }
-    },
     {
       "id": "2026-10-25",
       "date": "2026-10-25",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "WebHarbor: Docking Real Websites for Evolving GUI Agent Environments",
         "link": "https://arxiv.org/abs/2611.03634v1"
+      }
+    },
+    {
+      "id": "2026-11-07",
+      "date": "2026-11-07",
+      "publishAt": "2026-11-07T00:00:00.000Z",
+      "fact": {
+        "text": "On average, Americans` favorite smell is banana.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning",
+        "source": "pool",
+        "title": "PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning",
+        "link": "https://arxiv.org/abs/2611.05372v1"
       }
     }
   ]

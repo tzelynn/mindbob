@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-06T00:58:57.331Z",
+  "updated": "2026-11-07T00:09:01.936Z",
   "trends": [
-    {
-      "text": "Rethinking Neural Thickets Without Weight Perturbations",
-      "link": "https://arxiv.org/abs/2610.40649v1"
-    },
-    {
-      "text": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers",
-      "link": "https://arxiv.org/abs/2610.40647v1"
-    },
-    {
-      "text": "Luggage re-identification: A study of strategies towards a real-world application",
-      "link": "https://arxiv.org/abs/2610.40643v1"
-    },
     {
       "text": "From extreme weather to agricultural consequences with agentic AI",
       "link": "https://arxiv.org/abs/2610.40641v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2611.03641v1"
     },
     {
-      "text": "WebHarbor: Docking Real Websites for Evolving GUI Agent Environments",
-      "link": "https://arxiv.org/abs/2611.03634v1"
-    },
-    {
       "text": "Pretraining Data Scale Reverses the Muon-AdamW Fine-Tuning Gap",
       "link": "https://arxiv.org/abs/2611.03633v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Perceptive Humanoid Motion from Simulation",
       "link": "https://arxiv.org/abs/2611.06908v1"
+    },
+    {
+      "text": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+      "link": "https://arxiv.org/abs/2611.08483v1"
+    },
+    {
+      "text": "Scientist World: Grow a Research World for AI-Scientists",
+      "link": "https://arxiv.org/abs/2611.08478v1"
+    },
+    {
+      "text": "XStack: A Benchmark for ML Repo Migration",
+      "link": "https://arxiv.org/abs/2611.08472v1"
+    },
+    {
+      "text": "Same Behavior, Different Mechanism: What Finite Experiments Can Certify About Integrated Information",
+      "link": "https://arxiv.org/abs/2611.08469v1"
     }
   ]
 }
