@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-07T00:09:01.936Z",
+  "updated": "2026-11-08T00:54:33.322Z",
   "trends": [
-    {
-      "text": "From extreme weather to agricultural consequences with agentic AI",
-      "link": "https://arxiv.org/abs/2610.40641v1"
-    },
-    {
-      "text": "world2vec: Mechanistic world models through latent dynamics learning",
-      "link": "https://arxiv.org/abs/2610.40637v1"
-    },
-    {
-      "text": "An ODE-based Sampler for Discrete Diffusion Models",
-      "link": "https://arxiv.org/abs/2610.40618v1"
-    },
     {
       "text": "Difficulty Calibration Across Time for Membership Inference in Diffusion Models",
       "link": "https://arxiv.org/abs/2610.40616v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2611.05373v1"
     },
     {
-      "text": "PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning",
-      "link": "https://arxiv.org/abs/2611.05372v1"
-    },
-    {
       "text": "GUILD: Guided Iterative Data Collection for Imitation Learning",
       "link": "https://arxiv.org/abs/2611.05368v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Same Behavior, Different Mechanism: What Finite Experiments Can Certify About Integrated Information",
       "link": "https://arxiv.org/abs/2611.08469v1"
+    },
+    {
+      "text": "Towards interpreting any residual stream direction by scaling activation inversion",
+      "link": "https://arxiv.org/abs/2611.08465v1"
+    },
+    {
+      "text": "Adversarial Training with Large Step Sizes: Implicit Bias, Optimization, and Sharpness",
+      "link": "https://arxiv.org/abs/2611.08457v1"
+    },
+    {
+      "text": "Unpacking the Compute Efficiency of Strong-to-Weak OPD against GRPO",
+      "link": "https://arxiv.org/abs/2611.08453v1"
+    },
+    {
+      "text": "ReproBridge: Building Reproducibility into ML Research Artifacts",
+      "link": "https://arxiv.org/abs/2611.08452v1"
     }
   ]
 }

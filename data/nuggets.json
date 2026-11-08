@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-07T00:09:01.936Z",
+  "updated": "2026-11-08T00:54:33.322Z",
   "entries": [
-    {
-      "id": "2026-10-25",
-      "date": "2026-10-25",
-      "publishAt": "2026-10-25T00:00:00.000Z",
-      "fact": {
-        "text": "If you went out into space, you would explode before you suffocated because there`s no air pressure.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "A Quasipolynomial Algorithm for $\\ell_\\infty$ Contractions",
-        "source": "pool",
-        "title": "A Quasipolynomial Algorithm for $\\ell_\\infty$ Contractions",
-        "link": "https://arxiv.org/abs/2610.30122v1"
-      }
-    },
     {
       "id": "2026-10-26",
       "date": "2026-10-26",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning",
         "link": "https://arxiv.org/abs/2611.05372v1"
+      }
+    },
+    {
+      "id": "2026-11-08",
+      "date": "2026-11-08",
+      "publishAt": "2026-11-08T00:00:00.000Z",
+      "fact": {
+        "text": "Grapes explode when you put them in the microwave. Go on, try it then",
+        "source": "api"
+      },
+      "trend": {
+        "text": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
+        "source": "pool",
+        "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
+        "link": "https://arxiv.org/abs/2611.06910v1"
       }
     }
   ]
