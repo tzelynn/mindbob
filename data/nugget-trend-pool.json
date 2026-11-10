@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-09T01:13:34.661Z",
+  "updated": "2026-11-10T02:47:40.015Z",
   "trends": [
-    {
-      "text": "Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention",
-      "link": "https://arxiv.org/abs/2610.42147v1"
-    },
-    {
-      "text": "Hierarchical World Models with Implicit Dynamics",
-      "link": "https://arxiv.org/abs/2610.42146v1"
-    },
-    {
-      "text": "Counting on Dummies: Privacy Amplification with Observable Counts and Truncated Batches",
-      "link": "https://arxiv.org/abs/2610.42139v1"
-    },
     {
       "text": "Pixel: A Co-Designed Full-Stack Robot System for Learning General-Purpose Mobile Manipulation",
       "link": "https://arxiv.org/abs/2611.03648v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2611.08478v1"
     },
     {
-      "text": "XStack: A Benchmark for ML Repo Migration",
-      "link": "https://arxiv.org/abs/2611.08472v1"
-    },
-    {
       "text": "Same Behavior, Different Mechanism: What Finite Experiments Can Certify About Integrated Information",
       "link": "https://arxiv.org/abs/2611.08469v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "IDF killed Gaza aid workers at point blank range in 2025 massacre: Report",
       "link": "https://www.dropsitenews.com/p/israeli-soldiers-tel-sultan-gaza-red-crescent-civil-defense-massacre-report-forensic-architecture-earshot"
+    },
+    {
+      "text": "EmbodiedIntentBench: Benchmarking Intent-Driven Runtime Adaptation for Mobile Robotic Missions",
+      "link": "https://arxiv.org/abs/2611.10498v1"
+    },
+    {
+      "text": "Safer for Whom? A Systematic Exploration of AI Safety in Eating Disorder Interactions",
+      "link": "https://arxiv.org/abs/2611.10488v1"
+    },
+    {
+      "text": "GEAR: A GPU-Accelerated Global Solver for Bounded Continuous Nonlinear Programs via Linear Bound Propagation",
+      "link": "https://arxiv.org/abs/2611.10487v1"
+    },
+    {
+      "text": "Test-Time Scaling for Diffusion Language Models with Frequency-Aware Remasking",
+      "link": "https://arxiv.org/abs/2611.10486v1"
     }
   ]
 }

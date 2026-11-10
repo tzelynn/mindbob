@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-09T01:13:34.661Z",
+  "updated": "2026-11-10T02:47:40.015Z",
   "entries": [
-    {
-      "id": "2026-10-27",
-      "date": "2026-10-27",
-      "publishAt": "2026-10-27T00:00:00.000Z",
-      "fact": {
-        "text": "The name Jeep came from the abbreviation used in the army. G.P. for `General Purpose` vehicle.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
-        "source": "pool",
-        "title": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
-        "link": "https://arxiv.org/abs/2610.31650v1"
-      }
-    },
     {
       "id": "2026-10-28",
       "date": "2026-10-28",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "XStack: A Benchmark for ML Repo Migration",
         "link": "https://arxiv.org/abs/2611.08472v1"
+      }
+    },
+    {
+      "id": "2026-11-10",
+      "date": "2026-11-10",
+      "publishAt": "2026-11-10T00:00:00.000Z",
+      "fact": {
+        "text": "Nepal is the only country that has a non-rectangular flag. It is also asymmetrical.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Unpacking the Compute Efficiency of Strong-to-Weak OPD against GRPO",
+        "source": "pool",
+        "title": "Unpacking the Compute Efficiency of Strong-to-Weak OPD against GRPO",
+        "link": "https://arxiv.org/abs/2611.08453v1"
       }
     }
   ]
