@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-10T02:47:40.015Z",
+  "updated": "2026-11-11T00:42:32.730Z",
   "trends": [
-    {
-      "text": "Pixel: A Co-Designed Full-Stack Robot System for Learning General-Purpose Mobile Manipulation",
-      "link": "https://arxiv.org/abs/2611.03648v1"
-    },
-    {
-      "text": "From Natural Language to Exact Cover: A Neuro-Symbolic Approach to Zebra Puzzles",
-      "link": "https://arxiv.org/abs/2611.03641v1"
-    },
-    {
-      "text": "Pretraining Data Scale Reverses the Muon-AdamW Fine-Tuning Gap",
-      "link": "https://arxiv.org/abs/2611.03633v1"
-    },
     {
       "text": "From Autonomous Agents to Cognitive Symbionts: Toward AI-Augmented Human Intelligence",
       "link": "https://arxiv.org/abs/2611.05376v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2611.08457v1"
     },
     {
-      "text": "Unpacking the Compute Efficiency of Strong-to-Weak OPD against GRPO",
-      "link": "https://arxiv.org/abs/2611.08453v1"
-    },
-    {
       "text": "ReproBridge: Building Reproducibility into ML Research Artifacts",
       "link": "https://arxiv.org/abs/2611.08452v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Test-Time Scaling for Diffusion Language Models with Frequency-Aware Remasking",
       "link": "https://arxiv.org/abs/2611.10486v1"
+    },
+    {
+      "text": "Kolmogorov-Chapman Maps: Trajectory-Free Learning for Simulating Molecular Dynamics",
+      "link": "https://arxiv.org/abs/2611.12880v1"
+    },
+    {
+      "text": "Adaptive Quantization Preserves Fast Rates for TD Learning over Rate-Limited Channels",
+      "link": "https://arxiv.org/abs/2611.12878v1"
+    },
+    {
+      "text": "HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents",
+      "link": "https://arxiv.org/abs/2611.12872v1"
+    },
+    {
+      "text": "Vendi Anomaly Scores for Efficient and Accurate Anomaly Detection",
+      "link": "https://arxiv.org/abs/2611.12871v1"
     }
   ]
 }

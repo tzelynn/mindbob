@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-10T02:47:40.015Z",
+  "updated": "2026-11-11T00:42:32.730Z",
   "entries": [
-    {
-      "id": "2026-10-28",
-      "date": "2026-10-28",
-      "publishAt": "2026-10-28T00:00:00.000Z",
-      "fact": {
-        "text": "Only one person in two billion will live to be 116 or older.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Flownomaly: Single-Step Conditional-Mean Recovery for Few-Shot Anomaly Detection",
-        "source": "pool",
-        "title": "Flownomaly: Single-Step Conditional-Mean Recovery for Few-Shot Anomaly Detection",
-        "link": "https://arxiv.org/abs/2610.32964v1"
-      }
-    },
     {
       "id": "2026-10-29",
       "date": "2026-10-29",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Unpacking the Compute Efficiency of Strong-to-Weak OPD against GRPO",
         "link": "https://arxiv.org/abs/2611.08453v1"
+      }
+    },
+    {
+      "id": "2026-11-11",
+      "date": "2026-11-11",
+      "publishAt": "2026-11-11T00:00:00.000Z",
+      "fact": {
+        "text": "There are 45 miles of nerves in the skin of a human being.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "I believe there are entire companies right now under AI psychosis",
+        "source": "pool",
+        "title": "I believe there are entire companies right now under AI psychosis",
+        "link": "https://twitter.com/mitchellh/status/2055380239711457578"
       }
     }
   ]
