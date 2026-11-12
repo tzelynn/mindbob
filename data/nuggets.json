@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-11T00:42:32.730Z",
+  "updated": "2026-11-12T01:55:53.384Z",
   "entries": [
-    {
-      "id": "2026-10-29",
-      "date": "2026-10-29",
-      "publishAt": "2026-10-29T00:00:00.000Z",
-      "fact": {
-        "text": "Nutmeg is extremely poisonous if injected intravenously.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Monetizing Intelligence: Advertising and Subscription Design on LLM Platforms",
-        "source": "pool",
-        "title": "Monetizing Intelligence: Advertising and Subscription Design on LLM Platforms",
-        "link": "https://arxiv.org/abs/2610.32945v1"
-      }
-    },
     {
       "id": "2026-10-30",
       "date": "2026-10-30",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "I believe there are entire companies right now under AI psychosis",
         "link": "https://twitter.com/mitchellh/status/2055380239711457578"
+      }
+    },
+    {
+      "id": "2026-11-12",
+      "date": "2026-11-12",
+      "publishAt": "2026-11-12T00:00:00.000Z",
+      "fact": {
+        "text": "In the White House, there are 13,092 knives, forks and spoons!",
+        "source": "api"
+      },
+      "trend": {
+        "text": "GEAR: A GPU-Accelerated Global Solver for Bounded Continuous Nonlinear Programs via Linear Bound Propagation",
+        "source": "pool",
+        "title": "GEAR: A GPU-Accelerated Global Solver for Bounded Continuous Nonlinear Programs via Linear Bound Propagation",
+        "link": "https://arxiv.org/abs/2611.10487v1"
       }
     }
   ]
