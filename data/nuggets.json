@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-12T01:55:53.384Z",
+  "updated": "2026-11-13T01:12:07.495Z",
   "entries": [
-    {
-      "id": "2026-10-30",
-      "date": "2026-10-30",
-      "publishAt": "2026-10-30T00:00:00.000Z",
-      "fact": {
-        "text": "If we had the same mortality rate now as in 1900, more than half the people in the world today would not be alive.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Learning Force-Reactive Humanoid Loco-Manipulation",
-        "source": "pool",
-        "title": "Learning Force-Reactive Humanoid Loco-Manipulation",
-        "link": "https://arxiv.org/abs/2610.35862v1"
-      }
-    },
     {
       "id": "2026-10-31",
       "date": "2026-10-31",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "GEAR: A GPU-Accelerated Global Solver for Bounded Continuous Nonlinear Programs via Linear Bound Propagation",
         "link": "https://arxiv.org/abs/2611.10487v1"
+      }
+    },
+    {
+      "id": "2026-11-13",
+      "date": "2026-11-13",
+      "publishAt": "2026-11-13T00:00:00.000Z",
+      "fact": {
+        "text": "A mole can dig a tunnel 300 feet (91 m) long in just one night.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents",
+        "source": "pool",
+        "title": "HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents",
+        "link": "https://arxiv.org/abs/2611.12872v1"
       }
     }
   ]

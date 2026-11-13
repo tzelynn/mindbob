@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-12T01:55:53.384Z",
+  "updated": "2026-11-13T01:12:07.495Z",
   "trends": [
-    {
-      "text": "FlowReconBench: Accuracy, calibration and cost of learned and classical flow reconstruction from sparse sensors",
-      "link": "https://arxiv.org/abs/2611.06912v1"
-    },
-    {
-      "text": "BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories",
-      "link": "https://arxiv.org/abs/2611.06911v1"
-    },
-    {
-      "text": "Perceptive Humanoid Motion from Simulation",
-      "link": "https://arxiv.org/abs/2611.06908v1"
-    },
     {
       "text": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
       "link": "https://arxiv.org/abs/2611.08483v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2611.10488v1"
     },
     {
-      "text": "GEAR: A GPU-Accelerated Global Solver for Bounded Continuous Nonlinear Programs via Linear Bound Propagation",
-      "link": "https://arxiv.org/abs/2611.10487v1"
-    },
-    {
       "text": "Test-Time Scaling for Diffusion Language Models with Frequency-Aware Remasking",
       "link": "https://arxiv.org/abs/2611.10486v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
       "link": "https://arxiv.org/abs/2611.14514v1"
+    },
+    {
+      "text": "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents",
+      "link": "https://arxiv.org/abs/2611.14511v1"
+    },
+    {
+      "text": "When Does the Real Wiring Win? Testing connectome structure-function claims against unmeasured physiology",
+      "link": "https://arxiv.org/abs/2611.14508v1"
+    },
+    {
+      "text": "Continual-ARC: Measuring Skill Acquisition over a Working Lifetime",
+      "link": "https://arxiv.org/abs/2611.14505v1"
+    },
+    {
+      "text": "Emergent Biological Capabilities in a Foundation Model for Molecular Interactions",
+      "link": "https://arxiv.org/abs/2611.14504v1"
     }
   ]
 }
