@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-13T01:12:07.495Z",
+  "updated": "2026-11-14T00:55:07.277Z",
   "trends": [
-    {
-      "text": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
-      "link": "https://arxiv.org/abs/2611.08483v1"
-    },
-    {
-      "text": "Scientist World: Grow a Research World for AI-Scientists",
-      "link": "https://arxiv.org/abs/2611.08478v1"
-    },
-    {
-      "text": "Same Behavior, Different Mechanism: What Finite Experiments Can Certify About Integrated Information",
-      "link": "https://arxiv.org/abs/2611.08469v1"
-    },
     {
       "text": "Towards interpreting any residual stream direction by scaling activation inversion",
       "link": "https://arxiv.org/abs/2611.08465v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2611.12878v1"
     },
     {
-      "text": "HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents",
-      "link": "https://arxiv.org/abs/2611.12872v1"
-    },
-    {
       "text": "Vendi Anomaly Scores for Efficient and Accurate Anomaly Detection",
       "link": "https://arxiv.org/abs/2611.12871v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Emergent Biological Capabilities in a Foundation Model for Molecular Interactions",
       "link": "https://arxiv.org/abs/2611.14504v1"
+    },
+    {
+      "text": "ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research",
+      "link": "https://arxiv.org/abs/2611.17332v1"
+    },
+    {
+      "text": "Internalizing Investment Mandates: A Neurosymbolic RL Approach to Portfolio Allocation",
+      "link": "https://arxiv.org/abs/2611.17329v1"
+    },
+    {
+      "text": "AgentSSL: Can MLE Agents Leverage Unlabeled Data?",
+      "link": "https://arxiv.org/abs/2611.17323v1"
+    },
+    {
+      "text": "CoReMem: Cost-Internalizing Memory for Successive Coding Tasks with Prospective Valuation",
+      "link": "https://arxiv.org/abs/2611.17316v1"
     }
   ]
 }

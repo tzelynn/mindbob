@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-13T01:12:07.495Z",
+  "updated": "2026-11-14T00:55:07.277Z",
   "entries": [
-    {
-      "id": "2026-10-31",
-      "date": "2026-10-31",
-      "publishAt": "2026-10-31T00:00:00.000Z",
-      "fact": {
-        "text": "The San Francisco Cable cars are the only mobile National Monuments.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
-        "source": "pool",
-        "title": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
-        "link": "https://arxiv.org/abs/2610.37657v1"
-      }
-    },
     {
       "id": "2026-11-01",
       "date": "2026-11-01",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents",
         "link": "https://arxiv.org/abs/2611.12872v1"
+      }
+    },
+    {
+      "id": "2026-11-14",
+      "date": "2026-11-14",
+      "publishAt": "2026-11-14T00:00:00.000Z",
+      "fact": {
+        "text": "A whale`s penis is called a dork.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
+        "source": "pool",
+        "title": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
+        "link": "https://arxiv.org/abs/2611.14515v1"
       }
     }
   ]
