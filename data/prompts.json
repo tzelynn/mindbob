@@ -1,13 +1,6 @@
 {
-  "updated": "2026-11-14T00:55:06.451Z",
+  "updated": "2026-11-15T01:19:35.101Z",
   "entries": [
-    {
-      "id": "2026-11-01",
-      "date": "2026-11-01",
-      "publishAt": "2026-11-01T00:00:00.000Z",
-      "word": "butterfly",
-      "source": "fallback"
-    },
     {
       "id": "2026-11-02",
       "date": "2026-11-02",
@@ -97,6 +90,13 @@
       "date": "2026-11-14",
       "publishAt": "2026-11-14T00:00:00.000Z",
       "word": "bike",
+      "source": "fallback"
+    },
+    {
+      "id": "2026-11-15",
+      "date": "2026-11-15",
+      "publishAt": "2026-11-15T00:00:00.000Z",
+      "word": "snail",
       "source": "fallback"
     }
   ]

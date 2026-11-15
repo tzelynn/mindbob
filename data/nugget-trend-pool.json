@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-14T00:55:07.277Z",
+  "updated": "2026-11-15T01:19:35.975Z",
   "trends": [
-    {
-      "text": "Towards interpreting any residual stream direction by scaling activation inversion",
-      "link": "https://arxiv.org/abs/2611.08465v1"
-    },
-    {
-      "text": "Adversarial Training with Large Step Sizes: Implicit Bias, Optimization, and Sharpness",
-      "link": "https://arxiv.org/abs/2611.08457v1"
-    },
-    {
-      "text": "ReproBridge: Building Reproducibility into ML Research Artifacts",
-      "link": "https://arxiv.org/abs/2611.08452v1"
-    },
     {
       "text": "A Hidden Markov Preference Model for Online Prediction of Adversary Actions",
       "link": "https://arxiv.org/abs/2611.08445v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2611.14516v1"
     },
     {
-      "text": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
-      "link": "https://arxiv.org/abs/2611.14515v1"
-    },
-    {
       "text": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
       "link": "https://arxiv.org/abs/2611.14514v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "CoReMem: Cost-Internalizing Memory for Successive Coding Tasks with Prospective Valuation",
       "link": "https://arxiv.org/abs/2611.17316v1"
+    },
+    {
+      "text": "Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces",
+      "link": "https://arxiv.org/abs/2611.17314v1"
+    },
+    {
+      "text": "Sketching Language Models for Context Attribution",
+      "link": "https://arxiv.org/abs/2611.17313v1"
+    },
+    {
+      "text": "Classical Energies Learn to Reason 1,000x Faster than Looped Models",
+      "link": "https://arxiv.org/abs/2611.17309v1"
+    },
+    {
+      "text": "Quantifying structural stability of transparent models for general insurance pricing",
+      "link": "https://arxiv.org/abs/2611.17308v1"
     }
   ]
 }

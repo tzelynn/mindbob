@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-14T00:55:07.277Z",
+  "updated": "2026-11-15T01:19:35.975Z",
   "entries": [
-    {
-      "id": "2026-11-01",
-      "date": "2026-11-01",
-      "publishAt": "2026-11-01T00:00:00.000Z",
-      "fact": {
-        "text": "Albert Einstein and Charles Darwin both married their first cousins",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
-        "source": "pool",
-        "title": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
-        "link": "https://arxiv.org/abs/2610.37649v1"
-      }
-    },
     {
       "id": "2026-11-02",
       "date": "2026-11-02",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
         "link": "https://arxiv.org/abs/2611.14515v1"
+      }
+    },
+    {
+      "id": "2026-11-15",
+      "date": "2026-11-15",
+      "publishAt": "2026-11-15T00:00:00.000Z",
+      "fact": {
+        "text": "The word \"set\" has more definitions than any other word in the English language.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Continual-ARC: Measuring Skill Acquisition over a Working Lifetime",
+        "source": "pool",
+        "title": "Continual-ARC: Measuring Skill Acquisition over a Working Lifetime",
+        "link": "https://arxiv.org/abs/2611.14505v1"
       }
     }
   ]
