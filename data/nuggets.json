@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-15T01:19:35.975Z",
+  "updated": "2026-11-16T00:01:42.929Z",
   "entries": [
-    {
-      "id": "2026-11-02",
-      "date": "2026-11-02",
-      "publishAt": "2026-11-02T00:00:00.000Z",
-      "fact": {
-        "text": "There are a million ants for every person on Earth.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Adaptive Scenario Generation for KL-DRO Around a Learned Density Model",
-        "source": "pool",
-        "title": "Adaptive Scenario Generation for KL-DRO Around a Learned Density Model",
-        "link": "https://arxiv.org/abs/2610.40644v1"
-      }
-    },
     {
       "id": "2026-11-03",
       "date": "2026-11-03",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Continual-ARC: Measuring Skill Acquisition over a Working Lifetime",
         "link": "https://arxiv.org/abs/2611.14505v1"
+      }
+    },
+    {
+      "id": "2026-11-16",
+      "date": "2026-11-16",
+      "publishAt": "2026-11-16T00:00:00.000Z",
+      "fact": {
+        "text": "Al Capone`s business card said he was a used furniture dealer.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "AgentSSL: Can MLE Agents Leverage Unlabeled Data?",
+        "source": "pool",
+        "title": "AgentSSL: Can MLE Agents Leverage Unlabeled Data?",
+        "link": "https://arxiv.org/abs/2611.17323v1"
       }
     }
   ]

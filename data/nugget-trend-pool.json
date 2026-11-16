@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-15T01:19:35.975Z",
+  "updated": "2026-11-16T00:01:42.929Z",
   "trends": [
-    {
-      "text": "A Hidden Markov Preference Model for Online Prediction of Adversary Actions",
-      "link": "https://arxiv.org/abs/2611.08445v1"
-    },
-    {
-      "text": "An AI agent published a hit piece on me",
-      "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
-    },
-    {
-      "text": "IDF killed Gaza aid workers at point blank range in 2025 massacre: Report",
-      "link": "https://www.dropsitenews.com/p/israeli-soldiers-tel-sultan-gaza-red-crescent-civil-defense-massacre-report-forensic-architecture-earshot"
-    },
     {
       "text": "EmbodiedIntentBench: Benchmarking Intent-Driven Runtime Adaptation for Mobile Robotic Missions",
       "link": "https://arxiv.org/abs/2611.10498v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2611.14508v1"
     },
     {
-      "text": "Continual-ARC: Measuring Skill Acquisition over a Working Lifetime",
-      "link": "https://arxiv.org/abs/2611.14505v1"
-    },
-    {
       "text": "Emergent Biological Capabilities in a Foundation Model for Molecular Interactions",
       "link": "https://arxiv.org/abs/2611.14504v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Quantifying structural stability of transparent models for general insurance pricing",
       "link": "https://arxiv.org/abs/2611.17308v1"
+    },
+    {
+      "text": "Towards a Theory of Learnability via Debate",
+      "link": "https://arxiv.org/abs/2611.17303v1"
+    },
+    {
+      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
+      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
+    },
+    {
+      "text": "My AI skeptic friends are all nuts",
+      "link": "https://fly.io/blog/youre-all-nuts/"
+    },
+    {
+      "text": "I'm Tired of Talking to AI",
+      "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
     }
   ]
 }
