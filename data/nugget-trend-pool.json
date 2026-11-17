@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-16T00:01:42.929Z",
+  "updated": "2026-11-17T02:59:15.328Z",
   "trends": [
-    {
-      "text": "EmbodiedIntentBench: Benchmarking Intent-Driven Runtime Adaptation for Mobile Robotic Missions",
-      "link": "https://arxiv.org/abs/2611.10498v1"
-    },
-    {
-      "text": "Safer for Whom? A Systematic Exploration of AI Safety in Eating Disorder Interactions",
-      "link": "https://arxiv.org/abs/2611.10488v1"
-    },
-    {
-      "text": "Test-Time Scaling for Diffusion Language Models with Frequency-Aware Remasking",
-      "link": "https://arxiv.org/abs/2611.10486v1"
-    },
     {
       "text": "Kolmogorov-Chapman Maps: Trajectory-Free Learning for Simulating Molecular Dynamics",
       "link": "https://arxiv.org/abs/2611.12880v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2611.17329v1"
     },
     {
-      "text": "AgentSSL: Can MLE Agents Leverage Unlabeled Data?",
-      "link": "https://arxiv.org/abs/2611.17323v1"
-    },
-    {
       "text": "CoReMem: Cost-Internalizing Memory for Successive Coding Tasks with Prospective Valuation",
       "link": "https://arxiv.org/abs/2611.17316v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "I'm Tired of Talking to AI",
       "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
+    },
+    {
+      "text": "Mem2Fair: Online Fairness Control for Text-to-Video Generation via Fair Memory",
+      "link": "https://arxiv.org/abs/2611.19215v1"
+    },
+    {
+      "text": "STaSBO: LLM-Guided Strategy Planning and Configuration Selection for Bayesian Optimization",
+      "link": "https://arxiv.org/abs/2611.19214v1"
+    },
+    {
+      "text": "On-policy distillation as a Backdoor Propagation Channel",
+      "link": "https://arxiv.org/abs/2611.19207v1"
+    },
+    {
+      "text": "LogT: Logically Think with Images for Visual Search",
+      "link": "https://arxiv.org/abs/2611.19200v1"
     }
   ]
 }

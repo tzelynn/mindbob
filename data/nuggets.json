@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-16T00:01:42.929Z",
+  "updated": "2026-11-17T02:59:15.328Z",
   "entries": [
-    {
-      "id": "2026-11-03",
-      "date": "2026-11-03",
-      "publishAt": "2026-11-03T00:00:00.000Z",
-      "fact": {
-        "text": "It`s possible to lead a cow upstairs but not downstairs.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Probing Spatial State Representations in Visual Foundation Models",
-        "source": "pool",
-        "title": "Probing Spatial State Representations in Visual Foundation Models",
-        "link": "https://arxiv.org/abs/2610.40636v1"
-      }
-    },
     {
       "id": "2026-11-04",
       "date": "2026-11-04",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "AgentSSL: Can MLE Agents Leverage Unlabeled Data?",
         "link": "https://arxiv.org/abs/2611.17323v1"
+      }
+    },
+    {
+      "id": "2026-11-17",
+      "date": "2026-11-17",
+      "publishAt": "2026-11-17T00:00:00.000Z",
+      "fact": {
+        "text": "A pig`s orgasm lasts for 30 minutes.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Classical Energies Learn to Reason 1,000x Faster than Looped Models",
+        "source": "pool",
+        "title": "Classical Energies Learn to Reason 1,000x Faster than Looped Models",
+        "link": "https://arxiv.org/abs/2611.17309v1"
       }
     }
   ]

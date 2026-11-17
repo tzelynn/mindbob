@@ -1,13 +1,6 @@
 {
-  "updated": "2026-11-16T00:01:36.020Z",
+  "updated": "2026-11-17T02:59:14.359Z",
   "entries": [
-    {
-      "id": "2026-11-03",
-      "date": "2026-11-03",
-      "publishAt": "2026-11-03T00:00:00.000Z",
-      "word": "mug",
-      "source": "fallback"
-    },
     {
       "id": "2026-11-04",
       "date": "2026-11-04",
@@ -97,6 +90,13 @@
       "date": "2026-11-16",
       "publishAt": "2026-11-16T00:00:00.000Z",
       "word": "butterfly",
+      "source": "fallback"
+    },
+    {
+      "id": "2026-11-17",
+      "date": "2026-11-17",
+      "publishAt": "2026-11-17T00:00:00.000Z",
+      "word": "cup",
       "source": "fallback"
     }
   ]
