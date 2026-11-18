@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-17T02:59:15.328Z",
+  "updated": "2026-11-18T02:27:49.570Z",
   "entries": [
-    {
-      "id": "2026-11-04",
-      "date": "2026-11-04",
-      "publishAt": "2026-11-04T00:00:00.000Z",
-      "fact": {
-        "text": "Sex is biochemically no different from eating large quantities of chocolate.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Open source AI is the path forward",
-        "source": "pool",
-        "title": "Open source AI is the path forward",
-        "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
-      }
-    },
     {
       "id": "2026-11-05",
       "date": "2026-11-05",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Classical Energies Learn to Reason 1,000x Faster than Looped Models",
         "link": "https://arxiv.org/abs/2611.17309v1"
+      }
+    },
+    {
+      "id": "2026-11-18",
+      "date": "2026-11-18",
+      "publishAt": "2026-11-18T00:00:00.000Z",
+      "fact": {
+        "text": "Coca-Cola contained Coca (whose active ingredient is cocaine) from 1885 to 1903.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "My AI skeptic friends are all nuts",
+        "source": "pool",
+        "title": "My AI skeptic friends are all nuts",
+        "link": "https://fly.io/blog/youre-all-nuts/"
       }
     }
   ]

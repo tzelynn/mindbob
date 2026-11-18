@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-17T02:59:15.328Z",
+  "updated": "2026-11-18T02:27:49.570Z",
   "trends": [
-    {
-      "text": "Kolmogorov-Chapman Maps: Trajectory-Free Learning for Simulating Molecular Dynamics",
-      "link": "https://arxiv.org/abs/2611.12880v1"
-    },
-    {
-      "text": "Adaptive Quantization Preserves Fast Rates for TD Learning over Rate-Limited Channels",
-      "link": "https://arxiv.org/abs/2611.12878v1"
-    },
-    {
-      "text": "Vendi Anomaly Scores for Efficient and Accurate Anomaly Detection",
-      "link": "https://arxiv.org/abs/2611.12871v1"
-    },
     {
       "text": "Toward Foundation Detection Models via Example-Based Grounding in EM-DETR",
       "link": "https://arxiv.org/abs/2611.14518v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2611.17313v1"
     },
     {
-      "text": "Classical Energies Learn to Reason 1,000x Faster than Looped Models",
-      "link": "https://arxiv.org/abs/2611.17309v1"
-    },
-    {
       "text": "Quantifying structural stability of transparent models for general insurance pricing",
       "link": "https://arxiv.org/abs/2611.17308v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "LogT: Logically Think with Images for Visual Search",
       "link": "https://arxiv.org/abs/2611.19200v1"
+    },
+    {
+      "text": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
+      "link": "https://arxiv.org/abs/2611.21605v1"
+    },
+    {
+      "text": "Quantifying the added value of human forecaster discussions for tropical cyclone intensity prediction",
+      "link": "https://arxiv.org/abs/2611.21602v1"
+    },
+    {
+      "text": "How VLMs Plan What's Next",
+      "link": "https://arxiv.org/abs/2611.21600v1"
+    },
+    {
+      "text": "Hyperlyve: Parallelized Enumeration and Exact Lyapunov Stability Certification for Deep ReLU Networks",
+      "link": "https://arxiv.org/abs/2611.21599v1"
     }
   ]
 }
