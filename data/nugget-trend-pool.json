@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-18T02:27:49.570Z",
+  "updated": "2026-11-19T01:54:44.895Z",
   "trends": [
-    {
-      "text": "Toward Foundation Detection Models via Example-Based Grounding in EM-DETR",
-      "link": "https://arxiv.org/abs/2611.14518v1"
-    },
-    {
-      "text": "TorchCurves: Differentiable Parametric Curves",
-      "link": "https://arxiv.org/abs/2611.14516v1"
-    },
-    {
-      "text": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
-      "link": "https://arxiv.org/abs/2611.14514v1"
-    },
     {
       "text": "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents",
       "link": "https://arxiv.org/abs/2611.14511v1"
@@ -58,10 +46,6 @@
       "link": "https://news.ycombinator.com/newsguidelines.html#generated"
     },
     {
-      "text": "My AI skeptic friends are all nuts",
-      "link": "https://fly.io/blog/youre-all-nuts/"
-    },
-    {
       "text": "I'm Tired of Talking to AI",
       "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Hyperlyve: Parallelized Enumeration and Exact Lyapunov Stability Certification for Deep ReLU Networks",
       "link": "https://arxiv.org/abs/2611.21599v1"
+    },
+    {
+      "text": "Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models",
+      "link": "https://arxiv.org/abs/2611.23228v1"
+    },
+    {
+      "text": "StringQFT: A Multiuse Textbook Resource for AI-Assisted Theoretical Physics",
+      "link": "https://arxiv.org/abs/2611.23225v1"
+    },
+    {
+      "text": "An inexact stochastic variance-reduced gradient method for constrained convex finite-sum optimization",
+      "link": "https://arxiv.org/abs/2611.23221v1"
+    },
+    {
+      "text": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
+      "link": "https://arxiv.org/abs/2611.23219v1"
     }
   ]
 }

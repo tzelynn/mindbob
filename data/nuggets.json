@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-18T02:27:49.570Z",
+  "updated": "2026-11-19T01:54:44.895Z",
   "entries": [
-    {
-      "id": "2026-11-05",
-      "date": "2026-11-05",
-      "publishAt": "2026-11-05T00:00:00.000Z",
-      "fact": {
-        "text": "The past-tense of the English word “dare” is “durst",
-        "source": "api"
-      },
-      "trend": {
-        "text": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
-        "source": "pool",
-        "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory",
-        "link": "https://arxiv.org/abs/2610.42141v1"
-      }
-    },
     {
       "id": "2026-11-06",
       "date": "2026-11-06",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "My AI skeptic friends are all nuts",
         "link": "https://fly.io/blog/youre-all-nuts/"
+      }
+    },
+    {
+      "id": "2026-11-19",
+      "date": "2026-11-19",
+      "publishAt": "2026-11-19T00:00:00.000Z",
+      "fact": {
+        "text": "Russians generally answer the phone by saying, \"I'm listening\".",
+        "source": "api"
+      },
+      "trend": {
+        "text": "On-policy distillation as a Backdoor Propagation Channel",
+        "source": "pool",
+        "title": "On-policy distillation as a Backdoor Propagation Channel",
+        "link": "https://arxiv.org/abs/2611.19207v1"
       }
     }
   ]
