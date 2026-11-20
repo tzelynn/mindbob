@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-19T01:54:44.895Z",
+  "updated": "2026-11-20T01:47:55.206Z",
   "entries": [
-    {
-      "id": "2026-11-06",
-      "date": "2026-11-06",
-      "publishAt": "2026-11-06T00:00:00.000Z",
-      "fact": {
-        "text": "Canada” is an Indian word meaning “Big Village”.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "WebHarbor: Docking Real Websites for Evolving GUI Agent Environments",
-        "source": "pool",
-        "title": "WebHarbor: Docking Real Websites for Evolving GUI Agent Environments",
-        "link": "https://arxiv.org/abs/2611.03634v1"
-      }
-    },
     {
       "id": "2026-11-07",
       "date": "2026-11-07",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "On-policy distillation as a Backdoor Propagation Channel",
         "link": "https://arxiv.org/abs/2611.19207v1"
+      }
+    },
+    {
+      "id": "2026-11-20",
+      "date": "2026-11-20",
+      "publishAt": "2026-11-20T00:00:00.000Z",
+      "fact": {
+        "text": "Louisiana's capital building is the tallest one of any U.S. state.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "How VLMs Plan What's Next",
+        "source": "pool",
+        "title": "How VLMs Plan What's Next",
+        "link": "https://arxiv.org/abs/2611.21600v1"
       }
     }
   ]

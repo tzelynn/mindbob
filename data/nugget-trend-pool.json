@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-19T01:54:44.895Z",
+  "updated": "2026-11-20T01:47:55.206Z",
   "trends": [
-    {
-      "text": "Pyrite: Building and Benchmarking Protein-Ligand Pose Ranking Agents",
-      "link": "https://arxiv.org/abs/2611.14511v1"
-    },
-    {
-      "text": "When Does the Real Wiring Win? Testing connectome structure-function claims against unmeasured physiology",
-      "link": "https://arxiv.org/abs/2611.14508v1"
-    },
-    {
-      "text": "Emergent Biological Capabilities in a Foundation Model for Molecular Interactions",
-      "link": "https://arxiv.org/abs/2611.14504v1"
-    },
     {
       "text": "ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research",
       "link": "https://arxiv.org/abs/2611.17332v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2611.19214v1"
     },
     {
-      "text": "On-policy distillation as a Backdoor Propagation Channel",
-      "link": "https://arxiv.org/abs/2611.19207v1"
-    },
-    {
       "text": "LogT: Logically Think with Images for Visual Search",
       "link": "https://arxiv.org/abs/2611.19200v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
       "link": "https://arxiv.org/abs/2611.23219v1"
+    },
+    {
+      "text": "Mapping the AI Supply Chain: Dependencies, Vulnerabilities, and Market Concentration in the AI Ecosystem",
+      "link": "https://arxiv.org/abs/2611.24927v1"
+    },
+    {
+      "text": "Agentic Harness Engineering Beta: Requirement-Centered Evolution of Agent Harnesses",
+      "link": "https://arxiv.org/abs/2611.24924v1"
+    },
+    {
+      "text": "Decomposing SGD Dynamics in Neural Networks: Teacher-Induced Spikes and Variance Inflation",
+      "link": "https://arxiv.org/abs/2611.24908v1"
+    },
+    {
+      "text": "Equivariant Modeling with Polynomial Features via Minimal Homogeneous Generators",
+      "link": "https://arxiv.org/abs/2611.24896v1"
     }
   ]
 }
