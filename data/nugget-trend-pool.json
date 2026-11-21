@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-20T01:47:55.206Z",
+  "updated": "2026-11-21T01:35:48.438Z",
   "trends": [
-    {
-      "text": "ArchSpace: Recording, Reviewing, and Referencing LLM Architecture Research",
-      "link": "https://arxiv.org/abs/2611.17332v1"
-    },
-    {
-      "text": "Internalizing Investment Mandates: A Neurosymbolic RL Approach to Portfolio Allocation",
-      "link": "https://arxiv.org/abs/2611.17329v1"
-    },
-    {
-      "text": "CoReMem: Cost-Internalizing Memory for Successive Coding Tasks with Prospective Valuation",
-      "link": "https://arxiv.org/abs/2611.17316v1"
-    },
     {
       "text": "Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces",
       "link": "https://arxiv.org/abs/2611.17314v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2611.21602v1"
     },
     {
-      "text": "How VLMs Plan What's Next",
-      "link": "https://arxiv.org/abs/2611.21600v1"
-    },
-    {
       "text": "Hyperlyve: Parallelized Enumeration and Exact Lyapunov Stability Certification for Deep ReLU Networks",
       "link": "https://arxiv.org/abs/2611.21599v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Equivariant Modeling with Polynomial Features via Minimal Homogeneous Generators",
       "link": "https://arxiv.org/abs/2611.24896v1"
+    },
+    {
+      "text": "PlayCraft: Designing Engaging Games from Agent Play Experience",
+      "link": "https://arxiv.org/abs/2611.26624v1"
+    },
+    {
+      "text": "TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming",
+      "link": "https://arxiv.org/abs/2611.26619v1"
+    },
+    {
+      "text": "One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning",
+      "link": "https://arxiv.org/abs/2611.26617v1"
+    },
+    {
+      "text": "Bio-PM-Guided Synthetic IMU Generation",
+      "link": "https://arxiv.org/abs/2611.26607v1"
     }
   ]
 }

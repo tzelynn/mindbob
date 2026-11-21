@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-20T01:47:55.206Z",
+  "updated": "2026-11-21T01:35:48.438Z",
   "entries": [
-    {
-      "id": "2026-11-07",
-      "date": "2026-11-07",
-      "publishAt": "2026-11-07T00:00:00.000Z",
-      "fact": {
-        "text": "On average, Americans` favorite smell is banana.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning",
-        "source": "pool",
-        "title": "PolicyIK: High-Precision Inverse Kinematics for Robot Arms with Reinforcement Learning",
-        "link": "https://arxiv.org/abs/2611.05372v1"
-      }
-    },
     {
       "id": "2026-11-08",
       "date": "2026-11-08",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "How VLMs Plan What's Next",
         "link": "https://arxiv.org/abs/2611.21600v1"
+      }
+    },
+    {
+      "id": "2026-11-21",
+      "date": "2026-11-21",
+      "publishAt": "2026-11-21T00:00:00.000Z",
+      "fact": {
+        "text": "Only female mosquitoes bite.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "An inexact stochastic variance-reduced gradient method for constrained convex finite-sum optimization",
+        "source": "pool",
+        "title": "An inexact stochastic variance-reduced gradient method for constrained convex finite-sum optimization",
+        "link": "https://arxiv.org/abs/2611.23221v1"
       }
     }
   ]
