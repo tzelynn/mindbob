@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-21T01:35:48.438Z",
+  "updated": "2026-11-22T00:27:24.421Z",
   "trends": [
-    {
-      "text": "Linking Rapid Learning to Compositional Structure in Neural Networks: Evidence from Additive Analogies in Meta-Learned Parameter Spaces",
-      "link": "https://arxiv.org/abs/2611.17314v1"
-    },
-    {
-      "text": "Sketching Language Models for Context Attribution",
-      "link": "https://arxiv.org/abs/2611.17313v1"
-    },
-    {
-      "text": "Quantifying structural stability of transparent models for general insurance pricing",
-      "link": "https://arxiv.org/abs/2611.17308v1"
-    },
     {
       "text": "Towards a Theory of Learnability via Debate",
       "link": "https://arxiv.org/abs/2611.17303v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2611.23225v1"
     },
     {
-      "text": "An inexact stochastic variance-reduced gradient method for constrained convex finite-sum optimization",
-      "link": "https://arxiv.org/abs/2611.23221v1"
-    },
-    {
       "text": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
       "link": "https://arxiv.org/abs/2611.23219v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "Bio-PM-Guided Synthetic IMU Generation",
       "link": "https://arxiv.org/abs/2611.26607v1"
+    },
+    {
+      "text": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
+      "link": "https://arxiv.org/abs/2611.26603v1"
+    },
+    {
+      "text": "SoK: Assessing the Evolution of LLM Capability in Software Vulnerability Research",
+      "link": "https://arxiv.org/abs/2611.26601v1"
+    },
+    {
+      "text": "Active Feature Acquisition by Distilling an Oracle Teacher",
+      "link": "https://arxiv.org/abs/2611.26598v1"
+    },
+    {
+      "text": "PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation",
+      "link": "https://arxiv.org/abs/2611.26596v1"
     }
   ]
 }

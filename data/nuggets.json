@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-21T01:35:48.438Z",
+  "updated": "2026-11-22T00:27:24.421Z",
   "entries": [
-    {
-      "id": "2026-11-08",
-      "date": "2026-11-08",
-      "publishAt": "2026-11-08T00:00:00.000Z",
-      "fact": {
-        "text": "Grapes explode when you put them in the microwave. Go on, try it then",
-        "source": "api"
-      },
-      "trend": {
-        "text": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
-        "source": "pool",
-        "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
-        "link": "https://arxiv.org/abs/2611.06910v1"
-      }
-    },
     {
       "id": "2026-11-09",
       "date": "2026-11-09",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "An inexact stochastic variance-reduced gradient method for constrained convex finite-sum optimization",
         "link": "https://arxiv.org/abs/2611.23221v1"
+      }
+    },
+    {
+      "id": "2026-11-22",
+      "date": "2026-11-22",
+      "publishAt": "2026-11-22T00:00:00.000Z",
+      "fact": {
+        "text": "Only one in two billion people will live to be 116 or older.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Decomposing SGD Dynamics in Neural Networks: Teacher-Induced Spikes and Variance Inflation",
+        "source": "pool",
+        "title": "Decomposing SGD Dynamics in Neural Networks: Teacher-Induced Spikes and Variance Inflation",
+        "link": "https://arxiv.org/abs/2611.24908v1"
       }
     }
   ]
