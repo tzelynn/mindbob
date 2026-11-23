@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-22T00:27:24.421Z",
+  "updated": "2026-11-23T00:57:14.162Z",
   "entries": [
-    {
-      "id": "2026-11-09",
-      "date": "2026-11-09",
-      "publishAt": "2026-11-09T00:00:00.000Z",
-      "fact": {
-        "text": "An ostrich`s eye is bigger than its brain.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "XStack: A Benchmark for ML Repo Migration",
-        "source": "pool",
-        "title": "XStack: A Benchmark for ML Repo Migration",
-        "link": "https://arxiv.org/abs/2611.08472v1"
-      }
-    },
     {
       "id": "2026-11-10",
       "date": "2026-11-10",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Decomposing SGD Dynamics in Neural Networks: Teacher-Induced Spikes and Variance Inflation",
         "link": "https://arxiv.org/abs/2611.24908v1"
+      }
+    },
+    {
+      "id": "2026-11-23",
+      "date": "2026-11-23",
+      "publishAt": "2026-11-23T00:00:00.000Z",
+      "fact": {
+        "text": "Every acre of American crops harvested contains 100 pounds of insects.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning",
+        "source": "pool",
+        "title": "One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning",
+        "link": "https://arxiv.org/abs/2611.26617v1"
       }
     }
   ]

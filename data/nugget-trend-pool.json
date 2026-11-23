@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-22T00:27:24.421Z",
+  "updated": "2026-11-23T00:57:14.162Z",
   "trends": [
-    {
-      "text": "Towards a Theory of Learnability via Debate",
-      "link": "https://arxiv.org/abs/2611.17303v1"
-    },
-    {
-      "text": "Don't post generated/AI-edited comments. HN is for conversation between humans",
-      "link": "https://news.ycombinator.com/newsguidelines.html#generated"
-    },
-    {
-      "text": "I'm Tired of Talking to AI",
-      "link": "https://orchidfiles.com/im-tired-of-ai-generated-answers/"
-    },
     {
       "text": "Mem2Fair: Online Fairness Control for Text-to-Video Generation via Fair Memory",
       "link": "https://arxiv.org/abs/2611.19215v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2611.24924v1"
     },
     {
-      "text": "Decomposing SGD Dynamics in Neural Networks: Teacher-Induced Spikes and Variance Inflation",
-      "link": "https://arxiv.org/abs/2611.24908v1"
-    },
-    {
       "text": "Equivariant Modeling with Polynomial Features via Minimal Homogeneous Generators",
       "link": "https://arxiv.org/abs/2611.24896v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation",
       "link": "https://arxiv.org/abs/2611.26596v1"
+    },
+    {
+      "text": "Realized versus Population Reliability: Anytime-Valid Self-Consistency Certification under Correlated Reasoning",
+      "link": "https://arxiv.org/abs/2611.26592v1"
+    },
+    {
+      "text": "Open source AI is the path forward",
+      "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
+    },
+    {
+      "text": "An AI agent published a hit piece on me",
+      "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
+    },
+    {
+      "text": "IDF killed Gaza aid workers at point blank range in 2025 massacre: Report",
+      "link": "https://www.dropsitenews.com/p/israeli-soldiers-tel-sultan-gaza-red-crescent-civil-defense-massacre-report-forensic-architecture-earshot"
     }
   ]
 }
