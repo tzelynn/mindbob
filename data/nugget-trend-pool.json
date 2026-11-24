@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-23T00:57:14.162Z",
+  "updated": "2026-11-24T04:50:41.258Z",
   "trends": [
-    {
-      "text": "Mem2Fair: Online Fairness Control for Text-to-Video Generation via Fair Memory",
-      "link": "https://arxiv.org/abs/2611.19215v1"
-    },
-    {
-      "text": "STaSBO: LLM-Guided Strategy Planning and Configuration Selection for Bayesian Optimization",
-      "link": "https://arxiv.org/abs/2611.19214v1"
-    },
-    {
-      "text": "LogT: Logically Think with Images for Visual Search",
-      "link": "https://arxiv.org/abs/2611.19200v1"
-    },
     {
       "text": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
       "link": "https://arxiv.org/abs/2611.21605v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2611.26619v1"
     },
     {
-      "text": "One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning",
-      "link": "https://arxiv.org/abs/2611.26617v1"
-    },
-    {
       "text": "Bio-PM-Guided Synthetic IMU Generation",
       "link": "https://arxiv.org/abs/2611.26607v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "IDF killed Gaza aid workers at point blank range in 2025 massacre: Report",
       "link": "https://www.dropsitenews.com/p/israeli-soldiers-tel-sultan-gaza-red-crescent-civil-defense-massacre-report-forensic-architecture-earshot"
+    },
+    {
+      "text": "A Cascaded Framework with a Cross-Attention-Guided Mamba-CNN Model for Pre- and Post-Treatment Glioma Segmentation",
+      "link": "https://arxiv.org/abs/2611.29792v1"
+    },
+    {
+      "text": "Tabular Foundation Models for Weighted Regression and Classification",
+      "link": "https://arxiv.org/abs/2611.29789v1"
+    },
+    {
+      "text": "Constrained Diffusion from Binary Evaluations via Learned Doob h-Functions",
+      "link": "https://arxiv.org/abs/2611.29779v1"
+    },
+    {
+      "text": "S1Arena-MM: Which Multimodal Decisions Can Be Left to System 1?",
+      "link": "https://arxiv.org/abs/2611.29773v1"
     }
   ]
 }

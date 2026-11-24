@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-23T00:57:14.162Z",
+  "updated": "2026-11-24T04:50:41.258Z",
   "entries": [
-    {
-      "id": "2026-11-10",
-      "date": "2026-11-10",
-      "publishAt": "2026-11-10T00:00:00.000Z",
-      "fact": {
-        "text": "Nepal is the only country that has a non-rectangular flag. It is also asymmetrical.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "Unpacking the Compute Efficiency of Strong-to-Weak OPD against GRPO",
-        "source": "pool",
-        "title": "Unpacking the Compute Efficiency of Strong-to-Weak OPD against GRPO",
-        "link": "https://arxiv.org/abs/2611.08453v1"
-      }
-    },
     {
       "id": "2026-11-11",
       "date": "2026-11-11",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning",
         "link": "https://arxiv.org/abs/2611.26617v1"
+      }
+    },
+    {
+      "id": "2026-11-24",
+      "date": "2026-11-24",
+      "publishAt": "2026-11-24T00:00:00.000Z",
+      "fact": {
+        "text": "There is a seven letter word in the English language that contains ten words without rearranging any of its letters, \"therein\": the, there, he, in, rein, her, here, ere, therein, herein.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Active Feature Acquisition by Distilling an Oracle Teacher",
+        "source": "pool",
+        "title": "Active Feature Acquisition by Distilling an Oracle Teacher",
+        "link": "https://arxiv.org/abs/2611.26598v1"
       }
     }
   ]
