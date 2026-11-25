@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-24T04:50:41.258Z",
+  "updated": "2026-11-25T03:35:08.104Z",
   "trends": [
-    {
-      "text": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
-      "link": "https://arxiv.org/abs/2611.21605v1"
-    },
-    {
-      "text": "Quantifying the added value of human forecaster discussions for tropical cyclone intensity prediction",
-      "link": "https://arxiv.org/abs/2611.21602v1"
-    },
-    {
-      "text": "Hyperlyve: Parallelized Enumeration and Exact Lyapunov Stability Certification for Deep ReLU Networks",
-      "link": "https://arxiv.org/abs/2611.21599v1"
-    },
     {
       "text": "Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models",
       "link": "https://arxiv.org/abs/2611.23228v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2611.26601v1"
     },
     {
-      "text": "Active Feature Acquisition by Distilling an Oracle Teacher",
-      "link": "https://arxiv.org/abs/2611.26598v1"
-    },
-    {
       "text": "PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation",
       "link": "https://arxiv.org/abs/2611.26596v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "S1Arena-MM: Which Multimodal Decisions Can Be Left to System 1?",
       "link": "https://arxiv.org/abs/2611.29773v1"
+    },
+    {
+      "text": "RepoEviAgent: Scalable Synthesis of Evidence-Grounded Repository-Level Question Answering Tasks",
+      "link": "https://arxiv.org/abs/2611.31873v1"
+    },
+    {
+      "text": "Subliminal Learning Crosses Modalities",
+      "link": "https://arxiv.org/abs/2611.31870v1"
+    },
+    {
+      "text": "CALVIN-MAX: When Does a Mid-Execution Change Hurt a Robot Policy?",
+      "link": "https://arxiv.org/abs/2611.31868v1"
+    },
+    {
+      "text": "No Fixed Configuration Is Best: Context- and Cost-Aware Tuning of LLM Pipelines, with an Application to Schema Matching and Mapping",
+      "link": "https://arxiv.org/abs/2611.31864v1"
     }
   ]
 }
