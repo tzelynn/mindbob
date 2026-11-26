@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-25T03:35:08.104Z",
+  "updated": "2026-11-26T02:54:40.488Z",
   "entries": [
-    {
-      "id": "2026-11-12",
-      "date": "2026-11-12",
-      "publishAt": "2026-11-12T00:00:00.000Z",
-      "fact": {
-        "text": "In the White House, there are 13,092 knives, forks and spoons!",
-        "source": "api"
-      },
-      "trend": {
-        "text": "GEAR: A GPU-Accelerated Global Solver for Bounded Continuous Nonlinear Programs via Linear Bound Propagation",
-        "source": "pool",
-        "title": "GEAR: A GPU-Accelerated Global Solver for Bounded Continuous Nonlinear Programs via Linear Bound Propagation",
-        "link": "https://arxiv.org/abs/2611.10487v1"
-      }
-    },
     {
       "id": "2026-11-13",
       "date": "2026-11-13",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "An AI agent published a hit piece on me",
         "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
+      }
+    },
+    {
+      "id": "2026-11-26",
+      "date": "2026-11-26",
+      "publishAt": "2026-11-26T00:00:00.000Z",
+      "fact": {
+        "text": "A cat uses its whiskers to determine if a space is too small to squeeze through.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "Constrained Diffusion from Binary Evaluations via Learned Doob h-Functions",
+        "source": "pool",
+        "title": "Constrained Diffusion from Binary Evaluations via Learned Doob h-Functions",
+        "link": "https://arxiv.org/abs/2611.29779v1"
       }
     }
   ]

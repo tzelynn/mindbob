@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-25T03:35:08.104Z",
+  "updated": "2026-11-26T02:54:40.488Z",
   "trends": [
-    {
-      "text": "Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models",
-      "link": "https://arxiv.org/abs/2611.23228v1"
-    },
-    {
-      "text": "StringQFT: A Multiuse Textbook Resource for AI-Assisted Theoretical Physics",
-      "link": "https://arxiv.org/abs/2611.23225v1"
-    },
-    {
-      "text": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
-      "link": "https://arxiv.org/abs/2611.23219v1"
-    },
     {
       "text": "Mapping the AI Supply Chain: Dependencies, Vulnerabilities, and Market Concentration in the AI Ecosystem",
       "link": "https://arxiv.org/abs/2611.24927v1"
@@ -58,10 +46,6 @@
       "link": "https://about.fb.com/news/2024/07/open-source-ai-is-the-path-forward/"
     },
     {
-      "text": "An AI agent published a hit piece on me",
-      "link": "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
-    },
-    {
       "text": "IDF killed Gaza aid workers at point blank range in 2025 massacre: Report",
       "link": "https://www.dropsitenews.com/p/israeli-soldiers-tel-sultan-gaza-red-crescent-civil-defense-massacre-report-forensic-architecture-earshot"
     },
@@ -96,6 +80,22 @@
     {
       "text": "No Fixed Configuration Is Best: Context- and Cost-Aware Tuning of LLM Pipelines, with an Application to Schema Matching and Mapping",
       "link": "https://arxiv.org/abs/2611.31864v1"
+    },
+    {
+      "text": "REFORGE: LLM-Assisted RTL Bug Repair with Structured Context and Verification Feedback",
+      "link": "https://arxiv.org/abs/2611.33748v1"
+    },
+    {
+      "text": "WhatIf: Counterfactual World Models over Action-Grounded Causal Graphs for Robotic Manipulation",
+      "link": "https://arxiv.org/abs/2611.33745v1"
+    },
+    {
+      "text": "OrbACE: Orbital and Atomic Cluster Expansion",
+      "link": "https://arxiv.org/abs/2611.33743v1"
+    },
+    {
+      "text": "FlashProve-Next: Verifiable Inference for Production LLM APIs",
+      "link": "https://arxiv.org/abs/2611.33741v1"
     }
   ]
 }
