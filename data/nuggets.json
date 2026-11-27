@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-26T02:54:40.488Z",
+  "updated": "2026-11-27T02:56:56.366Z",
   "entries": [
-    {
-      "id": "2026-11-13",
-      "date": "2026-11-13",
-      "publishAt": "2026-11-13T00:00:00.000Z",
-      "fact": {
-        "text": "A mole can dig a tunnel 300 feet (91 m) long in just one night.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents",
-        "source": "pool",
-        "title": "HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents",
-        "link": "https://arxiv.org/abs/2611.12872v1"
-      }
-    },
     {
       "id": "2026-11-14",
       "date": "2026-11-14",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "Constrained Diffusion from Binary Evaluations via Learned Doob h-Functions",
         "link": "https://arxiv.org/abs/2611.29779v1"
+      }
+    },
+    {
+      "id": "2026-11-27",
+      "date": "2026-11-27",
+      "publishAt": "2026-11-27T00:00:00.000Z",
+      "fact": {
+        "text": "There are more ways to shuffle a single deck of cards than there are atoms on Earth.",
+        "source": "bank"
+      },
+      "trend": {
+        "text": "CALVIN-MAX: When Does a Mid-Execution Change Hurt a Robot Policy?",
+        "source": "pool",
+        "title": "CALVIN-MAX: When Does a Mid-Execution Change Hurt a Robot Policy?",
+        "link": "https://arxiv.org/abs/2611.31868v1"
       }
     }
   ]

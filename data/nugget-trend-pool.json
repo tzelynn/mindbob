@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-26T02:54:40.488Z",
+  "updated": "2026-11-27T02:56:56.366Z",
   "trends": [
-    {
-      "text": "Mapping the AI Supply Chain: Dependencies, Vulnerabilities, and Market Concentration in the AI Ecosystem",
-      "link": "https://arxiv.org/abs/2611.24927v1"
-    },
-    {
-      "text": "Agentic Harness Engineering Beta: Requirement-Centered Evolution of Agent Harnesses",
-      "link": "https://arxiv.org/abs/2611.24924v1"
-    },
-    {
-      "text": "Equivariant Modeling with Polynomial Features via Minimal Homogeneous Generators",
-      "link": "https://arxiv.org/abs/2611.24896v1"
-    },
     {
       "text": "PlayCraft: Designing Engaging Games from Agent Play Experience",
       "link": "https://arxiv.org/abs/2611.26624v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2611.29789v1"
     },
     {
-      "text": "Constrained Diffusion from Binary Evaluations via Learned Doob h-Functions",
-      "link": "https://arxiv.org/abs/2611.29779v1"
-    },
-    {
       "text": "S1Arena-MM: Which Multimodal Decisions Can Be Left to System 1?",
       "link": "https://arxiv.org/abs/2611.29773v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "FlashProve-Next: Verifiable Inference for Production LLM APIs",
       "link": "https://arxiv.org/abs/2611.33741v1"
+    },
+    {
+      "text": "Tokenisation is not in APX",
+      "link": "https://arxiv.org/abs/2611.34938v1"
+    },
+    {
+      "text": "Can image generation help visual reasoning? An empirical study",
+      "link": "https://arxiv.org/abs/2611.34935v1"
+    },
+    {
+      "text": "Attack Policy Selection can Mislead Monitor Evaluators",
+      "link": "https://arxiv.org/abs/2611.34934v1"
+    },
+    {
+      "text": "A gene informed benchmark for BioScoring of pathology foundation models",
+      "link": "https://arxiv.org/abs/2611.34930v1"
     }
   ]
 }
