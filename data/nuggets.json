@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T02:56:56.366Z",
+  "updated": "2026-11-27T03:47:32.749Z",
   "entries": [
     {
       "id": "2026-11-14",
@@ -201,8 +201,8 @@
       "date": "2026-11-27",
       "publishAt": "2026-11-27T00:00:00.000Z",
       "fact": {
-        "text": "There are more ways to shuffle a single deck of cards than there are atoms on Earth.",
-        "source": "bank"
+        "text": "Weatherman Willard Scott was the first original Ronald McDonald.",
+        "source": "api"
       },
       "trend": {
         "text": "CALVIN-MAX: When Does a Mid-Execution Change Hurt a Robot Policy?",
