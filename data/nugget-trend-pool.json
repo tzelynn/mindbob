@@ -1,18 +1,6 @@
 {
-  "updated": "2026-11-27T02:56:56.366Z",
+  "updated": "2026-11-28T02:47:43.708Z",
   "trends": [
-    {
-      "text": "PlayCraft: Designing Engaging Games from Agent Play Experience",
-      "link": "https://arxiv.org/abs/2611.26624v1"
-    },
-    {
-      "text": "TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming",
-      "link": "https://arxiv.org/abs/2611.26619v1"
-    },
-    {
-      "text": "Bio-PM-Guided Synthetic IMU Generation",
-      "link": "https://arxiv.org/abs/2611.26607v1"
-    },
     {
       "text": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
       "link": "https://arxiv.org/abs/2611.26603v1"
@@ -58,10 +46,6 @@
       "link": "https://arxiv.org/abs/2611.31870v1"
     },
     {
-      "text": "CALVIN-MAX: When Does a Mid-Execution Change Hurt a Robot Policy?",
-      "link": "https://arxiv.org/abs/2611.31868v1"
-    },
-    {
       "text": "No Fixed Configuration Is Best: Context- and Cost-Aware Tuning of LLM Pipelines, with an Application to Schema Matching and Mapping",
       "link": "https://arxiv.org/abs/2611.31864v1"
     },
@@ -96,6 +80,22 @@
     {
       "text": "A gene informed benchmark for BioScoring of pathology foundation models",
       "link": "https://arxiv.org/abs/2611.34930v1"
+    },
+    {
+      "text": "Diverse Alternative Reasoning Traces for Hard Math Problems",
+      "link": "https://arxiv.org/abs/2611.34928v1"
+    },
+    {
+      "text": "Mixture-of-Loops Transformer",
+      "link": "https://arxiv.org/abs/2611.34923v1"
+    },
+    {
+      "text": "$μ$-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents",
+      "link": "https://arxiv.org/abs/2611.34920v1"
+    },
+    {
+      "text": "Enhancing Maritime Domain Awareness using Latent Space Representations",
+      "link": "https://arxiv.org/abs/2611.34899v1"
     }
   ]
 }

@@ -1,21 +1,6 @@
 {
-  "updated": "2026-11-27T03:47:32.749Z",
+  "updated": "2026-11-28T02:47:43.708Z",
   "entries": [
-    {
-      "id": "2026-11-14",
-      "date": "2026-11-14",
-      "publishAt": "2026-11-14T00:00:00.000Z",
-      "fact": {
-        "text": "A whale`s penis is called a dork.",
-        "source": "api"
-      },
-      "trend": {
-        "text": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
-        "source": "pool",
-        "title": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
-        "link": "https://arxiv.org/abs/2611.14515v1"
-      }
-    },
     {
       "id": "2026-11-15",
       "date": "2026-11-15",
@@ -209,6 +194,21 @@
         "source": "pool",
         "title": "CALVIN-MAX: When Does a Mid-Execution Change Hurt a Robot Policy?",
         "link": "https://arxiv.org/abs/2611.31868v1"
+      }
+    },
+    {
+      "id": "2026-11-28",
+      "date": "2026-11-28",
+      "publishAt": "2026-11-28T00:00:00.000Z",
+      "fact": {
+        "text": "A raisin dropped in a glass of fresh champagne will bounce up and down continually from the bottom of the glass to the top.",
+        "source": "api"
+      },
+      "trend": {
+        "text": "OrbACE: Orbital and Atomic Cluster Expansion",
+        "source": "pool",
+        "title": "OrbACE: Orbital and Atomic Cluster Expansion",
+        "link": "https://arxiv.org/abs/2611.33743v1"
       }
     }
   ]
